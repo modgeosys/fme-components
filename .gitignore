@@ -1,3 +1,4 @@
+.DS_Store
 fme/*.ffs
 fme/Resources/Data/Auth/*
 fme/Resources/Data/Output/*
