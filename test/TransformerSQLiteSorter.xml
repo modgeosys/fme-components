@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE scenario [
+	<!ENTITY projectDir "/Users/kweller/Projects/mg/modgeosys^fme-components/trunk">
+	<!ENTITY fmePath "/usr/local/bin/fme">
+ 	<!ENTITY sortKeys "kml_name&lt;tab&gt;varchar&lt;tab&gt;asc&lt;lf&gt;kml_id&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;varchar&lt;tab&gt;desc">
+	<!ENTITY sourceOGCKMLDataset "&projectDir;/fme/Resources/Data/Test/USGS_DS_817_truncated.kmz">
+	<!ENTITY destUnchangedFFSDataset "&projectDir;/fme/Resources/Data/Output/TestSQLiteSorter_Unchanged_output.ffs">
+	<!ENTITY destDiffFFSDataset "&projectDir;/fme/Resources/Data/Output/TestSQLiteSorter_Diff_output.ffs">
+	<!ENTITY destDatasets "&projectDir;/fme/Resources/Data/Output/TestSQLiteSorter*_output.ffs">
+]>
+<scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../rTest/scenario/rtest.xsd">
+	<name>SQLiteSorter.fmx</name>
+	<author>Kevin Weller</author>
+	<description>Tests for SQLiteSorter transformer</description>
+	<fme_path>&fmePath;</fme_path>
+	<rtestCollection>
+		<rtest>
+			<enabled>true</enabled>
+			<deletebefore>&destDatasets;</deletebefore>
+			<name>Sort process emits unmodified features</name>
+			<processCollection>
+				<process>
+					<description>Test process</description>
+					<workspace>&projectDir;/fme/TestSQLiteSorter.fmw</workspace>
+					<parameterCollection>
+						<parameter name="Sort_Keys" value="&sortKeys;"/>
+						<parameter name="SourceDataset_OGCKML" value="&sourceOGCKMLDataset;"/>
+						<parameter name="DestDataset_Unchanged_FFS" value="&destUnchangedFFSDataset;"/>
+						<parameter name="DestDataset_Diff_FFS" value="&destDiffFFSDataset;"/>
+					</parameterCollection>
+				</process>
+			</processCollection>
+			<checkCollection>
+				<check>
+					<description>Number of features</description>
+					<source type="file" format="FFS" dataset="&destUnchangedFFSDataset;"/>
+					<condition type="featuresCount" expected="20006"/>
+				</check>
+				<check>
+					<description>Number of comparison result features</description>
+					<source type="file" format="FFS" dataset="&destDiffFFSDataset;"/>
+					<condition type="featuresCount" expected="1"/>
+				</check>
+				<check>
+					<description>Sort order matches</description>
+					<source type="file" format="FFS" dataset="&destDiffFFSDataset;" ft="TestSQLiteSorter_Diff_output"/>
+					<condition type="attributeValue" attribute="sort_order_matches" row="1" expected="true"/>
+				</check>
+			</checkCollection>
+		</rtest>
+	</rtestCollection>
+</scenario>

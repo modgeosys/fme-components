@@ -1,0 +1,1347 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <TRANSFORMER
+# TRANSFORMER_BEGIN OAuth2ConfigurationReader,3,Integrations,8beab0ec-2316-11e8-806c-b8e8563886b4,"Linked by Default",No,NO_PARALLELISM,,No,17652,YES,No,35
+# <p>Load an OAuth2 API configuration JSON file.  Necessary because FME web service connections are not yet flexible enough to handle OAuth 2.x authorization for some popular APIs.  Working with Safe Software to address this; once FME is fixed, this OAuth2 suite will be deprecated.</p>
+# <p>For issues or questions, please Create an issue <a href="https://modgeosys.atlassian.net/projects/MFC/issues/MFC-1?filter=allopenissues">here</a>.  For the source, including test driver components, please see the <a href="https://modgeosys.assembla.com/spaces/fme-components/subversion/source">Assembla repository</a>.  For a list of planned improvements, see <a href="https://modgeosys.atlassian.net/projects/MFC/issues/MFC-1?filter=allopenissues">here</a>.</p>
+# <p>Copyright &copy; 2017-2018 by Modern geoSystems, released under <a href="https://modgeosys.assembla.com/spaces/fme-components/subversion/source/HEAD/LICENSE?_format=raw">this BSD 3-clause license</a>.</p>
+# TRANSFORMER_END
+#!   TITLE="OAuth2ConfigurationReader"
+#!   PYTHON_COMPATIBILITY="35"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   SHOW_INFO_NODES="true"
+#!   MARKDOWN_DESCRIPTION="Load an OAuth2 API configuration JSON file.  Necessary because FME web service connections are not yet flexible enough to handle OAuth 2.x authorization for some popular APIs.  Working with Safe Software to address this; once FME is fixed, this OAuth2 suite will be deprecated.&#10;&#10;For issues or questions, please Create an issue [here](https://modgeosys.atlassian.net/projects/MFC/issues/MFC-1?filter=allopenissues).  For the source, including test driver components, please see the [Assembla repository](https://modgeosys.assembla.com/spaces/fme-components/subversion/source).  For a list of planned improvements, see [here](https://modgeosys.atlassian.net/projects/MFC/issues/MFC-1?filter=allopenissues).&#10;&#10;Copyright &amp;copy; 2017-2018 by Modern geoSystems, released under [this BSD 3-clause license](https://modgeosys.assembla.com/spaces/fme-components/subversion/source/HEAD/LICENSE?_format=raw)."
+#!   LAST_SAVE_DATE="2018-03-08T14:20:37"
+#!   XFORM_DEPRECATED="No"
+#!   ITERATION_COUNT_ATTR=""
+#!   FME_BUILD_NUM="17652"
+#!   FME_DOCUMENT_PRIORGUID="c6f47700-2306-11e8-806c-b8e8563886b4,2888dbba-2315-11e8-806c-b8e8563886b4"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   DESCRIPTION="&lt;p&gt;Load an OAuth2 API configuration JSON file.  Necessary because FME web service connections are not yet flexible enough to handle OAuth 2.x authorization for some popular APIs.  Working with Safe Software to address this; once FME is fixed, this OAuth2 suite will be deprecated.&lt;/p&gt;&#10;&lt;p&gt;For issues or questions, please Create an issue &lt;a href=&quot;https://modgeosys.atlassian.net/projects/MFC/issues/MFC-1?filter=allopenissues&quot;&gt;here&lt;/a&gt;.  For the source, including test driver components, please see the &lt;a href=&quot;https://modgeosys.assembla.com/spaces/fme-components/subversion/source&quot;&gt;Assembla repository&lt;/a&gt;.  For a list of planned improvements, see &lt;a href=&quot;https://modgeosys.atlassian.net/projects/MFC/issues/MFC-1?filter=allopenissues&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;&#10;&lt;p&gt;Copyright &amp;copy; 2017-2018 by Modern geoSystems, released under &lt;a href=&quot;https://modgeosys.assembla.com/spaces/fme-components/subversion/source/HEAD/LICENSE?_format=raw&quot;&gt;this BSD 3-clause license&lt;/a&gt;.&lt;/p&gt;"
+#!   FMX_INSERT_MODE="Linked by Default"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_SERVER_SERVICES=""
+#!   MARKDOWN_USAGE="### Ports&#10;&#10;#### Input&#10;Feed a feature per API configuration file to be loaded.&#10;&#10;#### Output&#10;The input feature enhanced with the following attributes for each resulting API configuration file:&#10;&#10;- `oauth2_client_id` - As assigned in API configuration file&#10;- `oauth2_client_key` - As assigned in API configuration file&#10;- `oauth2_redirect_url` - As assigned in API configuration file &#10;- `oauth2_refresh_token_file` - As assigned in API configuration file&#10;- `oauth2_refresh_url` - As assigned in API configuration file&#10;- `oauth2_old_refresh_token` - As assigned in refresh token file before refreshing&#10;&#10;#### &lt;Rejected&gt;&#10;The input feature enhanced with the following attributes for each feature rejected during processing:&#10;&#10;- `oauth2_reader_error` - As returned from the API configuration file reader&#10;&#10;### Parameters&#10;Specify the attributes containing the required parameters for each load request.&#10;&#10;#### OAUTH2_DATA_DIRECTORY&#10;The attribute containing the directory path where the API configuration JSON file and refresh token storage file are located.  For example, &quot;`$(FME_SHAREDRESOURCE_DATA)`&quot;.&#10;&#10;#### OAUTH2_CONFIGURATION_FILENAME&#10;The attribute containing the basename of the API configuration JSON file (not including the `OAUTH2_DATA_DIRECTORY` above), whose contents should look something like the following:&#10;&#10;    {&#10;      &quot;qbo_subdomain&quot;: &quot;quickbooks&quot;,&#10;      &quot;qbo_company_id&quot;: &quot;999999999&quot;,&#10;      &quot;client_id&quot;: &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,&#10;      &quot;client_key&quot;: &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,&#10;      &quot;refresh_url&quot;: &quot;https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer&quot;,&#10;      &quot;refresh_token_file&quot;: &quot;#&lt;Data_Directory&gt;/QBO_RefreshToken.txt&quot;,&#10;      &quot;post_body_mime_type&quot;: &quot;application/x-www-form-urlencoded&quot;&#10;    }&#10;"
+#!   ZOOM_SCALE="100"
+#!   HISTORY="2018-01-21,Kevin&lt;space&gt;Weller,Initial&lt;space&gt;publication.,2018-03-08,Kevin&lt;space&gt;Weller,Updates&lt;space&gt;to&lt;space&gt;reflect&lt;space&gt;move&lt;space&gt;from&lt;space&gt;GitHub&lt;space&gt;to&lt;space&gt;Assembla&lt;space&gt;and&lt;space&gt;Atlassian&lt;semicolon&gt;&lt;space&gt;resource&lt;space&gt;Data&lt;space&gt;files&lt;space&gt;moved&lt;space&gt;to&lt;space&gt;Auth&lt;space&gt;subdirectory."
+#!   DOC_TOP_LEFT="-1225.01 -406.504"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   USE_MARKDOWN="YES"
+#!   FME_DOCUMENT_GUID="8beab0ec-2316-11e8-806c-b8e8563886b4"
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.1.1 (20171014 - Build 17652 - macosx)"
+#!   WORKSPACE_VERSION="1"
+#!   PASSWORD=""
+#!   BLOCKED_LOOPING="No"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   CATEGORY="Integrations"
+#!   FME_LINKED_TRANSFORMER_VERSION="3"
+#!   VIEW_POSITION="-1311.01 405.004"
+#!   DOC_EXTENTS="2725.01 813.008"
+#!   MAX_LOOP_ITERATIONS=""
+#!   SHOW_ANNOTATIONS="true"
+#!   USAGE="&lt;h3&gt;Ports&lt;/h3&gt;&#10;&lt;h4&gt;Input&lt;/h4&gt;&#10;&lt;p&gt;Feed a feature per API configuration file to be loaded.&lt;/p&gt;&#10;&lt;h4&gt;Output&lt;/h4&gt;&#10;&lt;p&gt;The input feature enhanced with the following attributes for each resulting API configuration file:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_client_id&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_client_key&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_redirect_url&lt;/code&gt; - As assigned in API configuration file &lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_refresh_token_file&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_refresh_url&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_old_refresh_token&lt;/code&gt; - As assigned in refresh token file before refreshing&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h4&gt;&lt;Rejected&gt;&lt;/h4&gt;&#10;&lt;p&gt;The input feature enhanced with the following attributes for each feature rejected during processing:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_reader_error&lt;/code&gt; - As returned from the API configuration file reader&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h3&gt;Parameters&lt;/h3&gt;&#10;&lt;p&gt;Specify the attributes containing the required parameters for each load request.&lt;/p&gt;&#10;&lt;h4&gt;OAUTH2_DATA_DIRECTORY&lt;/h4&gt;&#10;&lt;p&gt;The attribute containing the directory path where the API configuration JSON file and refresh token storage file are located.  For example, &quot;&lt;code&gt;$(FME_SHAREDRESOURCE_DATA)&lt;/code&gt;&quot;.&lt;/p&gt;&#10;&lt;h4&gt;OAUTH2_CONFIGURATION_FILENAME&lt;/h4&gt;&#10;&lt;p&gt;The attribute containing the basename of the API configuration JSON file (not including the &lt;code&gt;OAUTH2_DATA_DIRECTORY&lt;/code&gt; above), whose contents should look something like the following:&lt;/p&gt;&#10;&lt;pre&gt;&lt;code&gt;{&#10;  &quot;qbo_subdomain&quot;: &quot;quickbooks&quot;,&#10;  &quot;qbo_company_id&quot;: &quot;999999999&quot;,&#10;  &quot;client_id&quot;: &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,&#10;  &quot;client_key&quot;: &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,&#10;  &quot;refresh_url&quot;: &quot;https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer&quot;,&#10;  &quot;refresh_token_file&quot;: &quot;#&amp;lt;Data_Directory&amp;gt;/QBO_RefreshToken.txt&quot;,&#10;  &quot;post_body_mime_type&quot;: &quot;application/x-www-form-urlencoded&quot;&#10;}&#10;&lt;/code&gt;&lt;/pre&gt;"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL STRING_OR_ATTR_ENCODED OAUTH2_DATA_DIRECTORY Oauth2 Data Directory:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL STRING_OR_ATTR_ENCODED OAUTH2_CONFIGURATION_FILENAME Oauth2 Configuration Filename:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_configuration_filename&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="5"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Replace #&amp;lt;Data_Directory&amp;gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;placeholder in refresh token&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;file paths with the real thing&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;from the input features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="120.99 304.501"
+#!   TOP_LEFT="120.99 304.501"
+#!   BOTTOM_RIGHT="119.99 305.501"
+#!   BOUNDING_RECT="120.99 304.501 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="3"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="12"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Rename attributes with&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;transformer-specific&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;prefixes &amp;amp; remove&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;redundant attributes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="858 300"
+#!   TOP_LEFT="858 300"
+#!   BOTTOM_RIGHT="857 301"
+#!   BOUNDING_RECT="858 300 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="11"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="6"
+#!   NAME="Load and prepare configuration data from JSON file."
+#!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;.SF NS Text&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="-721.01 406.504"
+#!   BOTTOM_RIGHT="741.01 -406.504"
+#!   BOUNDING_RECT="-721.01 406.504 1462.02 813.008"
+#!   STICKY="true"
+#!   COLOUR="0.176471,0.529412,0.8"
+#!   CONTENTS="3 5 4 2 "
+#! />
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="FeatureReader"
+#!   VERSION="9"
+#!   POSITION="-629.01 4.50101"
+#!   BOUNDING_RECT="-629.01 4.50101 526.359 71"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;SCHEMA&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_short_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_long_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_schema_handling" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="client_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="client_key" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="redirect_url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="JSON_GEOMETRY_FORMAT" PARM_VALUE="None"/>
+#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="JSON_GEOMETRY_FORMAT,&quot;OPTIONAL ACTIVECHOICE GeoJSON%OGC-WKT%None,GEOMETRY_KEY,COORDINATE_SYSTEM_KEY&quot;,JSON&lt;space&gt;Geometry&lt;space&gt;Format:,JSON_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP JSON_EXPOSE_FORMAT_ATTRS&quot;,JSON&lt;space&gt;Schema&lt;space&gt;Attributes,JSON_DECODE_TEXT_STRINGS,&quot;OPTIONAL NO_EDIT TEXT&quot;,JSON&lt;space&gt;,JSON_JSON_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS JSON%Source&quot;,JSON&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,JSON_SAVE_FRAGMENTS,&quot;OPTIONAL LOOKUP_CHOICE Yes,YES%No,NO&quot;,JSON&lt;space&gt;Read&lt;space&gt;Entire&lt;space&gt;Feature&lt;space&gt;as&lt;space&gt;JSON&lt;space&gt;Fragment:,JSON_SCAN_MODE,&quot;OPTIONAL ACTIVECHOICE_LOOKUP Auto,AUTO,QUERY_TABLE%JSON&lt;space&gt;Query,QUERY&quot;,JSON&lt;space&gt;Schema&lt;space&gt;Scan&lt;space&gt;Mode,JSON_FEATURE_TYPE_KEY,&quot;OPTIONAL TEXT&quot;,JSON&lt;space&gt;Feature&lt;space&gt;Type&lt;space&gt;Key&lt;space&gt;Name:,JSON_USE_BASENAME_AS_DEFAULT_FEATURE_TYPE,&quot;OPTIONAL NO_EDIT TEXT&quot;,JSON&lt;space&gt;,JSON_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,JSON&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,JSON_FLATTEN_MODE,&quot;OPTIONAL LOOKUP_CHOICE Yes,ALL_LEVELS%No,ONE_LEVEL&quot;,JSON&lt;space&gt;Flatten&lt;space&gt;Nested&lt;space&gt;JSON&lt;space&gt;Values&lt;space&gt;into&lt;space&gt;Attributes:"/>
+#!     <XFORM_PARM PARM_NAME="JSON_USE_BASENAME_AS_DEFAULT_FEATURE_TYPE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_"/>
+#!     <XFORM_PARM PARM_NAME="JSON_JSON_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ConfigFeatureReader"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="SINGLE_PORT"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_FLATTEN_MODE" PARM_VALUE="ALL_LEVELS"/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Initiator and Result"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="JSON_FEATURE_TYPE_KEY" PARM_VALUE="json_featuretype"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JSON_DECODE_TEXT_STRINGS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
+#!     <XFORM_PARM PARM_NAME="JSON_SAVE_FRAGMENTS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;&lt;solidus&gt;Auth&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;oauth2_configuration_filename&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="JSON"/>
+#!     <XFORM_PARM PARM_NAME="JSON_SCAN_MODE" PARM_VALUE="AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JSON_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceSCAN_MODE&lt;comma&gt;AUTO&lt;comma&gt;SourceQUERY_TABLE&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceFLATTEN_MODE&lt;comma&gt;ALL_LEVELS&lt;comma&gt;SourceFEATURE_TYPE_KEY&lt;comma&gt;json_featuretype&lt;comma&gt;SourceGEOMETRY_FORMAT&lt;comma&gt;None&lt;comma&gt;SourceGEOMETRY_KEY&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceCOORDINATE_SYSTEM_KEY&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceSAVE_FRAGMENTS&lt;comma&gt;NO&lt;comma&gt;SourceDECODE_TEXT_STRINGS&lt;comma&gt;Yes&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceJSON_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_BASENAME_AS_DEFAULT_FEATURE_TYPE&lt;comma&gt;No&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO,METAFILE,JSON"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE="client_id client_key redirect_url refresh_url refresh_token_file oauth2_data_directory post_body_mime_type additional_post_header_name additional_post_header_value"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="StringReplacer"
+#!   VERSION="4"
+#!   POSITION="120.99 4.50101"
+#!   BOUNDING_RECT="120.99 4.50101 517.484 71"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="client_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="client_key" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="redirect_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="refresh_token_file"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DirectoryStringReplacer"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="#&lt;lt&gt;Data_Directory&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="900 0"
+#!   BOUNDING_RECT="900 0 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_client_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_client_key" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_refresh_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_redirect_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="oauth2_configuration_filename oauth2_configuration_filename  REMOVE oauth2_data_directory oauth2_data_directory  REMOVE client_id oauth2_client_id  RENAME_SET_VALUE client_key oauth2_client_key  RENAME_SET_VALUE refresh_url oauth2_refresh_url  RENAME_SET_VALUE refresh_token_file oauth2_refresh_token_file  RENAME_SET_VALUE redirect_url oauth2_redirect_url  RENAME_SET_VALUE post_body_mime_type oauth2_post_body_mime_type  RENAME_SET_VALUE additional_post_header_name oauth2_additional_post_header_name  RENAME_SET_VALUE additional_post_header_value oauth2_additional_post_header_value  RENAME_SET_VALUE"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="AttributeRenamer"
+#!   VERSION="4"
+#!   POSITION="900 -300"
+#!   BOUNDING_RECT="900 -300 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_reader_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_reader_error oauth2_reader_error RENAME_SET_DEFAULT "/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="7"
+#!   NAME="Input"
+#!   POSITION="-1225.01 4.50101"
+#!   BOUNDING_RECT="-1225.01 4.50101 -1 -1"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" ATTR_VALUE="$(OAUTH2_DATA_DIRECTORY)" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" ATTR_VALUE="$(OAUTH2_CONFIGURATION_FILENAME)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="9"
+#!   NAME="Output"
+#!   POSITION="1500 0"
+#!   BOUNDING_RECT="1500 0 -1 -1"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="15"
+#!   NAME="&lt;Rejected&gt;"
+#!   POSITION="1500 -300"
+#!   BOUNDING_RECT="1500 -300 -1 -1"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;OTHER&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </TRANSFORMER>
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_DATA_DIRECTORY <at>Value<openparen>oauth2_data_directory<closeparen>
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_CONFIGURATION_FILENAME <at>Value<openparen>oauth2_configuration_filename<closeparen>
+#! START_HEADER
+#! END_HEADER
+
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+DEFAULT_MACRO OAuth2ConfigurationReader_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(OAuth2ConfigurationReader_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(OAuth2ConfigurationReader_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input1520544037 Input Splitter"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,oauth2_data_directory,$($(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_DATA_DIRECTORY),oauth2_configuration_filename,$($(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_CONFIGURATION_FILENAME), FEATURE_TYPE)"
+# -------------------------------------------------------------------------
+MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_OUTPUT_PORTS_ENCODED 
+MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_DIRECTIVES GEOMETRY_FORMAT,None,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,DECODE_TEXT_STRINGS,Yes,SAVE_FRAGMENTS,NO,SCAN_MODE,AUTO,FEATURE_TYPE_KEY,json_featuretype,USE_BASENAME_AS_DEFAULT_FEATURE_TYPE,No,USE_SEARCH_ENVELOPE,NO,FLATTEN_MODE,ALL_LEVELS
+
+# Always provide an INTERACTION, otherwise the factory defaults to ENVELOPE_INTERSECTS
+INCLUDE [if { ( {<Unused>} == {<Unused>} ) || ( {($INTERACT_OPTIONS)} == {} ) } {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION NONE};          } else {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION "<Unused>"};          }         ]
+# Consolidate the attribute merge options to what the factory expects
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS
+INCLUDE [       if { {MERGE} == {MERGE} } {          puts "MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS PREFER_RESULT";       } else {          puts "MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS MERGE";       };    ]
+FACTORY_DEF * QueryFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input"    $(FCTQUERY_INTERACTION_LINE)    COMBINE_ATTRIBUTES  $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS)    QUERYFCT_ATTRIBUTE_PREFIX <Unused>    COMBINE_GEOMETRY    RESULT_ONLY    ENABLE_CACHE        NO    QUERYFCT_TABLE_SEPARATOR SPACE    READER_TYPE         JSON    READER_DATASET      "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>oauth2_data_directory<closeparen><solidus>Auth<solidus><at>Value<openparen>oauth2_configuration_filename<closeparen>,$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader)"    QUERYFCT_IDS        ""    READER_DIRECTIVES META_MACROS,SourceSCAN_MODE<comma>AUTO<comma>SourceQUERY_TABLE<comma><lt>Unused<gt><comma>SourceFLATTEN_MODE<comma>ALL_LEVELS<comma>SourceFEATURE_TYPE_KEY<comma>json_featuretype<comma>SourceGEOMETRY_FORMAT<comma>None<comma>SourceGEOMETRY_KEY<comma><lt>Unused<gt><comma>SourceCOORDINATE_SYSTEM_KEY<comma><lt>Unused<gt><comma>SourceSAVE_FRAGMENTS<comma>NO<comma>SourceDECODE_TEXT_STRINGS<comma>Yes<comma>SourceEXPOSE_ATTRS_GROUP<comma>FME_DISCLOSURE_OPEN<comma>SourceJSON_EXPOSE_FORMAT_ATTRS<comma><comma>SourceUSE_BASENAME_AS_DEFAULT_FEATURE_TYPE<comma>No<comma>SourceUSE_SEARCH_ENVELOPE<comma>NO<comma>SourceSEARCH_ENVELOPE_MINX<comma>0<comma>SourceSEARCH_ENVELOPE_MINY<comma>0<comma>SourceSEARCH_ENVELOPE_MAXX<comma>0<comma>SourceSEARCH_ENVELOPE_MAXY<comma>0<comma>SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM<comma><comma>SourceCLIP_TO_ENVELOPE<comma>NO,METAFILE,JSON    QUERYFCT_OUTPUT     "BASED_ON_CONNECTIONS"    CONTINUE_ON_READER_ERROR YES    QUERYFCT_RESULT_TAGS $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_OUTPUT_PORTS_ENCODED)    QUERYFCT_SET_FME_FEATURE_TYPE YES    READER_PARAMS_WWJD     $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<OTHER>"    OUTPUT READER_ERROR FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<REJECTED>"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<REJECTED>" 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "_reader_error" "oauth2_reader_error" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer_OUTPUT"
+
+# -------------------------------------------------------------------------
+
+MACRO casemac
+INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
+Tcl2 proc $(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_4b08b0ae_1135_4631_8f4d_b6a24f8edd590_replacer { findText replaceText invalidValue} {     set attrs [split \"refresh_token_file\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<OTHER>"    OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_OUTPUT"         @Tcl2("$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_4b08b0ae_1135_4631_8f4d_b6a24f8edd590_replacer {#<lt>Data_Directory<gt>} {@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>oauth2_data_directory<closeparen>,$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer)} {_FME_NO_OP_}")
+
+# -------------------------------------------------------------------------
+
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_OUTPUT"    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "oauth2_configuration_filename" "oauth2_configuration_filename" "" "REMOVE" }      ATTR_ACTION { "oauth2_data_directory" "oauth2_data_directory" "" "REMOVE" }      ATTR_ACTION { "client_id" "oauth2_client_id" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "client_key" "oauth2_client_key" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "refresh_url" "oauth2_refresh_url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "refresh_token_file" "oauth2_refresh_token_file" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "redirect_url" "oauth2_redirect_url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "post_body_mime_type" "oauth2_post_body_mime_type" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "additional_post_header_name" "oauth2_additional_post_header_name" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "additional_post_header_value" "oauth2_additional_post_header_value" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager_OUTPUT"
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Output1520544037 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_<Rejected>1520544037 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_<Rejected>"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(OAuth2ConfigurationReader_WORKSPACE_NAME))}]
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <TRANSFORMER
+# TRANSFORMER_BEGIN OAuth2ConfigurationReader,2,Integrations,befbf2a0-ff05-11e7-87ae-b8e8563886b4,"Linked by Default",No,NO_PARALLELISM,,No,17652,YES,No,35
+# <p>Load an OAuth2 API configuration JSON file.  Necessary because FME web service connections are not yet flexible enough to handle OAuth 2.x authorization for some popular APIs.  Working with Safe Software to address this; once FME is fixed, this OAuth2 suite will be deprecated.</p>
+# <p>For issues or questions, please post a New Issue <a href="https://github.com/modgeosys/fme-components/issues">here</a>.  For the source, including test driver components, please see the <a href="https://github.com/modgeosys/fme-components">GitHub repository</a>.  For a list of planned improvements, see <a href="https://github.com/modgeosys/fme-components/projects/2">here</a>.</p>
+# <p>Copyright &copy; 2017-2018 by Modern geoSystems, released under <a href="https://github.com/modgeosys/fme-components/blob/master/LICENSE">this BSD 3-clause license</a>.</p>
+# TRANSFORMER_END
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   USE_MARKDOWN="YES"
+#!   FME_LINKED_TRANSFORMER_VERSION="2"
+#!   BLOCKED_LOOPING="No"
+#!   VIEW_POSITION="-1320.01 405.004"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   LAST_SAVE_DATE="2018-01-21T17:00:23"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   XFORM_DEPRECATED="No"
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.1.1 (20171014 - Build 17652 - macosx)"
+#!   FME_SERVER_SERVICES=""
+#!   DESCRIPTION="&lt;p&gt;Load an OAuth2 API configuration JSON file.  Necessary because FME web service connections are not yet flexible enough to handle OAuth 2.x authorization for some popular APIs.  Working with Safe Software to address this; once FME is fixed, this OAuth2 suite will be deprecated.&lt;/p&gt;&#10;&lt;p&gt;For issues or questions, please post a New Issue &lt;a href=&quot;https://github.com/modgeosys/fme-components/issues&quot;&gt;here&lt;/a&gt;.  For the source, including test driver components, please see the &lt;a href=&quot;https://github.com/modgeosys/fme-components&quot;&gt;GitHub repository&lt;/a&gt;.  For a list of planned improvements, see &lt;a href=&quot;https://github.com/modgeosys/fme-components/projects/2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;&#10;&lt;p&gt;Copyright &amp;copy; 2017-2018 by Modern geoSystems, released under &lt;a href=&quot;https://github.com/modgeosys/fme-components/blob/master/LICENSE&quot;&gt;this BSD 3-clause license&lt;/a&gt;.&lt;/p&gt;"
+#!   PASSWORD=""
+#!   CATEGORY="Integrations"
+#!   FME_BUILD_NUM="17652"
+#!   MARKDOWN_USAGE="### Ports&#10;&#10;#### Input&#10;Feed a feature per API configuration file to be loaded.&#10;&#10;#### Output&#10;The input feature enhanced with the following attributes for each resulting API configuration file:&#10;&#10;- `oauth2_client_id` - As assigned in API configuration file&#10;- `oauth2_client_key` - As assigned in API configuration file&#10;- `oauth2_redirect_url` - As assigned in API configuration file &#10;- `oauth2_refresh_token_file` - As assigned in API configuration file&#10;- `oauth2_refresh_url` - As assigned in API configuration file&#10;- `oauth2_old_refresh_token` - As assigned in refresh token file before refreshing&#10;&#10;#### &lt;Rejected&gt;&#10;The input feature enhanced with the following attributes for each feature rejected during processing:&#10;&#10;- `oauth2_reader_error` - As returned from the API configuration file reader&#10;&#10;### Parameters&#10;Specify the attributes containing the required parameters for each load request.&#10;&#10;#### OAUTH2_DATA_DIRECTORY&#10;The attribute containing the directory path where the API configuration JSON file and refresh token storage file are located.  For example, &quot;`$(FME_SHAREDRESOURCE_DATA)`&quot;.&#10;&#10;#### OAUTH2_CONFIGURATION_FILENAME&#10;The attribute containing the basename of the API configuration JSON file (not including the `OAUTH2_DATA_DIRECTORY` above), whose contents should look something like the following:&#10;&#10;    {&#10;      &quot;qbo_subdomain&quot;: &quot;quickbooks&quot;,&#10;      &quot;qbo_company_id&quot;: &quot;999999999&quot;,&#10;      &quot;client_id&quot;: &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,&#10;      &quot;client_key&quot;: &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,&#10;      &quot;refresh_url&quot;: &quot;https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer&quot;,&#10;      &quot;refresh_token_file&quot;: &quot;#&lt;Data_Directory&gt;/QBO_RefreshToken.txt&quot;,&#10;      &quot;post_body_mime_type&quot;: &quot;application/x-www-form-urlencoded&quot;&#10;    }&#10;"
+#!   HISTORY="2018-01-21,Kevin&lt;space&gt;Weller,Initial&lt;space&gt;publication."
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   FME_DOCUMENT_GUID="befbf2a0-ff05-11e7-87ae-b8e8563886b4"
+#!   SHOW_INFO_NODES="true"
+#!   USAGE="&lt;h3&gt;Ports&lt;/h3&gt;&#10;&lt;h4&gt;Input&lt;/h4&gt;&#10;&lt;p&gt;Feed a feature per API configuration file to be loaded.&lt;/p&gt;&#10;&lt;h4&gt;Output&lt;/h4&gt;&#10;&lt;p&gt;The input feature enhanced with the following attributes for each resulting API configuration file:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_client_id&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_client_key&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_redirect_url&lt;/code&gt; - As assigned in API configuration file &lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_refresh_token_file&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_refresh_url&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_old_refresh_token&lt;/code&gt; - As assigned in refresh token file before refreshing&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h4&gt;&lt;Rejected&gt;&lt;/h4&gt;&#10;&lt;p&gt;The input feature enhanced with the following attributes for each feature rejected during processing:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_reader_error&lt;/code&gt; - As returned from the API configuration file reader&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h3&gt;Parameters&lt;/h3&gt;&#10;&lt;p&gt;Specify the attributes containing the required parameters for each load request.&lt;/p&gt;&#10;&lt;h4&gt;OAUTH2_DATA_DIRECTORY&lt;/h4&gt;&#10;&lt;p&gt;The attribute containing the directory path where the API configuration JSON file and refresh token storage file are located.  For example, &quot;&lt;code&gt;$(FME_SHAREDRESOURCE_DATA)&lt;/code&gt;&quot;.&lt;/p&gt;&#10;&lt;h4&gt;OAUTH2_CONFIGURATION_FILENAME&lt;/h4&gt;&#10;&lt;p&gt;The attribute containing the basename of the API configuration JSON file (not including the &lt;code&gt;OAUTH2_DATA_DIRECTORY&lt;/code&gt; above), whose contents should look something like the following:&lt;/p&gt;&#10;&lt;pre&gt;&lt;code&gt;{&#10;  &quot;qbo_subdomain&quot;: &quot;quickbooks&quot;,&#10;  &quot;qbo_company_id&quot;: &quot;999999999&quot;,&#10;  &quot;client_id&quot;: &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,&#10;  &quot;client_key&quot;: &quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;,&#10;  &quot;refresh_url&quot;: &quot;https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer&quot;,&#10;  &quot;refresh_token_file&quot;: &quot;#&amp;lt;Data_Directory&amp;gt;/QBO_RefreshToken.txt&quot;,&#10;  &quot;post_body_mime_type&quot;: &quot;application/x-www-form-urlencoded&quot;&#10;}&#10;&lt;/code&gt;&lt;/pre&gt;"
+#!   MAX_LOOP_ITERATIONS=""
+#!   PYTHON_COMPATIBILITY="35"
+#!   WORKSPACE_VERSION="1"
+#!   TITLE="OAuth2ConfigurationReader"
+#!   MARKDOWN_DESCRIPTION="Load an OAuth2 API configuration JSON file.  Necessary because FME web service connections are not yet flexible enough to handle OAuth 2.x authorization for some popular APIs.  Working with Safe Software to address this; once FME is fixed, this OAuth2 suite will be deprecated.&#10;&#10;For issues or questions, please post a New Issue [here](https://github.com/modgeosys/fme-components/issues).  For the source, including test driver components, please see the [GitHub repository](https://github.com/modgeosys/fme-components).  For a list of planned improvements, see [here](https://github.com/modgeosys/fme-components/projects/2).&#10;&#10;Copyright &amp;copy; 2017-2018 by Modern geoSystems, released under [this BSD 3-clause license](https://github.com/modgeosys/fme-components/blob/master/LICENSE)."
+#!   ITERATION_COUNT_ATTR=""
+#!   FME_DOCUMENT_PRIORGUID="38ecbd86-fefe-11e7-93cd-b8e8563886b4"
+#!   SHOW_ANNOTATIONS="true"
+#!   FMX_INSERT_MODE="Linked by Default"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   ZOOM_SCALE="100"
+#!   DOC_EXTENTS="2725.01 813.008"
+#!   FME_PROCESS_GROUP_BY=""
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   DOC_TOP_LEFT="-1225.01 -406.504"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL STRING_OR_ATTR_ENCODED OAUTH2_DATA_DIRECTORY Oauth2 Data Directory:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL STRING_OR_ATTR_ENCODED OAUTH2_CONFIGURATION_FILENAME Oauth2 Configuration Filename:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_configuration_filename&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="5"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Replace #&amp;lt;Data_Directory&amp;gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;placeholder in refresh token&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;file paths with the real thing&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;from the input features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="120.99 304.501"
+#!   TOP_LEFT="120.99 304.501"
+#!   BOTTOM_RIGHT="119.99 305.501"
+#!   BOUNDING_RECT="120.99 304.501 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="3"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="12"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Rename attributes with&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;transformer-specific&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;prefixes &amp;amp; remove&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;redundant attributes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="858 300"
+#!   TOP_LEFT="858 300"
+#!   BOTTOM_RIGHT="857 301"
+#!   BOUNDING_RECT="858 300 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="11"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="6"
+#!   NAME="Load and prepare configuration data from JSON file."
+#!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;.SF NS Text&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="-721.01 406.504"
+#!   BOTTOM_RIGHT="741.01 -406.504"
+#!   BOUNDING_RECT="-721.01 406.504 1462.02 813.008"
+#!   STICKY="true"
+#!   COLOUR="0.176471,0.529412,0.8"
+#!   CONTENTS="4 2 3 5 "
+#! />
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="FeatureReader"
+#!   VERSION="9"
+#!   POSITION="-629.01 4.50101"
+#!   BOUNDING_RECT="-629.01 4.50101 526.359 71"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;SCHEMA&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_short_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_long_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_schema_handling" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="client_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="client_key" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="redirect_url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="JSON_FLATTEN_MODE" PARM_VALUE="ALL_LEVELS"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="JSON"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="JSON_SAVE_FRAGMENTS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE="client_id client_key redirect_url refresh_url refresh_token_file oauth2_data_directory post_body_mime_type additional_post_header_name additional_post_header_value"/>
+#!     <XFORM_PARM PARM_NAME="JSON_DECODE_TEXT_STRINGS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_"/>
+#!     <XFORM_PARM PARM_NAME="JSON_GEOMETRY_FORMAT" PARM_VALUE="None"/>
+#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;oauth2_configuration_filename&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="SINGLE_PORT"/>
+#!     <XFORM_PARM PARM_NAME="JSON_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="JSON_FEATURE_TYPE_KEY" PARM_VALUE="json_featuretype"/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="JSON_SCAN_MODE" PARM_VALUE="AUTO"/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Initiator and Result"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceSCAN_MODE&lt;comma&gt;AUTO&lt;comma&gt;SourceQUERY_TABLE&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceFLATTEN_MODE&lt;comma&gt;ALL_LEVELS&lt;comma&gt;SourceFEATURE_TYPE_KEY&lt;comma&gt;json_featuretype&lt;comma&gt;SourceGEOMETRY_FORMAT&lt;comma&gt;None&lt;comma&gt;SourceGEOMETRY_KEY&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceCOORDINATE_SYSTEM_KEY&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceSAVE_FRAGMENTS&lt;comma&gt;NO&lt;comma&gt;SourceDECODE_TEXT_STRINGS&lt;comma&gt;Yes&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceJSON_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_BASENAME_AS_DEFAULT_FEATURE_TYPE&lt;comma&gt;No&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO,METAFILE,JSON"/>
+#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_JSON_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="JSON_DECODE_TEXT_STRINGS,&quot;OPTIONAL NO_EDIT TEXT&quot;,JSON&lt;space&gt;,JSON_GEOMETRY_FORMAT,&quot;OPTIONAL ACTIVECHOICE GeoJSON%OGC-WKT%None,GEOMETRY_KEY,COORDINATE_SYSTEM_KEY&quot;,JSON&lt;space&gt;Geometry&lt;space&gt;Format:,JSON_SCAN_MODE,&quot;OPTIONAL ACTIVECHOICE_LOOKUP Auto,AUTO,QUERY_TABLE%JSON&lt;space&gt;Query,QUERY&quot;,JSON&lt;space&gt;Schema&lt;space&gt;Scan&lt;space&gt;Mode,JSON_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,JSON&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,JSON_FLATTEN_MODE,&quot;OPTIONAL LOOKUP_CHOICE Yes,ALL_LEVELS%No,ONE_LEVEL&quot;,JSON&lt;space&gt;Flatten&lt;space&gt;Nested&lt;space&gt;JSON&lt;space&gt;Values&lt;space&gt;into&lt;space&gt;Attributes:,JSON_USE_BASENAME_AS_DEFAULT_FEATURE_TYPE,&quot;OPTIONAL NO_EDIT TEXT&quot;,JSON&lt;space&gt;,JSON_SAVE_FRAGMENTS,&quot;OPTIONAL LOOKUP_CHOICE Yes,YES%No,NO&quot;,JSON&lt;space&gt;Read&lt;space&gt;Entire&lt;space&gt;Feature&lt;space&gt;as&lt;space&gt;JSON&lt;space&gt;Fragment:,JSON_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP JSON_EXPOSE_FORMAT_ATTRS&quot;,JSON&lt;space&gt;Schema&lt;space&gt;Attributes,JSON_FEATURE_TYPE_KEY,&quot;OPTIONAL TEXT&quot;,JSON&lt;space&gt;Feature&lt;space&gt;Type&lt;space&gt;Key&lt;space&gt;Name:,JSON_JSON_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS JSON%Source&quot;,JSON&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_USE_BASENAME_AS_DEFAULT_FEATURE_TYPE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="JSON_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ConfigFeatureReader"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="StringReplacer"
+#!   VERSION="4"
+#!   POSITION="120.99 4.50101"
+#!   BOUNDING_RECT="120.99 4.50101 517.484 71"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="client_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="client_key" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="redirect_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="#&lt;lt&gt;Data_Directory&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DirectoryStringReplacer"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="refresh_token_file"/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="900 0"
+#!   BOUNDING_RECT="900 0 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_client_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_client_key" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_refresh_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_redirect_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="oauth2_configuration_filename oauth2_configuration_filename  REMOVE oauth2_data_directory oauth2_data_directory  REMOVE client_id oauth2_client_id  RENAME_SET_VALUE client_key oauth2_client_key  RENAME_SET_VALUE refresh_url oauth2_refresh_url  RENAME_SET_VALUE refresh_token_file oauth2_refresh_token_file  RENAME_SET_VALUE redirect_url oauth2_redirect_url  RENAME_SET_VALUE post_body_mime_type oauth2_post_body_mime_type  RENAME_SET_VALUE additional_post_header_name oauth2_additional_post_header_name  RENAME_SET_VALUE additional_post_header_value oauth2_additional_post_header_value  RENAME_SET_VALUE"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="AttributeRenamer"
+#!   VERSION="4"
+#!   POSITION="900 -300"
+#!   BOUNDING_RECT="900 -300 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_reader_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_reader_error oauth2_reader_error RENAME_SET_DEFAULT "/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="7"
+#!   NAME="Input"
+#!   POSITION="-1225.01 4.50101"
+#!   BOUNDING_RECT="-1225.01 4.50101 -1 -1"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" ATTR_VALUE="$(OAUTH2_DATA_DIRECTORY)" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" ATTR_VALUE="$(OAUTH2_CONFIGURATION_FILENAME)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="9"
+#!   NAME="Output"
+#!   POSITION="1500 0"
+#!   BOUNDING_RECT="1500 0 -1 -1"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="15"
+#!   NAME="&lt;Rejected&gt;"
+#!   POSITION="1500 -300"
+#!   BOUNDING_RECT="1500 -300 -1 -1"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;OTHER&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </TRANSFORMER>
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_DATA_DIRECTORY <at>Value<openparen>oauth2_data_directory<closeparen>
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_CONFIGURATION_FILENAME <at>Value<openparen>oauth2_configuration_filename<closeparen>
+#! START_HEADER
+#! END_HEADER
+
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+DEFAULT_MACRO OAuth2ConfigurationReader_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(OAuth2ConfigurationReader_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(OAuth2ConfigurationReader_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input1516579223 Input Splitter"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,oauth2_data_directory,$($(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_DATA_DIRECTORY),oauth2_configuration_filename,$($(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_CONFIGURATION_FILENAME), FEATURE_TYPE)"
+# -------------------------------------------------------------------------
+MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_OUTPUT_PORTS_ENCODED 
+MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_DIRECTIVES DECODE_TEXT_STRINGS,Yes,GEOMETRY_FORMAT,None,SCAN_MODE,AUTO,USE_SEARCH_ENVELOPE,NO,FLATTEN_MODE,ALL_LEVELS,USE_BASENAME_AS_DEFAULT_FEATURE_TYPE,No,SAVE_FRAGMENTS,NO,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,FEATURE_TYPE_KEY,json_featuretype
+
+# Always provide an INTERACTION, otherwise the factory defaults to ENVELOPE_INTERSECTS
+INCLUDE [if { ( {<Unused>} == {<Unused>} ) || ( {($INTERACT_OPTIONS)} == {} ) } {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION NONE};          } else {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION "<Unused>"};          }         ]
+# Consolidate the attribute merge options to what the factory expects
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS
+INCLUDE [       if { {MERGE} == {MERGE} } {          puts "MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS PREFER_RESULT";       } else {          puts "MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS MERGE";       };    ]
+FACTORY_DEF * QueryFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input"    $(FCTQUERY_INTERACTION_LINE)    COMBINE_ATTRIBUTES  $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS)    QUERYFCT_ATTRIBUTE_PREFIX <Unused>    COMBINE_GEOMETRY    RESULT_ONLY    ENABLE_CACHE        NO    QUERYFCT_TABLE_SEPARATOR SPACE    READER_TYPE         JSON    READER_DATASET      "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>oauth2_data_directory<closeparen><solidus><at>Value<openparen>oauth2_configuration_filename<closeparen>,$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader)"    QUERYFCT_IDS        ""    READER_DIRECTIVES META_MACROS,SourceSCAN_MODE<comma>AUTO<comma>SourceQUERY_TABLE<comma><lt>Unused<gt><comma>SourceFLATTEN_MODE<comma>ALL_LEVELS<comma>SourceFEATURE_TYPE_KEY<comma>json_featuretype<comma>SourceGEOMETRY_FORMAT<comma>None<comma>SourceGEOMETRY_KEY<comma><lt>Unused<gt><comma>SourceCOORDINATE_SYSTEM_KEY<comma><lt>Unused<gt><comma>SourceSAVE_FRAGMENTS<comma>NO<comma>SourceDECODE_TEXT_STRINGS<comma>Yes<comma>SourceEXPOSE_ATTRS_GROUP<comma>FME_DISCLOSURE_OPEN<comma>SourceJSON_EXPOSE_FORMAT_ATTRS<comma><comma>SourceUSE_BASENAME_AS_DEFAULT_FEATURE_TYPE<comma>No<comma>SourceUSE_SEARCH_ENVELOPE<comma>NO<comma>SourceSEARCH_ENVELOPE_MINX<comma>0<comma>SourceSEARCH_ENVELOPE_MINY<comma>0<comma>SourceSEARCH_ENVELOPE_MAXX<comma>0<comma>SourceSEARCH_ENVELOPE_MAXY<comma>0<comma>SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM<comma><comma>SourceCLIP_TO_ENVELOPE<comma>NO,METAFILE,JSON    QUERYFCT_OUTPUT     "BASED_ON_CONNECTIONS"    CONTINUE_ON_READER_ERROR YES    QUERYFCT_RESULT_TAGS $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_OUTPUT_PORTS_ENCODED)    QUERYFCT_SET_FME_FEATURE_TYPE YES    READER_PARAMS_WWJD     $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<OTHER>"    OUTPUT READER_ERROR FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<REJECTED>"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<REJECTED>" 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "_reader_error" "oauth2_reader_error" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer_OUTPUT"
+
+# -------------------------------------------------------------------------
+
+MACRO casemac
+INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
+Tcl2 proc $(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_4badf78b_95d6_44d4_921e_02dabcfd91163_replacer { findText replaceText invalidValue} {     set attrs [split \"refresh_token_file\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<OTHER>"    OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_OUTPUT"         @Tcl2("$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_4badf78b_95d6_44d4_921e_02dabcfd91163_replacer {#<lt>Data_Directory<gt>} {@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>oauth2_data_directory<closeparen>,$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer)} {_FME_NO_OP_}")
+
+# -------------------------------------------------------------------------
+
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_OUTPUT"    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "oauth2_configuration_filename" "oauth2_configuration_filename" "" "REMOVE" }      ATTR_ACTION { "oauth2_data_directory" "oauth2_data_directory" "" "REMOVE" }      ATTR_ACTION { "client_id" "oauth2_client_id" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "client_key" "oauth2_client_key" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "refresh_url" "oauth2_refresh_url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "refresh_token_file" "oauth2_refresh_token_file" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "redirect_url" "oauth2_redirect_url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "post_body_mime_type" "oauth2_post_body_mime_type" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "additional_post_header_name" "oauth2_additional_post_header_name" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "additional_post_header_value" "oauth2_additional_post_header_value" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager_OUTPUT"
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Output1516579223 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_<Rejected>1516579223 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_<Rejected>"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(OAuth2ConfigurationReader_WORKSPACE_NAME))}]
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <TRANSFORMER
+# TRANSFORMER_BEGIN OAuth2ConfigurationReader,1,Integrations,571d492e-f972-11e7-b315-b8e8563886b4,"Linked by Default",No,NO_PARALLELISM,,No,17652,YES,No,35
+# 
+# TRANSFORMER_END
+#!   FME_BUILD_NUM="17652"
+#!   ZOOM_SCALE="100"
+#!   USAGE=""
+#!   TITLE="OAuth2ConfigurationReader"
+#!   LAST_SAVE_DATE="2018-01-14T14:32:18"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   DESCRIPTION=""
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FMX_INSERT_MODE="Linked by Default"
+#!   DOC_TOP_LEFT="-1225.01 -406.504"
+#!   FME_DOCUMENT_PRIORGUID="0e2c5fc4-f31a-11e7-b026-b8e8563886b4,193953cc-f31a-11e7-b026-b8e8563886b4,89e5ea20-f3df-11e7-8892-b8e8563886b4,89fd217e-f8d8-11e7-a553-b8e8563886b4,279efb86-f970-11e7-bed8-b8e8563886b4"
+#!   PYTHON_COMPATIBILITY="35"
+#!   USE_MARKDOWN="YES"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   MARKDOWN_DESCRIPTION=""
+#!   FME_LINKED_TRANSFORMER_VERSION="1"
+#!   FME_SERVER_SERVICES=""
+#!   SHOW_ANNOTATIONS="true"
+#!   ITERATION_COUNT_ATTR=""
+#!   MARKDOWN_USAGE=""
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   FME_DOCUMENT_GUID="571d492e-f972-11e7-b315-b8e8563886b4"
+#!   VIEW_POSITION="-1323.01 405.004"
+#!   BLOCKED_LOOPING="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   WORKSPACE_VERSION="1"
+#!   HISTORY=""
+#!   MAX_LOOP_ITERATIONS=""
+#!   PASSWORD=""
+#!   CATEGORY="Integrations"
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.1.1 (20171014 - Build 17652 - macosx)"
+#!   DOC_EXTENTS="2725.01 813.008"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   SHOW_INFO_NODES="true"
+#!   XFORM_DEPRECATED="No"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL STRING_OR_ATTR_ENCODED OAUTH2_DATA_DIRECTORY Oauth2 Data Directory:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL STRING_OR_ATTR_ENCODED OAUTH2_CONFIGURATION_FILENAME Oauth2 Configuration Filename:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_configuration_filename&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="5"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Replace #&amp;lt;Data_Directory&amp;gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;placeholder in refresh token&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;file paths with the real thing&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;from the input features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="120.99 304.501"
+#!   TOP_LEFT="120.99 304.501"
+#!   BOTTOM_RIGHT="119.99 305.501"
+#!   BOUNDING_RECT="120.99 304.501 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="3"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="12"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica neue&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Rename attributes with&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;transformer-specific&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;prefixes &amp;amp; remove&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;redundant attributes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="858 300"
+#!   TOP_LEFT="858 300"
+#!   BOTTOM_RIGHT="857 301"
+#!   BOUNDING_RECT="858 300 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="8"
+#!   COMMENT_TYPE="REGULAR"
+#!   ANCHORED_NODE="11"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="6"
+#!   NAME="Load and prepare configuration data from JSON file."
+#!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;.SF NS Text&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="-721.01 406.504"
+#!   BOTTOM_RIGHT="741.01 -406.504"
+#!   BOUNDING_RECT="-721.01 406.504 1462.02 813.008"
+#!   STICKY="true"
+#!   COLOUR="0.176471,0.529412,0.8"
+#!   CONTENTS="4 3 2 5 "
+#! />
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="FeatureReader"
+#!   VERSION="9"
+#!   POSITION="-629.01 4.50101"
+#!   BOUNDING_RECT="-629.01 4.50101 526.359 71"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;SCHEMA&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_short_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_long_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_schema_handling" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="subdomain" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="company_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="client_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="client_key" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="redirect_url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="JSON"/>
+#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_FEATURE_TYPE_KEY" PARM_VALUE="json_featuretype"/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_"/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="JSON_USE_BASENAME_AS_DEFAULT_FEATURE_TYPE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ConfigFeatureReader"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Initiator and Result"/>
+#!     <XFORM_PARM PARM_NAME="JSON_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_SCAN_MODE" PARM_VALUE="AUTO"/>
+#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="SINGLE_PORT"/>
+#!     <XFORM_PARM PARM_NAME="JSON_DECODE_TEXT_STRINGS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="JSON_FLATTEN_MODE" PARM_VALUE="ALL_LEVELS"/>
+#!     <XFORM_PARM PARM_NAME="JSON_GEOMETRY_FORMAT" PARM_VALUE="None"/>
+#!     <XFORM_PARM PARM_NAME="JSON_SAVE_FRAGMENTS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceSCAN_MODE&lt;comma&gt;AUTO&lt;comma&gt;SourceQUERY_TABLE&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceFLATTEN_MODE&lt;comma&gt;ALL_LEVELS&lt;comma&gt;SourceFEATURE_TYPE_KEY&lt;comma&gt;json_featuretype&lt;comma&gt;SourceGEOMETRY_FORMAT&lt;comma&gt;None&lt;comma&gt;SourceGEOMETRY_KEY&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceCOORDINATE_SYSTEM_KEY&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;SourceSAVE_FRAGMENTS&lt;comma&gt;NO&lt;comma&gt;SourceDECODE_TEXT_STRINGS&lt;comma&gt;Yes&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;SourceJSON_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_BASENAME_AS_DEFAULT_FEATURE_TYPE&lt;comma&gt;No&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceSEARCH_ENVELOPE_MINX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MINY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXX&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_MAXY&lt;comma&gt;0&lt;comma&gt;SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM&lt;comma&gt;&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO,METAFILE,JSON"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="JSON_DECODE_TEXT_STRINGS,&quot;OPTIONAL NO_EDIT TEXT&quot;,JSON&lt;space&gt;,JSON_JSON_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS JSON%Source&quot;,JSON&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,JSON_SAVE_FRAGMENTS,&quot;OPTIONAL LOOKUP_CHOICE Yes,YES%No,NO&quot;,JSON&lt;space&gt;Read&lt;space&gt;Entire&lt;space&gt;Feature&lt;space&gt;as&lt;space&gt;JSON&lt;space&gt;Fragment:,JSON_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%SEARCH_ENVELOPE_COORDINATE_SYSTEM%CLIP_TO_ENVELOPE%SEARCH_METHOD%SEARCH_METHOD_FILTER%SEARCH_ORDER%SEARCH_FEATURE%DUMMY_SEARCH_ENVELOPE_PARAMETER&quot;,JSON&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,JSON_FLATTEN_MODE,&quot;OPTIONAL LOOKUP_CHOICE Yes,ALL_LEVELS%No,ONE_LEVEL&quot;,JSON&lt;space&gt;Flatten&lt;space&gt;Nested&lt;space&gt;JSON&lt;space&gt;Values&lt;space&gt;into&lt;space&gt;Attributes:,JSON_GEOMETRY_FORMAT,&quot;OPTIONAL ACTIVECHOICE GeoJSON%OGC-WKT%None,GEOMETRY_KEY,COORDINATE_SYSTEM_KEY&quot;,JSON&lt;space&gt;Geometry&lt;space&gt;Format:,JSON_SCAN_MODE,&quot;OPTIONAL ACTIVECHOICE_LOOKUP Auto,AUTO,QUERY_TABLE%JSON&lt;space&gt;Query,QUERY&quot;,JSON&lt;space&gt;Schema&lt;space&gt;Scan&lt;space&gt;Mode,JSON_FEATURE_TYPE_KEY,&quot;OPTIONAL TEXT&quot;,JSON&lt;space&gt;Feature&lt;space&gt;Type&lt;space&gt;Key&lt;space&gt;Name:,JSON_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP JSON_EXPOSE_FORMAT_ATTRS&quot;,JSON&lt;space&gt;Schema&lt;space&gt;Attributes,JSON_USE_BASENAME_AS_DEFAULT_FEATURE_TYPE,&quot;OPTIONAL NO_EDIT TEXT&quot;,JSON&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="JSON_JSON_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;oauth2_configuration_filename&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE="subdomain company_id client_id client_key redirect_url refresh_url refresh_token_file oauth2_data_directory post_body_mime_type additional_post_header_name additional_post_header_value"/>
+#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Schema and Data Features"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="StringReplacer"
+#!   VERSION="4"
+#!   POSITION="120.99 4.50101"
+#!   BOUNDING_RECT="120.99 4.50101 517.484 71"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="subdomain" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="company_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="client_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="client_key" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="redirect_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="#&lt;lt&gt;Data_Directory&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_data_directory&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DirectoryStringReplacer"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="refresh_token_file"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="900 0"
+#!   BOUNDING_RECT="900 0 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_subdomain" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_company_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_client_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_client_key" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_refresh_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_refresh_token_file" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_redirect_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_post_body_mime_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_additional_post_header_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_additional_post_header_value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="oauth2_configuration_filename oauth2_configuration_filename  REMOVE oauth2_data_directory oauth2_data_directory  REMOVE subdomain oauth2_subdomain  RENAME_SET_VALUE company_id oauth2_company_id  RENAME_SET_VALUE client_id oauth2_client_id  RENAME_SET_VALUE client_key oauth2_client_key  RENAME_SET_VALUE refresh_url oauth2_refresh_url  RENAME_SET_VALUE refresh_token_file oauth2_refresh_token_file  RENAME_SET_VALUE redirect_url oauth2_redirect_url  RENAME_SET_VALUE post_body_mime_type oauth2_post_body_mime_type  RENAME_SET_VALUE additional_post_header_name oauth2_additional_post_header_name  RENAME_SET_VALUE additional_post_header_value oauth2_additional_post_header_value  RENAME_SET_VALUE"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="AttributeRenamer"
+#!   VERSION="4"
+#!   POSITION="900 -300"
+#!   BOUNDING_RECT="900 -300 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_reader_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_reader_error oauth2_reader_error RENAME_SET_DEFAULT "/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="7"
+#!   NAME="Input"
+#!   POSITION="-1225.01 4.50101"
+#!   BOUNDING_RECT="-1225.01 4.50101 -1 -1"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="oauth2_data_directory" ATTR_VALUE="$(OAUTH2_DATA_DIRECTORY)" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_configuration_filename" ATTR_VALUE="$(OAUTH2_CONFIGURATION_FILENAME)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="9"
+#!   NAME="Output"
+#!   POSITION="1500 0"
+#!   BOUNDING_RECT="1500 0 -1 -1"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="15"
+#!   NAME="&lt;Rejected&gt;"
+#!   POSITION="1500 -300"
+#!   BOUNDING_RECT="1500 -300 -1 -1"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;OTHER&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </TRANSFORMER>
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_DATA_DIRECTORY <at>Value<openparen>oauth2_data_directory<closeparen>
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_CONFIGURATION_FILENAME <at>Value<openparen>oauth2_configuration_filename<closeparen>
+#! START_HEADER
+#! END_HEADER
+
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+DEFAULT_MACRO OAuth2ConfigurationReader_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(OAuth2ConfigurationReader_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(OAuth2ConfigurationReader_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input1515965538 Input Splitter"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,oauth2_data_directory,$($(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_DATA_DIRECTORY),oauth2_configuration_filename,$($(OAuth2ConfigurationReader_WORKSPACE_NAME)_OAUTH2_CONFIGURATION_FILENAME), FEATURE_TYPE)"
+# -------------------------------------------------------------------------
+MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_OUTPUT_PORTS_ENCODED 
+MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_DIRECTIVES DECODE_TEXT_STRINGS,Yes,SAVE_FRAGMENTS,NO,USE_SEARCH_ENVELOPE,NO,FLATTEN_MODE,ALL_LEVELS,GEOMETRY_FORMAT,None,SCAN_MODE,AUTO,FEATURE_TYPE_KEY,json_featuretype,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,USE_BASENAME_AS_DEFAULT_FEATURE_TYPE,No
+
+# Always provide an INTERACTION, otherwise the factory defaults to ENVELOPE_INTERSECTS
+INCLUDE [if { ( {<Unused>} == {<Unused>} ) || ( {($INTERACT_OPTIONS)} == {} ) } {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION NONE};          } else {             puts {MACRO FCTQUERY_INTERACTION_LINE FCTQUERY_INTERACTION "<Unused>"};          }         ]
+# Consolidate the attribute merge options to what the factory expects
+DEFAULT_MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS
+INCLUDE [       if { {MERGE} == {MERGE} } {          puts "MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS PREFER_RESULT";       } else {          puts "MACRO $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS MERGE";       };    ]
+FACTORY_DEF * QueryFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Input"    $(FCTQUERY_INTERACTION_LINE)    COMBINE_ATTRIBUTES  $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_COMBINE_ATTRS)    QUERYFCT_ATTRIBUTE_PREFIX <Unused>    COMBINE_GEOMETRY    RESULT_ONLY    ENABLE_CACHE        NO    QUERYFCT_TABLE_SEPARATOR SPACE    READER_TYPE         JSON    READER_DATASET      "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>oauth2_data_directory<closeparen><solidus><at>Value<openparen>oauth2_configuration_filename<closeparen>,$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader)"    QUERYFCT_IDS        ""    READER_DIRECTIVES META_MACROS,SourceSCAN_MODE<comma>AUTO<comma>SourceQUERY_TABLE<comma><lt>Unused<gt><comma>SourceFLATTEN_MODE<comma>ALL_LEVELS<comma>SourceFEATURE_TYPE_KEY<comma>json_featuretype<comma>SourceGEOMETRY_FORMAT<comma>None<comma>SourceGEOMETRY_KEY<comma><lt>Unused<gt><comma>SourceCOORDINATE_SYSTEM_KEY<comma><lt>Unused<gt><comma>SourceSAVE_FRAGMENTS<comma>NO<comma>SourceDECODE_TEXT_STRINGS<comma>Yes<comma>SourceEXPOSE_ATTRS_GROUP<comma>FME_DISCLOSURE_OPEN<comma>SourceJSON_EXPOSE_FORMAT_ATTRS<comma><comma>SourceUSE_BASENAME_AS_DEFAULT_FEATURE_TYPE<comma>No<comma>SourceUSE_SEARCH_ENVELOPE<comma>NO<comma>SourceSEARCH_ENVELOPE_MINX<comma>0<comma>SourceSEARCH_ENVELOPE_MINY<comma>0<comma>SourceSEARCH_ENVELOPE_MAXX<comma>0<comma>SourceSEARCH_ENVELOPE_MAXY<comma>0<comma>SourceSEARCH_ENVELOPE_COORDINATE_SYSTEM<comma><comma>SourceCLIP_TO_ENVELOPE<comma>NO,METAFILE,JSON    QUERYFCT_OUTPUT     "BASED_ON_CONNECTIONS"    CONTINUE_ON_READER_ERROR YES    QUERYFCT_RESULT_TAGS $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_OUTPUT_PORTS_ENCODED)    QUERYFCT_SET_FME_FEATURE_TYPE YES    READER_PARAMS_WWJD     $($(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<OTHER>"    OUTPUT READER_ERROR FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<REJECTED>"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<REJECTED>" 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "_reader_error" "oauth2_reader_error" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer_OUTPUT"
+
+# -------------------------------------------------------------------------
+
+MACRO casemac
+INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
+Tcl2 proc $(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_d34b9aa0_2b76_43dd_af59_e64228721fb61_replacer { findText replaceText invalidValue} {     set attrs [split \"refresh_token_file\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_ConfigFeatureReader_<OTHER>"    OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_OUTPUT"         @Tcl2("$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_d34b9aa0_2b76_43dd_af59_e64228721fb61_replacer {#<lt>Data_Directory<gt>} {@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>oauth2_data_directory<closeparen>,$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer)} {_FME_NO_OP_}")
+
+# -------------------------------------------------------------------------
+
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager    INPUT  FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_DirectoryStringReplacer_OUTPUT"    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "oauth2_configuration_filename" "oauth2_configuration_filename" "" "REMOVE" }      ATTR_ACTION { "oauth2_data_directory" "oauth2_data_directory" "" "REMOVE" }      ATTR_ACTION { "subdomain" "oauth2_subdomain" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "company_id" "oauth2_company_id" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "client_id" "oauth2_client_id" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "client_key" "oauth2_client_key" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "refresh_url" "oauth2_refresh_url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "refresh_token_file" "oauth2_refresh_token_file" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "redirect_url" "oauth2_redirect_url" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "post_body_mime_type" "oauth2_post_body_mime_type" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "additional_post_header_name" "oauth2_additional_post_header_name" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "additional_post_header_value" "oauth2_additional_post_header_value" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager_OUTPUT"
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Output1515965538 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeManager_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_<Rejected>1515965538 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_AttributeRenamer_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2ConfigurationReader_WORKSPACE_NAME)_<Rejected>"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(OAuth2ConfigurationReader_WORKSPACE_NAME))}]
+
+
+
+
+

@@ -1,0 +1,2268 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    /Library/FME/2017.1/fme /Users/kweller/Projects/mg/fme-components/workspaces/TruncateUSGSTestData.fmw
+#          --SourceDataset_OGCKML "/Users/kweller/Projects/mg/fme-components/workspaces/Resources/Data/USGS_DS_817.kmz"
+#          --DestDataset_OGCKML "/Users/kweller/Projects/mg/fme-components/workspaces/Resources/Data/USGS_DS_817_truncated.kml.zip"
+#    
+#    
+#!   FME_BUILD_NUM="17652"
+#!   MARKDOWN_DESCRIPTION=""
+#!   IGNORE_READER_FAILURE="No"
+#!   USAGE=""
+#!   DESTINATION_ROUTING_FILE=""
+#!   MARKDOWN_USAGE=""
+#!   ZOOM_SCALE="100"
+#!   PASSWORD=""
+#!   DOC_EXTENTS="2568.81 1805"
+#!   FME_SERVER_SERVICES=""
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   VIEW_POSITION="0 99.001"
+#!   FME_DOCUMENT_GUID="5a71a78c-d645-11e7-b1fd-720000708a50"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   TERMINATE_REJECTED="YES"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   HISTORY=""
+#!   SOURCE_ROUTING_FILE=""
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   FME_DOCUMENT_PRIORGUID="8555403c-d643-11e7-bf07-720000708a50"
+#!   MAX_LOG_FEATURES="200"
+#!   USE_MARKDOWN=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   TITLE=""
+#!   LAST_SAVE_DATE="2017-11-30T20:11:41"
+#!   BEGIN_PYTHON=""
+#!   DESTINATION="NONE"
+#!   SHOW_ANNOTATIONS="true"
+#!   LOG_FILE=""
+#!   CATEGORY=""
+#!   SOURCE="NONE"
+#!   DESCRIPTION=""
+#!   WORKSPACE_VERSION="1"
+#!   PYTHON_COMPATIBILITY="35"
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.1.1 (20171014 - Build 17652 - macosx)"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   DOC_TOP_LEFT="100 -1835"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   SHOW_INFO_NODES="true"
+#!   BEGIN_TCL=""
+#!   END_TCL=""
+#!   END_PYTHON=""
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="OGCKML"
+#!   DATASET="$(SourceDataset_OGCKML)"
+#!   KEYWORD="OGCKML_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="kml_icon kml_buffer kml_iconstyle_scale kml_real64 kml_icon_color kml_char(50) kml_labelstyle_scale kml_real64 fme_pen_opacity kml_real64 kml_linestyle_color_mode kml_char(20) kml_parent kml_buffer kml_altitude kml_real64 kml_min_refresh_period kml_real64 kml_gx_timespan_begin kml_datetime kml_link_view_bound_scale kml_real64 kml_lookat_gx_timespan_end kml_datetime kml_style_url_normal kml_buffer kml_target_style_normal kml_buffer kml_latlonaltbox_west kml_real64 kml_link_view_format kml_buffer multi_reader_id kml_int32 kml_polystyle_color_mode kml_char(20) kml_iconstyle_color kml_char(10) kml_labelstyle_color kml_char(10) kml_icon_opacity kml_real64 kml_draw_order kml_int16 kml_latlonaltbox_altitude_mode kml_char(50) kml_timestamp_when kml_datetime kml_target_href kml_buffer kml_balloonstyle_raw_text kml_buffer kml_gx_timespan_end kml_datetime kml_orientation_heading kml_real64 kml_style_id kml_buffer kml_link_name kml_buffer kml_screenxy_x kml_real64 kml_screenxy_y kml_real64 kml_rotationxy_x kml_real64 kml_rotationxy_y kml_real64 kml_description_raw_text kml_buffer kml_polystyle_outline kml_int16 kml_lod_max_lod_pixels kml_real64 fme_text_size kml_real64 kml_latlonaltbox_north kml_real64 kml_size_xunits kml_char(20) kml_tour_stop_view_heading kml_char(25) kml_balloon_opacity kml_real64 kml_fly_to_view kml_int16 kml_target_style kml_buffer kml_liststyle_list_item_type kml_char(50) kml_label_opacity kml_real64 kml_lookat_latitude kml_real64 kml_lookat_altitude kml_real64 kml_atom_link_rel kml_buffer kml_latlonbox_east kml_real64 kml_document_path kml_buffer multi_reader_full_id kml_int32 kml_document kml_buffer kml_camera_latitude kml_real64 kml_style_url_highlight kml_buffer kml_imagepyramid_maxheight kml_int16 kml_camera_altitude kml_real64 kml_iconstyle_color_mode kml_char(20) kml_link_href kml_buffer kml_lod_min_fade_extent kml_real64 fme_start_angle kml_real64 kml_gx_duration kml_int16 fme_sweep_angle kml_real64 kml_atom_author_email kml_buffer kml_rotationxy_yunits kml_char(20) kml_tour_stop_delay_type kml_char(10) kml_hotspot_yunits kml_char(20) kml_polystyle_fill kml_real64 fme_type kml_char(50) kml_latlonbox_rotation kml_real64 kml_camera_gx_timespan_end kml_datetime kml_lookat_altitude_mode kml_char(20) fme_color kml_char(50) kml_lod_max_fade_extent kml_real64 kml_message kml_buffer multi_reader_keyword kml_char(50) kml_schema_data{}.value kml_buffer kml_balloonstyle_text kml_buffer kml_latlonbox_south kml_real64 kml_orientation_tilt kml_real64 kml_linestyle_physical_width kml_real64 kml_gx_lookat_altitude_mode kml_char(50) kml_tour_stop_view_tilt kml_char(25) kml_refresh_visibility kml_int16 kml_snippet kml_buffer kml_balloon_text_opacity kml_real64 kml_link_refresh_mode kml_char(50) kml_timespan_begin kml_datetime kml_tour_stop_tour_duration kml_int16 kml_camera_roll kml_real64 fme_dataset kml_char(50) kml_camera_longitude kml_real64 kml_latlonaltbox_min_altitude kml_real64 kml_expires kml_datetime kml_overlayxy_x kml_real64 kml_overlayxy_y kml_real64 fme_fill_opacity kml_real64 kml_screenxy_xunits kml_char(20) kml_viewvolume_bottomfov kml_int16 kml_cookie kml_buffer kml_polystyle_color kml_char(10) kml_imagepyramid_gridorigin kml_buffer kml_description_text kml_buffer kml_raw_text kml_buffer kml_icon_view_refresh_mode kml_char(50) fme_text_string kml_char(50) kml_atom_author_name kml_buffer kml_icon_refresh_interval kml_int16 fme_feature_type kml_char(50) kml_linestyle_color kml_char(10) kml_gx_latlonaltbox_altitude_mode kml_char(50) kml_overlayxy_xunits kml_char(20) kml_description kml_buffer kml_hotspot_x kml_int16 kml_hotspot_y kml_int16 kml_gx_play_mode kml_char(20) kml_link_http_query kml_buffer kml_schema_url kml_buffer kml_gx_balloon_visibility kml_int16 kml_extended_data_xml kml_buffer kml_tour_stop_view_perspective kml_char(15) kml_tour_stop_tour_name kml_buffer kml_viewvolume_near kml_int16 kml_icon_view_refresh_time kml_int16 kml_icon_refresh_mode kml_char(50) kml_imagepyramid_maxwidth kml_int16 kml_data{}.display_name kml_buffer kml_target_style_highlight kml_buffer fme_primary_axis kml_real64 kml_icon_view_bound_scale kml_real64 kml_create_info_point kml_char(3) kml_latlonaltbox_max_altitude kml_real64 kml_extrude kml_int16 multi_reader_type kml_char(50) kml_shape kml_buffer kml_camera_gx_timestamp_when kml_datetime kml_tour_stop_flyto_duration kml_int16 kml_color kml_char(8) kml_icon_href kml_buffer kml_latlonaltbox_east kml_char(255) fme_secondary_axis kml_real64 kml_style_url kml_buffer kml_tour_stop_delay_duration kml_int16 kml_link_snippet kml_buffer kml_tessellate kml_int16 kml_balloon_color kml_char(10) kml_gx_altitude_mode kml_char(50) kml_common_style kml_buffer kml_document_href kml_buffer kml_data{}.display_name_raw_text kml_buffer kml_icon_temp_file_location kml_buffer kml_liststyle_bgcolor kml_char(50) kml_size_yunits kml_char(20) kml_lookat_tilt kml_real64 kml_location_latitude kml_real64 kml_link_description kml_buffer kml_location_altitude kml_real64 kml_iconstyle_heading kml_real64 kml_snippet_raw_text kml_buffer kml_visibility kml_int16 kml_latlonbox_west kml_real64 kml_tour kml_buffer kml_link_view_refresh_mode kml_char(50) kml_sort_value kml_buffer kml_liststyle_item_icon{}.href kml_buffer kml_extended_data_xmlns_prefix kml_buffer kml_latlonaltbox_south kml_real64 kml_liststyle_item_icon{}.state kml_char(50) kml_size_x kml_real64 kml_lod_min_lod_pixels kml_real64 kml_size_y kml_real64 kml_tour_stop_display_balloon kml_char(3) kml_latlonbox_north kml_real64 kml_lookat_gx_timestamp_when kml_datetime fme_opacity kml_real64 fme_basename kml_char(50) kml_roll kml_real64 fme_fill_color kml_char(50) fme_geometry fme_char(50) kml_address kml_buffer kml_data{}.name kml_buffer kml_rotationxy_xunits kml_char(20) kml_data{}.value kml_buffer fme_rotation kml_real64 kml_link_view_refresh_time kml_int16 kml_hotspot_xunits kml_char(20) kml_camera_gx_timespan_begin kml_datetime kml_icon_http_query kml_buffer kml_camera_tilt kml_real64 kml_phone_number kml_buffer kml_lookat_longitude kml_real64 kml_schema_data{}.name kml_buffer kml_gx_timestamp_when kml_datetime kml_rotation kml_real64 kml_balloonstyle_bgcolor kml_char(10) kml_name kml_buffer kml_attribute_table_title kml_buffer kml_lookat_heading kml_real64 kml_timespan_end kml_datetime kml_scale_x kml_real64 kml_label_color kml_char(50) kml_scale_y kml_real64 kml_screenxy_yunits kml_char(20) kml_orientation_roll kml_real64 kml_tour_stop_flyto_mode kml_char(20) kml_scale_z kml_real64 kml_balloon_text_color kml_char(10) kml_location_longitude kml_real64 kml_altitude_mode kml_char(50) kml_camera_altitude_mode kml_char(50) kml_lookat_range kml_real64 kml_update_mode kml_char(10) kml_balloonstyle_text_color kml_char(10) kml_viewvolume_topfov kml_int16 kml_id kml_buffer kml_open kml_int16 kml_viewvolume_leftfov kml_int16 kml_link_snippet_max_lines kml_int16 kml_tour_stop_view_range kml_char(25) kml_gx_camera_altitude_mode kml_char(50) kml_max_session_length kml_real64 kml_icon_view_format kml_buffer kml_href kml_buffer kml_linestyle_label_visibility kml_boolean kml_imagepyramid_tilesize kml_real64 kml_atom_link_href kml_buffer kml_labelstyle_color_mode kml_char(20) kml_viewvolume_rightfov kml_int16 kml_linestyle_width kml_real64 kml_overlayxy_yunits kml_char(20) kml_gx_flyto_mode kml_char(10) kml_link_refresh_interval kml_real64 kml_liststyle_item_icon kml_buffer kml_extended_data_xmlns_url kml_buffer kml_lookat_gx_timespan_begin kml_datetime kml_animated_update kml_buffer kml_camera_heading kml_real64"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE_OR_URL"
+#!   GENERATE_FME_BUILD_NUM="17652"
+#!   MIN_FEATURES=""
+#!   MAX_FEATURES=""
+#!   FEATURE_TYPES=""
+#!   START_FEATURE=""
+#!   COORDSYS=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_ESTABLISHED_CACHE"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Google Earth KML file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="ALWAYS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE=".kml application/vnd.google-earth.kml+xml .kmz application/vnd.google-earth.kmz ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="KML21_RASTER_COMPRESSION_LEVEL OGCKML_IN_KML21_APPLY_MODEL_TRANSFORMS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="kml file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Google Earth KML File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="OGCKML"
+#!   DATASET="$(DestDataset_OGCKML)"
+#!   KEYWORD="OGCKML_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="99999"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="KML21_INFORMATION_POINT_ICON &quot;&quot; KML21_OPACITY &quot;&quot; KML21_FILL_OPACITY &quot;&quot; KML21_PEN_OPACITY &quot;&quot; KML21_ICON_COLOR &quot;&quot; KML21_FILL_COLOR &quot;&quot; KML21_PEN_COLOR &quot;&quot; KML21_SORT_BY_ATTRIBUTE &quot;&quot; KML21_ATTR_IN_DESCRIPTION &quot;&quot; KML21_HTML_DESCRIPTIONS &quot;&quot; KML21_DOCUMENT_FILENAME &quot;&quot; KML21_CREATE_FOLDER_FOR_FEATURE_TYPE &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="kml_icon kml_buffer kml_iconstyle_scale kml_real64 kml_icon_color kml_char(50) kml_labelstyle_scale kml_real64 fme_pen_opacity kml_real64 kml_linestyle_color_mode kml_char(20) kml_parent kml_buffer kml_altitude kml_real64 kml_min_refresh_period kml_real64 kml_gx_timespan_begin kml_datetime kml_link_view_bound_scale kml_real64 kml_lookat_gx_timespan_end kml_datetime kml_style_url_normal kml_buffer kml_target_style_normal kml_buffer kml_latlonaltbox_west kml_real64 kml_link_view_format kml_buffer kml_polystyle_color_mode kml_char(20) kml_iconstyle_color kml_char(10) kml_labelstyle_color kml_char(10) kml_icon_opacity kml_real64 kml_draw_order kml_int16 kml_latlonaltbox_altitude_mode kml_char(50) kml_timestamp_when kml_datetime kml_target_href kml_buffer kml_balloonstyle_raw_text kml_buffer kml_gx_timespan_end kml_datetime kml_orientation_heading kml_real64 kml_style_id kml_buffer kml_link_name kml_buffer kml_screenxy_x kml_real64 kml_screenxy_y kml_real64 kml_rotationxy_x kml_real64 kml_rotationxy_y kml_real64 kml_description_raw_text kml_buffer kml_polystyle_outline kml_int16 kml_lod_max_lod_pixels kml_real64 fme_text_size kml_real64 kml_latlonaltbox_north kml_real64 kml_size_xunits kml_char(20) kml_tour_stop_view_heading kml_char(25) kml_balloon_opacity kml_real64 kml_fly_to_view kml_int16 kml_target_style kml_buffer kml_liststyle_list_item_type kml_char(50) kml_label_opacity kml_real64 kml_lookat_latitude kml_real64 kml_lookat_altitude kml_real64 kml_atom_link_rel kml_buffer kml_latlonbox_east kml_real64 kml_document_path kml_buffer kml_document kml_buffer kml_camera_latitude kml_real64 kml_style_url_highlight kml_buffer kml_imagepyramid_maxheight kml_int16 kml_camera_altitude kml_real64 kml_iconstyle_color_mode kml_char(20) kml_link_href kml_buffer kml_lod_min_fade_extent kml_real64 fme_start_angle kml_real64 kml_gx_duration kml_int16 fme_sweep_angle kml_real64 kml_atom_author_email kml_buffer kml_rotationxy_yunits kml_char(20) kml_tour_stop_delay_type kml_char(10) kml_hotspot_yunits kml_char(20) kml_polystyle_fill kml_real64 fme_type kml_char(50) kml_latlonbox_rotation kml_real64 kml_camera_gx_timespan_end kml_datetime kml_lookat_altitude_mode kml_char(20) fme_color kml_char(50) kml_lod_max_fade_extent kml_real64 kml_message kml_buffer kml_schema_data{}.value kml_buffer kml_balloonstyle_text kml_buffer kml_latlonbox_south kml_real64 kml_orientation_tilt kml_real64 kml_linestyle_physical_width kml_real64 kml_gx_lookat_altitude_mode kml_char(50) kml_tour_stop_view_tilt kml_char(25) kml_refresh_visibility kml_int16 kml_snippet kml_buffer kml_balloon_text_opacity kml_real64 kml_link_refresh_mode kml_char(50) kml_timespan_begin kml_datetime kml_tour_stop_tour_duration kml_int16 kml_camera_roll kml_real64 fme_dataset kml_char(50) kml_camera_longitude kml_real64 kml_latlonaltbox_min_altitude kml_real64 kml_expires kml_datetime kml_overlayxy_x kml_real64 kml_overlayxy_y kml_real64 fme_fill_opacity kml_real64 kml_screenxy_xunits kml_char(20) kml_viewvolume_bottomfov kml_int16 kml_cookie kml_buffer kml_polystyle_color kml_char(10) kml_imagepyramid_gridorigin kml_buffer kml_description_text kml_buffer kml_raw_text kml_buffer kml_icon_view_refresh_mode kml_char(50) fme_text_string kml_char(50) kml_atom_author_name kml_buffer kml_icon_refresh_interval kml_int16 fme_feature_type kml_char(50) kml_linestyle_color kml_char(10) kml_gx_latlonaltbox_altitude_mode kml_char(50) kml_overlayxy_xunits kml_char(20) kml_description kml_buffer kml_hotspot_x kml_int16 kml_hotspot_y kml_int16 kml_gx_play_mode kml_char(20) kml_link_http_query kml_buffer kml_schema_url kml_buffer kml_gx_balloon_visibility kml_int16 kml_extended_data_xml kml_buffer kml_tour_stop_view_perspective kml_char(15) kml_tour_stop_tour_name kml_buffer kml_viewvolume_near kml_int16 kml_icon_view_refresh_time kml_int16 kml_icon_refresh_mode kml_char(50) kml_imagepyramid_maxwidth kml_int16 kml_data{}.display_name kml_buffer kml_target_style_highlight kml_buffer fme_primary_axis kml_real64 kml_icon_view_bound_scale kml_real64 kml_create_info_point kml_char(3) kml_latlonaltbox_max_altitude kml_real64 kml_extrude kml_int16 kml_shape kml_buffer kml_camera_gx_timestamp_when kml_datetime kml_tour_stop_flyto_duration kml_int16 kml_color kml_char(8) kml_icon_href kml_buffer kml_latlonaltbox_east kml_char(255) fme_secondary_axis kml_real64 kml_style_url kml_buffer kml_tour_stop_delay_duration kml_int16 kml_link_snippet kml_buffer kml_tessellate kml_int16 kml_balloon_color kml_char(10) kml_gx_altitude_mode kml_char(50) kml_common_style kml_buffer kml_document_href kml_buffer kml_data{}.display_name_raw_text kml_buffer kml_icon_temp_file_location kml_buffer kml_liststyle_bgcolor kml_char(50) kml_size_yunits kml_char(20) kml_lookat_tilt kml_real64 kml_location_latitude kml_real64 kml_link_description kml_buffer kml_location_altitude kml_real64 kml_iconstyle_heading kml_real64 kml_snippet_raw_text kml_buffer kml_visibility kml_int16 kml_latlonbox_west kml_real64 kml_tour kml_buffer kml_link_view_refresh_mode kml_char(50) kml_sort_value kml_buffer kml_liststyle_item_icon{}.href kml_buffer kml_extended_data_xmlns_prefix kml_buffer kml_latlonaltbox_south kml_real64 kml_liststyle_item_icon{}.state kml_char(50) kml_size_x kml_real64 kml_lod_min_lod_pixels kml_real64 kml_size_y kml_real64 kml_tour_stop_display_balloon kml_char(3) kml_latlonbox_north kml_real64 kml_lookat_gx_timestamp_when kml_datetime fme_opacity kml_real64 fme_basename kml_char(50) kml_roll kml_real64 fme_fill_color kml_char(50) fme_geometry fme_char(50) kml_address kml_buffer kml_data{}.name kml_buffer kml_rotationxy_xunits kml_char(20) kml_data{}.value kml_buffer fme_rotation kml_real64 kml_link_view_refresh_time kml_int16 kml_hotspot_xunits kml_char(20) kml_camera_gx_timespan_begin kml_datetime kml_icon_http_query kml_buffer kml_camera_tilt kml_real64 kml_phone_number kml_buffer kml_lookat_longitude kml_real64 kml_schema_data{}.name kml_buffer kml_gx_timestamp_when kml_datetime kml_rotation kml_real64 kml_balloonstyle_bgcolor kml_char(10) kml_name kml_buffer kml_attribute_table_title kml_buffer kml_lookat_heading kml_real64 kml_timespan_end kml_datetime kml_scale_x kml_real64 kml_label_color kml_char(50) kml_scale_y kml_real64 kml_screenxy_yunits kml_char(20) kml_orientation_roll kml_real64 kml_tour_stop_flyto_mode kml_char(20) kml_scale_z kml_real64 kml_balloon_text_color kml_char(10) kml_location_longitude kml_real64 kml_altitude_mode kml_char(50) kml_camera_altitude_mode kml_char(50) kml_update_mode kml_char(10) kml_lookat_range kml_real64 kml_balloonstyle_text_color kml_char(10) kml_viewvolume_topfov kml_int16 kml_id kml_buffer kml_open kml_int16 kml_viewvolume_leftfov kml_int16 kml_link_snippet_max_lines kml_int16 kml_tour_stop_view_range kml_char(25) kml_gx_camera_altitude_mode kml_char(50) kml_max_session_length kml_real64 kml_icon_view_format kml_buffer kml_href kml_buffer kml_linestyle_label_visibility kml_boolean kml_imagepyramid_tilesize kml_real64 kml_atom_link_href kml_buffer kml_labelstyle_color_mode kml_char(20) kml_viewvolume_rightfov kml_int16 kml_linestyle_width kml_real64 kml_overlayxy_yunits kml_char(20) kml_gx_flyto_mode kml_char(10) kml_link_refresh_interval kml_real64 kml_liststyle_item_icon kml_buffer kml_extended_data_xmlns_url kml_buffer kml_lookat_gx_timespan_begin kml_datetime kml_animated_update kml_buffer kml_camera_heading kml_real64"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP ogc_layer_group ogc_appearance_group%ogc_advanced_group Feature Type&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP ogc_appearance_group KML21_FILL_COLOR%KML21_FILL_OPACITY%KML21_PEN_COLOR%KML21_PEN_OPACITY%KML21_SORT_BY_ATTRIBUTE%KML21_INFORMATION_POINT_ICON%KML21_ICON_COLOR Appearance&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP ogc_advanced_group KML21_ATTR_IN_DESCRIPTION%KML21_DOCUMENT_FILENAME%KML21_CREATE_FOLDER_FOR_FEATURE_TYPE%KML21_HTML_DESCRIPTIONS Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL ICONPICK KML21_INFORMATION_POINT_ICON icons Information Point Icon&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_PICK KML21_ICON_COLOR Icon Color&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_PICK KML21_FILL_COLOR Fill Color&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT KML21_FILL_OPACITY Fill Opacity&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_PICK KML21_PEN_COLOR Pen Color&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT KML21_PEN_OPACITY Pen Opacity&quot; &quot;&quot; &quot;GUI OPTIONAL ATTR KML21_SORT_BY_ATTRIBUTE \&quot; \&quot; _ Sort By Attribute&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE KML21_HTML_DESCRIPTIONS yes%no Use HTML in Description Balloon&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE KML21_ATTR_IN_DESCRIPTION yes%no Create Attribute Table in Description Balloon&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT KML21_DOCUMENT_FILENAME Parent Document File Name&quot; &quot;&quot; &quot;GUI CHOICE KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes%no Create Folder for Feature Type&quot; yes "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE_OR_URL"
+#!   GENERATE_FME_BUILD_NUM="17652"
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#!   COORDSYS=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_ESTABLISHED_CACHE"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Google Earth KML file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="ALWAYS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE=".kml application/vnd.google-earth.kml+xml .kmz application/vnd.google-earth.kmz ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OGCKML_OUT_OUTPUT_SCHEMA OGCKML_OUT_AUTO_CREATE_NETWORK_LINKS OGCKML_OUT_LOG_VERBOSE OGCKML_OUT_ORIENTATION OGCKML_OUT_DATASET_HINT OGCKML_OUT_STYLE_DOC OGCKML_OUT_SCHEMA_DOC OGCKML_OUT_DETECT_RASTERS OGCKML_OUT_RASTER_MODE OGCKML_OUT_RASTER_FORMAT OGCKML_OUT_TEXTURE_FORMAT OGCKML_OUT_COPY_ICON OGCKML_OUT_REGIONATE_DATA OGCKML_OUT_EXEC_GO_PIPELINE OGCKML_OUT_EXEC_PO_PIPELINE OGCKML_OUT_OMIT_DOCUMENT_ELEMENT OGCKML_OUT_CREATE_EMPTY_FOLDERS OGCKML_OUT_KML21_TARGET_HREF OGCKML_OUT_KML21_FANOUT_TYPE OGCKML_OUT_MOVE_TO_KML_LOCAL_COORDSYS OGCKML_OUT_WRITE_3D_GEOM_AS_POLYGONS OGCKML_OUT_WRITE_TEXTURES_TXT_FILE KML21_INFORMATION_POINT_ICON KML21_REGIONATOR_PIPELINE KML21_GO_PYRAMIDER_PIPELINE KML21_PO_PYRAMIDER_PIPELINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="kml file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Google Earth KML File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(255)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(255)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(255)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(255)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_int16"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_int16"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_int32"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_real64"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_real64"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(255)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(255)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(255)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(255)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_int16"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_int16"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_int32"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_real64"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_real64"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OGCKML"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_aggregate"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="kml_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_aggregate"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_area"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="kml_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="OGCKML"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="AnimatedUpdate"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -162.001"
+#!   BOUNDING_RECT="100 -162.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="AnimatedUpdate"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -162.001"
+#!   BOUNDING_RECT="2604 -162.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Wait"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="4"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -281.501"
+#!   BOUNDING_RECT="100 -281.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Wait"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="5"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -281.501"
+#!   BOUNDING_RECT="2604 -281.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="TourControl"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="6"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -401.001"
+#!   BOUNDING_RECT="100 -401.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="TourControl"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="7"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -401.001"
+#!   BOUNDING_RECT="2604 -401.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="SoundCue"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="8"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -520.501"
+#!   BOUNDING_RECT="100 -520.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="SoundCue"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="9"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -520.501"
+#!   BOUNDING_RECT="2604 -520.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="FlyTo"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="10"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -640.001"
+#!   BOUNDING_RECT="100 -640.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="FlyTo"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="11"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -640.001"
+#!   BOUNDING_RECT="2604 -640.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Tour"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="12"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -759.501"
+#!   BOUNDING_RECT="100 -759.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Tour"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="13"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -759.501"
+#!   BOUNDING_RECT="2604 -759.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="StyleMap"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="14"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -879.001"
+#!   BOUNDING_RECT="100 -879.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="StyleMap"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="15"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -879.001"
+#!   BOUNDING_RECT="2604 -879.001 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Style"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="16"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -998.501"
+#!   BOUNDING_RECT="100 -998.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Style"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="17"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -998.501"
+#!   BOUNDING_RECT="2604 -998.501 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Folder"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="18"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -1118"
+#!   BOUNDING_RECT="100 -1118 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Folder"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="19"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -1118"
+#!   BOUNDING_RECT="2604 -1118 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Document"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="20"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -1237.5"
+#!   BOUNDING_RECT="100 -1237.5 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Document"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="21"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -1237.5"
+#!   BOUNDING_RECT="2604 -1237.5 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="GroundOverlay"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="22"
+#!   FEAT_GEOMTYPE="kml_no_geom kml_raster"
+#!   POSITION="100 -1357"
+#!   BOUNDING_RECT="100 -1357 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="GroundOverlay"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="23"
+#!   FEAT_GEOMTYPE="kml_no_geom kml_raster"
+#!   POSITION="2604 -1357"
+#!   BOUNDING_RECT="2604 -1357 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="PhotoOverlay"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="24"
+#!   FEAT_GEOMTYPE="kml_no_geom kml_raster kml_point"
+#!   POSITION="100 -1476.5"
+#!   BOUNDING_RECT="100 -1476.5 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="PhotoOverlay"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="25"
+#!   FEAT_GEOMTYPE="kml_no_geom kml_raster kml_point"
+#!   POSITION="2604 -1476.5"
+#!   BOUNDING_RECT="2604 -1476.5 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="ScreenOverlay"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="26"
+#!   FEAT_GEOMTYPE="kml_no_geom kml_raster"
+#!   POSITION="100 -1596"
+#!   BOUNDING_RECT="100 -1596 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="ScreenOverlay"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="27"
+#!   FEAT_GEOMTYPE="kml_no_geom kml_raster"
+#!   POSITION="2604 -1596"
+#!   BOUNDING_RECT="2604 -1596 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Placemark"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="28"
+#!   FEAT_GEOMTYPE="kml_no_geom kml_point kml_line kml_area kml_aggregate kml_surface kml_solid"
+#!   POSITION="100 -1715.5"
+#!   BOUNDING_RECT="100 -1715.5 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Placemark"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="29"
+#!   FEAT_GEOMTYPE="kml_no_geom kml_point kml_line kml_area kml_aggregate kml_surface kml_solid"
+#!   POSITION="2604 -1715.5"
+#!   BOUNDING_RECT="2604 -1715.5 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="NetworkLink"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="30"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="100 -1835"
+#!   BOUNDING_RECT="100 -1835 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="NetworkLink"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="31"
+#!   FEAT_GEOMTYPE="kml_no_geom"
+#!   POSITION="2604 -1835"
+#!   BOUNDING_RECT="2604 -1835 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCKML_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_parent" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_document" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="kml_char(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_description" ATTR_TYPE="kml_char(1024)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_appearance_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ogc_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILE_OR_URL SourceDataset_OGCKML KML_Files(*.kml;*.kmz)|*.kml;*.kmz|All_Files(*)|* Source Google KML File or URL:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Resources/Data/USGS_DS_817.kmz"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_OGCKML KML_Files(*.kml;*.kmz)|*.kml;*.kmz|All_Files(*)|* Destination Google KML File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Resources/Data/USGS_DS_817_truncated.kml.zip"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="47"
+#!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Reader Feature Types&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="100 -30"
+#!   TOP_LEFT="100 -30"
+#!   BOTTOM_RIGHT="99 -29"
+#!   BOUNDING_RECT="100 -30 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="SOURCE_HEADER"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="48"
+#!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Data Flow&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1475.39 -30"
+#!   TOP_LEFT="1475.39 -30"
+#!   BOTTOM_RIGHT="1474.39 -29"
+#!   BOUNDING_RECT="1475.39 -30 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="DATAFLOW_HEADER"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="49"
+#!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Writer Feature Types&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2668.81 -30"
+#!   TOP_LEFT="2668.81 -30"
+#!   BOTTOM_RIGHT="2667.81 -29"
+#!   BOUNDING_RECT="2668.81 -30 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="DEST_HEADER"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="50"
+#!   TYPE="Sampler"
+#!   VERSION="2"
+#!   POSITION="1350 -1650"
+#!   BOUNDING_RECT="1350 -1650 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="SAMPLED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <OUTPUT_FEAT NAME="NOT_SAMPLED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RATE" PARM_VALUE="20000"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sampler"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SAMPLE_TYPE_LONG" PARM_VALUE="First N Features"/>
+#!     <XFORM_PARM PARM_NAME="SAMPLE_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="35"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="37"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="39"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="20"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="22"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="43"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="44"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="27"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="51"
+#!   SOURCE_NODE="28"
+#!   TARGET_NODE="50"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="46"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="52"
+#!   SOURCE_NODE="50"
+#!   TARGET_NODE="29"
+#!   SOURCE_PORT_DESC="fo 0 SAMPLED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 35
+GUI IGNORE SourceDataset_OGCKML_1,OGCKML_IN_KML21_LOG_VERBOSE_OGCKML_1,OGCKML_IN_KML21_RASTER_READ_MODE_OGCKML_1,OGCKML_IN_KML21_SCAN_SCHEMA_OGCKML_1,OGCKML_IN_KML21_FAIL_ON_NETWORK_ERROR_OGCKML_1,OGCKML_IN_KML21_DELETE_DOWNLOADED_FILES_OGCKML_1,OGCKML_IN_KML21_TRAVERSE_NETWORKLINKS_OGCKML_1,OGCKML_IN_KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH_OGCKML_1,OGCKML_IN_KML21_DATASET_ENCODING_OGCKML_1,OGCKML_IN_KML21_MOVE_TO_KML_WORLD_COORDSYS_OGCKML_1,OGCKML_IN_KML21_APPLY_MODEL_TRANSFORMS_OGCKML_1,OGCKML_IN_EXPOSE_ATTRS_GROUP_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MINX_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MINY_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MAXX_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MAXY_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCKML_1,OGCKML_IN_CLIP_TO_ENVELOPE_OGCKML_1,OGCKML_IN_NETWORK_AUTHENTICATION_OGCKML_1,DestDataset_OGCKML_2,OGCKML_OUT_DOCUMENT_NAME_OGCKML_2,OGCKML_OUT_DOCUMENT_DESC_OGCKML_2,OGCKML_OUT_DOCUMENT_VISIBILITY_OGCKML_2,OGCKML_OUT_ATOM_AUTHOR_NAME_OGCKML_2,OGCKML_OUT_ATOM_AUTHOR_EMAIL_OGCKML_2,OGCKML_OUT_ATOM_LINK_HREF_OGCKML_2,OGCKML_OUT_WATERMARK_NAME_OGCKML_2,OGCKML_OUT_WATERMARK_SNIPPET_OGCKML_2,OGCKML_OUT_WATERMARK_ICON_OGCKML_2,OGCKML_OUT_ATTR_IN_DESCRIPTION_OGCKML_2,OGCKML_OUT_HTML_DESCRIPTIONS_OGCKML_2,OGCKML_OUT_KML_WRT_ADV_PARA_OGCKML_2,OGCKML_OUT_DATASET_HINT_OGCKML_2,OGCKML_OUT_STYLE_DOC_OGCKML_2,OGCKML_OUT_SCHEMA_DOC_OGCKML_2,OGCKML_OUT_DETECT_RASTERS_OGCKML_2,OGCKML_OUT_EXEC_GO_PIPELINE_OGCKML_2,OGCKML_OUT_RASTER_MODE_OGCKML_2,OGCKML_OUT_RASTER_FORMAT_OGCKML_2,OGCKML_OUT_TEXTURE_FORMAT_OGCKML_2,OGCKML_OUT_COPY_ICON_OGCKML_2,OGCKML_OUT_OUTPUT_SCHEMA_OGCKML_2,OGCKML_OUT_AUTO_CREATE_NETWORK_LINKS_OGCKML_2,OGCKML_OUT_ORIENTATION_OGCKML_2,OGCKML_OUT_LOG_VERBOSE_OGCKML_2,OGCKML_OUT_OMIT_DOCUMENT_ELEMENT_OGCKML_2,OGCKML_OUT_REGIONATE_DATA_OGCKML_2,OGCKML_OUT_EXEC_PO_PIPELINE_OGCKML_2,OGCKML_OUT_CREATE_EMPTY_FOLDERS_OGCKML_2,OGCKML_OUT_KML21_TARGET_HREF_OGCKML_2,OGCKML_OUT_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_2,OGCKML_OUT_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_2,OGCKML_OUT_WRITE_TEXTURES_TXT_FILE_OGCKML_2,OGCKML_OUT_KML21_FANOUT_TYPE_OGCKML_2
+DEFAULT_MACRO SourceDataset_OGCKML $(FME_MF_DIR)Resources/Data/USGS_DS_817.kmz
+GUI FILE_OR_URL SourceDataset_OGCKML KML_Files(*.kml;*.kmz)|*.kml;*.kmz|All_Files(*)|* Source Google KML File or URL:
+DEFAULT_MACRO DestDataset_OGCKML $(FME_MF_DIR)Resources/Data/USGS_DS_817_truncated.kml.zip
+GUI FILENAME DestDataset_OGCKML KML_Files(*.kml;*.kmz)|*.kml;*.kmz|All_Files(*)|* Destination Google KML File:
+INCLUDE [ if {{$(SourceDataset_OGCKML)} == {}} { puts_real {Parameter 'SourceDataset_OGCKML' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_OGCKML)} == {}} { puts_real {Parameter 'DestDataset_OGCKML' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! encoding="utf-8"
+#! WORKSPACE_VERSION 1
+# ============================================================================ 
+# 
+# This mapping file was generated by FME Workbench
+# on 11/30/17 for translation between OGCKML and OGCKML
+# 
+# This workspace was generated with FME build 17652
+#
+# You may edit this mapping file to customize its operation.  Comments are 
+# placed throughout to assist you. 
+# 
+# Modification History:
+# 
+#     Name              Date     Description
+#     ================= ======== =============================================
+# 
+# 
+# ============================================================================ 
+# ============================================================================ 
+# The following line defines the title presented to the user when this
+# mapping file is run through the FME GUI.  You may modify this
+# if a more meaningful title would be appropriate.
+GUI TITLE OGCKML to OGCKML Translation 
+# ============================================================================ 
+# The following line names the log file to which useful statistics about
+# the translation will be written.  This line can be uncommented and
+# updated if you do wish to keep these statistics.
+# LOG_FILENAME translation.log
+# LOG_APPEND NO
+# ============================================================================ 
+# The following line instructs the FME to log any features that do not
+# match any of the source feature patterns listed further down in
+# this file.  If you are modifying this mapping file, this will be
+# useful to describe to you exactly which features you are losing
+# during translation, if the statistics indicate that features are
+# not being correlated or grouped.  Uncorrelated features do not
+# match any source specification, ungrouped features do not have
+# any corresponding _DEF line. 
+# FME_DEBUG UNGROUPED UNCORRELATED
+# ============================================================================ 
+# The following two lines define the type of reader and writer to be
+# used for this translation.  If you want to translate your data
+# back into its original format, you may make a copy of this file
+# and switch the reader and writer types.  If you rerun the FME, you
+# will get your original data back again (together with any modifications
+# you made in the meantime).  Note that several formats are NOT
+# bi-directional (for example, GIF can only be used as a WRITER)
+# so a reverse translation may not always be possible.
+#! START_WB_HEADER
+READER_TYPE OGCKML
+READER_KEYWORD OGCKML_1
+READER_GEN_DIRECTIVES KML21_LOG_VERBOSE,No,KML21_RASTER_READ_MODE,GroundOverlay,KML21_SCAN_SCHEMA,Yes,KML21_FAIL_ON_NETWORK_ERROR,No,KML21_DELETE_DOWNLOADED_FILES,Yes,KML21_TRAVERSE_NETWORKLINKS,All,KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH,5,KML21_MOVE_TO_KML_WORLD_COORDSYS,Yes,KML21_APPLY_MODEL_TRANSFORMS,No,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,SourceDataset,<solidus>Users<solidus>kweller<solidus>Projects<solidus>mg<solidus>fme-components<solidus>workspaces<solidus>Resources<solidus>Data<solidus>USGS_DS_817.kmz,FME_GEOMETRY_HANDLING,Enhanced
+
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} OGCKML
+MULTI_WRITER_KEYWORD{0} OGCKML_2
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OGCKML_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OGCKML OGCKML_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_OGCKML_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OGCKML OGCKML_1
+DEFAULT_MACRO SourceDataset_OGCKML_1 $(SourceDataset_OGCKML)
+GUI FILE_OR_URL SourceDataset_OGCKML_1 KML_Files(*.kml;*.kmz)|*.kml;*.kmz|All_Files(*)|* Source Google KML File or URL:
+DEFAULT_MACRO OGCKML_IN_KML21_LOG_VERBOSE_OGCKML_1 No
+OGCKML_1_KML21_LOG_VERBOSE "$(OGCKML_IN_KML21_LOG_VERBOSE_OGCKML_1)"
+GUI CHOICE OGCKML_IN_KML21_LOG_VERBOSE_OGCKML_1 Yes%No Verbose Logging:
+DEFAULT_MACRO OGCKML_IN_KML21_RASTER_READ_MODE_OGCKML_1 GroundOverlay
+OGCKML_1_KML21_RASTER_READ_MODE "$(OGCKML_IN_KML21_RASTER_READ_MODE_OGCKML_1)"
+GUI OPTIONAL CHOICE OGCKML_IN_KML21_RASTER_READ_MODE_OGCKML_1 All%GroundOverlay%None Read Overlays as Rasters:
+DEFAULT_MACRO OGCKML_IN_KML21_SCAN_SCHEMA_OGCKML_1 Yes
+OGCKML_1_KML21_SCAN_SCHEMA "$(OGCKML_IN_KML21_SCAN_SCHEMA_OGCKML_1)"
+GUI CHOICE OGCKML_IN_KML21_SCAN_SCHEMA_OGCKML_1 Yes%No Scan Schema:
+DEFAULT_MACRO OGCKML_IN_KML21_FAIL_ON_NETWORK_ERROR_OGCKML_1 No
+OGCKML_1_KML21_FAIL_ON_NETWORK_ERROR "$(OGCKML_IN_KML21_FAIL_ON_NETWORK_ERROR_OGCKML_1)"
+GUI CHOICE OGCKML_IN_KML21_FAIL_ON_NETWORK_ERROR_OGCKML_1 Yes%No Fail on Network Errors:
+DEFAULT_MACRO OGCKML_IN_KML21_DELETE_DOWNLOADED_FILES_OGCKML_1 Yes
+OGCKML_1_KML21_DELETE_DOWNLOADED_FILES "$(OGCKML_IN_KML21_DELETE_DOWNLOADED_FILES_OGCKML_1)"
+GUI CHOICE OGCKML_IN_KML21_DELETE_DOWNLOADED_FILES_OGCKML_1 Yes%No Delete Downloaded Files:
+DEFAULT_MACRO OGCKML_IN_KML21_TRAVERSE_NETWORKLINKS_OGCKML_1 All
+OGCKML_1_KML21_TRAVERSE_NETWORKLINKS "$(OGCKML_IN_KML21_TRAVERSE_NETWORKLINKS_OGCKML_1)"
+GUI OPTIONAL CHOICE OGCKML_IN_KML21_TRAVERSE_NETWORKLINKS_OGCKML_1 No%Local%All Traverse NetworkLinks:
+DEFAULT_MACRO OGCKML_IN_KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH_OGCKML_1 5
+OGCKML_1_KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH "$(OGCKML_IN_KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH_OGCKML_1)"
+GUI OPTIONAL INTEGER OGCKML_IN_KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH_OGCKML_1 Maximum NetworkLinks Traversal Depth:
+DEFAULT_MACRO OGCKML_IN_KML21_DATASET_ENCODING_OGCKML_1 
+OGCKML_1_KML21_DATASET_ENCODING "$(OGCKML_IN_KML21_DATASET_ENCODING_OGCKML_1)"
+GUI OPTIONAL ENCODING OGCKML_IN_KML21_DATASET_ENCODING_OGCKML_1 * Force Dataset Encoding:
+DEFAULT_MACRO OGCKML_IN_KML21_MOVE_TO_KML_WORLD_COORDSYS_OGCKML_1 Yes
+OGCKML_1_KML21_MOVE_TO_KML_WORLD_COORDSYS "$(OGCKML_IN_KML21_MOVE_TO_KML_WORLD_COORDSYS_OGCKML_1)"
+GUI CHOICE OGCKML_IN_KML21_MOVE_TO_KML_WORLD_COORDSYS_OGCKML_1 Yes%No Move To World Coordinate System:
+DEFAULT_MACRO OGCKML_IN_KML21_APPLY_MODEL_TRANSFORMS_OGCKML_1 No
+OGCKML_1_KML21_APPLY_MODEL_TRANSFORMS "$(OGCKML_IN_KML21_APPLY_MODEL_TRANSFORMS_OGCKML_1)"
+GUI CHOICE OGCKML_IN_KML21_APPLY_MODEL_TRANSFORMS_OGCKML_1 Yes%No Apply Transformations To Models:
+DEFAULT_MACRO OGCKML_IN_EXPOSE_ATTRS_GROUP_OGCKML_1 
+OGCKML_1_EXPOSE_ATTRS_GROUP "$(OGCKML_IN_EXPOSE_ATTRS_GROUP_OGCKML_1)"
+GUI OPTIONAL DISCLOSUREGROUP OGCKML_IN_EXPOSE_ATTRS_GROUP_OGCKML_1 OGCKML_IN_OGCKML_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO OGCKML_IN_SEARCH_ENVELOPE_MINX_OGCKML_1 0
+OGCKML_1_SEARCH_ENVELOPE "$(OGCKML_IN_SEARCH_ENVELOPE_MINX_OGCKML_1)"
+GUI OPTIONAL FLOAT OGCKML_IN_SEARCH_ENVELOPE_MINX_OGCKML_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO OGCKML_IN_SEARCH_ENVELOPE_MINY_OGCKML_1 0
+OGCKML_1_SEARCH_ENVELOPE "$(OGCKML_IN_SEARCH_ENVELOPE_MINY_OGCKML_1)"
+GUI OPTIONAL FLOAT OGCKML_IN_SEARCH_ENVELOPE_MINY_OGCKML_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO OGCKML_IN_SEARCH_ENVELOPE_MAXX_OGCKML_1 0
+OGCKML_1_SEARCH_ENVELOPE "$(OGCKML_IN_SEARCH_ENVELOPE_MAXX_OGCKML_1)"
+GUI OPTIONAL FLOAT OGCKML_IN_SEARCH_ENVELOPE_MAXX_OGCKML_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO OGCKML_IN_SEARCH_ENVELOPE_MAXY_OGCKML_1 0
+OGCKML_1_SEARCH_ENVELOPE "$(OGCKML_IN_SEARCH_ENVELOPE_MAXY_OGCKML_1)"
+GUI OPTIONAL FLOAT OGCKML_IN_SEARCH_ENVELOPE_MAXY_OGCKML_1 Maximum Y:
+# ===========================================================================
+DEFAULT_MACRO OGCKML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCKML_1 
+OGCKML_1_SEARCH_ENVELOPE "$(OGCKML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCKML_1)"
+GUI OPTIONAL COORDSYS OGCKML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCKML_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+DEFAULT_MACRO OGCKML_IN_CLIP_TO_ENVELOPE_OGCKML_1 NO
+OGCKML_1_CLIP_TO_ENVELOPE "$(OGCKML_IN_CLIP_TO_ENVELOPE_OGCKML_1)"
+GUI OPTIONAL CHECKBOX OGCKML_IN_CLIP_TO_ENVELOPE_OGCKML_1 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO OGCKML_IN_NETWORK_AUTHENTICATION_OGCKML_1 
+OGCKML_1_NETWORK_AUTHENTICATION "$(OGCKML_IN_NETWORK_AUTHENTICATION_OGCKML_1)"
+GUI OPTIONAL AUTHENTICATOR OGCKML_IN_NETWORK_AUTHENTICATION_OGCKML_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO OGCKML_IN_ATTRIBUTE_READING_OGCKML_1 ALL
+OGCKML_1_ATTRIBUTE_READING "$(OGCKML_IN_ATTRIBUTE_READING_OGCKML_1)"
+OGCKML_1_DATASET "$(SourceDataset_OGCKML_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OGCKML_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER OGCKML OGCKML_2
+# The dataset this mapping file was generated for was:
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_OGCKML_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER OGCKML OGCKML_2
+DEFAULT_MACRO DestDataset_OGCKML_2 $(DestDataset_OGCKML)
+GUI FILENAME DestDataset_OGCKML_2 KML_Files(*.kml;*.kmz)|*.kml;*.kmz|All_Files(*)|* Destination Google KML File:
+OGCKML_2_WRITE_3D_GEOM_AS_POLYGONS no
+DEFAULT_MACRO OGCKML_OUT_DOCUMENT_NAME_OGCKML_2 
+OGCKML_2_DOCUMENT_NAME "$(OGCKML_OUT_DOCUMENT_NAME_OGCKML_2)"
+GUI OPTIONAL TEXT_ENCODED OGCKML_OUT_DOCUMENT_NAME_OGCKML_2 Root Document name:
+DEFAULT_MACRO OGCKML_OUT_DOCUMENT_DESC_OGCKML_2 
+OGCKML_2_DOCUMENT_DESC "$(OGCKML_OUT_DOCUMENT_DESC_OGCKML_2)"
+GUI OPTIONAL TEXT_ENCODED OGCKML_OUT_DOCUMENT_DESC_OGCKML_2 Document description:
+DEFAULT_MACRO OGCKML_OUT_DOCUMENT_VISIBILITY_OGCKML_2 yes
+OGCKML_2_DOCUMENT_VISIBILITY "$(OGCKML_OUT_DOCUMENT_VISIBILITY_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_DOCUMENT_VISIBILITY_OGCKML_2 yes%no Document visible on load:
+DEFAULT_MACRO OGCKML_OUT_ATOM_AUTHOR_NAME_OGCKML_2 
+OGCKML_2_ATOM_AUTHOR_NAME "$(OGCKML_OUT_ATOM_AUTHOR_NAME_OGCKML_2)"
+GUI OPTIONAL TEXT_ENCODED OGCKML_OUT_ATOM_AUTHOR_NAME_OGCKML_2 Author Name:
+DEFAULT_MACRO OGCKML_OUT_ATOM_AUTHOR_EMAIL_OGCKML_2 
+OGCKML_2_ATOM_AUTHOR_EMAIL "$(OGCKML_OUT_ATOM_AUTHOR_EMAIL_OGCKML_2)"
+GUI OPTIONAL TEXT_ENCODED OGCKML_OUT_ATOM_AUTHOR_EMAIL_OGCKML_2 Author Email:
+DEFAULT_MACRO OGCKML_OUT_ATOM_LINK_HREF_OGCKML_2 
+OGCKML_2_ATOM_LINK_HREF "$(OGCKML_OUT_ATOM_LINK_HREF_OGCKML_2)"
+GUI OPTIONAL TEXT_ENCODED OGCKML_OUT_ATOM_LINK_HREF_OGCKML_2 Author URL:
+DEFAULT_MACRO OGCKML_OUT_WATERMARK_NAME_OGCKML_2 
+OGCKML_2_WATERMARK_NAME "$(OGCKML_OUT_WATERMARK_NAME_OGCKML_2)"
+GUI OPTIONAL TEXT_ENCODED OGCKML_OUT_WATERMARK_NAME_OGCKML_2 Watermark Name:
+DEFAULT_MACRO OGCKML_OUT_WATERMARK_SNIPPET_OGCKML_2 
+OGCKML_2_WATERMARK_SNIPPET "$(OGCKML_OUT_WATERMARK_SNIPPET_OGCKML_2)"
+GUI OPTIONAL TEXT_ENCODED OGCKML_OUT_WATERMARK_SNIPPET_OGCKML_2 Watermark Snippet Text:
+DEFAULT_MACRO OGCKML_OUT_WATERMARK_ICON_OGCKML_2 
+OGCKML_2_WATERMARK_ICON "$(OGCKML_OUT_WATERMARK_ICON_OGCKML_2)"
+GUI OPTIONAL TEXT OGCKML_OUT_WATERMARK_ICON_OGCKML_2 Watermark Overlay Icon:
+DEFAULT_MACRO OGCKML_OUT_ATTR_IN_DESCRIPTION_OGCKML_2 yes
+OGCKML_2_ATTR_IN_DESCRIPTION "$(OGCKML_OUT_ATTR_IN_DESCRIPTION_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_ATTR_IN_DESCRIPTION_OGCKML_2 yes%no Create Attribute Table in Description Balloon:
+DEFAULT_MACRO OGCKML_OUT_HTML_DESCRIPTIONS_OGCKML_2 yes
+OGCKML_2_HTML_DESCRIPTIONS "$(OGCKML_OUT_HTML_DESCRIPTIONS_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_HTML_DESCRIPTIONS_OGCKML_2 yes%no Use HTML in Description Balloon:
+DEFAULT_MACRO OGCKML_OUT_KML_WRT_ADV_PARA_OGCKML_2 
+GUI OPTIONAL DISCLOSUREGROUP OGCKML_OUT_KML_WRT_ADV_PARA_OGCKML_2 OGCKML_OUT_DATASET_HINT_OGCKML_2%OGCKML_OUT_STYLE_DOC_OGCKML_2%OGCKML_OUT_SCHEMA_DOC_OGCKML_2%OGCKML_OUT_DETECT_RASTERS_OGCKML_2%OGCKML_OUT_EXEC_GO_PIPELINE_OGCKML_2%OGCKML_OUT_RASTER_MODE_OGCKML_2%OGCKML_OUT_RASTER_FORMAT_OGCKML_2%OGCKML_OUT_TEXTURE_FORMAT_OGCKML_2%OGCKML_OUT_COPY_ICON_OGCKML_2%OGCKML_OUT_OUTPUT_SCHEMA_OGCKML_2%OGCKML_OUT_AUTO_CREATE_NETWORK_LINKS_OGCKML_2%OGCKML_OUT_ORIENTATION_OGCKML_2%OGCKML_OUT_LOG_VERBOSE_OGCKML_2%OGCKML_OUT_OMIT_DOCUMENT_ELEMENT_OGCKML_2%OGCKML_OUT_REGIONATE_DATA_OGCKML_2%OGCKML_OUT_EXEC_PO_PIPELINE_OGCKML_2%OGCKML_OUT_CREATE_EMPTY_FOLDERS_OGCKML_2%OGCKML_OUT_KML21_TARGET_HREF_OGCKML_2%OGCKML_OUT_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_2%OGCKML_OUT_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_2%OGCKML_OUT_WRITE_TEXTURES_TXT_FILE_OGCKML_2%OGCKML_OUT_KML21_FANOUT_TYPE_OGCKML_2 Advanced
+DEFAULT_MACRO OGCKML_OUT_DATASET_HINT_OGCKML_2 
+OGCKML_2_DATASET_HINT "$(OGCKML_OUT_DATASET_HINT_OGCKML_2)"
+GUI OPTIONAL TEXT OGCKML_OUT_DATASET_HINT_OGCKML_2 KML hint attribute:
+DEFAULT_MACRO OGCKML_OUT_STYLE_DOC_OGCKML_2 
+OGCKML_2_STYLE_DOC "$(OGCKML_OUT_STYLE_DOC_OGCKML_2)"
+GUI OPTIONAL TEXT OGCKML_OUT_STYLE_DOC_OGCKML_2 External Style Document:
+DEFAULT_MACRO OGCKML_OUT_SCHEMA_DOC_OGCKML_2 
+OGCKML_2_SCHEMA_DOC "$(OGCKML_OUT_SCHEMA_DOC_OGCKML_2)"
+GUI OPTIONAL TEXT OGCKML_OUT_SCHEMA_DOC_OGCKML_2 External Schema Document:
+DEFAULT_MACRO OGCKML_OUT_DETECT_RASTERS_OGCKML_2 yes
+OGCKML_2_DETECT_RASTERS "$(OGCKML_OUT_DETECT_RASTERS_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_DETECT_RASTERS_OGCKML_2 yes%no Generate Raster Ground Overlays:
+DEFAULT_MACRO OGCKML_OUT_EXEC_GO_PIPELINE_OGCKML_2 no
+OGCKML_2_EXEC_GO_PIPELINE "$(OGCKML_OUT_EXEC_GO_PIPELINE_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_EXEC_GO_PIPELINE_OGCKML_2 yes%no Generate Super-Overlays:
+DEFAULT_MACRO OGCKML_OUT_RASTER_MODE_OGCKML_2 write
+OGCKML_2_RASTER_MODE "$(OGCKML_OUT_RASTER_MODE_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_RASTER_MODE_OGCKML_2 write%copy%relative Raster Handling Mode:
+DEFAULT_MACRO OGCKML_OUT_RASTER_FORMAT_OGCKML_2 tiff
+OGCKML_2_RASTER_FORMAT "$(OGCKML_OUT_RASTER_FORMAT_OGCKML_2)"
+GUI OPTIONAL CHOICE OGCKML_OUT_RASTER_FORMAT_OGCKML_2 jpeg%tiff%png%gif Raster Output Format:
+DEFAULT_MACRO OGCKML_OUT_TEXTURE_FORMAT_OGCKML_2 NONE
+OGCKML_2_TEXTURE_FORMAT "$(OGCKML_OUT_TEXTURE_FORMAT_OGCKML_2)"
+GUI LOOKUP_CHOICE OGCKML_OUT_TEXTURE_FORMAT_OGCKML_2 Auto,NONE%PNG,PNGRASTER%JPEG%GIF,GIFRASTER%BMP%TIFF Preferred Texture Format:
+DEFAULT_MACRO OGCKML_OUT_COPY_ICON_OGCKML_2 yes
+OGCKML_2_COPY_ICON "$(OGCKML_OUT_COPY_ICON_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_COPY_ICON_OGCKML_2 yes%no Copy icons to destination dataset:
+DEFAULT_MACRO OGCKML_OUT_OUTPUT_SCHEMA_OGCKML_2 yes
+OGCKML_2_OUTPUT_SCHEMA "$(OGCKML_OUT_OUTPUT_SCHEMA_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_OUTPUT_SCHEMA_OGCKML_2 yes%no Create KML Schema Elements:
+DEFAULT_MACRO OGCKML_OUT_AUTO_CREATE_NETWORK_LINKS_OGCKML_2 no
+OGCKML_2_AUTO_CREATE_NETWORK_LINKS "$(OGCKML_OUT_AUTO_CREATE_NETWORK_LINKS_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_AUTO_CREATE_NETWORK_LINKS_OGCKML_2 yes%no Create Network Links for Referenced Documents:
+DEFAULT_MACRO OGCKML_OUT_ORIENTATION_OGCKML_2 none
+OGCKML_2_ORIENTATION "$(OGCKML_OUT_ORIENTATION_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_ORIENTATION_OGCKML_2 none%left%right Force Geometry Orientation:
+DEFAULT_MACRO OGCKML_OUT_LOG_VERBOSE_OGCKML_2 no
+OGCKML_2_LOG_VERBOSE "$(OGCKML_OUT_LOG_VERBOSE_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_LOG_VERBOSE_OGCKML_2 yes%no Verbose Logging:
+DEFAULT_MACRO OGCKML_OUT_OMIT_DOCUMENT_ELEMENT_OGCKML_2 no
+OGCKML_2_OMIT_DOCUMENT_ELEMENT "$(OGCKML_OUT_OMIT_DOCUMENT_ELEMENT_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_OMIT_DOCUMENT_ELEMENT_OGCKML_2 yes%no Omit Document Element:
+DEFAULT_MACRO OGCKML_OUT_REGIONATE_DATA_OGCKML_2 no
+OGCKML_2_REGIONATE_DATA "$(OGCKML_OUT_REGIONATE_DATA_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_REGIONATE_DATA_OGCKML_2 yes%no Regionate Vectors (Beta):
+DEFAULT_MACRO OGCKML_OUT_EXEC_PO_PIPELINE_OGCKML_2 no
+OGCKML_2_EXEC_PO_PIPELINE "$(OGCKML_OUT_EXEC_PO_PIPELINE_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_EXEC_PO_PIPELINE_OGCKML_2 yes%no Pyramid PhotoOverlays (Beta):
+DEFAULT_MACRO OGCKML_OUT_CREATE_EMPTY_FOLDERS_OGCKML_2 no
+OGCKML_2_CREATE_EMPTY_FOLDERS "$(OGCKML_OUT_CREATE_EMPTY_FOLDERS_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_CREATE_EMPTY_FOLDERS_OGCKML_2 yes%no Create Empty Folders:
+DEFAULT_MACRO OGCKML_OUT_KML21_TARGET_HREF_OGCKML_2 
+OGCKML_2_KML21_TARGET_HREF "$(OGCKML_OUT_KML21_TARGET_HREF_OGCKML_2)"
+GUI OPTIONAL TEXT OGCKML_OUT_KML21_TARGET_HREF_OGCKML_2 Update Target HREF (NetworkLinkControl):
+DEFAULT_MACRO OGCKML_OUT_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_2 yes
+OGCKML_2_MOVE_TO_KML_LOCAL_COORDSYS "$(OGCKML_OUT_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_2 yes%no Move To Local Coordinate System:
+DEFAULT_MACRO OGCKML_OUT_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_2 no
+OGCKML_2_WRITE_3D_GEOM_AS_POLYGONS "$(OGCKML_OUT_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_2 yes%no Write 3D Geometry As Polygons:
+DEFAULT_MACRO OGCKML_OUT_WRITE_TEXTURES_TXT_FILE_OGCKML_2 no
+OGCKML_2_WRITE_TEXTURES_TXT_FILE "$(OGCKML_OUT_WRITE_TEXTURES_TXT_FILE_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_WRITE_TEXTURES_TXT_FILE_OGCKML_2 yes%no Write texture list to textures.txt:
+DEFAULT_MACRO OGCKML_OUT_KML21_FANOUT_TYPE_OGCKML_2 folder
+OGCKML_2_KML21_FANOUT_TYPE "$(OGCKML_OUT_KML21_FANOUT_TYPE_OGCKML_2)"
+GUI CHOICE OGCKML_OUT_KML21_FANOUT_TYPE_OGCKML_2 folder%subfolder Feature Type Fanout Mode:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO OGCKML_OUT_DESTINATION_DATASETTYPE_VALIDATION_OGCKML_2 Yes
+OGCKML_2_DESTINATION_DATASETTYPE_VALIDATION "$(OGCKML_OUT_DESTINATION_DATASETTYPE_VALIDATION_OGCKML_2)"
+DEFAULT_MACRO OGCKML_OUT_COORDINATE_SYSTEM_GRANULARITY_OGCKML_2 FEATURE
+OGCKML_2_COORDINATE_SYSTEM_GRANULARITY "$(OGCKML_OUT_COORDINATE_SYSTEM_GRANULARITY_OGCKML_2)"
+OGCKML_2_DATASET "$(DestDataset_OGCKML_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)TruncateUSGSTestData.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_OGCKML_1 OGCKML_1
+DEFAULT_MACRO DATASET_KEYWORD_OGCKML_2 OGCKML_2
+# -------------------------------------------------------------------------
+
+OGCKML_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME TruncateUSGSTestData
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+OGCKML_1_DEF PhotoOverlay
+# -------------------------------------------------------------------------
+OGCKML_1_DEF ScreenOverlay
+# -------------------------------------------------------------------------
+OGCKML_1_DEF NetworkLink
+# -------------------------------------------------------------------------
+OGCKML_1_DEF Tour
+# -------------------------------------------------------------------------
+OGCKML_1_DEF Document
+# -------------------------------------------------------------------------
+OGCKML_1_DEF Wait
+# -------------------------------------------------------------------------
+OGCKML_1_DEF SoundCue
+# -------------------------------------------------------------------------
+OGCKML_1_DEF Folder
+# -------------------------------------------------------------------------
+OGCKML_1_DEF Placemark
+# -------------------------------------------------------------------------
+OGCKML_1_DEF FlyTo
+# -------------------------------------------------------------------------
+OGCKML_1_DEF AnimatedUpdate
+# -------------------------------------------------------------------------
+OGCKML_1_DEF GroundOverlay
+# -------------------------------------------------------------------------
+OGCKML_1_DEF TourControl
+# -------------------------------------------------------------------------
+OGCKML_1_DEF StyleMap
+# -------------------------------------------------------------------------
+OGCKML_1_DEF Style
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD OGCKML_1   INPUT FEATURE_TYPE *    ROUTE OGCKML OGCKML_1::PhotoOverlay TO FME_GENERIC ::PhotoOverlay ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::ScreenOverlay TO FME_GENERIC ::ScreenOverlay ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::NetworkLink TO FME_GENERIC ::NetworkLink ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::Tour TO FME_GENERIC ::Tour ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::Document TO FME_GENERIC ::Document ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::Wait TO FME_GENERIC ::Wait ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::SoundCue TO FME_GENERIC ::SoundCue ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::Folder TO FME_GENERIC ::Folder ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::Placemark TO FME_GENERIC ::Placemark ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::FlyTo TO FME_GENERIC ::FlyTo ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::AnimatedUpdate TO FME_GENERIC ::AnimatedUpdate ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::GroundOverlay TO FME_GENERIC ::GroundOverlay ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::TourControl TO FME_GENERIC ::TourControl ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::StyleMap TO FME_GENERIC ::StyleMap ALIAS_GEOMETRY    ROUTE OGCKML OGCKML_1::Style TO FME_GENERIC ::Style ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+OGCKML_1_MERGE_DEF OGCKML_1::PhotoOverlay EXACT PhotoOverlay
+OGCKML_1_MERGE_DEF OGCKML_1::ScreenOverlay EXACT ScreenOverlay
+OGCKML_1_MERGE_DEF OGCKML_1::NetworkLink EXACT NetworkLink
+OGCKML_1_MERGE_DEF OGCKML_1::Tour EXACT Tour
+OGCKML_1_MERGE_DEF OGCKML_1::Document EXACT Document
+OGCKML_1_MERGE_DEF OGCKML_1::Wait EXACT Wait
+OGCKML_1_MERGE_DEF OGCKML_1::SoundCue EXACT SoundCue
+OGCKML_1_MERGE_DEF OGCKML_1::Folder EXACT Folder
+OGCKML_1_MERGE_DEF OGCKML_1::Placemark EXACT Placemark
+OGCKML_1_MERGE_DEF OGCKML_1::FlyTo EXACT FlyTo
+OGCKML_1_MERGE_DEF OGCKML_1::AnimatedUpdate EXACT AnimatedUpdate
+OGCKML_1_MERGE_DEF OGCKML_1::GroundOverlay EXACT GroundOverlay
+OGCKML_1_MERGE_DEF OGCKML_1::TourControl EXACT TourControl
+OGCKML_1_MERGE_DEF OGCKML_1::StyleMap EXACT StyleMap
+OGCKML_1_MERGE_DEF OGCKML_1::Style EXACT Style
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PhotoOverlay (OGCKML_1) Splitter"    INPUT FEATURE_TYPE PhotoOverlay    OUTPUT FEATURE_TYPE PhotoOverlay_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "ScreenOverlay (OGCKML_1) Splitter"    INPUT FEATURE_TYPE ScreenOverlay    OUTPUT FEATURE_TYPE ScreenOverlay_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "NetworkLink (OGCKML_1) Splitter"    INPUT FEATURE_TYPE NetworkLink    OUTPUT FEATURE_TYPE NetworkLink_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Tour (OGCKML_1) Splitter"    INPUT FEATURE_TYPE Tour    OUTPUT FEATURE_TYPE Tour_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Document (OGCKML_1) Splitter"    INPUT FEATURE_TYPE Document    OUTPUT FEATURE_TYPE Document_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Wait (OGCKML_1) Splitter"    INPUT FEATURE_TYPE Wait    OUTPUT FEATURE_TYPE Wait_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "SoundCue (OGCKML_1) Splitter"    INPUT FEATURE_TYPE SoundCue    OUTPUT FEATURE_TYPE SoundCue_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Folder (OGCKML_1) Splitter"    INPUT FEATURE_TYPE Folder    OUTPUT FEATURE_TYPE Folder_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Placemark (OGCKML_1) Splitter"    INPUT FEATURE_TYPE Placemark    OUTPUT FEATURE_TYPE Placemark_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "FlyTo (OGCKML_1) Splitter"    INPUT FEATURE_TYPE FlyTo    OUTPUT FEATURE_TYPE FlyTo_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AnimatedUpdate (OGCKML_1) Splitter"    INPUT FEATURE_TYPE AnimatedUpdate    OUTPUT FEATURE_TYPE AnimatedUpdate_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GroundOverlay (OGCKML_1) Splitter"    INPUT FEATURE_TYPE GroundOverlay    OUTPUT FEATURE_TYPE GroundOverlay_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "TourControl (OGCKML_1) Splitter"    INPUT FEATURE_TYPE TourControl    OUTPUT FEATURE_TYPE TourControl_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "StyleMap (OGCKML_1) Splitter"    INPUT FEATURE_TYPE StyleMap    OUTPUT FEATURE_TYPE StyleMap_OGCKML_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Style (OGCKML_1) Splitter"    INPUT FEATURE_TYPE Style    OUTPUT FEATURE_TYPE Style_OGCKML_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+INCLUDE [ puts "MACRO REAL_RATE [expr 20000 * -1 ]" ]
+FACTORY_DEF * SamplingFactory    FACTORY_NAME Sampler    SAMPLE_RATE $(REAL_RATE)    SAMPLE_ORDER ORIGINAL    INPUT  FEATURE_TYPE Placemark_OGCKML_1    OUTPUT SAMPLED FEATURE_TYPE ___SAMPLED___
+# This TeeFactory is needed because Sampler will still output features if it has no OUTPUT clauses specified.
+# This way we behave nicely even if there are no output connections on the transformer. See PR#28886.
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME Sampler_Sampled    INPUT FEATURE_TYPE ___SAMPLED___    OUTPUT FEATURE_TYPE Sampler_SAMPLED
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC PhotoOverlay_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>PhotoOverlay<closeparen> GEOMETRY    ROUTE FME_GENERIC ScreenOverlay_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>ScreenOverlay<closeparen> GEOMETRY    ROUTE FME_GENERIC NetworkLink_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>NetworkLink<closeparen> GEOMETRY    ROUTE FME_GENERIC Tour_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Tour<closeparen> GEOMETRY    ROUTE FME_GENERIC Document_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Document<closeparen> GEOMETRY    ROUTE FME_GENERIC Wait_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Wait<closeparen> GEOMETRY    ROUTE FME_GENERIC SoundCue_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>SoundCue<closeparen> GEOMETRY    ROUTE FME_GENERIC Folder_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Folder<closeparen> GEOMETRY    ROUTE FME_GENERIC Sampler_SAMPLED TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Placemark<closeparen> GEOMETRY    ROUTE FME_GENERIC FlyTo_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>FlyTo<closeparen> GEOMETRY    ROUTE FME_GENERIC GroundOverlay_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>GroundOverlay<closeparen> GEOMETRY    ROUTE FME_GENERIC AnimatedUpdate_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>AnimatedUpdate<closeparen> GEOMETRY    ROUTE FME_GENERIC TourControl_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>TourControl<closeparen> GEOMETRY    ROUTE FME_GENERIC StyleMap_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>StyleMap<closeparen> GEOMETRY    ROUTE FME_GENERIC Style_OGCKML_1 TO OGCKML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Style<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+OGCKML_2_DEF PhotoOverlay   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF ScreenOverlay   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF NetworkLink   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF Tour   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF Document   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF Wait   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF SoundCue   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF Folder   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF Placemark   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF FlyTo   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF GroundOverlay   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF AnimatedUpdate   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF TourControl   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF StyleMap   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
+# -------------------------------------------------------------------------
+OGCKML_2_DEF Style   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes
