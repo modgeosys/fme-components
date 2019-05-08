@@ -1,6 +1,6 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <TRANSFORMER
-# TRANSFORMER_BEGIN ValidationTestTransformer,1,,3540b247-a78b-4a6a-a058-b840c7b4f2a3,"Linked by Default",No,NO_PARALLELISM,,No,18592,YES,No,36
+# TRANSFORMER_BEGIN AttributeValidationTestTransformer,1,,3540b247-a78b-4a6a-a058-b840c7b4f2a3,"Linked by Default",No,NO_PARALLELISM,,No,18592,YES,No,36
 # 
 # TRANSFORMER_END
 #!   ATTR_TYPE_ENCODING="SDF"
@@ -31,7 +31,7 @@
 #!   PYTHON_COMPATIBILITY="36"
 #!   SHOW_ANNOTATIONS="true"
 #!   SHOW_INFO_NODES="true"
-#!   TITLE="ValidationTestTransformer"
+#!   TITLE="AttributeValidationTestTransformer"
 #!   USAGE=""
 #!   USE_MARKDOWN="NO"
 #!   VIEW_POSITION="-3921.04 129.001"
@@ -444,23 +444,23 @@
 #! </TRANSFORMER>
 
 FME_PYTHON_VERSION 36
-DEFAULT_MACRO $(ValidationTestTransformer_WORKSPACE_NAME)__CREATION_INSTANCE <at>Value<openparen>_creation_instance<closeparen>
+DEFAULT_MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)__CREATION_INSTANCE <at>Value<openparen>_creation_instance<closeparen>
 #! START_HEADER
 #! END_HEADER
 
 DEFAULT_MACRO WB_CURRENT_CONTEXT
-DEFAULT_MACRO ValidationTestTransformer_WORKSPACE_NAME ""
-INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(ValidationTestTransformer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(ValidationTestTransformer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_Input1557336869 Input Splitter"   INPUT FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_Input"   OUTPUT FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,_creation_instance,$($(ValidationTestTransformer_WORKSPACE_NAME)__CREATION_INSTANCE), FEATURE_TYPE)"
+DEFAULT_MACRO AttributeValidationTestTransformer_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationTestTransformer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationTestTransformer_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_Input1557336869 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV,_creation_instance,$($(AttributeValidationTestTransformer_WORKSPACE_NAME)__CREATION_INSTANCE), FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 MACRO testClauses #Tcl to generate test clauses for the table in preparation for the TestFactory
 #Each Attribute gets put in a seperate clause
 INCLUDE [    set table {_creation_instance;TYPE;XML};    set testString {MACRO testClauses };    set rows [split $table {/}];    foreach row $rows {    set cells [split $row {;}];    set attrs [split [lindex $cells 0] {,}];       set op [lindex $cells 1];       set val [lindex $cells 2];       foreach attr $attrs {       append testString "TEST ${attr} ${op} ${val} ENCODED ";             };    };    puts $testString;    ]
-FACTORY_DEF * TestFactory    FACTORY_NAME $(ValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator    INPUT  FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_Input"    $(testClauses)    BOOLEAN_OPERATOR AND    VALIDATOR_MODE TRUE    OUTPUT FAILED FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_FAILED"
+FACTORY_DEF * TestFactory    FACTORY_NAME $(AttributeValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator    INPUT  FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_Input"    $(testClauses)    BOOLEAN_OPERATOR AND    VALIDATOR_MODE TRUE    OUTPUT FAILED FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_FAILED"
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator Input Input Collector"   INPUT FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_FAILED"   OUTPUT FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Input"
-MACRO ValidatorListPopulator_WORKSPACE_NAME $(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator
-MACRO $(ValidatorListPopulator_WORKSPACE_NAME)_XFORMER_NAME $(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator Input Input Collector"   INPUT FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ModuleAttributeValidator_FAILED"   OUTPUT FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Input"
+MACRO ValidatorListPopulator_WORKSPACE_NAME $(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator
+MACRO $(ValidatorListPopulator_WORKSPACE_NAME)_XFORMER_NAME $(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator
 MACRO $(ValidatorListPopulator_WORKSPACE_NAME)_TRANSFORMER_GROUP 
 MACRO $(ValidatorListPopulator_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
 MACRO $(ValidatorListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME ValidatorListPopulator
@@ -483,6 +483,6 @@ INCLUDE [    set macroLine "MACRO $(ValidatorListPopulator_WORKSPACE_NAME)_Attri
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(ValidatorListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(ValidatorListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(ValidatorListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(ValidatorListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ValidatorListPopulator_WORKSPACE_NAME)_Output1557336869 Output Collector"   INPUT FEATURE_TYPE "$(ValidatorListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(ValidatorListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(ValidatorListPopulator_WORKSPACE_NAME))}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output"   OUTPUT FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output_11557336869 Output Collector"   INPUT FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output"   OUTPUT FEATURE_TYPE "$(ValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output_1"
-INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(ValidationTestTransformer_WORKSPACE_NAME))}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output"   OUTPUT FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output_11557336869 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output"   OUTPUT FEATURE_TYPE "$(AttributeValidationTestTransformer_WORKSPACE_NAME)_ValidatorListPopulator_Output_1"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationTestTransformer_WORKSPACE_NAME))}]
