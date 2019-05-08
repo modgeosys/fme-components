@@ -1,7 +1,7 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        /opt/fme-desktop-2018/fme /home/kweller/Projects/mg/fme-components/fme/AttributeTestValidation.fmw
+#        /opt/fme-desktop-2018/fme /home/kweller/Projects/mg/fme-components/fme/TestAttributeValidation.fmw
 #              --DestDataset_HTML "/home/kweller/Projects/mg/fme-components/fme/Resources/Data/Output/TestResults.html"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
@@ -1921,7 +1921,7 @@ HTML_1_DATASET "$(DestDataset_HTML_1)"
 #! END_WB_HEADER
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)AttributeTestValidation.log"
+LOG_FILENAME "$(FME_MF_DIR)TestAttributeValidation.log"
 LOG_APPEND NO
 LOG_TIMINGS YES
 FME_DEBUG MAPPING_FILE BADNEWS FME_STACK_TRACE UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG FME_DEBUG
@@ -1939,7 +1939,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME AttributeTestValidation
+MACRO WORKSPACE_NAME TestAttributeValidation
 MACRO FME_VIEWER_APP fmedatainspector
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
