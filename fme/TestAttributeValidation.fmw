@@ -1,8 +1,8 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        /opt/fme-desktop-2018/fme /home/kweller/Projects/mg/fme-components/fme/TestAttributeValidation.fmw
-#              --DestDataset_HTML "/home/kweller/Projects/mg/fme-components/fme/Resources/Data/Output/TestResults.html"
+#        /Library/FME/2018.1/fme /Users/kweller/Projects/mg/fme-components/fme/TestAttributeValidation.fmw
+#              --DestDataset_HTML "/Users/kweller/Projects/mg/fme-components/fme/Resources/Data/Output/TestResults.html"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -17,8 +17,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18592"
-#!   FME_DOCUMENT_GUID="790c0d6b-5d93-48f4-ab46-7236272e9152"
-#!   FME_DOCUMENT_PRIORGUID="07a66fe0-a6c4-423b-a97d-b08bea0b13e0,279bef88-ab4c-4aae-b3da-34b1294aff70,d8c86109-386a-4157-aaf1-20e37ddb4509,ffaea88f-73eb-4f15-baea-55ed98a0633c,aec67d28-775e-40a0-9296-f319ffa347a8,3acc2584-2b00-4298-bc9c-6389f1676324,ed7a2fee-8fb8-4515-926d-e5b74816ad6c,d7629c4f-6898-4190-bc8d-c7198517f271,3f4d3eca-d131-456d-96f1-5beb5a7cb978,911993f3-d62b-462b-ad41-43fea0f01d33,924b3a87-d70d-4d44-9369-0bc9611db50c,f6893fce-09af-461c-8a89-93aedd7b5934,19553093-159b-4d64-94eb-00b01ffaef0a"
+#!   FME_DOCUMENT_GUID="3432b376-72ba-4ad1-b579-b0a5171ff5eb"
+#!   FME_DOCUMENT_PRIORGUID="07a66fe0-a6c4-423b-a97d-b08bea0b13e0,279bef88-ab4c-4aae-b3da-34b1294aff70,d8c86109-386a-4157-aaf1-20e37ddb4509,ffaea88f-73eb-4f15-baea-55ed98a0633c,aec67d28-775e-40a0-9296-f319ffa347a8,3acc2584-2b00-4298-bc9c-6389f1676324,ed7a2fee-8fb8-4515-926d-e5b74816ad6c,d7629c4f-6898-4190-bc8d-c7198517f271,3f4d3eca-d131-456d-96f1-5beb5a7cb978,911993f3-d62b-462b-ad41-43fea0f01d33,924b3a87-d70d-4d44-9369-0bc9611db50c,f6893fce-09af-461c-8a89-93aedd7b5934,19553093-159b-4d64-94eb-00b01ffaef0a,790c0d6b-5d93-48f4-ab46-7236272e9152,d6c28f3a-d2c6-4dc7-a53d-dd24800e8792"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -26,8 +26,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - linux-x64)"
-#!   LAST_SAVE_DATE="2019-05-08T17:12:03"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - macosx)"
+#!   LAST_SAVE_DATE="2019-05-09T12:18:04"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -64,7 +64,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_geometry char(50) fme_text_string char(50) fme_feature_type char(50) fme_primary_axis number(31,15) html_eol char(10) fme_rotation number(31,15) fme_type char(50) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_fill_color char(50) fme_dataset char(50) fme_color char(50) fme_basename char(50)"
+#!   EXPOSABLE_ATTRS="fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_rotation number(31,15) fme_feature_type char(50) fme_type char(50) fme_fill_color char(50) fme_basename char(50) fme_secondary_axis number(31,15) fme_geometry char(50) fme_dataset char(50) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) html_eol char(10) fme_color char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -783,15 +783,15 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="35"
 #!   TYPE="AttributeValidationTestTransformer"
-#!   VERSION="1"
+#!   VERSION="2"
 #!   POSITION="750 -2100"
 #!   BOUNDING_RECT="750 -2100 708.015625 71"
 #!   ORDER="500000000000040"
-#!   PARMS_EDITED="false"
+#!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="18592"
 #! >
-#!     <OUTPUT_FEAT NAME="ValidatorListPopulator_Output_1"/>
+#!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -840,7 +840,7 @@
 #!   SOURCE_NODE="16"
 #!   TARGET_NODE="35"
 #!   SOURCE_PORT_DESC="fo 0 CREATED"
-#!   TARGET_PORT_DESC="fi 0 ModuleAttributeValidator_Input"
+#!   TARGET_PORT_DESC="fi 0 Input"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -946,17 +946,6 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="38"
-#!   SOURCE_NODE="35"
-#!   TARGET_NODE="28"
-#!   SOURCE_PORT_DESC="fo 0 ValidatorListPopulator_Output_1"
-#!   TARGET_PORT_DESC="fi 0 input"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #!   IDENTIFIER="32"
 #!   SOURCE_NODE="6"
 #!   TARGET_NODE="12"
@@ -1000,6 +989,17 @@
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="35"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
 #! </FEAT_LINKS>
 #! <BREAKPOINTS>
 #! </BREAKPOINTS>
@@ -1020,7 +1020,7 @@
 #!   FME_PROCESS_GROUP_BY=""
 #!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
 #!   HISTORY=""
-#!   IS_VISIBLE="true"
+#!   IS_VISIBLE="false"
 #!   LAST_SAVE_BUILD=""
 #!   LAST_SAVE_DATE=""
 #!   MARKDOWN_DESCRIPTION=""
@@ -1161,7 +1161,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_FME_MF_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _mgs_calling_module SET_TO &lt;at&gt;Value&lt;openparen&gt;_FME_MF_DIR&lt;closeparen&gt;&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;_FME_MF_NAME&lt;closeparen&gt;  _mgs_validator_name SET_TO $(Validator_Name)"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _mgs_calling_module SET_TO &lt;at&gt;Value&lt;openparen&gt;_FME_MF_DIR&lt;closeparen&gt;&lt;at&gt;Value&lt;openparen&gt;_FME_MF_NAME&lt;closeparen&gt;  _mgs_validator_name SET_TO $(Validator_Name)"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1282,7 +1282,7 @@
 #!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
 #!   GUID="3540b247-a78b-4a6a-a058-b840c7b4f2a3"
 #!   HISTORY=""
-#!   IS_VISIBLE="true"
+#!   IS_VISIBLE="false"
 #!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - linux-x64)"
 #!   LAST_SAVE_DATE="2019-05-08T11:34:29"
 #!   MARKDOWN_DESCRIPTION=""
@@ -1292,7 +1292,7 @@
 #!   TITLE="TestTransformer"
 #!   USAGE=""
 #!   USE_MARKDOWN="NO"
-#!   VIEW_POSITION="-3921.04 129.001"
+#!   VIEW_POSITION="-3921.04 126.001"
 #!   XFORM_DEPRECATED="No"
 #!   ZOOM_SCALE="100"
 #! >
@@ -1817,14 +1817,14 @@ FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_2_CREATED Brancher -1 36"
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationTestTransformer ModuleAttributeValidator_Input Input Collector"   INPUT FEATURE_TYPE Creator_2_CREATED   OUTPUT FEATURE_TYPE AttributeValidationTestTransformer_ModuleAttributeValidator_Input
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationTestTransformer Input Input Collector"   INPUT FEATURE_TYPE Creator_2_CREATED   OUTPUT FEATURE_TYPE AttributeValidationTestTransformer_Input
 MACRO AttributeValidationTestTransformer_WORKSPACE_NAME AttributeValidationTestTransformer
 MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)_XFORMER_NAME AttributeValidationTestTransformer
 MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)_TRANSFORMER_GROUP 
 MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
 MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)__CREATION_INSTANCE <at>Value<openparen>_creation_instance<closeparen>
-INCLUDE_CUSTOM_TRANSFORMER_VER AttributeValidationTestTransformer:1
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationTestTransformer ValidatorListPopulator_Output_1 Output Renamer/Nuker"   INPUT FEATURE_TYPE AttributeValidationTestTransformer_ValidatorListPopulator_Output_1   OUTPUT FEATURE_TYPE AttributeValidationTestTransformer_ValidatorListPopulator_Output_1
+INCLUDE_CUSTOM_TRANSFORMER_VER AttributeValidationTestTransformer:2
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationTestTransformer Output Output Renamer/Nuker"   INPUT FEATURE_TYPE AttributeValidationTestTransformer_Output   OUTPUT FEATURE_TYPE AttributeValidationTestTransformer_Output
 # -------------------------------------------------------------------------
 # Create the DomainName that this transformer will use.
 # Because @Count itself will evalute the expression to calculate the
@@ -1835,10 +1835,10 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "Counter <REJECTED> Transformer Output N
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Counter_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "string1" "SET_TO" "dummy" }      ATTR_ACTION { "" "int1" "SET_TO" "1" }      ATTR_ACTION { "" "string2" "SET_TO" "whatever" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
 # -------------------------------------------------------------------------
-DEFAULT_MACRO __StatisticsCalculator_cb052636_3c33_4ea1_982c_881afe5c3d7a1_GROUP_BY
+DEFAULT_MACRO __StatisticsCalculator_78b942fe_cd04_4541_8067_1a023bc06abf2_GROUP_BY
 DYNAMIC_FUNCTION_CONFIGURATION Python FMEOBJECTS
 DYNAMIC_FUNCTION_CONFIGURATION Python import StatisticsCalculator
-DYNAMIC_FUNCTION_CONFIGURATION Python "StatisticsCalculator.connectTransformer(    'StatisticsCalculator',{     'GROUP_BY_MACRO':'__StatisticsCalculator_cb052636_3c33_4ea1_982c_881afe5c3d7a1_GROUP_BY',     'STATS_ATTRS':'id',     'COUNT_ATTR':'_input_feature_count',     'COMPUTE_HISTOGRAM':'NO',     'HISTO_ATTR':'<Unused>',     'PREPEND_ATTR_NAME':'No',     'encoded_result_attrs':True,     None:None})"
+DYNAMIC_FUNCTION_CONFIGURATION Python "StatisticsCalculator.connectTransformer(    'StatisticsCalculator',{     'GROUP_BY_MACRO':'__StatisticsCalculator_78b942fe_cd04_4541_8067_1a023bc06abf2_GROUP_BY',     'STATS_ATTRS':'id',     'COUNT_ATTR':'_input_feature_count',     'COMPUTE_HISTOGRAM':'NO',     'HISTO_ATTR':'<Unused>',     'PREPEND_ATTR_NAME':'No',     'encoded_result_attrs':True,     None:None})"
 FACTORY_DEF * TeeFactory    FACTORY_NAME StatisticsCalculator_InputProcessor    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    OUTPUT FEATURE_TYPE __ORIGINAL__       @Python(StatisticsCalculator.recordFeature,StatisticsCalculator)
 FACTORY_DEF * TeeFactory    FACTORY_NAME StatisticsCalculator_UnneededInputNuker    INPUT FEATURE_TYPE __ORIGINAL__    OUTPUT FEATURE_TYPE StatisticsCalculator_COMPLETE
 FACTORY_DEF * SortFactory    FACTORY_NAME StatisticsCalculator_CompleteOutputter    INPUT FEATURE_TYPE __UNUSED_INPUT_TO_GUARANTEE_FACTORY_DOESNT_CONSUME_EVERYTHING__    INPUT FEATURE_TYPE StatisticsCalculator_COMPLETE    OUTPUT SORTED FEATURE_TYPE StatisticsCalculator_COMPLETE       @Python(StatisticsCalculator.summarizeStatistics,StatisticsCalculator,__ORIGINAL__)
@@ -1864,12 +1864,12 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name InputFeatureCount
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557357123 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557425884 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_mgs_calling_module" "SET_TO" "<at>Value<openparen>_FME_MF_DIR<closeparen><solidus><at>Value<openparen>_FME_MF_NAME<closeparen>" }      ATTR_ACTION { "" "_mgs_validator_name" "SET_TO" "$($(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name$encode)" }    OUTPUT OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_mgs_calling_module" "SET_TO" "<at>Value<openparen>_FME_MF_DIR<closeparen><at>Value<openparen>_FME_MF_NAME<closeparen>" }      ATTR_ACTION { "" "_mgs_validator_name" "SET_TO" "$($(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name$encode)" }    OUTPUT OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"
 # -------------------------------------------------------------------------
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 FACTORY_DEF * PythonFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fme<lf>import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>messages<space>=<space>feature.getAttribute<openparen><apos>_fme_validation_message_list<apos><closeparen><lf><space><space><space><space>index<space>=<space>0<lf><space><space><space><space>for<space>message<space>in<space>messages:<lf><space><space><space><space><space><space><space><space>if<space>feature.getAttributeNullMissingAndType<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><closeparen><openbracket>1<closebracket>:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_validator_name<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.calling_module<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_calling_module<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space>index<space>+=<space>1    OUTPUT PYOUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller_OUTPUT"
@@ -1878,7 +1878,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORK
 # -------------------------------------------------------------------------
 INCLUDE [    set macroLine "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557357123 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557425884 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "InputFeatureCountAttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE InputFeatureCountAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE InputFeatureCountAttributeValidationListPopulator_Output
 # -------------------------------------------------------------------------
@@ -1896,12 +1896,12 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name First
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557357123 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557425884 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_mgs_calling_module" "SET_TO" "<at>Value<openparen>_FME_MF_DIR<closeparen><solidus><at>Value<openparen>_FME_MF_NAME<closeparen>" }      ATTR_ACTION { "" "_mgs_validator_name" "SET_TO" "$($(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name$encode)" }    OUTPUT OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_mgs_calling_module" "SET_TO" "<at>Value<openparen>_FME_MF_DIR<closeparen><at>Value<openparen>_FME_MF_NAME<closeparen>" }      ATTR_ACTION { "" "_mgs_validator_name" "SET_TO" "$($(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name$encode)" }    OUTPUT OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"
 # -------------------------------------------------------------------------
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 FACTORY_DEF * PythonFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fme<lf>import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>messages<space>=<space>feature.getAttribute<openparen><apos>_fme_validation_message_list<apos><closeparen><lf><space><space><space><space>index<space>=<space>0<lf><space><space><space><space>for<space>message<space>in<space>messages:<lf><space><space><space><space><space><space><space><space>if<space>feature.getAttributeNullMissingAndType<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><closeparen><openbracket>1<closebracket>:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_validator_name<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.calling_module<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_calling_module<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space>index<space>+=<space>1    OUTPUT PYOUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller_OUTPUT"
@@ -1910,7 +1910,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORK
 # -------------------------------------------------------------------------
 INCLUDE [    set macroLine "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557357123 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557425884 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FirstAttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE FirstAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE FirstAttributeValidationListPopulator_Output
 # -------------------------------------------------------------------------
@@ -1928,12 +1928,12 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name Second
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557357123 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557425884 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_mgs_calling_module" "SET_TO" "<at>Value<openparen>_FME_MF_DIR<closeparen><solidus><at>Value<openparen>_FME_MF_NAME<closeparen>" }      ATTR_ACTION { "" "_mgs_validator_name" "SET_TO" "$($(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name$encode)" }    OUTPUT OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_mgs_calling_module" "SET_TO" "<at>Value<openparen>_FME_MF_DIR<closeparen><at>Value<openparen>_FME_MF_NAME<closeparen>" }      ATTR_ACTION { "" "_mgs_validator_name" "SET_TO" "$($(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name$encode)" }    OUTPUT OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"
 # -------------------------------------------------------------------------
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 FACTORY_DEF * PythonFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fme<lf>import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>messages<space>=<space>feature.getAttribute<openparen><apos>_fme_validation_message_list<apos><closeparen><lf><space><space><space><space>index<space>=<space>0<lf><space><space><space><space>for<space>message<space>in<space>messages:<lf><space><space><space><space><space><space><space><space>if<space>feature.getAttributeNullMissingAndType<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><closeparen><openbracket>1<closebracket>:<lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_validator_name<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.calling_module<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_calling_module<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space>index<space>+=<space>1    OUTPUT PYOUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller_OUTPUT"
@@ -1942,11 +1942,11 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORK
 # -------------------------------------------------------------------------
 INCLUDE [    set macroLine "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557357123 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557425884 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "SecondAttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE SecondAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE SecondAttributeValidationListPopulator_Output
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationHTMLReportGenerator input Input Collector"   INPUT FEATURE_TYPE SecondAttributeValidationListPopulator_Output   INPUT FEATURE_TYPE InputFeatureCountAttributeValidationListPopulator_Output   INPUT FEATURE_TYPE AttributeValidationTestTransformer_ValidatorListPopulator_Output_1   OUTPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_input
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationHTMLReportGenerator input Input Collector"   INPUT FEATURE_TYPE SecondAttributeValidationListPopulator_Output   INPUT FEATURE_TYPE InputFeatureCountAttributeValidationListPopulator_Output   INPUT FEATURE_TYPE AttributeValidationTestTransformer_Output   OUTPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_input
 MACRO AttributeValidationHTMLReportGenerator_WORKSPACE_NAME AttributeValidationHTMLReportGenerator
 MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)_XFORMER_NAME AttributeValidationHTMLReportGenerator
 MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)_TRANSFORMER_GROUP 
