@@ -4,8 +4,7 @@
 #        /opt/fme-desktop-2018/fme /home/kweller/Projects/mg/fme-components/fme/TestSQLiteSorter.fmw
 #              --Sort_Keys "kml_name<tab><tab>varchar<tab>asc<lf>kml_id<tab><tab><tab>varchar<tab>desc"
 #              --SourceDataset_OGCKML "https://github.com/modgeosys/fme-components/blob/master/fme/Resources/Data/Test/USGS_DS_817_truncated.kmz?raw=true"
-#              --DestDataset_Unchanged_FFS "$(FME_MF_DIR_USERTYPED)/Resources/Data/Output/TestSQLiteSorter_Unchanged_output.ffs"
-#              --DestDataset_Diff_FFS "$(FME_MF_DIR_USERTYPED)/Resources/Data/Output/TestSQLiteSorter_Diff_output.ffs"
+#              --DestDataset_HTML "/home/kweller/Projects/mg/fme-components/fme/Resources/Data/Output/TestSQLiteSorter.html"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -14,14 +13,14 @@
 #!   DESCRIPTION="&lt;p&gt;Test &lt;strong&gt;SQLiteSorter&lt;/strong&gt; output against &lt;strong&gt;Sorter&lt;/strong&gt; output.&lt;/p&gt;&#10;"
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="7599.84 1829.5"
-#!   DOC_TOP_LEFT="150 -1421"
+#!   DOC_EXTENTS="8250 1979.5"
+#!   DOC_TOP_LEFT="150 -1571"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="18592"
-#!   FME_DOCUMENT_GUID="4a25ca55-ee38-4475-b43f-8c9e8f78c10d"
-#!   FME_DOCUMENT_PRIORGUID="71d48b88-7178-11e7-ab2c-b8e8563886b4,399b073a-7716-11e7-a679-b8e8563886b4,ed3aec06-7716-11e7-a679-b8e8563886b4,25fa0644-7717-11e7-a679-b8e8563886b4,c6cf51f4-cfc4-11e7-823c-720000708a50,581e4128-cfc6-11e7-823c-720000708a50,a4b06ef0-cff6-11e7-b781-720000708a50,aca79710-cffa-11e7-a071-720000708a50,e85a0428-d081-11e7-abc2-720000708a50,b625baa2-d085-11e7-abc2-720000708a50,46444386-d08d-11e7-b1b7-720000708a50,28e0509a-d08e-11e7-b1b7-720000708a50,44f8e684-d08e-11e7-b1b7-720000708a50,86f63f36-d094-11e7-8da2-720000708a50,2caa6d92-d132-11e7-a84a-720000708a50,54597cf0-d139-11e7-a84a-720000708a50,c1f97094-d14d-11e7-a84a-720000708a50,600bbee2-d151-11e7-8ba4-720000708a50,5570ed80-d157-11e7-966b-720000708a50,ecc40706-d15e-11e7-bfc4-720000708a50,65c81f28-d170-11e7-85b3-720000708a50,ce34fd3e-d1a6-11e7-b654-720000708a50,ee9afd44-d1a6-11e7-b654-720000708a50,5eb7210c-d625-11e7-90cd-720000708a50,f45e6fa2-d62b-11e7-b78b-720000708a50,2fde9d58-d62d-11e7-bf07-720000708a50,a68efbec-d645-11e7-b1fd-720000708a50,498f04ae-166a-11e8-b170-720000708a50,46d6fbaa-2307-11e8-806c-b8e8563886b4,9ab5cd78-2307-11e8-806c-b8e8563886b4,2cf11db4-2312-11e8-806c-b8e8563886b4,dc4730da-2332-11e8-adb8-b8e8563886b4,f56cd5d2-2365-11e8-9600-b8e8563886b4,6798dd9c-23b4-11e8-ac8d-b8e8563886b4,5c726c46-2ae7-11e8-818d-b8e8563886b4,bf44325a-2ae7-11e8-b9e8-b8e8563886b4,3de30cef-6b9e-4870-b098-e1f7b566eb75,6e8292a2-aa27-42ec-b512-9d3fdf7ca801,79f6f681-bca8-4131-b866-c60801dd2a07,0748e260-80c6-4c9e-abf2-2f5ae018d7b1,3169632b-88fb-4c25-b858-0e9cc342f502,9af23027-126c-498e-b22d-667ef29247ad"
+#!   FME_DOCUMENT_GUID="5740d647-9f2e-4032-bc85-ede1a419e643"
+#!   FME_DOCUMENT_PRIORGUID="71d48b88-7178-11e7-ab2c-b8e8563886b4,399b073a-7716-11e7-a679-b8e8563886b4,ed3aec06-7716-11e7-a679-b8e8563886b4,25fa0644-7717-11e7-a679-b8e8563886b4,c6cf51f4-cfc4-11e7-823c-720000708a50,581e4128-cfc6-11e7-823c-720000708a50,a4b06ef0-cff6-11e7-b781-720000708a50,aca79710-cffa-11e7-a071-720000708a50,e85a0428-d081-11e7-abc2-720000708a50,b625baa2-d085-11e7-abc2-720000708a50,46444386-d08d-11e7-b1b7-720000708a50,28e0509a-d08e-11e7-b1b7-720000708a50,44f8e684-d08e-11e7-b1b7-720000708a50,86f63f36-d094-11e7-8da2-720000708a50,2caa6d92-d132-11e7-a84a-720000708a50,54597cf0-d139-11e7-a84a-720000708a50,c1f97094-d14d-11e7-a84a-720000708a50,600bbee2-d151-11e7-8ba4-720000708a50,5570ed80-d157-11e7-966b-720000708a50,ecc40706-d15e-11e7-bfc4-720000708a50,65c81f28-d170-11e7-85b3-720000708a50,ce34fd3e-d1a6-11e7-b654-720000708a50,ee9afd44-d1a6-11e7-b654-720000708a50,5eb7210c-d625-11e7-90cd-720000708a50,f45e6fa2-d62b-11e7-b78b-720000708a50,2fde9d58-d62d-11e7-bf07-720000708a50,a68efbec-d645-11e7-b1fd-720000708a50,498f04ae-166a-11e8-b170-720000708a50,46d6fbaa-2307-11e8-806c-b8e8563886b4,9ab5cd78-2307-11e8-806c-b8e8563886b4,2cf11db4-2312-11e8-806c-b8e8563886b4,dc4730da-2332-11e8-adb8-b8e8563886b4,f56cd5d2-2365-11e8-9600-b8e8563886b4,6798dd9c-23b4-11e8-ac8d-b8e8563886b4,5c726c46-2ae7-11e8-818d-b8e8563886b4,bf44325a-2ae7-11e8-b9e8-b8e8563886b4,3de30cef-6b9e-4870-b098-e1f7b566eb75,6e8292a2-aa27-42ec-b512-9d3fdf7ca801,79f6f681-bca8-4131-b866-c60801dd2a07,0748e260-80c6-4c9e-abf2-2f5ae018d7b1,3169632b-88fb-4c25-b858-0e9cc342f502,9af23027-126c-498e-b22d-667ef29247ad,4a25ca55-ee38-4475-b43f-8c9e8f78c10d,799a8f2e-8349-4206-b7da-d5af3fed66a6,7d501c1b-944f-4904-bef1-869ffc63b9fb,721ceec2-30f7-4f70-a73f-60b5c5ebebdb,e687a394-0141-4536-9bb5-1349f9c43b23,9eb25566-7cd5-49e0-9533-1df435721fd2,ed862dbd-08a5-4773-84a4-339020fd28dc"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -30,7 +29,7 @@
 #!   HISTORY="2018-03-08,Kevin&lt;space&gt;Weller,Updates&lt;space&gt;to&lt;space&gt;reflect&lt;space&gt;move&lt;space&gt;from&lt;space&gt;GitHub&lt;space&gt;to&lt;space&gt;Assembla&lt;space&gt;and&lt;space&gt;Atlassian."
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - linux-x64)"
-#!   LAST_SAVE_DATE="2019-05-08T15:53:26"
+#!   LAST_SAVE_DATE="2019-05-08T18:19:38"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION="Test **SQLiteSorter** output against **Sorter** output."
@@ -38,7 +37,7 @@
 #!   MAX_LOG_FEATURES="200"
 #!   MULTI_WRITER_DATASET_ORDER="BY_ID"
 #!   PASSWORD=""
-#!   PYTHON_COMPATIBILITY="2or3"
+#!   PYTHON_COMPATIBILITY="36"
 #!   REDIRECT_TERMINATORS="NONE"
 #!   SHOW_ANNOTATIONS="true"
 #!   SHOW_INFO_NODES="true"
@@ -48,7 +47,7 @@
 #!   TITLE="TestSQLiteSorter"
 #!   USAGE=""
 #!   USE_MARKDOWN="YES"
-#!   VIEW_POSITION="99.001 870.009"
+#!   VIEW_POSITION="429.004 789.008"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -67,7 +66,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="kml_size_y kml_real64 kml_sort_value kml_buffer kml_balloon_color kml_char(10) kml_target_style_normal kml_buffer kml_data{}.name kml_buffer kml_raw_text kml_buffer kml_camera_gx_timespan_end kml_datetime kml_roll kml_real64 kml_imagepyramid_maxheight kml_int16 kml_name kml_buffer kml_style_url kml_buffer kml_gx_lookat_altitude_mode kml_char(50) kml_lod_min_lod_pixels kml_real64 kml_overlayxy_x kml_real64 kml_latlonbox_south kml_real64 kml_camera_altitude_mode kml_char(50) kml_atom_author_email kml_buffer kml_hotspot_y kml_int16 kml_common_style kml_buffer fme_opacity kml_real64 kml_icon_temp_file_location kml_buffer kml_link_href kml_buffer fme_primary_axis kml_real64 kml_data{}.value kml_buffer kml_link_view_bound_scale kml_real64 kml_link_refresh_mode kml_char(50) kml_gx_play_mode kml_char(20) kml_target_style kml_buffer kml_label_color kml_char(50) kml_size_yunits kml_char(20) kml_gx_camera_altitude_mode kml_char(50) kml_tour_stop_view_range kml_char(25) kml_timespan_end kml_datetime kml_polystyle_outline kml_int16 kml_hotspot_x kml_int16 kml_gx_timespan_begin kml_datetime kml_camera_altitude kml_real64 kml_link_refresh_interval kml_real64 kml_icon_view_refresh_time kml_int16 kml_scale_z kml_real64 kml_camera_tilt kml_real64 kml_screenxy_y kml_real64 kml_target_style_highlight kml_buffer kml_icon_href kml_buffer kml_linestyle_label_visibility kml_boolean kml_gx_latlonaltbox_altitude_mode kml_char(50) kml_message kml_buffer kml_camera_heading kml_real64 kml_document_path kml_buffer fme_feature_type kml_char(50) kml_update_mode kml_char(10) kml_balloonstyle_text kml_buffer kml_latlonaltbox_max_altitude kml_real64 kml_linestyle_physical_width kml_real64 fme_dataset kml_char(50) fme_secondary_axis kml_real64 kml_rotationxy_y kml_real64 kml_balloon_text_color kml_char(10) kml_fly_to_view kml_int16 kml_address kml_buffer kml_linestyle_width kml_real64 kml_balloonstyle_text_color kml_char(10) kml_screenxy_yunits kml_char(20) kml_gx_altitude_mode kml_char(50) kml_labelstyle_scale kml_real64 kml_lod_min_fade_extent kml_real64 kml_polystyle_color_mode kml_char(20) kml_latlonaltbox_min_altitude kml_real64 kml_color kml_char(8) kml_schema_data{}.name kml_buffer kml_document kml_buffer kml_viewvolume_leftfov kml_int16 kml_visibility kml_int16 kml_tour_stop_view_perspective kml_char(15) fme_rotation kml_real64 kml_balloonstyle_raw_text kml_buffer kml_href kml_buffer kml_icon_opacity kml_real64 kml_schema_url kml_buffer kml_icon_refresh_mode kml_char(50) kml_id kml_buffer kml_atom_link_href kml_buffer kml_target_href kml_buffer kml_lookat_gx_timespan_begin kml_datetime kml_balloon_opacity kml_real64 kml_phone_number kml_buffer kml_imagepyramid_gridorigin kml_buffer kml_latlonbox_north kml_real64 kml_latlonbox_east kml_real64 kml_liststyle_list_item_type kml_char(50) fme_pen_opacity kml_real64 kml_link_view_refresh_time kml_int16 fme_text_size kml_real64 kml_link_snippet kml_buffer kml_latlonbox_rotation kml_real64 kml_lookat_tilt kml_real64 kml_atom_author_name kml_buffer kml_icon_view_format kml_buffer kml_scale_x kml_real64 kml_balloon_text_opacity kml_real64 kml_overlayxy_yunits kml_char(20) kml_tour_stop_display_balloon kml_char(3) kml_style_url_highlight kml_buffer kml_liststyle_bgcolor kml_char(50) kml_lookat_latitude kml_real64 kml_gx_timestamp_when kml_datetime kml_extended_data_xml kml_buffer kml_icon_refresh_interval kml_int16 kml_latlonaltbox_south kml_real64 kml_latlonaltbox_north kml_real64 kml_icon_http_query kml_buffer kml_camera_latitude kml_real64 kml_balloonstyle_bgcolor kml_char(10) kml_tour_stop_delay_duration kml_int16 kml_description kml_buffer kml_lookat_altitude kml_real64 kml_max_session_length kml_real64 kml_latlonaltbox_east kml_char(255) kml_lookat_range kml_real64 kml_imagepyramid_maxwidth kml_int16 kml_schema_data{}.value kml_buffer kml_liststyle_item_icon kml_buffer kml_tessellate kml_int16 kml_iconstyle_color_mode kml_char(20) kml_tour_stop_flyto_mode kml_char(20) kml_latlonaltbox_altitude_mode kml_char(50) kml_extended_data_xmlns_prefix kml_buffer kml_tour_stop_view_tilt kml_char(25) kml_location_latitude kml_real64 kml_extended_data_xmlns_url kml_buffer kml_screenxy_x kml_real64 kml_icon kml_buffer kml_lookat_gx_timespan_end kml_datetime kml_cookie kml_buffer kml_lookat_heading kml_real64 multi_reader_id kml_int32 kml_orientation_heading kml_real64 kml_tour_stop_tour_name kml_buffer kml_polystyle_color kml_char(10) kml_rotationxy_yunits kml_char(20) kml_gx_balloon_visibility kml_int16 kml_lod_max_fade_extent kml_real64 kml_refresh_visibility kml_int16 kml_imagepyramid_tilesize kml_real64 kml_iconstyle_color kml_char(10) kml_icon_view_refresh_mode kml_char(50) kml_camera_gx_timestamp_when kml_datetime kml_attribute_table_title kml_buffer kml_overlayxy_y kml_real64 fme_basename kml_char(50) fme_fill_color kml_char(50) kml_style_id kml_buffer kml_scale_y kml_real64 kml_atom_link_rel kml_buffer kml_location_altitude kml_real64 kml_link_snippet_max_lines kml_int16 kml_altitude_mode kml_char(50) kml_min_refresh_period kml_real64 kml_gx_flyto_mode kml_char(10) kml_iconstyle_scale kml_real64 kml_icon_view_bound_scale kml_real64 kml_link_http_query kml_buffer kml_viewvolume_topfov kml_int16 fme_color kml_char(50) fme_type kml_char(50) kml_icon_color kml_char(50) kml_viewvolume_rightfov kml_int16 kml_rotation kml_real64 multi_reader_keyword kml_char(50) kml_data{}.display_name_raw_text kml_buffer fme_sweep_angle kml_real64 kml_description_text kml_buffer kml_lookat_longitude kml_real64 kml_snippet_raw_text kml_buffer kml_timespan_begin kml_datetime kml_polystyle_fill kml_real64 kml_style_url_normal kml_buffer kml_link_name kml_buffer kml_hotspot_yunits kml_char(20) kml_hotspot_xunits kml_char(20) kml_liststyle_item_icon{}.href kml_buffer multi_reader_full_id kml_int32 kml_parent kml_buffer kml_size_xunits kml_char(20) kml_tour_stop_view_heading kml_char(25) kml_gx_timespan_end kml_datetime fme_fill_opacity kml_real64 kml_liststyle_item_icon{}.state kml_char(50) fme_geometry fme_char(50) fme_text_string kml_char(50) kml_rotationxy_x kml_real64 kml_lookat_gx_timestamp_when kml_datetime kml_timestamp_when kml_datetime kml_shape kml_buffer kml_rotationxy_xunits kml_char(20) kml_draw_order kml_int16 multi_reader_type kml_char(50) kml_gx_duration kml_int16 kml_camera_roll kml_real64 kml_labelstyle_color_mode kml_char(20) kml_orientation_roll kml_real64 kml_description_raw_text kml_buffer kml_link_view_refresh_mode kml_char(50) kml_link_view_format kml_buffer kml_altitude kml_real64 kml_iconstyle_heading kml_real64 kml_tour_stop_delay_type kml_char(10) kml_lookat_altitude_mode kml_char(20) kml_link_description kml_buffer kml_size_x kml_real64 kml_label_opacity kml_real64 kml_camera_longitude kml_real64 kml_snippet kml_buffer kml_camera_gx_timespan_begin kml_datetime kml_viewvolume_bottomfov kml_int16 kml_tour kml_buffer kml_tour_stop_tour_duration kml_int16 kml_orientation_tilt kml_real64 kml_linestyle_color kml_char(10) kml_animated_update kml_buffer kml_tour_stop_flyto_duration kml_int16 kml_latlonbox_west kml_real64 kml_location_longitude kml_real64 kml_overlayxy_xunits kml_char(20) kml_latlonaltbox_west kml_real64 kml_extrude kml_int16 kml_open kml_int16 kml_create_info_point kml_char(3) kml_lod_max_lod_pixels kml_real64 kml_document_href kml_buffer kml_data{}.display_name kml_buffer kml_labelstyle_color kml_char(10) fme_start_angle kml_real64 kml_viewvolume_near kml_int16 kml_expires kml_datetime kml_screenxy_xunits kml_char(20) kml_linestyle_color_mode kml_char(20)"
+#!   EXPOSABLE_ATTRS="kml_icon_view_refresh_time kml_int16 kml_data{}.display_name kml_buffer kml_target_style_highlight kml_buffer fme_sweep_angle kml_real64 fme_text_size kml_real64 kml_link_snippet_max_lines kml_int16 fme_type kml_char(50) fme_primary_axis kml_real64 fme_feature_type kml_char(50) kml_camera_roll kml_real64 kml_create_info_point kml_char(3) kml_color kml_char(8) kml_screenxy_yunits kml_char(20) kml_screenxy_xunits kml_char(20) fme_fill_color kml_char(50) kml_iconstyle_color_mode kml_char(20) kml_location_latitude kml_real64 kml_atom_author_name kml_buffer fme_opacity kml_real64 fme_pen_opacity kml_real64 fme_fill_opacity kml_real64 kml_extended_data_xmlns_url kml_buffer kml_tour_stop_flyto_mode kml_char(20) kml_latlonaltbox_north kml_real64 kml_link_refresh_mode kml_char(50) kml_icon_view_bound_scale kml_real64 kml_linestyle_color_mode kml_char(20) fme_secondary_axis kml_real64 kml_document_path kml_buffer kml_open kml_int16 kml_gx_duration kml_int16 kml_icon_opacity kml_real64 kml_viewvolume_topfov kml_int16 multi_reader_keyword kml_char(50) kml_latlonaltbox_min_altitude kml_real64 kml_location_altitude kml_real64 kml_tour_stop_view_heading kml_char(25) kml_balloon_text_color kml_char(10) kml_tour_stop_flyto_duration kml_int16 kml_id kml_buffer kml_schema_data{}.value kml_buffer kml_gx_play_mode kml_char(20) kml_animated_update kml_buffer kml_lookat_altitude_mode kml_char(20) kml_link_view_format kml_buffer kml_lod_max_lod_pixels kml_real64 kml_tessellate kml_int16 kml_lookat_tilt kml_real64 kml_roll kml_real64 kml_link_href kml_buffer kml_latlonaltbox_max_altitude kml_real64 kml_shape kml_buffer kml_orientation_roll kml_real64 kml_style_id kml_buffer kml_balloonstyle_bgcolor kml_char(10) kml_linestyle_width kml_real64 kml_latlonbox_south kml_real64 kml_target_style_normal kml_buffer kml_style_url_normal kml_buffer kml_latlonaltbox_south kml_real64 kml_refresh_visibility kml_int16 kml_common_style kml_buffer kml_camera_latitude kml_real64 kml_scale_y kml_real64 kml_tour_stop_view_range kml_char(25) multi_reader_id kml_int32 kml_polystyle_outline kml_int16 kml_polystyle_color_mode kml_char(20) kml_data{}.display_name_raw_text kml_buffer kml_data{}.name kml_buffer kml_link_view_refresh_time kml_int16 kml_imagepyramid_gridorigin kml_buffer kml_gx_camera_altitude_mode kml_char(50) kml_tour_stop_delay_type kml_char(10) kml_document_href kml_buffer kml_hotspot_xunits kml_char(20) kml_expires kml_datetime kml_labelstyle_color_mode kml_char(20) kml_labelstyle_scale kml_real64 kml_label_opacity kml_real64 kml_hotspot_yunits kml_char(20) kml_balloonstyle_text kml_buffer kml_name kml_buffer kml_hotspot_x kml_int16 kml_latlonaltbox_east kml_char(255) kml_gx_timespan_end kml_datetime kml_min_refresh_period kml_real64 kml_altitude kml_real64 kml_gx_latlonaltbox_altitude_mode kml_char(50) kml_lod_min_lod_pixels kml_real64 kml_iconstyle_color kml_char(10) kml_size_x kml_real64 kml_scale_x kml_real64 kml_description_raw_text kml_buffer kml_atom_author_email kml_buffer kml_screenxy_x kml_real64 kml_style_url kml_buffer kml_orientation_heading kml_real64 kml_icon_http_query kml_buffer kml_description_text kml_buffer kml_update_mode kml_char(10) kml_balloon_color kml_char(10) kml_raw_text kml_buffer kml_description kml_buffer kml_gx_altitude_mode kml_char(50) kml_latlonbox_west kml_real64 kml_hotspot_y kml_int16 kml_liststyle_list_item_type kml_char(50) kml_target_style kml_buffer kml_lod_min_fade_extent kml_real64 kml_data{}.value kml_buffer kml_gx_timespan_begin kml_datetime kml_timespan_begin kml_datetime multi_reader_type kml_char(50) kml_rotationxy_yunits kml_char(20) kml_visibility kml_int16 kml_tour_stop_view_tilt kml_char(25) fme_text_string kml_char(50) kml_lookat_gx_timestamp_when kml_datetime kml_rotationxy_x kml_real64 kml_schema_data{}.name kml_buffer kml_viewvolume_rightfov kml_int16 kml_polystyle_fill kml_real64 kml_target_href kml_buffer kml_liststyle_bgcolor kml_char(50) kml_polystyle_color kml_char(10) kml_balloon_text_opacity kml_real64 kml_link_http_query kml_buffer kml_style_url_highlight kml_buffer kml_icon_color kml_char(50) kml_altitude_mode kml_char(50) kml_tour kml_buffer kml_imagepyramid_tilesize kml_real64 kml_document kml_buffer kml_liststyle_item_icon{}.state kml_char(50) kml_icon_refresh_mode kml_char(50) kml_gx_balloon_visibility kml_int16 kml_extended_data_xmlns_prefix kml_buffer kml_balloonstyle_raw_text kml_buffer kml_screenxy_y kml_real64 kml_fly_to_view kml_int16 kml_tour_stop_view_perspective kml_char(15) kml_camera_tilt kml_real64 kml_lookat_gx_timespan_begin kml_datetime kml_imagepyramid_maxheight kml_int16 kml_extrude kml_int16 kml_imagepyramid_maxwidth kml_int16 fme_dataset kml_char(50) kml_labelstyle_color kml_char(10) kml_link_description kml_buffer kml_extended_data_xml kml_buffer kml_latlonaltbox_altitude_mode kml_char(50) kml_rotationxy_y kml_real64 kml_attribute_table_title kml_buffer kml_overlayxy_y kml_real64 multi_reader_full_id kml_int32 kml_link_view_bound_scale kml_real64 fme_start_angle kml_real64 kml_address kml_buffer kml_rotation kml_real64 kml_phone_number kml_buffer kml_liststyle_item_icon kml_buffer kml_gx_flyto_mode kml_char(10) kml_overlayxy_x kml_real64 kml_tour_stop_display_balloon kml_char(3) kml_draw_order kml_int16 kml_camera_heading kml_real64 kml_message kml_buffer kml_overlayxy_yunits kml_char(20) kml_label_color kml_char(50) kml_snippet_raw_text kml_buffer kml_lookat_latitude kml_real64 kml_latlonbox_east kml_real64 kml_linestyle_label_visibility kml_boolean kml_overlayxy_xunits kml_char(20) kml_atom_link_href kml_buffer kml_liststyle_item_icon{}.href kml_buffer fme_rotation kml_real64 kml_lookat_altitude kml_real64 kml_linestyle_color kml_char(10) kml_snippet kml_buffer kml_icon kml_buffer kml_scale_z kml_real64 kml_schema_url kml_buffer kml_icon_view_refresh_mode kml_char(50) kml_timespan_end kml_datetime kml_link_refresh_interval kml_real64 kml_icon_temp_file_location kml_buffer kml_viewvolume_leftfov kml_int16 fme_geometry fme_char(50) kml_icon_view_format kml_buffer kml_camera_gx_timespan_begin kml_datetime kml_iconstyle_heading kml_real64 kml_lookat_heading kml_real64 kml_orientation_tilt kml_real64 kml_latlonaltbox_west kml_real64 kml_balloon_opacity kml_real64 kml_tour_stop_delay_duration kml_int16 kml_icon_href kml_buffer kml_sort_value kml_buffer kml_size_yunits kml_char(20) kml_lod_max_fade_extent kml_real64 kml_gx_lookat_altitude_mode kml_char(50) kml_location_longitude kml_real64 kml_size_y kml_real64 kml_gx_timestamp_when kml_datetime kml_lookat_range kml_real64 kml_rotationxy_xunits kml_char(20) kml_balloonstyle_text_color kml_char(10) fme_basename kml_char(50) kml_latlonbox_north kml_real64 kml_atom_link_rel kml_buffer kml_camera_altitude_mode kml_char(50) kml_linestyle_physical_width kml_real64 fme_color kml_char(50) kml_camera_gx_timespan_end kml_datetime kml_icon_refresh_interval kml_int16 kml_viewvolume_near kml_int16 kml_cookie kml_buffer kml_lookat_gx_timespan_end kml_datetime kml_max_session_length kml_real64 kml_link_snippet kml_buffer kml_viewvolume_bottomfov kml_int16 kml_camera_gx_timestamp_when kml_datetime kml_camera_longitude kml_real64 kml_latlonbox_rotation kml_real64 kml_link_name kml_buffer kml_tour_stop_tour_name kml_buffer kml_href kml_buffer kml_iconstyle_scale kml_real64 kml_size_xunits kml_char(20) kml_lookat_longitude kml_real64 kml_parent kml_buffer kml_camera_altitude kml_real64 kml_timestamp_when kml_datetime kml_tour_stop_tour_duration kml_int16 kml_link_view_refresh_mode kml_char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -119,79 +118,56 @@
 #! <DATASET
 #!   IS_SOURCE="false"
 #!   ROLE="WRITER"
-#!   FORMAT="FFS"
-#!   DATASET="$(DestDataset_Unchanged_FFS)"
-#!   KEYWORD="FFS_1"
+#!   FORMAT="HTML"
+#!   DATASET="$(DestDataset_HTML)"
+#!   KEYWORD="HTML_1"
 #!   MULTI_GEOM_ALLOWED="true"
-#!   ATTR_MAX_LENGTH="4000"
+#!   ATTR_MAX_LENGTH="60"
 #!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
+#!   ALLOWED_FEAT_TYPES="HTML"
+#!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_fill_color char(50) fme_text_string char(50) fme_feature_type char(50) fme_color char(50) fme_secondary_axis real64 fme_text_size real64 fme_geometry fme_char(50) fme_start_angle real64 fme_dataset char(50) fme_primary_axis real64 fme_rotation real64 fme_type char(50) fme_sweep_angle real64 fme_basename char(50)"
+#!   EXPOSABLE_ATTRS="fme_color char(50) fme_secondary_axis number(31,15) fme_rotation number(31,15) fme_type char(50) fme_feature_type char(50) fme_text_string char(50) fme_primary_axis number(31,15) html_eol char(10) fme_basename char(50) fme_start_angle number(31,15) fme_fill_color char(50) fme_dataset char(50) fme_geometry char(50) fme_sweep_angle number(31,15) fme_text_size number(31,15)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="false"
 #!   ENABLED="true"
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="FILE"
-#!   GENERATE_FME_BUILD_NUM="17291"
-#!   COORDSYS=""
-#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
-#!   FANOUT_GROUP="NO"
-#! >
-#! <METAFILE_PARAMETER
-#!   NAME="DATASET_NAME"
-#!   VALUE="ffs file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the FFS file(s)"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the FFS file"
-#! />
-#! </DATASET>
-#! <DATASET
-#!   IS_SOURCE="false"
-#!   ROLE="WRITER"
-#!   FORMAT="FFS"
-#!   DATASET="$(DestDataset_Diff_FFS)"
-#!   KEYWORD="FFS_2"
-#!   MULTI_GEOM_ALLOWED="true"
-#!   ATTR_MAX_LENGTH="4000"
-#!   ATTR_CASE="ANY"
-#!   ALLOWED_FEAT_TYPES=""
-#!   WRITE_DEFS="true"
-#!   DEFLINE_TEMPLATE=""
-#!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_fill_color char(50) fme_text_string char(50) fme_feature_type char(50) fme_color char(50) fme_secondary_axis real64 fme_text_size real64 fme_geometry fme_char(50) fme_start_angle real64 fme_dataset char(50) fme_primary_axis real64 fme_rotation real64 fme_type char(50) fme_sweep_angle real64 fme_basename char(50)"
-#!   DEFLINE_PARMS=""
-#!   ATTR_INDEX_TYPES=""
-#!   ATTR_NAME_INVALID_CHARS=""
-#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
-#!   ENABLED="true"
-#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
-#!   DATASET_TYPE="FILE"
-#!   GENERATE_FME_BUILD_NUM="17652"
+#!   GENERATE_FME_BUILD_NUM="18592"
 #!   COORDSYS=""
 #!   FANOUT_EXPRESSION=""
 #!   FANOUT_GROUP="NO"
 #! >
 #! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
-#!   VALUE="ffs file"
+#!   VALUE="HTML file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="HTML"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="text/html"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the FFS file(s)"
+#!   VALUE="Select the HTML file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the FFS file"
+#!   VALUE="Specify a name for the HTML file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -343,140 +319,140 @@
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="char(width)"
-#!   FME_TYPE="fme_char(width)"
-#!   FORMAT="FFS"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="varchar(width)"
-#!   FME_TYPE="fme_varchar(width)"
-#!   FORMAT="FFS"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="buffer"
 #!   FME_TYPE="fme_buffer"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="xml"
-#!   FME_TYPE="fme_xml"
-#!   FORMAT="FFS"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="json"
-#!   FME_TYPE="fme_json"
-#!   FORMAT="FFS"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="binary(width)"
-#!   FME_TYPE="fme_binary(width)"
-#!   FORMAT="FFS"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="varbinary(width)"
-#!   FME_TYPE="fme_varbinary(width)"
-#!   FORMAT="FFS"
-#! />
-#! <DATA_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="binarybuffer"
+#!   FORMAT_TYPE="buffer"
 #!   FME_TYPE="fme_binarybuffer"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="datetime"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
 #!   FME_TYPE="fme_datetime"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="time"
+#!   FORMAT_TYPE="char(12)"
 #!   FME_TYPE="fme_time"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="date"
+#!   FORMAT_TYPE="char(8)"
 #!   FME_TYPE="fme_date"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="real64"
+#!   FORMAT_TYPE="number(31,15)"
 #!   FME_TYPE="fme_real64"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="real32"
+#!   FORMAT_TYPE="number(15,7)"
 #!   FME_TYPE="fme_real32"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="int32"
+#!   FORMAT_TYPE="number(11,0)"
 #!   FME_TYPE="fme_int32"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="uint32"
+#!   FORMAT_TYPE="number(11,0)"
 #!   FME_TYPE="fme_uint32"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="int64"
+#!   FORMAT_TYPE="number(20,0)"
 #!   FME_TYPE="fme_int64"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="uint64"
+#!   FORMAT_TYPE="number(20,0)"
 #!   FME_TYPE="fme_uint64"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="logical"
 #!   FME_TYPE="fme_boolean"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="int16"
+#!   FORMAT_TYPE="number(6,0)"
 #!   FME_TYPE="fme_int16"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="uint16"
+#!   FORMAT_TYPE="number(6,0)"
 #!   FME_TYPE="fme_uint16"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="int8"
+#!   FORMAT_TYPE="number(4,0)"
 #!   FME_TYPE="fme_int8"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="uint8"
+#!   FORMAT_TYPE="number(4,0)"
 #!   FME_TYPE="fme_uint8"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="false"
 #!   FORMAT_TYPE="number(width,decimal)"
 #!   FME_TYPE="fme_decimal(width,decimal)"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! </DATA_TYPES>
 #! <GEOM_TYPES>
@@ -572,149 +548,96 @@
 #! />
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_point"
-#!   FME_TYPE="fme_point"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_line"
-#!   FME_TYPE="fme_line"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_area"
-#!   FME_TYPE="fme_area"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_text"
-#!   FME_TYPE="fme_text"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_ellipse"
-#!   FME_TYPE="fme_ellipse"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_arc"
-#!   FME_TYPE="fme_arc"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_rectangle"
-#!   FME_TYPE="fme_rectangle"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_rounded_rectangle"
-#!   FME_TYPE="fme_rounded_rectangle"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_raster"
-#!   FME_TYPE="fme_raster"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_collection"
-#!   FME_TYPE="fme_collection"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_surface"
-#!   FME_TYPE="fme_surface"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_solid"
-#!   FME_TYPE="fme_solid"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_point_cloud"
-#!   FME_TYPE="fme_point_cloud"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_feature_table"
-#!   FME_TYPE="fme_feature_table"
-#!   FORMAT="FFS"
-#! />
-#! <GEOM_TYPE
-#!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_geom"
+#!   FORMAT_TYPE="html_none"
 #!   FME_TYPE="fme_no_geom"
-#!   FORMAT="FFS"
+#!   FORMAT="HTML"
 #! />
 #! <GEOM_TYPE
 #!   IS_SOURCE="false"
-#!   FORMAT_TYPE="fme_no_geom"
-#!   FME_TYPE="TARGET_GEOMTYPE"
-#!   FORMAT="FFS"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="HTML"
 #! />
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="false"
-#!   NODE_NAME="TestSQLiteSorter_Unchanged_output"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="5"
-#!   FEAT_GEOMTYPE="All"
-#!   POSITION="2850 -900"
-#!   BOUNDING_RECT="2850 -900 846.38 71"
-#!   ORDER="500000000000000"
-#!   COLLAPSED="true"
-#!   KEYWORD="FFS_1"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   SCHEMA_ATTRIBUTE_SOURCE="0"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="varchar(255)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_id" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="kml_name" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
-#! <FEATURE_TYPE
-#!   IS_SOURCE="false"
-#!   NODE_NAME="TestSQLiteSorter_Diff_output"
-#!   FEATURE_TYPE_NAME=""
-#!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="false"
-#!   IDENTIFIER="53"
-#!   FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
-#!   POSITION="7050 -150"
-#!   BOUNDING_RECT="7050 -150 699.84400000000005 71"
-#!   ORDER="500000000000000"
-#!   COLLAPSED="true"
-#!   KEYWORD="FFS_2"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   SCHEMA_ATTRIBUTE_SOURCE="0"
-#! >
-#!     <FEAT_ATTRIBUTE ATTR_NAME="sort_order_matches" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="sorter_dataset" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="_feature_type{}.count" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="_feature_type{}.name" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="_total_features_written" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="sqlite_sorter_dataset" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="comparison_result" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_rejection_code" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="true"
 #!   NODE_NAME="AnimatedUpdate"
@@ -738,6 +661,25 @@
 #! >
 #!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="kml_char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="HTML"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="74"
+#!   FEAT_GEOMTYPE="html_none"
+#!   POSITION="8400 -1200"
+#!   BOUNDING_RECT="8400 -1200 -1 -1"
+#!   ORDER="500000000000004"
+#!   COLLAPSED="true"
+#!   KEYWORD="HTML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="html_content" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! <READER_DATASETS>
@@ -759,14 +701,9 @@
 #!   DATASET="$(FME_MF_DIR_USERTYPED)/Resources/Data/Output"
 #! />
 #! <DATASET 
-#!   NAME="FFS_2"
-#!   OVERRIDE="-FFS_2_DATASET"
-#!   DATASET="$(FME_MF_DIR_USERTYPED)/Resources/Data/Output/TestSQLiteSorter_Diff_output.ffs"
-#! />
-#! <DATASET 
-#!   NAME="FFS_1"
-#!   OVERRIDE="-FFS_1_DATASET"
-#!   DATASET="$(FME_MF_DIR_USERTYPED)/Resources/Data/Output/TestSQLiteSorter_Unchanged_output.ffs"
+#!   NAME="HTML_1"
+#!   OVERRIDE="-HTML_1_DATASET"
+#!   DATASET="HTML_1/TestSQLiteSorter.html"
 #! />
 #! </WRITER_DATASETS>
 #! </FMESERVER>
@@ -782,13 +719,8 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI FILENAME DestDataset_Unchanged_FFS FME_Feature_Store_Files(*.ffs)|*.ffs|All_Files|* Destination FME Feature Store (FFS) File:"
-#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)/Resources/Data/Output/TestSQLiteSorter_Unchanged_output.ffs"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI FILENAME DestDataset_Diff_FFS FME_Feature_Store_Files(*.ffs)|*.ffs|All_Files|* Destination FME Feature Store (FFS) File:"
-#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)/Resources/Data/Output/TestSQLiteSorter_Diff_output.ffs"
+#!   GUI_LINE="GUI FILENAME DestDataset_HTML HTML&lt;space&gt;Files(*.html)|*.html Destination Html File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Resources/Data/Output/TestSQLiteSorter.html"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
@@ -797,24 +729,24 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI IGNORE OPTIONAL DIRNAME_SRC FME_SHAREDRESOURCE_DATA FME Server Resource Data:"
-#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)/Resources/Data"
+#!   GUI_LINE="GUI IGNORE OPTIONAL DIRNAME_SRC FME_SHAREDRESOURCE_TEMP FME Server Temporary Resource Directory:"
+#!   DEFAULT_VALUE="/tmp"
 #!   IS_STAND_ALONE="FME_SERVER"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI IGNORE OPTIONAL DIRNAME_SRC FME_SHAREDRESOURCE_TEMP FME Server Temporary Resource Directory:"
-#!   DEFAULT_VALUE="/tmp"
+#!   GUI_LINE="GUI IGNORE OPTIONAL DIRNAME_SRC FME_SHAREDRESOURCE_DATA FME Server Resource Data:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)/Resources/Data"
 #!   IS_STAND_ALONE="FME_SERVER"
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
 #!   IDENTIFIER="31"
-#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;helvetica neue&apos;; font-size:9pt;&quot;&gt;Make sure the features&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;helvetica neue&apos;; font-size:9pt;&quot;&gt;themselves are not&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;helvetica neue&apos;; font-size:9pt;&quot;&gt;altered by the proess.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="2250 -653.99806000059982"
-#!   TOP_LEFT="2250 -653.99806000059982"
-#!   BOTTOM_RIGHT="2775.7860078600788 -860.99983001830003"
-#!   BOUNDING_RECT="2250 -653.99806000059982 525.7860078600786 207.00177001770018"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;helvetica neue&apos;; font-size:9pt;&quot;&gt;Make sure the features&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;helvetica neue&apos;; font-size:9pt;&quot;&gt;themselves are not&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;helvetica neue&apos;; font-size:9pt;&quot;&gt;altered by the process.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2250 -803.99806000059982"
+#!   TOP_LEFT="2250 -803.99806000059982"
+#!   BOTTOM_RIGHT="2775.7860078600788 -1010.9998300183"
+#!   BOUNDING_RECT="2250 -803.99806000059982 525.7860078600786 207.00177001770018"
 #!   ORDER="500000000000000"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -892,7 +824,7 @@
 #!   BOUNDING_RECT="1426 408.5 2390.04 375.50099999999998"
 #!   STICKY="true"
 #!   COLOUR="0.72156862745098038,0.77647058823529413,0.20000000000000001"
-#!   CONTENTS="40 33 32 6 39 "
+#!   CONTENTS="39 33 32 40 6 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -905,7 +837,7 @@
 #!   BOUNDING_RECT="1450 -191.5 2366.6900000000001 374.5"
 #!   STICKY="true"
 #!   COLOUR="0.81176470588235294,0.53725490196078429,0.0078431372549019607"
-#!   CONTENTS="35 7 34 42 43 "
+#!   CONTENTS="7 35 34 43 42 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -918,7 +850,7 @@
 #!   BOUNDING_RECT="4000 405.00400000000002 2894.0700000000002 966.00999999999999"
 #!   STICKY="true"
 #!   COLOUR="0.14901960784313725,0.63137254901960782,0.92156862745098034"
-#!   CONTENTS="48 56 57 58 64 50 62 46 36 29 45 47 52 63 38 51 49 37 "
+#!   CONTENTS="46 49 29 57 37 63 62 38 50 45 52 58 64 36 48 47 56 51 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -969,8 +901,8 @@
 #!   IDENTIFIER="17"
 #!   TYPE="ChangeDetector"
 #!   VERSION="2"
-#!   POSITION="2250 -900"
-#!   BOUNDING_RECT="2250 -900 -1 -1"
+#!   POSITION="2250 -1050"
+#!   BOUNDING_RECT="2250 -1050 -1 -1"
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1000,62 +932,6 @@
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ChangeDetector"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="22"
-#!   TYPE="Inspector"
-#!   VERSION="5"
-#!   POSITION="2850 -1146"
-#!   BOUNDING_RECT="2850 -1146 574.10900000000004 71"
-#!   ORDER="500000000000000"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="17652"
-#! >
-#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
-#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ChangeDetector_Added"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="24"
-#!   TYPE="Inspector"
-#!   VERSION="5"
-#!   POSITION="2850 -1350"
-#!   BOUNDING_RECT="2850 -1350 591.48400000000004 71"
-#!   ORDER="500000000000000"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="17652"
-#! >
-#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
-#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ChangeDetector_Deleted"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="32"
@@ -1326,48 +1202,48 @@
 #! >
 #!     <OUTPUT_FEAT NAME="0"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="comparison_result"/>
@@ -1385,21 +1261,21 @@
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="17652"
+#!   LAST_PARM_EDIT="18592"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="sort_order_matches" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; sort_order_matches SET_TO true"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; sort_order_matches SET_TO TRUE"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1417,21 +1293,21 @@
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="17652"
+#!   LAST_PARM_EDIT="18592"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="sort_order_matches" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; sort_order_matches SET_TO false"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; sort_order_matches SET_TO FALSE"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1491,6 +1367,260 @@
 #!     <XFORM_PARM PARM_NAME="ATTR_LIST_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeExposer"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="71"
+#!   TYPE="AttributeValidator"
+#!   VERSION="2"
+#!   POSITION="7350 -150"
+#!   BOUNDING_RECT="7350 -150 570.015625 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="sort_order_matches" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="sort_order_matches" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="sort_order_matches;IN;TRUE"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SortOrderAttributeValidator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="53"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="3"
+#!   POSITION="7350 -600"
+#!   BOUNDING_RECT="7350 -600 820.015625 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="sort_order_matches" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="comparison_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="sqlite_sorter_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="SortOrder"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SortOrderAttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="76"
+#!   TYPE="AttributeValidationHTMLReportGenerator"
+#!   VERSION="2"
+#!   POSITION="7350 -1200"
+#!   BOUNDING_RECT="7350 -1200 821.015625 71"
+#!   ORDER="500000000000005"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="html_content" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationHTMLReportGenerator"/>
+#!     <XFORM_PARM PARM_NAME="_FEATURE_ID" PARM_VALUE="FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST kml_id ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;at&gt;Value&lt;openparen&gt;kml_id&lt;closeparen&gt;&lt;space&gt;-&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;kml_name&lt;closeparen&gt;&apos;FME_NUM_CONDITIONS2___"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="75"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3000 -1200"
+#!   BOUNDING_RECT="3000 -1200 691.109375 71"
+#!   ORDER="500000000000043"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="unmatched_sort_feature" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; unmatched_sort_feature SET_TO ADDED"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SortFeatureAddedAttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="79"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3000 -1500"
+#!   BOUNDING_RECT="3000 -1500 717.015625 71"
+#!   ORDER="500000000000043"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="unmatched_sort_feature" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; unmatched_sort_feature SET_TO DELETED"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SortFeatureDeletedAttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="81"
+#!   TYPE="AttributeValidator"
+#!   VERSION="2"
+#!   POSITION="4050 -1200"
+#!   BOUNDING_RECT="4050 -1200 744.015625 71"
+#!   ORDER="500000000000044"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="unmatched_sort_feature" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="unmatched_sort_feature" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="kml_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="kml_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="unmatched_sort_feature;IN;UNCHANGED"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SortFeatureChangeAttributeValidator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="85"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="3"
+#!   POSITION="6150 -1200"
+#!   BOUNDING_RECT="6150 -1200 994.015625 71"
+#!   ORDER="500000000000045"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="unmatched_sort_feature" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="SortFeatureChange"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SortFeatureChangeAttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="84"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3000 -900"
+#!   BOUNDING_RECT="3000 -900 783.015625 71"
+#!   ORDER="500000000000043"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="unmatched_sort_feature" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; unmatched_sort_feature SET_TO UNCHANGED"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SortFeatureUnchangedAttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="90"
+#!   TYPE="Sorter"
+#!   VERSION="2"
+#!   POSITION="5250 -1500"
+#!   BOUNDING_RECT="5250 -1500 547.015625 71"
+#!   ORDER="500000000000046"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="SORTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="unmatched_sort_feature" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kml_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SORT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="kml_id ALPHA ASCENDING unmatched_sort_feature ALPHA ASCENDING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SortFeatureChangeSorter"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -1549,11 +1679,11 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="8"
+#!   IDENTIFIER="88"
 #!   SOURCE_NODE="17"
-#!   TARGET_NODE="5"
+#!   TARGET_NODE="84"
 #!   SOURCE_PORT_DESC="fo 0 UNCHANGED"
-#!   TARGET_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -1637,22 +1767,33 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="54"
+#!   IDENTIFIER="73"
 #!   SOURCE_NODE="46"
-#!   TARGET_NODE="53"
+#!   TARGET_NODE="71"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="55"
+#!   IDENTIFIER="72"
 #!   SOURCE_NODE="48"
-#!   TARGET_NODE="53"
+#!   TARGET_NODE="71"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="77"
+#!   SOURCE_NODE="53"
+#!   TARGET_NODE="76"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 input"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -1692,9 +1833,97 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
+#!   IDENTIFIER="55"
+#!   SOURCE_NODE="71"
+#!   TARGET_NODE="53"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="82"
+#!   SOURCE_NODE="75"
+#!   TARGET_NODE="81"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="78"
+#!   SOURCE_NODE="76"
+#!   TARGET_NODE="74"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="83"
+#!   SOURCE_NODE="79"
+#!   TARGET_NODE="81"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="86"
+#!   SOURCE_NODE="81"
+#!   TARGET_NODE="85"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="89"
+#!   SOURCE_NODE="84"
+#!   TARGET_NODE="81"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="87"
+#!   SOURCE_NODE="85"
+#!   TARGET_NODE="76"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="92"
+#!   SOURCE_NODE="90"
+#!   TARGET_NODE="85"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
 #!   IDENTIFIER="23"
 #!   SOURCE_NODE="17"
-#!   TARGET_NODE="22"
+#!   TARGET_NODE="75"
 #!   SOURCE_PORT_DESC="fo 1 ADDED"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1714,9 +1943,31 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="25"
+#!   IDENTIFIER="54"
+#!   SOURCE_NODE="71"
+#!   TARGET_NODE="53"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="91"
+#!   SOURCE_NODE="81"
+#!   TARGET_NODE="90"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="80"
 #!   SOURCE_NODE="17"
-#!   TARGET_NODE="24"
+#!   TARGET_NODE="79"
 #!   SOURCE_PORT_DESC="fo 2 DELETED"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1774,31 +2025,290 @@
 #! <ATTR_LINKS>
 #! </ATTR_LINKS>
 #! <SUBDOCUMENTS>
+#! <SUBDOCUMENT
+#!   NAME="AttributeValidationListPopulator"
+#!   CATEGORY="Data Quality"
+#!   DESCRIPTION=""
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   DOC_EXTENTS="4500 1e-5"
+#!   DOC_TOP_LEFT="-900 -1e-5"
+#!   FME_DOCUMENT_GUID="99db61af-036d-4d85-bbd0-c1632405d498"
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   GUID="99db61af-036d-4d85-bbd0-c1632405d498"
+#!   HISTORY=""
+#!   IS_VISIBLE="false"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - linux-x64)"
+#!   LAST_SAVE_DATE="2019-05-08T17:58:50"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   PYTHON_COMPATIBILITY="36"
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="AttributeValidationListPopulator"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-999.01 99.001"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_OR_ATTR Validator_Name Validator Name:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="1350 0"
+#!   BOUNDING_RECT="1350 0 -1 -1"
+#!   ORDER="500000000000019"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_FME_MF_DIR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_FME_MF_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="_fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;.validator_name _fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;.calling_module"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fme&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;messages&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_fme_validation_message_list&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;messages:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;index&lt;space&gt;=&lt;space&gt;0&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;message&lt;space&gt;in&lt;space&gt;messages:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;feature.getAttributeNullMissingAndType&lt;openparen&gt;&lt;apos&gt;_fme_validation_message_list&lt;opencurly&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;str&lt;openparen&gt;index&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;closecurly&gt;.validator_name&lt;apos&gt;&lt;closeparen&gt;&lt;openbracket&gt;1&lt;closebracket&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;_fme_validation_message_list&lt;opencurly&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;str&lt;openparen&gt;index&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;closecurly&gt;.validator_name&lt;apos&gt;&lt;comma&gt;&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_mgs_validator_name&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;_fme_validation_message_list&lt;opencurly&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;str&lt;openparen&gt;index&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;closecurly&gt;.calling_module&lt;apos&gt;&lt;comma&gt;&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_mgs_calling_module&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;index&lt;space&gt;+=&lt;space&gt;1&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="AttributeExposer"
+#!   VERSION="1"
+#!   POSITION="2100 0"
+#!   BOUNDING_RECT="2100 0 -1 -1"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_FME_MF_DIR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_FME_MF_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_fme_validation_message"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_LIST_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeExposer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="AttributeRemover"
+#!   VERSION="1"
+#!   POSITION="2850 0"
+#!   BOUNDING_RECT="2850 0 -1 -1"
+#!   ORDER="500000000000021"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="ParameterFetcher"
+#!   VERSION="4"
+#!   POSITION="-150 0"
+#!   BOUNDING_RECT="-150 0 -1 -1"
+#!   ORDER="500000000000024"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_FME_MF_DIR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_FME_MF_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_FME_MF_DIR $(FME_MF_DIR_USERTYPED) _FME_MF_NAME $(FME_MF_NAME)"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ParameterFetcher"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="599.99999999999966 0"
+#!   BOUNDING_RECT="599.99999999999966 0 -1 -1"
+#!   ORDER="500000000000025"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_FME_MF_DIR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_FME_MF_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _mgs_calling_module SET_TO &lt;at&gt;Value&lt;openparen&gt;_FME_MF_DIR&lt;closeparen&gt;&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;_FME_MF_NAME&lt;closeparen&gt;  _mgs_validator_name SET_TO $(Validator_Name)"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="2"
+#!   NAME="Input"
+#!   POSITION="-900 0"
+#!   BOUNDING_RECT="-900 0 -1 -1"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="3"
+#!   NAME="Output"
+#!   POSITION="3600 0"
+#!   BOUNDING_RECT="3600 0 -1 -1"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="11"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
 #! </SUBDOCUMENTS>
 #! <LOOKUP_TABLES>
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 
-FME_PYTHON_VERSION 2or3
-GUI IGNORE SourceDataset_OGCKML_1,OGCKML_IN_KML21_LOG_VERBOSE_OGCKML_1,OGCKML_IN_KML21_RASTER_READ_MODE_OGCKML_1,OGCKML_IN_KML21_SCAN_SCHEMA_OGCKML_1,OGCKML_IN_KML21_FAIL_ON_NETWORK_ERROR_OGCKML_1,OGCKML_IN_KML21_DELETE_DOWNLOADED_FILES_OGCKML_1,OGCKML_IN_KML21_TRAVERSE_NETWORKLINKS_OGCKML_1,OGCKML_IN_KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH_OGCKML_1,OGCKML_IN_KML21_DATASET_ENCODING_OGCKML_1,OGCKML_IN_KML21_MOVE_TO_KML_WORLD_COORDSYS_OGCKML_1,OGCKML_IN_KML21_APPLY_MODEL_TRANSFORMS_OGCKML_1,OGCKML_IN_EXPOSE_ATTRS_GROUP_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MINX_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MINY_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MAXX_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MAXY_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCKML_1,OGCKML_IN_CLIP_TO_ENVELOPE_OGCKML_1,OGCKML_IN_NETWORK_AUTHENTICATION_OGCKML_1,DestDataset_FFS_1,FFS_OUT_INDEXED_FFS_1,FFS_OUT_COMPRESSION_LEVEL_FFS_1,FFS_OUT_PASSPHRASE_FFS_1,FFS_OUT_TARGET_ENCODING_FFS_1,FFS_OUT_MAX_FILE_SIZE_FFS_1,FFS_OUT_REQUIRES_FEATURE_TABLES_FFS_1,DestDataset_FFS_2,FFS_OUT_PASSPHRASE_FFS_2,FFS_OUT_INDEXED_FFS_2,FFS_OUT_COMPRESSION_LEVEL_FFS_2,FFS_OUT_REQUIRES_FEATURE_TABLES_FFS_2,FFS_OUT_STORE_SCANNED_SCHEMA_FFS_2,FFS_OUT_ATTRIBUTE_TYPE_SCANNING_FFS_2,FFS_OUT_STORE_SCANNED_METADATA_FFS_2,FFS_OUT_ADVANCED_GROUP_FFS_2,FFS_OUT_MAX_FILE_SIZE_FFS_2,FFS_OUT_TARGET_ENCODING_FFS_2
+FME_PYTHON_VERSION 36
+GUI IGNORE SourceDataset_OGCKML_1,OGCKML_IN_KML21_LOG_VERBOSE_OGCKML_1,OGCKML_IN_KML21_RASTER_READ_MODE_OGCKML_1,OGCKML_IN_KML21_SCAN_SCHEMA_OGCKML_1,OGCKML_IN_KML21_FAIL_ON_NETWORK_ERROR_OGCKML_1,OGCKML_IN_KML21_DELETE_DOWNLOADED_FILES_OGCKML_1,OGCKML_IN_KML21_TRAVERSE_NETWORKLINKS_OGCKML_1,OGCKML_IN_KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH_OGCKML_1,OGCKML_IN_KML21_DATASET_ENCODING_OGCKML_1,OGCKML_IN_KML21_MOVE_TO_KML_WORLD_COORDSYS_OGCKML_1,OGCKML_IN_KML21_APPLY_MODEL_TRANSFORMS_OGCKML_1,OGCKML_IN_EXPOSE_ATTRS_GROUP_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MINX_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MINY_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MAXX_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_MAXY_OGCKML_1,OGCKML_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCKML_1,OGCKML_IN_CLIP_TO_ENVELOPE_OGCKML_1,OGCKML_IN_NETWORK_AUTHENTICATION_OGCKML_1,DestDataset_HTML_1
 DEFAULT_MACRO Sort_Keys kml_name<tab><tab>varchar<tab>asc<lf>kml_id<tab><tab><tab>varchar<tab>desc
 GUI TEXT_EDIT Sort_Keys " " Sort Keys:
 DEFAULT_MACRO SourceDataset_OGCKML https://github.com/modgeosys/fme-components/blob/master/fme/Resources/Data/Test/USGS_DS_817_truncated.kmz?raw=true
 GUI FILE_OR_URL SourceDataset_OGCKML KML_Files(*.kml;*.kmz)|*.kml;*.kmz|All_Files(*)|* Source Google KML File or URL:
-DEFAULT_MACRO DestDataset_Unchanged_FFS $(FME_MF_DIR_USERTYPED)/Resources/Data/Output/TestSQLiteSorter_Unchanged_output.ffs
-GUI FILENAME DestDataset_Unchanged_FFS FME_Feature_Store_Files(*.ffs)|*.ffs|All_Files|* Destination FME Feature Store (FFS) File:
-DEFAULT_MACRO DestDataset_Diff_FFS $(FME_MF_DIR_USERTYPED)/Resources/Data/Output/TestSQLiteSorter_Diff_output.ffs
-GUI FILENAME DestDataset_Diff_FFS FME_Feature_Store_Files(*.ffs)|*.ffs|All_Files|* Destination FME Feature Store (FFS) File:
+DEFAULT_MACRO DestDataset_HTML $(FME_MF_DIR)Resources/Data/Output/TestSQLiteSorter.html
+GUI FILENAME DestDataset_HTML HTML<space>Files(*.html)|*.html Destination Html File:
 DEFAULT_MACRO FEATURE_TYPES 
 GUI IGNORE OPTIONAL FEATURE_TYPES FEATURE_TYPES https:<solidus><solidus>github.com<solidus>modgeosys<solidus>fme-components<solidus>blob<solidus>master<solidus>fme<solidus>Resources<solidus>Data<solidus>Test<solidus>USGS_DS_817_truncated.kmz?raw=true,_FORMAT_OVERRIDE_,OGCKML,_DATASET_OVERRIDE_,SourceDataset_OGCKML,KML21_LOG_VERBOSE,No,KML21_RASTER_READ_MODE,GroundOverlay,KML21_SCAN_SCHEMA,Yes,KML21_FAIL_ON_NETWORK_ERROR,No,KML21_DELETE_DOWNLOADED_FILES,Yes,KML21_TRAVERSE_NETWORKLINKS,All,KML21_MAX_NETWORKLINK_TRAVERSAL_DEPTH,5,KML21_MOVE_TO_KML_WORLD_COORDSYS,Yes,KML21_APPLY_MODEL_TRANSFORMS,No,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,USE_SEARCH_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read:
-DEFAULT_MACRO FME_SHAREDRESOURCE_DATA $(FME_MF_DIR_USERTYPED)/Resources/Data
-GUI IGNORE OPTIONAL DIRNAME_SRC FME_SHAREDRESOURCE_DATA FME Server Resource Data:
 DEFAULT_MACRO FME_SHAREDRESOURCE_TEMP /tmp
 GUI IGNORE OPTIONAL DIRNAME_SRC FME_SHAREDRESOURCE_TEMP FME Server Temporary Resource Directory:
+DEFAULT_MACRO FME_SHAREDRESOURCE_DATA $(FME_MF_DIR_USERTYPED)/Resources/Data
+GUI IGNORE OPTIONAL DIRNAME_SRC FME_SHAREDRESOURCE_DATA FME Server Resource Data:
 INCLUDE [ if {{$(Sort_Keys)} == {}} { puts_real {Parameter 'Sort_Keys' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(SourceDataset_OGCKML)} == {}} { puts_real {Parameter 'SourceDataset_OGCKML' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_Unchanged_FFS)} == {}} { puts_real {Parameter 'DestDataset_Unchanged_FFS' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_Diff_FFS)} == {}} { puts_real {Parameter 'DestDataset_Diff_FFS' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_HTML)} == {}} { puts_real {Parameter 'DestDataset_HTML' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
@@ -1808,10 +2318,8 @@ MULTI_READER_GEN_DIRECTIVES{0} SEARCH_ENVELOPE_MAXX,0,CLIP_TO_ENVELOPE,NO,SEARCH
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
-MULTI_WRITER_TYPE{0} FFS
-MULTI_WRITER_KEYWORD{0} FFS_1
-MULTI_WRITER_TYPE{1} FFS
-MULTI_WRITER_KEYWORD{1} FFS_2
+MULTI_WRITER_TYPE{0} HTML
+MULTI_WRITER_KEYWORD{0} HTML_1
 #! END_WB_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "OGCKML_1"
@@ -1902,154 +2410,62 @@ OGCKML_1_DATASET "$(SourceDataset_OGCKML_1)"
 OGCKML_1_GENERATE_FME_BUILD_NUM 17652
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
-MACRO WB_KEYWORD "FFS_1"
+MACRO WB_KEYWORD "HTML_1"
 #! END_WB_HEADER
-#! START_DEST_HEADER FFS FFS_1
-# ============================================================================
+#! START_DEST_HEADER HTML HTML_1
+# =====================================================================
 # The following GUI line prompts for a folder to be used as the
-# the destination for the FME Feature Store files.
+# the destination for the TextLine files. The user input is stored in
+# a macro, which is then used to define the dataset to be written.
 #! END_DEST_HEADER
 #! START_WB_HEADER
 DEFAULT_MACRO DestDataset
 INCLUDE [ if {"$(DestDataset)" != ""} {                          \
- puts {DEFAULT_MACRO DestDataset_FFS_1 $(DestDataset)}         \
+ puts {DEFAULT_MACRO DestDataset_HTML_1 $(DestDataset)}         \
  } ]
 #! END_WB_HEADER
-#! START_DEST_HEADER FFS FFS_1
-DEFAULT_MACRO DestDataset_FFS_1 $(DestDataset_Unchanged_FFS)
-GUI FILENAME DestDataset_FFS_1 FME_Feature_Store_Files(*.ffs)|*.ffs|All_Files|* Destination FME Feature Store (FFS) File:
+#! START_DEST_HEADER HTML HTML_1
+DEFAULT_MACRO DestDataset_HTML_1 $(DestDataset_HTML)
+GUI FILENAME DestDataset_HTML_1 HTML<space>Files(*.html)|*.html Destination Html File:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO HTML_OUT_OVERWRITE_FILE_HTML_1 YES
+HTML_1_OVERWRITE_FILE "$(HTML_OUT_OVERWRITE_FILE_HTML_1)"
+# =====================================================================
+# Set the type of encoding for the output files
+# =====================================================================
+# Set line termination character
+DEFAULT_MACRO HTML_OUT_END_OF_LINE_HTML_1 System
+HTML_1_END_OF_LINE "$(HTML_OUT_END_OF_LINE_HTML_1)"
+# =====================================================================
+# Set whether to write the last line termination character
+DEFAULT_MACRO HTML_OUT_WRITE_LAST_EOL_HTML_1 YES
+HTML_1_WRITE_LAST_EOL "$(HTML_OUT_WRITE_LAST_EOL_HTML_1)"
+DEFAULT_MACRO HTML_OUT_ENCODING_HTML_1 UTF8
+HTML_1_ENCODING "$(HTML_OUT_ENCODING_HTML_1)"
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO HTML_OUT_WRITE_UTF8_BOM_HTML_1 YES
+HTML_1_WRITE_UTF8_BOM "$(HTML_OUT_WRITE_UTF8_BOM_HTML_1)"
+# =====================================================================
+# Set the mime type. Note -- it is actually only used inside of workspaces
+# as a FORMAT_PARAMETER which even then is parsed only by the FME Server
+# Repository Manager
+DEFAULT_MACRO HTML_OUT_MIME_TYPE_HTML_1 text/html
+HTML_1_MIME_TYPE "$(HTML_OUT_MIME_TYPE_HTML_1)"
 # ============================================================================
-# Ask if we should make a spatial index
-DEFAULT_MACRO FFS_OUT_INDEXED_FFS_1 no
-FFS_1_INDEXED "$(FFS_OUT_INDEXED_FFS_1)"
-GUI LOOKUP_CHOICE FFS_OUT_INDEXED_FFS_1 yes%no Create Spatial Index:
-# ============================================================================
-# Set the compression level
-# BUG10851: Change default from 6 to 0.
-DEFAULT_MACRO FFS_OUT_COMPRESSION_LEVEL_FFS_1 0
-FFS_1_COMPRESSION_LEVEL "$(FFS_OUT_COMPRESSION_LEVEL_FFS_1)"
-GUI CHOICE FFS_OUT_COMPRESSION_LEVEL_FFS_1 0%1%2%3%4%5%6%7%8%9 Compression Level:
-# ============================================================================
-# Set the passphrase (which is optional)
-DEFAULT_MACRO FFS_OUT_PASSPHRASE_FFS_1 
-FFS_1_PASSPHRASE "$(FFS_OUT_PASSPHRASE_FFS_1)"
-GUI OPTIONAL PASSWORD_ENCODED FFS_OUT_PASSPHRASE_FFS_1 Password:
-# ============================================================================
-# Set the target string encoding
-# PR73732
-DEFAULT_MACRO FFS_OUT_TARGET_ENCODING_FFS_1 
-FFS_1_TARGET_ENCODING "$(FFS_OUT_TARGET_ENCODING_FFS_1)"
-GUI OPTIONAL ENCODING FFS_OUT_TARGET_ENCODING_FFS_1 * Target String Transcoding:
-# ============================================================================
-# Opt out of destination dataset type vs format type validation
-DEFAULT_MACRO FFS_OUT_DESTINATION_DATASETTYPE_VALIDATION_FFS_1 No
-FFS_1_DESTINATION_DATASETTYPE_VALIDATION "$(FFS_OUT_DESTINATION_DATASETTYPE_VALIDATION_FFS_1)"
-DEFAULT_MACRO FFS_OUT_COORDINATE_SYSTEM_GRANULARITY_FFS_1 FEATURE
-FFS_1_COORDINATE_SYSTEM_GRANULARITY "$(FFS_OUT_COORDINATE_SYSTEM_GRANULARITY_FFS_1)"
-DEFAULT_MACRO FFS_OUT_FILE_DEST_DATASET_FFS_1 yes
-FFS_1_FILE_DEST_DATASET "$(FFS_OUT_FILE_DEST_DATASET_FFS_1)"
-# ========================================================================
-# The following parameter specifies the maximum size for FFS files. If
-# it is specified, the FFS writer will split up the output into multiple
-# FFS files.
-DEFAULT_MACRO FFS_OUT_MAX_FILE_SIZE_FFS_1 
-FFS_1_MAX_FILE_SIZE "$(FFS_OUT_MAX_FILE_SIZE_FFS_1)"
-GUI OPTIONAL INTEGER FFS_OUT_MAX_FILE_SIZE_FFS_1 Maximum FFS File Size, in Bytes
-# ========================================================================
-# The following parameter indicates if features should have all user
-# attributes not listed on the DEF line removed before they are saved.
-# If yes, the unlisted attributes are stripped.
-DEFAULT_MACRO FFS_OUT_REQUIRES_FEATURE_TABLES_FFS_1 No
-FFS_1_REQUIRES_FEATURE_TABLES "$(FFS_OUT_REQUIRES_FEATURE_TABLES_FFS_1)"
-GUI CHOICE FFS_OUT_REQUIRES_FEATURE_TABLES_FFS_1 Yes%No Enforce Strict Schema
-FFS_1_FEATURE_TABLE_FORMAT_ATTRS fme_color fme_fill_color
-FFS_1_DATASET "$(DestDataset_FFS_1)"
-FFS_1_GENERATE_FME_BUILD_NUM 17291
-#! END_DEST_HEADER
-#! START_WB_HEADER
-MACRO WB_KEYWORD "FFS_2"
-#! END_WB_HEADER
-#! START_DEST_HEADER FFS FFS_2
-# ============================================================================
-# The following GUI line prompts for a folder to be used as the
-# the destination for the FME Feature Store files.
-#! END_DEST_HEADER
-#! START_WB_HEADER
-DEFAULT_MACRO DestDataset
-INCLUDE [ if {"$(DestDataset)" != ""} {                          \
- puts {DEFAULT_MACRO DestDataset_FFS_2 $(DestDataset)}         \
- } ]
-#! END_WB_HEADER
-#! START_DEST_HEADER FFS FFS_2
-DEFAULT_MACRO DestDataset_FFS_2 $(DestDataset_Diff_FFS)
-GUI FILENAME DestDataset_FFS_2 FME_Feature_Store_Files(*.ffs)|*.ffs|All_Files|* Destination FME Feature Store (FFS) File:
-# ============================================================================
-# Set the passphrase (which is optional)
-DEFAULT_MACRO FFS_OUT_PASSPHRASE_FFS_2 
-FFS_2_PASSPHRASE "$(FFS_OUT_PASSPHRASE_FFS_2)"
-GUI OPTIONAL PASSWORD_ENCODED FFS_OUT_PASSPHRASE_FFS_2 Password:
-# ============================================================================
-# Ask if we should make a spatial index
-DEFAULT_MACRO FFS_OUT_INDEXED_FFS_2 no
-FFS_2_INDEXED "$(FFS_OUT_INDEXED_FFS_2)"
-GUI ACTIVECHOICE FFS_OUT_INDEXED_FFS_2 Yes,FFS_OUT_COMPRESSION_LEVEL_FFS_2%no Create Spatial Index:
-# ============================================================================
-# Set the compression level
-# BUG10851: Change default from 6 to 0.
-DEFAULT_MACRO FFS_OUT_COMPRESSION_LEVEL_FFS_2 0
-FFS_2_COMPRESSION_LEVEL "$(FFS_OUT_COMPRESSION_LEVEL_FFS_2)"
-GUI CHOICE FFS_OUT_COMPRESSION_LEVEL_FFS_2 0%1%2%3%4%5%6%7%8%9 Compression Level:
-# ========================================================================
-# The following parameter indicates if features should have all user
-# attributes not listed on the DEF line removed before they are saved.
-# If yes, the unlisted attributes are stripped.
-DEFAULT_MACRO FFS_OUT_REQUIRES_FEATURE_TABLES_FFS_2 No
-FFS_2_REQUIRES_FEATURE_TABLES "$(FFS_OUT_REQUIRES_FEATURE_TABLES_FFS_2)"
-GUI CHOICE FFS_OUT_REQUIRES_FEATURE_TABLES_FFS_2 Yes%No Enforce Strict Schema
-# ========================================================================
-# The following parameter indicates if we should store scanned
-# schema(s) of all input attributes not listed on the defline.
-DEFAULT_MACRO FFS_OUT_STORE_SCANNED_SCHEMA_FFS_2 No
-FFS_2_STORE_SCANNED_SCHEMA "$(FFS_OUT_STORE_SCANNED_SCHEMA_FFS_2)"
-GUI ACTIVECHOICE FFS_OUT_STORE_SCANNED_SCHEMA_FFS_2 Yes%No,FFS_OUT_ATTRIBUTE_TYPE_SCANNING_FFS_2 Store Scanned Schema
-# ========================================================================
-# The following parameter indicates how we should store scanned
-# types of all input attributes not listed on the defline.
-DEFAULT_MACRO FFS_OUT_ATTRIBUTE_TYPE_SCANNING_FFS_2 <Unused>
-FFS_2_ATTRIBUTE_TYPE_SCANNING "$(FFS_OUT_ATTRIBUTE_TYPE_SCANNING_FFS_2)"
-GUI LOOKUP_CHOICE FFS_OUT_ATTRIBUTE_TYPE_SCANNING_FFS_2 Yes,YES%No,NO Scan for Types
-# ========================================================================
-# The following parameter indicates if we should store scanned
-# metadata and store it with the dataset.
-DEFAULT_MACRO FFS_OUT_STORE_SCANNED_METADATA_FFS_2 No
-FFS_2_STORE_SCANNED_METADATA "$(FFS_OUT_STORE_SCANNED_METADATA_FFS_2)"
-GUI CHOICE FFS_OUT_STORE_SCANNED_METADATA_FFS_2 Yes%No Store Scanned Metadata
-DEFAULT_MACRO FFS_OUT_ADVANCED_GROUP_FFS_2 
-GUI OPTIONAL DISCLOSUREGROUP FFS_OUT_ADVANCED_GROUP_FFS_2 FME_DISCLOSURE_CLOSED%FFS_OUT_MAX_FILE_SIZE_FFS_2%FFS_OUT_TARGET_ENCODING_FFS_2 Advanced
-# ========================================================================
-# The following parameter specifies the maximum size for FFS files. If
-# it is specified, the FFS writer will split up the output into multiple
-# FFS files.
-DEFAULT_MACRO FFS_OUT_MAX_FILE_SIZE_FFS_2 
-FFS_2_MAX_FILE_SIZE "$(FFS_OUT_MAX_FILE_SIZE_FFS_2)"
-GUI OPTIONAL INTEGER FFS_OUT_MAX_FILE_SIZE_FFS_2 Maximum FFS File Size, in Bytes
-# ============================================================================
-# Set the target string encoding
-# PR73732
-DEFAULT_MACRO FFS_OUT_TARGET_ENCODING_FFS_2 
-FFS_2_TARGET_ENCODING "$(FFS_OUT_TARGET_ENCODING_FFS_2)"
-GUI OPTIONAL ENCODING FFS_OUT_TARGET_ENCODING_FFS_2 * Target String Transcoding:
-# ============================================================================
-# Opt out of destination dataset type vs format type validation
-DEFAULT_MACRO FFS_OUT_DESTINATION_DATASETTYPE_VALIDATION_FFS_2 No
-FFS_2_DESTINATION_DATASETTYPE_VALIDATION "$(FFS_OUT_DESTINATION_DATASETTYPE_VALIDATION_FFS_2)"
-DEFAULT_MACRO FFS_OUT_COORDINATE_SYSTEM_GRANULARITY_FFS_2 FEATURE
-FFS_2_COORDINATE_SYSTEM_GRANULARITY "$(FFS_OUT_COORDINATE_SYSTEM_GRANULARITY_FFS_2)"
-DEFAULT_MACRO FFS_OUT_FILE_DEST_DATASET_FFS_2 yes
-FFS_2_FILE_DEST_DATASET "$(FFS_OUT_FILE_DEST_DATASET_FFS_2)"
-FFS_2_FEATURE_TABLE_FORMAT_ATTRS fme_color fme_fill_color
-FFS_2_DATASET "$(DestDataset_FFS_2)"
-FFS_2_GENERATE_FME_BUILD_NUM 17652
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO HTML_OUT_DESTINATION_DATASETTYPE_VALIDATION_HTML_1 Yes
+HTML_1_DESTINATION_DATASETTYPE_VALIDATION "$(HTML_OUT_DESTINATION_DATASETTYPE_VALIDATION_HTML_1)"
+DEFAULT_MACRO HTML_OUT_COORDINATE_SYSTEM_GRANULARITY_HTML_1 FEATURE
+HTML_1_COORDINATE_SYSTEM_GRANULARITY "$(HTML_OUT_COORDINATE_SYSTEM_GRANULARITY_HTML_1)"
+# ============================================================================ 
+HTML_1_GENERATE_FME_BUILD_NUM 18592
+HTML_1_DATASET "$(DestDataset_HTML_1)"
 #! END_DEST_HEADER
 #! START_WB_HEADER
 #! END_WB_HEADER
@@ -2068,8 +2484,7 @@ FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 MAPPING_FILE_ID TestSQLiteSorter
 DEFAULT_MACRO DATASET_KEYWORD_OGCKML_1 OGCKML_1
-DEFAULT_MACRO DATASET_KEYWORD_FFS_1 FFS_1
-DEFAULT_MACRO DATASET_KEYWORD_FFS_2 FFS_2
+DEFAULT_MACRO DATASET_KEYWORD_HTML_1 HTML_1
 # -------------------------------------------------------------------------
 
 OGCKML_1_READER_META_ATTRIBUTES fme_feature_type
@@ -2083,12 +2498,6 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 MACRO WORKSPACE_NAME TestSQLiteSorter
 MACRO FME_VIEWER_APP fmedatainspector
-# -------------------------------------------------------------------------
-
-INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
-MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
-MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
-MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
 # -------------------------------------------------------------------------
 OGCKML_1_DEF AnimatedUpdate
 # -------------------------------------------------------------------------
@@ -2136,9 +2545,41 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME DiffSystemCaller    INPUT  FEATURE_TYPE
 FACTORY_DEF * TeeFactory    FACTORY_NAME ComparisonResultAttributeFilter    INPUT  FEATURE_TYPE DiffSystemCaller_OUTPUT    INPUT  FEATURE_TYPE NullDiffAttributeCreator_OUTPUT    OUTPUT FEATURE_TYPE ComparisonResultAttributeFilter_FILTER
 FACTORY_DEF * AttributeFilterFactory FACTORY_NAME ComparisonResultAttributeFilter_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE ComparisonResultAttributeFilter_FILTER FILTER_ATTRIBUTE comparison_result FILTER_VALUES 0 <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> OUTPUT 0 FEATURE_TYPE ComparisonResultAttributeFilter_0 OUTPUT <lt>EMPTY<gt> FEATURE_TYPE ComparisonResultAttributeFilter_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE ComparisonResultAttributeFilter_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE ComparisonResultAttributeFilter_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE ComparisonResultAttributeFilter_<lt>UNFILTERED<gt>
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME SortOrderDifferentAttributeCreator    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_<lt>EMPTY<gt>    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_<lt>MISSING<gt>    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_<lt>NULL<gt>    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_<lt>UNFILTERED<gt>    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "sort_order_matches" "SET_TO" "false" }    OUTPUT OUTPUT FEATURE_TYPE SortOrderDifferentAttributeCreator_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME SortOrderDifferentAttributeCreator    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_<lt>EMPTY<gt>    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_<lt>MISSING<gt>    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_<lt>NULL<gt>    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_<lt>UNFILTERED<gt>    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "sort_order_matches" "SET_TO" "FALSE" }    OUTPUT OUTPUT FEATURE_TYPE SortOrderDifferentAttributeCreator_OUTPUT
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME SortOrderSameAttributeCreator    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_0    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "sort_order_matches" "SET_TO" "true" }    OUTPUT OUTPUT FEATURE_TYPE SortOrderSameAttributeCreator_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME SortOrderSameAttributeCreator    INPUT  FEATURE_TYPE ComparisonResultAttributeFilter_0    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "sort_order_matches" "SET_TO" "TRUE" }    OUTPUT OUTPUT FEATURE_TYPE SortOrderSameAttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+MACRO testClauses #Tcl to generate test clauses for the table in preparation for the TestFactory
+#Each Attribute gets put in a seperate clause
+INCLUDE [    set table {sort_order_matches;IN;TRUE};    set testString {MACRO testClauses };    set rows [split $table {/}];    foreach row $rows {    set cells [split $row {;}];    set attrs [split [lindex $cells 0] {,}];       set op [lindex $cells 1];       set val [lindex $cells 2];       foreach attr $attrs {       append testString "TEST ${attr} ${op} ${val} ENCODED ";             };    };    puts $testString;    ]
+FACTORY_DEF * TestFactory    FACTORY_NAME SortOrderAttributeValidator    INPUT  FEATURE_TYPE SortOrderSameAttributeCreator_OUTPUT    INPUT  FEATURE_TYPE SortOrderDifferentAttributeCreator_OUTPUT    $(testClauses)    BOOLEAN_OPERATOR AND    VALIDATOR_MODE TRUE    OUTPUT PASSED FEATURE_TYPE SortOrderAttributeValidator_PASSED    OUTPUT FAILED FEATURE_TYPE SortOrderAttributeValidator_FAILED
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SortOrderAttributeValidationListPopulator Input Input Collector"   INPUT FEATURE_TYPE SortOrderAttributeValidator_PASSED   INPUT FEATURE_TYPE SortOrderAttributeValidator_FAILED   OUTPUT FEATURE_TYPE SortOrderAttributeValidationListPopulator_Input
+MACRO AttributeValidationListPopulator_WORKSPACE_NAME SortOrderAttributeValidationListPopulator
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_XFORMER_NAME SortOrderAttributeValidationListPopulator
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeValidationListPopulator
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name SortOrder
+DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557361178 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+# -------------------------------------------------------------------------
+Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_mgs_calling_module" "SET_TO" "<at>Value<openparen>_FME_MF_DIR<closeparen><solidus><at>Value<openparen>_FME_MF_NAME<closeparen>" }      ATTR_ACTION { "" "_mgs_validator_name" "SET_TO" "$($(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name$encode)" }    OUTPUT OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF * PythonFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fme<lf>import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>messages<space>=<space>feature.getAttribute<openparen><apos>_fme_validation_message_list<apos><closeparen><lf><space><space><space><space>if<space>messages:<lf><space><space><space><space><space><space><space><space>index<space>=<space>0<lf><space><space><space><space><space><space><space><space>for<space>message<space>in<space>messages:<lf><space><space><space><space><space><space><space><space><space><space><space><space>if<space>feature.getAttributeNullMissingAndType<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><closeparen><openbracket>1<closebracket>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_validator_name<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.calling_module<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_calling_module<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>index<space>+=<space>1<lf>    OUTPUT PYOUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller_OUTPUT"
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller_OUTPUT"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"
+# -------------------------------------------------------------------------
+INCLUDE [    set macroLine "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557361178 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SortOrderAttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE SortOrderAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE SortOrderAttributeValidationListPopulator_Output
 # -------------------------------------------------------------------------
 INCLUDE [    if { {EXCEPT} == {MATCH} } {       puts {MACRO ChangeDetector_ATTRMATCH MATCH_ATTRIBUTES { kml_name kml_id }};    }    elseif { {EXCEPT} == {EXCEPT} } {       puts {MACRO ChangeDetector_ATTRMATCH MATCH_ALL_ATTRS_EXCEPT { kml_name kml_id }};    }    else {       puts {MACRO ChangeDetector_ATTRMATCH MATCH_ALL_ATTRIBUTES};    }
 FACTORY_DEF * TeeFactory    FACTORY_NAME ChangeDetector_Original    INPUT FEATURE_TYPE ___nothing_will_match_this_to_handle_when_below_inputs_are_not_specified___    INPUT  FEATURE_TYPE Sorter_SORTED_0_3iJewJ+xcb8=    OUTPUT FEATURE_TYPE ___TOMATCH___ ___orig___ yes
@@ -2147,43 +2588,58 @@ FACTORY_DEF {*} MatchingFactory    FACTORY_NAME ChangeDetector_Matcher    INPUT 
 FACTORY_DEF * TestFactory    FACTORY_NAME ChangeDetector_MatchedWeeder    INPUT FEATURE_TYPE ___matched___    TEST &___orig___ == "yes"    OUTPUT PASSED FEATURE_TYPE ChangeDetector_UNCHANGED        @RemoveAttributes(___orig___)
 FACTORY_DEF * TestFactory    FACTORY_NAME ChangeDetector_UnMatchedWeeder    INPUT FEATURE_TYPE ___not_matched___    TEST &___orig___ == "yes"    OUTPUT PASSED FEATURE_TYPE ChangeDetector_DELETED        @RemoveAttributes(___orig___)    OUTPUT FAILED FEATURE_TYPE ChangeDetector_ADDED        @RemoveAttributes(___orig___)
 # -------------------------------------------------------------------------
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {ChangeDetector_Deleted} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
-FACTORY_DEF {*} InspectorFactory    FACTORY_NAME ChangeDetector_Deleted_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE ChangeDetector_DELETED    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { ChangeDetector_Deleted }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-FACTORY_DEF * RecorderFactory    FACTORY_NAME ChangeDetector_Deleted_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA fme_feature_type,varchar<openparen>255<closeparen>,kml_id,varchar<openparen>255<closeparen>,kml_name,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME SortFeatureDeletedAttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE ChangeDetector_DELETED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "unmatched_sort_feature" "SET_TO" "DELETED" }    OUTPUT OUTPUT FEATURE_TYPE SortFeatureDeletedAttributeCreator_OUTPUT
 # -------------------------------------------------------------------------
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {ChangeDetector_Added} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
-FACTORY_DEF {*} InspectorFactory    FACTORY_NAME ChangeDetector_Added_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE ChangeDetector_ADDED    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { ChangeDetector_Added }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-FACTORY_DEF * RecorderFactory    FACTORY_NAME ChangeDetector_Added_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA fme_feature_type,varchar<openparen>255<closeparen>,kml_id,varchar<openparen>255<closeparen>,kml_name,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME SortFeatureAddedAttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE ChangeDetector_ADDED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "unmatched_sort_feature" "SET_TO" "ADDED" }    OUTPUT OUTPUT FEATURE_TYPE SortFeatureAddedAttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME SortFeatureUnchangedAttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE ChangeDetector_UNCHANGED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "unmatched_sort_feature" "SET_TO" "UNCHANGED" }    OUTPUT OUTPUT FEATURE_TYPE SortFeatureUnchangedAttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+MACRO testClauses #Tcl to generate test clauses for the table in preparation for the TestFactory
+#Each Attribute gets put in a seperate clause
+INCLUDE [    set table {unmatched_sort_feature;IN;UNCHANGED};    set testString {MACRO testClauses };    set rows [split $table {/}];    foreach row $rows {    set cells [split $row {;}];    set attrs [split [lindex $cells 0] {,}];       set op [lindex $cells 1];       set val [lindex $cells 2];       foreach attr $attrs {       append testString "TEST ${attr} ${op} ${val} ENCODED ";             };    };    puts $testString;    ]
+FACTORY_DEF * TestFactory    FACTORY_NAME SortFeatureChangeAttributeValidator    INPUT  FEATURE_TYPE SortFeatureAddedAttributeCreator_OUTPUT    INPUT  FEATURE_TYPE SortFeatureDeletedAttributeCreator_OUTPUT    INPUT  FEATURE_TYPE SortFeatureUnchangedAttributeCreator_OUTPUT    $(testClauses)    BOOLEAN_OPERATOR AND    VALIDATOR_MODE TRUE    OUTPUT PASSED FEATURE_TYPE SortFeatureChangeAttributeValidator_PASSED    OUTPUT FAILED FEATURE_TYPE SortFeatureChangeAttributeValidator_FAILED
+# -------------------------------------------------------------------------
+FACTORY_DEF * SortFactory    FACTORY_NAME SortFeatureChangeSorter    INPUT  FEATURE_TYPE SortFeatureChangeAttributeValidator_FAILED    SORT_BY kml_id ALPHA ASCENDING unmatched_sort_feature ALPHA ASCENDING    OUTPUT SORTED FEATURE_TYPE SortFeatureChangeSorter_SORTED
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SortFeatureChangeAttributeValidationListPopulator Input Input Collector"   INPUT FEATURE_TYPE SortFeatureChangeSorter_SORTED   INPUT FEATURE_TYPE SortFeatureChangeAttributeValidator_PASSED   OUTPUT FEATURE_TYPE SortFeatureChangeAttributeValidationListPopulator_Input
+MACRO AttributeValidationListPopulator_WORKSPACE_NAME SortFeatureChangeAttributeValidationListPopulator
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_XFORMER_NAME SortFeatureChangeAttributeValidationListPopulator
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeValidationListPopulator
+MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name SortFeatureChange
+DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557361178 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+# -------------------------------------------------------------------------
+Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_mgs_calling_module" "SET_TO" "<at>Value<openparen>_FME_MF_DIR<closeparen><solidus><at>Value<openparen>_FME_MF_NAME<closeparen>" }      ATTR_ACTION { "" "_mgs_validator_name" "SET_TO" "$($(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name$encode)" }    OUTPUT OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF * PythonFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeCreator_OUTPUT"    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fme<lf>import<space>fmeobjects<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>messages<space>=<space>feature.getAttribute<openparen><apos>_fme_validation_message_list<apos><closeparen><lf><space><space><space><space>if<space>messages:<lf><space><space><space><space><space><space><space><space>index<space>=<space>0<lf><space><space><space><space><space><space><space><space>for<space>message<space>in<space>messages:<lf><space><space><space><space><space><space><space><space><space><space><space><space>if<space>feature.getAttributeNullMissingAndType<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><closeparen><openbracket>1<closebracket>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.validator_name<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_validator_name<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>_fme_validation_message_list<opencurly><apos><space>+<space>str<openparen>index<closeparen><space>+<space><apos><closecurly>.calling_module<apos><comma><space>feature.getAttribute<openparen><apos>_mgs_calling_module<apos><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>index<space>+=<space>1<lf>    OUTPUT PYOUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller_OUTPUT"
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_PythonCaller_OUTPUT"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"
+# -------------------------------------------------------------------------
+INCLUDE [    set macroLine "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557361178 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SortFeatureChangeAttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE SortFeatureChangeAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE SortFeatureChangeAttributeValidationListPopulator_Output
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationHTMLReportGenerator input Input Collector"   INPUT FEATURE_TYPE SortOrderAttributeValidationListPopulator_Output   INPUT FEATURE_TYPE SortFeatureChangeAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_input
+MACRO AttributeValidationHTMLReportGenerator_WORKSPACE_NAME AttributeValidationHTMLReportGenerator
+MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)_XFORMER_NAME AttributeValidationHTMLReportGenerator
+MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)__FEATURE_ID FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST kml_id ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<at>Value<openparen>kml_id<closeparen><space>-<space><at>Value<openparen>kml_name<closeparen>'FME_NUM_CONDITIONS2___
+INCLUDE_CUSTOM_TRANSFORMER_VER AttributeValidationHTMLReportGenerator:2
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationHTMLReportGenerator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_Output   OUTPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_Output
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC SortOrderSameAttributeCreator_OUTPUT TO FFS __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>TestSQLiteSorter_Diff_output<closeparen> GEOMETRY    ROUTE FME_GENERIC SortOrderDifferentAttributeCreator_OUTPUT TO FFS __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>TestSQLiteSorter_Diff_output<closeparen> GEOMETRY    ROUTE FME_GENERIC ChangeDetector_UNCHANGED TO FFS __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>TestSQLiteSorter_Unchanged_output<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeValidationHTMLReportGenerator_Output TO HTML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>HTML<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
-FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
-# -------------------------------------------------------------------------
-FFS_1_DEF TestSQLiteSorter_Unchanged_output   kml_id                       varchar(200)   kml_name                     varchar(200)
-# -------------------------------------------------------------------------
-FFS_2_DEF TestSQLiteSorter_Diff_output   sort_order_matches           varchar(200)   sorter_dataset               varchar(200)   _feature_type{}.count        varchar(200)   _feature_type{}.name         varchar(200)   _total_features_written      varchar(200)   sqlite_sorter_dataset        varchar(200)   comparison_result            varchar(200)   fme_rejection_code           varchar(200)
