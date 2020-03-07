@@ -1,8 +1,8 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        /Library/FME/2018.1/fme /Users/kweller/Projects/mg/fme-components/fme/TestAttributeValidation.fmw
-#              --DestDataset_HTML "/Users/kweller/Projects/mg/fme-components/fme/Resources/Data/Output/TestResults.html"
+#        /opt/fme-desktop-2019/fme /home/kweller/Projects/mg/fme-components/fme/TestAttributeValidation.fmw
+#              --DestDataset_HTML "/home/kweller/Projects/mg/fme-components/fme/Resources/Data/Output/TestResults.html"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -11,14 +11,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="7500 2021"
+#!   DOC_EXTENTS="7931 2021"
 #!   DOC_TOP_LEFT="0 -2171"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="18592"
-#!   FME_DOCUMENT_GUID="3432b376-72ba-4ad1-b579-b0a5171ff5eb"
-#!   FME_DOCUMENT_PRIORGUID="07a66fe0-a6c4-423b-a97d-b08bea0b13e0,279bef88-ab4c-4aae-b3da-34b1294aff70,d8c86109-386a-4157-aaf1-20e37ddb4509,ffaea88f-73eb-4f15-baea-55ed98a0633c,aec67d28-775e-40a0-9296-f319ffa347a8,3acc2584-2b00-4298-bc9c-6389f1676324,ed7a2fee-8fb8-4515-926d-e5b74816ad6c,d7629c4f-6898-4190-bc8d-c7198517f271,3f4d3eca-d131-456d-96f1-5beb5a7cb978,911993f3-d62b-462b-ad41-43fea0f01d33,924b3a87-d70d-4d44-9369-0bc9611db50c,f6893fce-09af-461c-8a89-93aedd7b5934,19553093-159b-4d64-94eb-00b01ffaef0a,790c0d6b-5d93-48f4-ab46-7236272e9152,d6c28f3a-d2c6-4dc7-a53d-dd24800e8792"
+#!   FME_BUILD_NUM="19823"
+#!   FME_DOCUMENT_GUID="5e3c9f3c-6864-4255-bfe5-1be576521dc4"
+#!   FME_DOCUMENT_PRIORGUID="07a66fe0-a6c4-423b-a97d-b08bea0b13e0,279bef88-ab4c-4aae-b3da-34b1294aff70,d8c86109-386a-4157-aaf1-20e37ddb4509,ffaea88f-73eb-4f15-baea-55ed98a0633c,aec67d28-775e-40a0-9296-f319ffa347a8,3acc2584-2b00-4298-bc9c-6389f1676324,ed7a2fee-8fb8-4515-926d-e5b74816ad6c,d7629c4f-6898-4190-bc8d-c7198517f271,3f4d3eca-d131-456d-96f1-5beb5a7cb978,911993f3-d62b-462b-ad41-43fea0f01d33,924b3a87-d70d-4d44-9369-0bc9611db50c,f6893fce-09af-461c-8a89-93aedd7b5934,19553093-159b-4d64-94eb-00b01ffaef0a,790c0d6b-5d93-48f4-ab46-7236272e9152,d6c28f3a-d2c6-4dc7-a53d-dd24800e8792,3432b376-72ba-4ad1-b579-b0a5171ff5eb,cd485d63-4c3d-451d-ac49-1de466df8b09"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -26,8 +26,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - macosx)"
-#!   LAST_SAVE_DATE="2019-05-09T12:18:04"
+#!   LAST_SAVE_BUILD="FME(R) 2019.2.3.1 (20200212 - Build 19823 - linux-x64)"
+#!   LAST_SAVE_DATE="2020-03-06T17:18:53"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -37,6 +37,7 @@
 #!   PASSWORD=""
 #!   PYTHON_COMPATIBILITY="36"
 #!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
 #!   SHOW_ANNOTATIONS="true"
 #!   SHOW_INFO_NODES="true"
 #!   SOURCE="NONE"
@@ -45,7 +46,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-159.002 0"
+#!   VIEW_POSITION="-159.002 -210.002"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -64,7 +65,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_rotation number(31,15) fme_feature_type char(50) fme_type char(50) fme_fill_color char(50) fme_basename char(50) fme_secondary_axis number(31,15) fme_geometry char(50) fme_dataset char(50) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) html_eol char(10) fme_color char(50)"
+#!   EXPOSABLE_ATTRS="fme_color char(50) fme_feature_type char(50) fme_type char(50) html_eol char(10) fme_fill_color char(50) fme_text_string char(50) fme_text_size number(31,15) fme_sweep_angle number(31,15) fme_rotation number(31,15) fme_geometry char(50) fme_secondary_axis number(31,15) fme_primary_axis number(31,15) fme_basename char(50) fme_dataset char(50) fme_start_angle number(31,15)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -349,7 +350,7 @@
 #!   IDENTIFIER="2"
 #!   FEAT_GEOMTYPE="html_none"
 #!   POSITION="7500 -150"
-#!   BOUNDING_RECT="7500 -150 -1 -1"
+#!   BOUNDING_RECT="7500 -150 431 71"
 #!   ORDER="500000000000009"
 #!   COLLAPSED="false"
 #!   KEYWORD="HTML_1"
@@ -388,7 +389,7 @@
 #!   TYPE="Creator"
 #!   VERSION="5"
 #!   POSITION="0 -150"
-#!   BOUNDING_RECT="0 -150 -1 -1"
+#!   BOUNDING_RECT="0 -150 431 71"
 #!   ORDER="500000000000001"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -412,7 +413,7 @@
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
 #!   POSITION="750 -600"
-#!   BOUNDING_RECT="750 -600 -1 -1"
+#!   BOUNDING_RECT="750 -600 431 71"
 #!   ORDER="500000000000003"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -440,7 +441,7 @@
 #!   TYPE="Counter"
 #!   VERSION="2"
 #!   POSITION="750 -150"
-#!   BOUNDING_RECT="750 -150 -1 -1"
+#!   BOUNDING_RECT="750 -150 431 71"
 #!   ORDER="500000000000010"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -466,7 +467,7 @@
 #!   TYPE="StatisticsCalculator"
 #!   VERSION="7"
 #!   POSITION="750 -1050"
-#!   BOUNDING_RECT="750 -1050 -1 -1"
+#!   BOUNDING_RECT="750 -1050 431 71"
 #!   ORDER="500000000000032"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -489,7 +490,7 @@
 #!     <XFORM_ATTR ATTR_NAME="string2" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_input_feature_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_PARM PARM_NAME="ATTIBUTES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="COMPUTE_HISTOGRAM" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE="_input_feature_count"/>
 #!     <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
@@ -501,6 +502,7 @@
 #!     <XFORM_PARM PARM_NAME="MEDIAN_ATTR" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="MIN_ATTR" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="MODE_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MORE_ATTRIBUTES_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NUMERIC_ATTR" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PREPEND_ATTR_NAME_CHOICE" PARM_VALUE="For multiple results only"/>
@@ -591,7 +593,7 @@
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18592"
+#!   LAST_PARM_EDIT="19823"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -618,7 +620,7 @@
 #!   ORDER="500000000000021"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18592"
+#!   LAST_PARM_EDIT="19823"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -678,7 +680,7 @@
 #!   ORDER="500000000000035"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18592"
+#!   LAST_PARM_EDIT="19823"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -700,7 +702,7 @@
 #!   TYPE="DuplicateFilter"
 #!   VERSION="5"
 #!   POSITION="1650 -600"
-#!   BOUNDING_RECT="1650 -600 -1 -1"
+#!   BOUNDING_RECT="1650 -600 431 71"
 #!   ORDER="500000000000036"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -724,9 +726,11 @@
 #!     <XFORM_ATTR ATTR_NAME="_input_feature_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="INPUT_ORDERED_CHOICE" PARM_VALUE="No"/>
 #!     <XFORM_PARM PARM_NAME="KEYATTR" PARM_VALUE="_input_feature_count"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter"/>
 #! </TRANSFORMER>
@@ -735,7 +739,7 @@
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="1650 -1050"
-#!   BOUNDING_RECT="1650 -1050 -1 -1"
+#!   BOUNDING_RECT="1650 -1050 431 71"
 #!   ORDER="500000000000037"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -760,7 +764,7 @@
 #!   TYPE="Creator"
 #!   VERSION="5"
 #!   POSITION="0 -2100"
-#!   BOUNDING_RECT="0 -2100 -1 -1"
+#!   BOUNDING_RECT="0 -2100 431 71"
 #!   ORDER="500000000000039"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -783,13 +787,13 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="35"
 #!   TYPE="AttributeValidationTestTransformer"
-#!   VERSION="2"
+#!   VERSION="3"
 #!   POSITION="750 -2100"
 #!   BOUNDING_RECT="750 -2100 708.015625 71"
 #!   ORDER="500000000000040"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18592"
+#!   LAST_PARM_EDIT="19823"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -805,18 +809,55 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="28"
 #!   TYPE="AttributeValidationHTMLReportGenerator"
-#!   VERSION="1"
+#!   VERSION="5"
 #!   POSITION="6450 -150"
 #!   BOUNDING_RECT="6450 -150 821.015625 71"
 #!   ORDER="500000000000042"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18592"
+#!   LAST_PARM_EDIT="19823"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="html_content" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_no_validation_errors" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="string1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="int1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="string2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_input_feature_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;DIRTY&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="string1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="int1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="string2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_input_feature_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_validator_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;CLEAN&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_no_validation_errors" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="string1" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="int1" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="string2" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_input_feature_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationHTMLReportGenerator"/>
 #!     <XFORM_PARM PARM_NAME="_FEATURE_ID" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;id&lt;closeparen&gt;"/>
@@ -946,6 +987,17 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="35"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
 #!   IDENTIFIER="32"
 #!   SOURCE_NODE="6"
 #!   TARGET_NODE="12"
@@ -989,12 +1041,158 @@
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! <SUBDOCUMENT
+#!   NAME="TestTransformer"
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   DOC_EXTENTS="2595.51 106.5"
+#!   DOC_TOP_LEFT="-1350 -71"
+#!   FME_DOCUMENT_GUID="3540b247-a78b-4a6a-a058-b840c7b4f2a3"
+#!   FME_DOCUMENT_PRIORGUID="e0eb6970-c0b1-4cec-90da-32e8e040a9ec"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   GUID="3540b247-a78b-4a6a-a058-b840c7b4f2a3"
+#!   HISTORY=""
+#!   IS_VISIBLE="false"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - linux-x64)"
+#!   LAST_SAVE_DATE="2019-05-08T11:34:29"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   PYTHON_COMPATIBILITY=""
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="TestTransformer"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-3921.04 126.001"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR _CREATION_INSTANCE Creation Instance:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;_creation_instance&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="AttributeValidator"
+#!   VERSION="2"
+#!   POSITION="-690.510009765625 35.5"
+#!   BOUNDING_RECT="-690.510009765625 35.5 524.984375 71"
+#!   ORDER="500000000000040"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18592"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="_creation_instance;TYPE;XML"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ModuleAttributeValidator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="1"
+#!   POSITION="209.489990234375 35.5"
+#!   BOUNDING_RECT="209.489990234375 35.5 481.015625 71"
+#!   ORDER="500000000000041"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="Module"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="2"
+#!   NAME="ModuleAttributeValidator_Input"
+#!   POSITION="-1350 0"
+#!   BOUNDING_RECT="-1350 0 431 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" ATTR_VALUE="$(_CREATION_INSTANCE)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="3"
+#!   NAME="AttributeValidationListPopulator_Output_1"
+#!   POSITION="814.505615234375 17"
+#!   BOUNDING_RECT="814.505615234375 17 431 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
 #! <FEAT_LINK
-#!   IDENTIFIER="38"
-#!   SOURCE_NODE="35"
-#!   TARGET_NODE="28"
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="3"
 #!   SOURCE_PORT_DESC="fo 0 Output"
-#!   TARGET_PORT_DESC="fi 0 input"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 Input"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -1005,19 +1203,20 @@
 #! </BREAKPOINTS>
 #! <ATTR_LINKS>
 #! </ATTR_LINKS>
-#! <SUBDOCUMENTS>
+#! </SUBDOCUMENT>
 #! <SUBDOCUMENT
-#!   NAME="AttributeValidationListPopulator"
+#!   NAME="AttributeValidationListPopulator_2"
 #!   CATEGORY="Data Quality"
 #!   DESCRIPTION=""
 #!   DOC_DYNAMIC_INPUT_ATTRS="0"
-#!   DOC_EXTENTS="4500 1e-5"
-#!   DOC_TOP_LEFT="-900 -1e-5"
+#!   DOC_EXTENTS="4931 71"
+#!   DOC_TOP_LEFT="-900 -71"
 #!   FME_DOCUMENT_GUID=""
 #!   FME_DOCUMENT_PRIORGUID=""
 #!   FME_PROCESS_COUNT="NO_PARALLELISM"
 #!   FME_PROCESS_GROUPS_ORDERED="No"
 #!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
 #!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
 #!   HISTORY=""
 #!   IS_VISIBLE="false"
@@ -1025,9 +1224,9 @@
 #!   LAST_SAVE_DATE=""
 #!   MARKDOWN_DESCRIPTION=""
 #!   MARKDOWN_USAGE=""
-#!   PYTHON_COMPATIBILITY="36"
+#!   PYTHON_COMPATIBILITY=""
 #!   SUPPRESS_UPGRADE="false"
-#!   TITLE="AttributeValidationListPopulator"
+#!   TITLE="AttributeValidationListPopulator_2"
 #!   USAGE=""
 #!   USE_MARKDOWN="NO"
 #!   VIEW_POSITION="-999.01 96.001"
@@ -1053,7 +1252,7 @@
 #!   TYPE="PythonCaller"
 #!   VERSION="4"
 #!   POSITION="1350 0"
-#!   BOUNDING_RECT="1350 0 -1 -1"
+#!   BOUNDING_RECT="1350 0 431 71"
 #!   ORDER="500000000000019"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1082,7 +1281,7 @@
 #!   TYPE="AttributeExposer"
 #!   VERSION="1"
 #!   POSITION="2100 0"
-#!   BOUNDING_RECT="2100 0 -1 -1"
+#!   BOUNDING_RECT="2100 0 431 71"
 #!   ORDER="500000000000022"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1106,7 +1305,7 @@
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="2850 0"
-#!   BOUNDING_RECT="2850 0 -1 -1"
+#!   BOUNDING_RECT="2850 0 431 71"
 #!   ORDER="500000000000021"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1127,7 +1326,7 @@
 #!   TYPE="ParameterFetcher"
 #!   VERSION="4"
 #!   POSITION="-150 0"
-#!   BOUNDING_RECT="-150 0 -1 -1"
+#!   BOUNDING_RECT="-150 0 431 71"
 #!   ORDER="500000000000024"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1147,7 +1346,7 @@
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
 #!   POSITION="599.99999999999966 0"
-#!   BOUNDING_RECT="599.99999999999966 0 -1 -1"
+#!   BOUNDING_RECT="599.99999999999966 0 431 71"
 #!   ORDER="500000000000025"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1161,7 +1360,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_FME_MF_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _mgs_calling_module SET_TO &lt;at&gt;Value&lt;openparen&gt;_FME_MF_DIR&lt;closeparen&gt;&lt;at&gt;Value&lt;openparen&gt;_FME_MF_NAME&lt;closeparen&gt;  _mgs_validator_name SET_TO $(Validator_Name)"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _mgs_calling_module SET_TO &lt;at&gt;Value&lt;openparen&gt;_FME_MF_DIR&lt;closeparen&gt;&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;_FME_MF_NAME&lt;closeparen&gt;  _mgs_validator_name SET_TO $(Validator_Name)"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1176,7 +1375,7 @@
 #!   IDENTIFIER="2"
 #!   NAME="Input"
 #!   POSITION="-900 0"
-#!   BOUNDING_RECT="-900 0 -1 -1"
+#!   BOUNDING_RECT="-900 0 431 71"
 #!   COLLAPSED="true"
 #!   PUBLISHED="true"
 #!   IS_SOURCE="true"
@@ -1187,7 +1386,7 @@
 #!   IDENTIFIER="3"
 #!   NAME="Output"
 #!   POSITION="3600 0"
-#!   BOUNDING_RECT="3600 0 -1 -1"
+#!   BOUNDING_RECT="3600 0 431 71"
 #!   COLLAPSED="true"
 #!   IS_SOURCE="false"
 #!   ATTR_MODE="0"
@@ -1268,173 +1467,18 @@
 #! </ATTR_LINKS>
 #! </SUBDOCUMENT>
 #! <SUBDOCUMENT
-#!   NAME="TestTransformer"
-#!   CATEGORY=""
-#!   DESCRIPTION=""
-#!   DOC_DYNAMIC_INPUT_ATTRS="0"
-#!   DOC_EXTENTS="2164.51 71"
-#!   DOC_TOP_LEFT="-1350 -35.5"
-#!   FME_DOCUMENT_GUID="3540b247-a78b-4a6a-a058-b840c7b4f2a3"
-#!   FME_DOCUMENT_PRIORGUID="e0eb6970-c0b1-4cec-90da-32e8e040a9ec"
-#!   FME_PROCESS_COUNT="NO_PARALLELISM"
-#!   FME_PROCESS_GROUPS_ORDERED="No"
-#!   FME_PROCESS_GROUP_BY=""
-#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
-#!   GUID="3540b247-a78b-4a6a-a058-b840c7b4f2a3"
-#!   HISTORY=""
-#!   IS_VISIBLE="false"
-#!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - linux-x64)"
-#!   LAST_SAVE_DATE="2019-05-08T11:34:29"
-#!   MARKDOWN_DESCRIPTION=""
-#!   MARKDOWN_USAGE=""
-#!   PYTHON_COMPATIBILITY="36"
-#!   SUPPRESS_UPGRADE="false"
-#!   TITLE="TestTransformer"
-#!   USAGE=""
-#!   USE_MARKDOWN="NO"
-#!   VIEW_POSITION="-3921.04 126.001"
-#!   XFORM_DEPRECATED="No"
-#!   ZOOM_SCALE="100"
-#! >
-#! <GLOBAL_PARAMETERS>
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR _CREATION_INSTANCE Creation Instance:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;_creation_instance&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! </GLOBAL_PARAMETERS>
-#! <COMMENTS>
-#! </COMMENTS>
-#! <CONSTANTS>
-#! </CONSTANTS>
-#! <BOOKMARKS>
-#! </BOOKMARKS>
-#! <TRANSFORMERS>
-#! <TRANSFORMER
-#!   IDENTIFIER="4"
-#!   TYPE="AttributeValidator"
-#!   VERSION="2"
-#!   POSITION="-690.510009765625 35.5"
-#!   BOUNDING_RECT="-690.510009765625 35.5 524.984375 71"
-#!   ORDER="500000000000040"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18592"
-#! >
-#!     <OUTPUT_FEAT NAME="PASSED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="FAILED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="_creation_instance;TYPE;XML"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ModuleAttributeValidator"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="5"
-#!   TYPE="SubDocumentTransformer"
-#!   VERSION="1"
-#!   POSITION="209.489990234375 35.5"
-#!   BOUNDING_RECT="209.489990234375 35.5 481.015625 71"
-#!   ORDER="500000000000041"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="18592"
-#! >
-#!     <OUTPUT_FEAT NAME="Output"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="Module"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
-#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! </TRANSFORMERS>
-#! <SUBDOCUMENT_IOS>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="2"
-#!   NAME="ModuleAttributeValidator_Input"
-#!   POSITION="-1350 0"
-#!   BOUNDING_RECT="-1350 0 -1 -1"
-#!   COLLAPSED="true"
-#!   PUBLISHED="true"
-#!   IS_SOURCE="true"
-#!   ATTR_MODE="0"
-#! >
-#!     <XFORM_ATTR ATTR_NAME="_creation_instance" ATTR_VALUE="$(_CREATION_INSTANCE)" />
-#! </SUBDOCUMENT_IO>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="3"
-#!   NAME="AttributeValidationListPopulator_Output_1"
-#!   POSITION="814.505615234375 17"
-#!   BOUNDING_RECT="814.505615234375 17 -1 -1"
-#!   COLLAPSED="true"
-#!   IS_SOURCE="false"
-#!   ATTR_MODE="0"
-#! >
-#! </SUBDOCUMENT_IO>
-#! </SUBDOCUMENT_IOS>
-#! <FEAT_LINKS>
-#! <FEAT_LINK
-#!   IDENTIFIER="6"
-#!   SOURCE_NODE="2"
-#!   TARGET_NODE="4"
-#!   SOURCE_PORT_DESC="0"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="7"
-#!   SOURCE_NODE="5"
-#!   TARGET_NODE="3"
-#!   SOURCE_PORT_DESC="fo 0 Output"
-#!   TARGET_PORT_DESC="0"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="8"
-#!   SOURCE_NODE="4"
-#!   TARGET_NODE="5"
-#!   SOURCE_PORT_DESC="fo 1 FAILED"
-#!   TARGET_PORT_DESC="fi 0 Input"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   EXTRA_POINTS=""
-#! />
-#! </FEAT_LINKS>
-#! <BREAKPOINTS>
-#! </BREAKPOINTS>
-#! <ATTR_LINKS>
-#! </ATTR_LINKS>
-#! </SUBDOCUMENT>
-#! <SUBDOCUMENT
-#!   NAME="AttributeValidationListPopulator_2"
+#!   NAME="AttributeValidationListPopulator"
 #!   CATEGORY="Data Quality"
 #!   DESCRIPTION=""
 #!   DOC_DYNAMIC_INPUT_ATTRS="0"
-#!   DOC_EXTENTS="4500 1e-5"
-#!   DOC_TOP_LEFT="-900 -1e-5"
+#!   DOC_EXTENTS="4931 71"
+#!   DOC_TOP_LEFT="-900 -71"
 #!   FME_DOCUMENT_GUID=""
 #!   FME_DOCUMENT_PRIORGUID=""
 #!   FME_PROCESS_COUNT="NO_PARALLELISM"
 #!   FME_PROCESS_GROUPS_ORDERED="No"
 #!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
 #!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
 #!   HISTORY=""
 #!   IS_VISIBLE="false"
@@ -1442,9 +1486,9 @@
 #!   LAST_SAVE_DATE=""
 #!   MARKDOWN_DESCRIPTION=""
 #!   MARKDOWN_USAGE=""
-#!   PYTHON_COMPATIBILITY="36"
+#!   PYTHON_COMPATIBILITY=""
 #!   SUPPRESS_UPGRADE="false"
-#!   TITLE="AttributeValidationListPopulator_2"
+#!   TITLE="AttributeValidationListPopulator"
 #!   USAGE=""
 #!   USE_MARKDOWN="NO"
 #!   VIEW_POSITION="-999.01 96.001"
@@ -1470,7 +1514,7 @@
 #!   TYPE="PythonCaller"
 #!   VERSION="4"
 #!   POSITION="1350 0"
-#!   BOUNDING_RECT="1350 0 -1 -1"
+#!   BOUNDING_RECT="1350 0 431 71"
 #!   ORDER="500000000000019"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1499,7 +1543,7 @@
 #!   TYPE="AttributeExposer"
 #!   VERSION="1"
 #!   POSITION="2100 0"
-#!   BOUNDING_RECT="2100 0 -1 -1"
+#!   BOUNDING_RECT="2100 0 431 71"
 #!   ORDER="500000000000022"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1523,7 +1567,7 @@
 #!   TYPE="AttributeRemover"
 #!   VERSION="1"
 #!   POSITION="2850 0"
-#!   BOUNDING_RECT="2850 0 -1 -1"
+#!   BOUNDING_RECT="2850 0 431 71"
 #!   ORDER="500000000000021"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1544,7 +1588,7 @@
 #!   TYPE="ParameterFetcher"
 #!   VERSION="4"
 #!   POSITION="-150 0"
-#!   BOUNDING_RECT="-150 0 -1 -1"
+#!   BOUNDING_RECT="-150 0 431 71"
 #!   ORDER="500000000000024"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1564,7 +1608,7 @@
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
 #!   POSITION="599.99999999999966 0"
-#!   BOUNDING_RECT="599.99999999999966 0 -1 -1"
+#!   BOUNDING_RECT="599.99999999999966 0 431 71"
 #!   ORDER="500000000000025"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1578,7 +1622,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_FME_MF_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _mgs_calling_module SET_TO &lt;at&gt;Value&lt;openparen&gt;_FME_MF_DIR&lt;closeparen&gt;&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;_FME_MF_NAME&lt;closeparen&gt;  _mgs_validator_name SET_TO $(Validator_Name)"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _mgs_calling_module SET_TO &lt;at&gt;Value&lt;openparen&gt;_FME_MF_DIR&lt;closeparen&gt;&lt;at&gt;Value&lt;openparen&gt;_FME_MF_NAME&lt;closeparen&gt;  _mgs_validator_name SET_TO $(Validator_Name)"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1593,7 +1637,7 @@
 #!   IDENTIFIER="2"
 #!   NAME="Input"
 #!   POSITION="-900 0"
-#!   BOUNDING_RECT="-900 0 -1 -1"
+#!   BOUNDING_RECT="-900 0 431 71"
 #!   COLLAPSED="true"
 #!   PUBLISHED="true"
 #!   IS_SOURCE="true"
@@ -1604,7 +1648,7 @@
 #!   IDENTIFIER="3"
 #!   NAME="Output"
 #!   POSITION="3600 0"
-#!   BOUNDING_RECT="3600 0 -1 -1"
+#!   BOUNDING_RECT="3600 0 431 71"
 #!   COLLAPSED="true"
 #!   IS_SOURCE="false"
 #!   ATTR_MODE="0"
@@ -1768,7 +1812,7 @@ HTML_1_DATASET "$(DestDataset_HTML_1)"
 LOG_FILENAME "$(FME_MF_DIR)TestAttributeValidation.log"
 LOG_APPEND NO
 LOG_TIMINGS YES
-FME_DEBUG MAPPING_FILE BADNEWS FME_STACK_TRACE UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG FME_DEBUG
+FME_DEBUG MAPPING_FILE BADNEWS FME_STACK_TRACE UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG FME_DEBUG STASH
 LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -1823,23 +1867,28 @@ MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)_XFORMER_NAME Attribut
 MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)_TRANSFORMER_GROUP 
 MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
 MACRO $(AttributeValidationTestTransformer_WORKSPACE_NAME)__CREATION_INSTANCE <at>Value<openparen>_creation_instance<closeparen>
-INCLUDE_CUSTOM_TRANSFORMER_VER AttributeValidationTestTransformer:2
+INCLUDE_CUSTOM_TRANSFORMER_VER AttributeValidationTestTransformer:3
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationTestTransformer Output Output Renamer/Nuker"   INPUT FEATURE_TYPE AttributeValidationTestTransformer_Output   OUTPUT FEATURE_TYPE AttributeValidationTestTransformer_Output
 # -------------------------------------------------------------------------
 # Create the DomainName that this transformer will use.
 # Because @Count itself will evalute the expression to calculate the
 # domain, we don't need to do anything in Tcl per feature going by
 INCLUDE [    set domainPrefix {};    if { {Global} == {Local} }    {       set domainPrefix [FME_EncodeText {Counter_}];    };    puts "MACRO Counter_FULL_DOMAIN ${domainPrefix}record_id_counter"; ]
-FACTORY_DEF * ExecuteFunctionFactory    FACTORY_NAME Counter_Rejector    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_CREATED    FUNCTION_DEFINITION @Count(REJECTABLE_WITH_FLAG,fme_encoded,$(Counter_FULL_DOMAIN),"0")    RESULT_ATTRIBUTE "id"    OUTPUT COMPLETE FEATURE_TYPE Counter_OUTPUT    OUTPUT REJECTED FEATURE_TYPE Counter_<REJECTED>
+FACTORY_DEF * ExecuteFunctionFactory    FACTORY_NAME Counter_Rejector    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_CREATED    FUNCTION_DEFINITION @Count(REJECTABLE_WITH_FLAG,fme_encoded,$(Counter_FULL_DOMAIN),"0")    RESULT_ATTRIBUTE "id"    FEATURE_TABLE_SHIM_SUPPORT Yes    OUTPUT COMPLETE FEATURE_TYPE Counter_OUTPUT    OUTPUT REJECTED FEATURE_TYPE Counter_<REJECTED>
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Counter <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE Counter_<REJECTED>
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Counter_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "string1" "SET_TO" "dummy" }      ATTR_ACTION { "" "int1" "SET_TO" "1" }      ATTR_ACTION { "" "string2" "SET_TO" "whatever" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
 # -------------------------------------------------------------------------
-DEFAULT_MACRO __StatisticsCalculator_78b942fe_cd04_4541_8067_1a023bc06abf2_GROUP_BY
+DEFAULT_MACRO __StatisticsCalculator_405ab5af_f1d6_4538_babd_9b3b3bd7ecf40_GROUP_BY
+# If the cumulative port is connected, the _PORT_SPECIFIED macro
+MACRO StatisticsCalculator_405ab5af_f1d6_4538_babd_9b3b3bd7ecf40_PORT_SPECIFIED no
+# Force splitting of feature tables when the CUMULATIVE port is connected
+MACRO StatisticsCalculator_405ab5af_f1d6_4538_babd_9b3b3bd7ecf40_SPLIT_FEATURE_TABLES Yes
+INCLUDE [if { {$(StatisticsCalculator_405ab5af_f1d6_4538_babd_9b3b3bd7ecf40_PORT_SPECIFIED)} == "no" } {     puts {MACRO StatisticsCalculator_405ab5af_f1d6_4538_babd_9b3b3bd7ecf40_SPLIT_FEATURE_TABLES No} }
 DYNAMIC_FUNCTION_CONFIGURATION Python FMEOBJECTS
 DYNAMIC_FUNCTION_CONFIGURATION Python import StatisticsCalculator
-DYNAMIC_FUNCTION_CONFIGURATION Python "StatisticsCalculator.connectTransformer(    'StatisticsCalculator',{     'GROUP_BY_MACRO':'__StatisticsCalculator_78b942fe_cd04_4541_8067_1a023bc06abf2_GROUP_BY',     'STATS_ATTRS':'id',     'COUNT_ATTR':'_input_feature_count',     'COMPUTE_HISTOGRAM':'NO',     'HISTO_ATTR':'<Unused>',     'PREPEND_ATTR_NAME':'No',     'encoded_result_attrs':True,     None:None})"
-FACTORY_DEF * TeeFactory    FACTORY_NAME StatisticsCalculator_InputProcessor    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    OUTPUT FEATURE_TYPE __ORIGINAL__       @Python(StatisticsCalculator.recordFeature,StatisticsCalculator)
+DYNAMIC_FUNCTION_CONFIGURATION Python "StatisticsCalculator.connectTransformer(    'StatisticsCalculator',{     'GROUP_BY_MACRO':'__StatisticsCalculator_405ab5af_f1d6_4538_babd_9b3b3bd7ecf40_GROUP_BY',     'STATS_ATTRS':'id',     'COUNT_ATTR':'_input_feature_count',     'COMPUTE_HISTOGRAM':'NO',     'HISTO_ATTR':'<Unused>',     'PREPEND_ATTR_NAME':'No',     'encoded_result_attrs':True,     'cumulative_mode':'$(StatisticsCalculator_405ab5af_f1d6_4538_babd_9b3b3bd7ecf40_PORT_SPECIFIED)',     None:None})"
+FACTORY_DEF * TeeFactory    FACTORY_NAME StatisticsCalculator_InputProcessor    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    SPLIT_FEATURE_TABLES $(StatisticsCalculator_405ab5af_f1d6_4538_babd_9b3b3bd7ecf40_SPLIT_FEATURE_TABLES)    OUTPUT FEATURE_TYPE __ORIGINAL__       @Python(StatisticsCalculator.recordFeature,StatisticsCalculator)
 FACTORY_DEF * TeeFactory    FACTORY_NAME StatisticsCalculator_UnneededInputNuker    INPUT FEATURE_TYPE __ORIGINAL__    OUTPUT FEATURE_TYPE StatisticsCalculator_COMPLETE
 FACTORY_DEF * SortFactory    FACTORY_NAME StatisticsCalculator_CompleteOutputter    INPUT FEATURE_TYPE __UNUSED_INPUT_TO_GUARANTEE_FACTORY_DOESNT_CONSUME_EVERYTHING__    INPUT FEATURE_TYPE StatisticsCalculator_COMPLETE    OUTPUT SORTED FEATURE_TYPE StatisticsCalculator_COMPLETE       @Python(StatisticsCalculator.summarizeStatistics,StatisticsCalculator,__ORIGINAL__)
 FACTORY_DEF * CreationFactory    FACTORY_NAME StatisticsCalculator_SummaryCreator    CREATE_AT_END    NUMBER_TO_CREATE 1
@@ -1850,7 +1899,7 @@ MACRO testClauses #Tcl to generate test clauses for the table in preparation for
 INCLUDE [    set table {_input_feature_count;RANGE;<openparen>1<comma>3<closebracket>};    set testString {MACRO testClauses };    set rows [split $table {/}];    foreach row $rows {    set cells [split $row {;}];    set attrs [split [lindex $cells 0] {,}];       set op [lindex $cells 1];       set val [lindex $cells 2];       foreach attr $attrs {       append testString "TEST ${attr} ${op} ${val} ENCODED ";             };    };    puts $testString;    ]
 FACTORY_DEF * TestFactory    FACTORY_NAME InputFeatureCountAttributeValidator    INPUT  FEATURE_TYPE StatisticsCalculator_COMPLETE    $(testClauses)    BOOLEAN_OPERATOR AND    VALIDATOR_MODE TRUE    OUTPUT PASSED FEATURE_TYPE InputFeatureCountAttributeValidator_PASSED    OUTPUT FAILED FEATURE_TYPE InputFeatureCountAttributeValidator_FAILED
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME DuplicateFilter    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE InputFeatureCountAttributeValidator_FAILED    KEY_ATTRIBUTES { _input_feature_count }    INPUT_IS_ORDERED NO    OUTPUT UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE
+FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME DuplicateFilter    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE InputFeatureCountAttributeValidator_FAILED    KEY_ATTRIBUTES { _input_feature_count }    INPUT_IS_ORDERED NO    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    OUTPUT UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE
 # -------------------------------------------------------------------------
 INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE DuplicateFilter_UNIQUE    OUTPUT { FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(fme_encoded,id)        @RemoveAttributes(fme_pcre_match"$(AttributeRemover_LIST_EXP)")         }
@@ -1864,7 +1913,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name InputFeatureCount
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557425884 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1583540333 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)
@@ -1878,7 +1927,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORK
 # -------------------------------------------------------------------------
 INCLUDE [    set macroLine "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557425884 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1583540333 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "InputFeatureCountAttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE InputFeatureCountAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE InputFeatureCountAttributeValidationListPopulator_Output
 # -------------------------------------------------------------------------
@@ -1896,7 +1945,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name First
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557425884 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1583540333 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)
@@ -1910,7 +1959,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORK
 # -------------------------------------------------------------------------
 INCLUDE [    set macroLine "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557425884 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1583540333 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "FirstAttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE FirstAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE FirstAttributeValidationListPopulator_Output
 # -------------------------------------------------------------------------
@@ -1928,7 +1977,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name Second
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1557425884 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1583540333 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)
@@ -1942,7 +1991,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORK
 # -------------------------------------------------------------------------
 INCLUDE [    set macroLine "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        @RemoveAttributes(fme_pcre_match"$($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_EXP)")         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1557425884 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1583540333 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "SecondAttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE SecondAttributeValidationListPopulator_Output   OUTPUT FEATURE_TYPE SecondAttributeValidationListPopulator_Output
 # -------------------------------------------------------------------------
@@ -1952,8 +2001,10 @@ MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)_XFORMER_NAME Attr
 MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)_TRANSFORMER_GROUP 
 MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
 MACRO $(AttributeValidationHTMLReportGenerator_WORKSPACE_NAME)__FEATURE_ID <at>Value<openparen>id<closeparen>
-INCLUDE_CUSTOM_TRANSFORMER_VER AttributeValidationHTMLReportGenerator:1
+INCLUDE_CUSTOM_TRANSFORMER_VER AttributeValidationHTMLReportGenerator:5
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationHTMLReportGenerator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_Output   OUTPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_Output
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationHTMLReportGenerator <DIRTY> Output Renamer/Nuker"   INPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_<DIRTY>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValidationHTMLReportGenerator <CLEAN> Output Renamer/Nuker"   INPUT FEATURE_TYPE AttributeValidationHTMLReportGenerator_<CLEAN>
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeValidationHTMLReportGenerator_Output TO HTML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>HTML<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
