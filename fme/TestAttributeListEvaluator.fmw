@@ -1,7 +1,7 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        /opt/fme-desktop-2018/fme /home/kweller/Projects/mg/fme-components/fme/TestAttributeListEvaluator.fmw
+#        /opt/fme-desktop-2019/fme /home/kweller/Projects/mg/fme-components/fme/TestAttributeListEvaluator.fmw
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -15,9 +15,9 @@
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="18592"
-#!   FME_DOCUMENT_GUID="221de56d-b9eb-4a17-aed5-77a1ab2fc473"
-#!   FME_DOCUMENT_PRIORGUID="184fc252-a7d6-4a37-a151-d73d3c71725b,119b1a26-0d75-4b74-bc19-5f2658e8fb99"
+#!   FME_BUILD_NUM="19823"
+#!   FME_DOCUMENT_GUID="cfa66921-fa4e-469f-adbc-331b3ae9b30e"
+#!   FME_DOCUMENT_PRIORGUID="184fc252-a7d6-4a37-a151-d73d3c71725b,119b1a26-0d75-4b74-bc19-5f2658e8fb99,221de56d-b9eb-4a17-aed5-77a1ab2fc473"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -25,8 +25,8 @@
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2018.1.2.1 (20190319 - Build 18592 - linux-x64)"
-#!   LAST_SAVE_DATE="2019-07-25T15:51:57"
+#!   LAST_SAVE_BUILD="FME(R) 2019.2.3.1 (20200212 - Build 19823 - linux-x64)"
+#!   LAST_SAVE_DATE="2020-05-13T19:21:09"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -36,6 +36,7 @@
 #!   PASSWORD=""
 #!   PYTHON_COMPATIBILITY="36"
 #!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
 #!   SHOW_ANNOTATIONS="true"
 #!   SHOW_INFO_NODES="true"
 #!   SOURCE="NONE"
@@ -73,7 +74,7 @@
 #!   TYPE="Creator"
 #!   VERSION="5"
 #!   POSITION="-4800 -300"
-#!   BOUNDING_RECT="-4800 -300 -1 -1"
+#!   BOUNDING_RECT="-4800 -300 431 71"
 #!   ORDER="500000000000001"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -97,7 +98,7 @@
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
 #!   POSITION="-4050 -300"
-#!   BOUNDING_RECT="-4050 -300 -1 -1"
+#!   BOUNDING_RECT="-4050 -300 431 71"
 #!   ORDER="500000000000002"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -122,13 +123,13 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="12"
 #!   TYPE="AttributeListEvaluator"
-#!   VERSION="1"
+#!   VERSION="2"
 #!   POSITION="-3300 -300"
 #!   BOUNDING_RECT="-3300 -300 471.015625 71"
 #!   ORDER="500000000000000"
-#!   PARMS_EDITED="false"
+#!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="18592"
+#!   LAST_PARM_EDIT="19823"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -150,7 +151,7 @@
 #!   TYPE="ListConcatenator"
 #!   VERSION="3"
 #!   POSITION="-2550 -300"
-#!   BOUNDING_RECT="-2550 -300 -1 -1"
+#!   BOUNDING_RECT="-2550 -300 431 71"
 #!   ORDER="500000000000007"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -271,10 +272,10 @@ NULL_DEST_DATASET null
 #! END_WB_HEADER
 #! END_HEADER
 
-LOG_FILENAME "/home/kweller/Projects/mg/fme-components/fme/TestAttributeListEvaluator.log"
+LOG_FILENAME "$(FME_MF_DIR)TestAttributeListEvaluator.log"
 LOG_APPEND NO
 LOG_TIMINGS YES
-FME_DEBUG MAPPING_FILE BADNEWS FME_STACK_TRACE UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG FME_DEBUG
+FME_DEBUG MAPPING_FILE BADNEWS FME_STACK_TRACE UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG FME_DEBUG STASH
 LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -323,7 +324,7 @@ MACRO $(AttributeListEvaluator_WORKSPACE_NAME)_TRANSFORMER_GROUP
 MACRO $(AttributeListEvaluator_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
 MACRO $(AttributeListEvaluator_WORKSPACE_NAME)_Attribute_Names attribute2,attribute1
 MACRO $(AttributeListEvaluator_WORKSPACE_NAME)_Evaluated_Attribute_List_Name _list
-INCLUDE_CUSTOM_TRANSFORMER_VER AttributeListEvaluator:1
+INCLUDE_CUSTOM_TRANSFORMER_VER AttributeListEvaluator:2
 FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeListEvaluator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE AttributeListEvaluator_Output   OUTPUT FEATURE_TYPE AttributeListEvaluator_Output
 # -------------------------------------------------------------------------
 Tcl2 set ListConcatenator__separator [FME_DecodeText {<comma>}];      regsub -all \"{}\" [FME_DecodeText {_list<opencurly><closecurly>.value}] [FME_DecodeText {<opencurly><backslash>d+<closecurly>}] ListConcatenator__listPattern;      set ListConcatenator__listPattern ^$ListConcatenator__listPattern$;
@@ -351,5 +352,6 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYP
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
 FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
