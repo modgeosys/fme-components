@@ -1,0 +1,177 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <TRANSFORMER
+# TRANSFORMER_BEGIN RejectedFeatureLoggerTerminator,1,"Data Quality",79155250-dfd3-4436-92ed-468a902bc2c0,"Linked by Default",No,NO_PARALLELISM,,No,20620,YES,No,36,No,
+# <p>Copyright &copy; 2017-2020 by Modern geoSystems, released under <a href="https://github.com/modgeosys/fme-components/raw/master/LICENSE">this BSD 3-clause license</a>.</p>
+# TRANSFORMER_END
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BLOCKED_LOOPING="No"
+#!   CATEGORY="Data Quality"
+#!   DESCRIPTION="&lt;p&gt;Copyright &amp;copy; 2017-2020 by Modern geoSystems, released under &lt;a href=&quot;https://github.com/modgeosys/fme-components/raw/master/LICENSE&quot;&gt;this BSD 3-clause license&lt;/a&gt;.&lt;/p&gt;"
+#!   DOC_EXTENTS="2061 71"
+#!   DOC_TOP_LEFT="-5250 -71"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="20620"
+#!   FME_DOCUMENT_GUID="79155250-dfd3-4436-92ed-468a902bc2c0"
+#!   FME_DOCUMENT_PRIORGUID="e67c721d-514e-4c84-9166-3ed2889d57aa,5036f510-dbc6-43f0-a4ad-98e91b1b12d1,ac575422-86a9-422a-b49e-3b27d74fba83"
+#!   FME_LINKED_TRANSFORMER_VERSION="1"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FME_SERVER_SERVICES=""
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   FMX_INSERT_MODE="Linked by Default"
+#!   HISTORY="2020-10-02,Kevin&lt;space&gt;Weller,Initial&lt;space&gt;implementation."
+#!   ITERATION_COUNT_ATTR=""
+#!   LAST_SAVE_BUILD="FME(R) 2020.1.2.0 (20200902 - Build 20620 - linux-x64)"
+#!   LAST_SAVE_DATE="2020-10-02T15:39:34"
+#!   MARKDOWN_DESCRIPTION="Copyright &amp;copy; 2017-2020 by Modern geoSystems, released under [this BSD 3-clause license](https://github.com/modgeosys/fme-components/raw/master/LICENSE)."
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOOP_ITERATIONS=""
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="36"
+#!   REPLACED_BY=""
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   TITLE="RejectedFeatureLoggerTerminator"
+#!   USAGE=""
+#!   USE_MARKDOWN="YES"
+#!   VIEW_POSITION="-5538.06 297.003"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="-4500 0"
+#!   BOUNDING_RECT="-4500 0 493.00106825772946 71"
+#!   ORDER="500000000000091"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20620"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="&lt;amp&gt;Feature&lt;space&gt;is:"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="__Rejected_Logger"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="Terminator"
+#!   VERSION="3"
+#!   POSITION="-3750 0"
+#!   BOUNDING_RECT="-3750 0 561.00106825772946 71"
+#!   ORDER="500000000000125"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20620"
+#! >
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="&lt;amp&gt;Translation&lt;space&gt;Terminated"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="__Rejected_Terminator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="6"
+#!   NAME="Input"
+#!   POSITION="-5250 0"
+#!   BOUNDING_RECT="-5250 0 430 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 LOGGED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </TRANSFORMER>
+
+#! START_HEADER
+#! END_HEADER
+
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+DEFAULT_MACRO RejectedFeatureLoggerTerminator_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)_Input1601674774 Input Splitter"   INPUT FEATURE_TYPE "$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)_Input"
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)___Rejected_Logger_Logger    INPUT  FEATURE_TYPE "$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)_Input"    OUTPUT FEATURE_TYPE "$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)___Rejected_Logger_LOGGED"                  @Log(ENCODED, "<dollar><openparen>RejectedFeatureLoggerTerminator_WORKSPACE_NAME<closeparen>___Rejected_Logger:<space><amp>Feature<space>is:","20","20","",INFO,LOG_ONLY,$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)___Rejected_Logger_84fdf6e1_d841_43fc_a586_0fe06cc8f58c0)
+# -------------------------------------------------------------------------
+# The default behaviour is to abort on any feature entering the transformer.
+# If Workbench has set the _WB_BYPASS_TERMINATION macro to a value of "Yes",
+# then the features will instead be passed through with a feature type of
+# __WB_BYPASS_TERMINATOR__, which Workbench will send to a visualizer or
+# somesuch.
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TestFactory    FACTORY_NAME $(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)___Rejected_Terminator    INPUT  FEATURE_TYPE "$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)___Rejected_Logger_LOGGED"    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,"<amp>Translation<space>Terminated")       @SupplyAttributes(_wb_termination_xformer,"$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME)___Rejected_Terminator")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,"<amp>Translation<space>Terminated")
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(RejectedFeatureLoggerTerminator_WORKSPACE_NAME))}]
