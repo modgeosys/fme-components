@@ -3,6 +3,7 @@
 fme/*.ffs
 **/*.log
 **/*.fm?.recover
+c:
 fme/Resources/Data/Auth/*
 fme/Resources/Data/Output/*
 fme/Resources/Temp/*
