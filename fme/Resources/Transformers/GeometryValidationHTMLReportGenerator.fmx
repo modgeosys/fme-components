@@ -1,0 +1,274 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <TRANSFORMER
+# TRANSFORMER_BEGIN GeometryValidationHTMLReportGenerator,1,"Data Quality",736fa5af-c0c5-48b0-8b19-e4e5c055fddc,"Linked by Default",No,NO_PARALLELISM,,No,22311,YES,No,,No,
+# 
+# TRANSFORMER_END
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BLOCKED_LOOPING="No"
+#!   CATEGORY="Data Quality"
+#!   DESCRIPTION=""
+#!   DOC_EXTENTS="2980 71"
+#!   DOC_TOP_LEFT="-1350 -71"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="22311"
+#!   FME_DOCUMENT_GUID="736fa5af-c0c5-48b0-8b19-e4e5c055fddc"
+#!   FME_DOCUMENT_PRIORGUID="67af242e-db65-45db-8da8-d5a79f0dc7bb"
+#!   FME_LINKED_TRANSFORMER_VERSION="1"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FME_SERVER_SERVICES=""
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   FMX_INSERT_MODE="Linked by Default"
+#!   HISTORY=""
+#!   ITERATION_COUNT_ATTR=""
+#!   LAST_SAVE_BUILD="FME(R) 2022.0.0.0 (20220323 - Build 22311 - linux-x64)"
+#!   LAST_SAVE_DATE="2022-03-28T08:48:55"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOOP_ITERATIONS=""
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY=""
+#!   REPLACED_BY=""
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   TITLE="GeometryValidationHTMLReportGenerator"
+#!   USAGE=""
+#!   USE_MARKDOWN="YES"
+#!   VIEW_POSITION="-1992.02 510.005"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR _FEATURE_ID FME_SYNTAX%FME%FME_SUPPORTSNUMERIC%YES Feature Id"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;_feature_id&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR _MGS_CALLING_MODULE FME_SYNTAX%FME%FME_SUPPORTSNUMERIC%YES Mgs Calling Module:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;_mgs_calling_module&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPl9mZWF0dXJlX2lkPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwiaGlkZGVuIjpmYWxzZSwibmFtZSI6Il9GRUFUVVJFX0lEIiwicHJvbXB0IjoiRmVhdHVyZSBJZCIsInJlcXVpcmVkIjp0cnVlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5fbWdzX2NhbGxpbmdfbW9kdWxlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Il9NR1NfQ0FMTElOR19NT0RVTEUiLCJwcm9tcHQiOiJNZ3MgQ2FsbGluZyBNb2R1bGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="_FEATURE_ID" 
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;_feature_id&lt;closeparen&gt;"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR _FEATURE_ID FME_SYNTAX%FME%FME_SUPPORTSNUMERIC%YES Feature Id"
+#! />
+#!     <INFO NAME="_MGS_CALLING_MODULE" 
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;_mgs_calling_module&lt;closeparen&gt;"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR _MGS_CALLING_MODULE FME_SYNTAX%FME%FME_SUPPORTSNUMERIC%YES Mgs Calling Module:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="HTMLReportGenerator"
+#!   VERSION="1"
+#!   POSITION="450 0"
+#!   BOUNDING_RECT="450 0 490.00106825772946 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22311"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="html_content" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CONTENTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CONTENT_LIST" PARM_VALUE="HEADER HTML TABLE"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="_mgs_calling_module"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="PAGE_CONFIG" PARM_VALUE="HEADER{{TEXT;&lt;at&gt;Value&lt;openparen&gt;_mgs_calling_module&lt;closeparen&gt;;HEADER;H4;HEADER_ID;;ALIGNMENT;LEFT;COLOR;0&lt;comma&gt;0&lt;comma&gt;0;FME_CONTROLLER_QUERY_FILE;transformers&lt;solidus&gt;dependencies&lt;solidus&gt;html5&lt;solidus&gt;Header.fme;FME_CONTROLLER_CHOICE;Header}}HTML{{HTML;&lt;lt&gt;div&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;ul&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;FME&lt;space&gt;Build&lt;space&gt;Number:&lt;space&gt;$(FME_BUILD_NUM)&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;FME&lt;space&gt;Build&lt;space&gt;Date:&lt;space&gt;$(FME_BUILD_DATE)&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;FME&lt;space&gt;Home:&lt;space&gt;$(FME_HOME_UNIX_USERTYPED)&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;FME&lt;space&gt;Product&lt;space&gt;Name:&lt;space&gt;$(FME_PRODUCT_NAME)&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;Test&lt;space&gt;Ran&lt;space&gt;At:&lt;space&gt;&lt;at&gt;DateTimeFormat&lt;openparen&gt;&lt;at&gt;DateTimeNow&lt;openparen&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;%Y-%m-%d&lt;space&gt;%H:%M:%S&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;ul&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;&lt;solidus&gt;div&lt;gt&gt;;FME_CONTROLLER_QUERY_FILE;transformers&lt;solidus&gt;dependencies&lt;solidus&gt;html5&lt;solidus&gt;Custom&lt;space&gt;HTML.fme;FME_CONTROLLER_CHOICE;Custom&lt;space&gt;HTML}}TABLE{{STYLE;STRIPED;TABLE;_feature_id|Feature&lt;space&gt;ID/_issue_count|Count/_issue_issue_found|Issue/_issue_location_sample.x|x/_issue_location_sample.y|y/_issue_location_sample.z|z/_issue_repair_state|Repair&lt;space&gt;State;FME_CONTROLLER_QUERY_FILE;transformers&lt;solidus&gt;dependencies&lt;solidus&gt;html5&lt;solidus&gt;Table.fme;FME_CONTROLLER_CHOICE;Table}}"/>
+#!     <XFORM_PARM PARM_NAME="PAGE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TITLE" PARM_VALUE="Geometry&lt;space&gt;Validation&lt;space&gt;Report"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HTMLReportGenerator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="ListExploder"
+#!   VERSION="6"
+#!   POSITION="-300 0"
+#!   BOUNDING_RECT="-300 0 454 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21797"
+#! >
+#!     <OUTPUT_FEAT NAME="ELEMENTS"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_issue_found" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_location_sample.x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_location_sample.y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_location_sample.z" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_repair_state" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_issue_found" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_location_sample.x" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_location_sample.y" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_location_sample.z" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_issue_repair_state" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Prefix List Attributes"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="INCOMING_PREFIX" PARM_VALUE="_issue_"/>
+#!     <XFORM_PARM PARM_NAME="INDEX_ATTR" PARM_VALUE="_issue_index"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="_issues{}"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListExploder"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="2"
+#!   NAME="HTMLReportGenerator_Input"
+#!   POSITION="-1350 0"
+#!   BOUNDING_RECT="-1350 0 693.00106825772946 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="_feature_id" ATTR_TYPE="int64" ATTR_VALUE="$(_FEATURE_ID)" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.count" ATTR_TYPE="uint32" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.issue_found" ATTR_TYPE="buffer" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.x" ATTR_TYPE="real64" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.y" ATTR_TYPE="real64" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.location_sample.z" ATTR_TYPE="real64" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="_issues{}.repair_state" ATTR_TYPE="buffer" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="_mgs_calling_module" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(_MGS_CALLING_MODULE)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="3"
+#!   NAME="Output"
+#!   POSITION="1199.9999999999998 0"
+#!   BOUNDING_RECT="1199.9999999999998 0 430 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 ELEMENTS"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </TRANSFORMER>
+
+FME_PYTHON_VERSION 
+# ============================================================================
+DEFAULT_MACRO $(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)__FEATURE_ID <at>Value<openparen>_feature_id<closeparen>
+
+DEFAULT_MACRO $(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)__MGS_CALLING_MODULE <at>Value<openparen>_mgs_calling_module<closeparen>
+
+# ============================================================================
+#! START_HEADER
+#! END_HEADER
+
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+DEFAULT_MACRO GeometryValidationHTMLReportGenerator_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator_Input1648478935 Input Splitter"   INPUT FEATURE_TYPE "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator_Input"   OUTPUT FEATURE_TYPE "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,_feature_id,$($(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)__FEATURE_ID),INT,_mgs_calling_module,$($(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)__MGS_CALLING_MODULE),UTF8, FEATURE_TYPE)"
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} ElementFactory    FACTORY_NAME { $(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_ListExploder }    INPUT  FEATURE_TYPE "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator_Input"    LIST_NAME { "_issues{}" }    ELEMENT_NUMBER_FIELD { "_issue_index" }    CLONE_GEOMETRY    ATTR_ACCUM_MODE { "PREFIX_INCOMING" }    ATTR_CONFLICT_RES { "<Unused>" }    INCOMING_PREFIX { "_issue_" }    OUTPUT { ELEMENT FEATURE_TYPE "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_ListExploder_ELEMENTS"         @RemoveAttributes(ElementFactory.baseCloned)          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    INPUT  FEATURE_TYPE "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_ListExploder_ELEMENTS"    OUTPUT { FEATURE_TYPE $(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator_PROCESSED       fme_html5_title "Geometry<space>Validation<space>Report"       fme_html5_config "HEADER{{TEXT;@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_mgs_calling_module<closeparen>,$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator);HEADER;H4;HEADER_ID;;ALIGNMENT;LEFT;COLOR;0<comma>0<comma>0}}HTML{{HTML;@EvaluateExpression(FDIV,STRING_ENCODED,<lt>div<gt><lf><space><space><space><space><lt>ul<gt><lf><space><space><space><space><space><space><space><space><lt>li<gt>FME<space>Build<space>Number:<space>$(FME_BUILD_NUM$encode)<lt><solidus>li<gt><lf><space><space><space><space><space><space><space><space><lt>li<gt>FME<space>Build<space>Date:<space>$(FME_BUILD_DATE$encode)<lf><space><space><space><space><space><space><space><space><lt>li<gt>FME<space>Home:<space>$(FME_HOME_UNIX_USERTYPED$encode)<lt><solidus>li<gt><lf><space><space><space><space><space><space><space><space><lt>li<gt>FME<space>Product<space>Name:<space>$(FME_PRODUCT_NAME$encode)<lt><solidus>li<gt><lf><space><space><space><space><space><space><space><space><lt>li<gt>Test<space>Ran<space>At:<space><at>DateTimeFormat<openparen><at>DateTimeNow<openparen><closeparen><comma><space>%Y-%m-%d<space>%H:%M:%S<closeparen><lt><solidus>li<gt><lf><space><space><space><space><lt><solidus>ul<gt><lf><lt><solidus>div<gt>,$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator)}}TABLE{{STYLE;STRIPED;TABLE;_feature_id|Feature<space>ID/_issue_count|Count/_issue_issue_found|Issue/_issue_location_sample.x|x/_issue_location_sample.y|y/_issue_location_sample.z|z/_issue_repair_state|Repair<space>State"       fme_html5_xformer_name "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator" }
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { $(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator }    GROUP_BY { _mgs_calling_module }    FLUSH_WHEN_GROUPS_CHANGE { No }    INPUT { FEATURE_TYPE $(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator_PROCESSED }    PYTHON_NAMESPACE FMEOBJECTS    SYMBOL_NAME reportgenerator.html5assembler.HTML5Assembler    OUTPUT { PYOUTPUT FEATURE_TYPE "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator_OUTPUT"            }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_Output1648478935 Output Collector"   INPUT FEATURE_TYPE "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_HTMLReportGenerator_OUTPUT"   OUTPUT FEATURE_TYPE "$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME)_Output"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(GeometryValidationHTMLReportGenerator_WORKSPACE_NAME))}]
