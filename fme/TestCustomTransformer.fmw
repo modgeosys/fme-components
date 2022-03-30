@@ -34,7 +34,7 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="21797"
-#!   FME_DOCUMENT_GUID="a07fc211-6d72-47f8-8a02-82824cd26199"
+#!   FME_DOCUMENT_GUID="d3ba8aff-56cd-43df-b262-9414c14c8b5f"
 #!   FME_DOCUMENT_PRIORGUID="e9698297-8b6f-40f0-b6e6-5a70d03f0add,b533e990-9c83-4815-ae09-2ce8d08e7b7a,73264de7-c8c4-46cd-801f-cc6f9f85e2b3,dc0c849c-597a-4a59-a57d-311eddd77c67,287983b7-2c1b-40e4-b5ff-36787b7d7227,33d03741-cd8f-4bdb-b4ad-8d324201a46d,9b63e6d6-523a-4b8c-83dc-bcf5d64f01c6,1cbe3676-871f-4dbf-8093-540a611d91ba,1b5b12dd-8e0c-411c-a9e0-cef58b8787a4,9ef5985e-11c6-4425-809d-4a285b0faea3,79bdf7ef-3c4b-4ca2-bac9-c7e77835f37d,bdbac3b0-637c-4fd1-acb5-aea99e82f3a7,45a659c0-6210-4400-bbe2-36ef98b4919b,4ce77f0a-222f-4a8d-a917-4325d867506a,9e9b2da2-fdf5-4eab-8112-cdcd149d4887,5349b141-4e85-4700-9d3c-0a5b7c0f6c24,d956f00b-12a3-4a99-a25d-45fecfe0e7f3,91616c02-b962-4306-bb10-911a1e657e74,885076ac-ddaa-44f1-9995-5af1b8770997,ed05d5a8-6a6a-43db-b763-6d3998d4dd37,b8073a67-721e-4ed3-8aad-4e12863b1cc6,dc9c2c8a-626d-4bb6-bcb1-e31e6420c177,7ed16470-c296-4843-83b6-9cff5afa4b74,f3300a18-eb2c-4b9f-b898-e5a09d749c49,6d3b0cf8-c142-43b2-9193-663d82f3be7b,12c5b349-127a-4c86-b421-f87e658a081b,e4f6bdc7-78c5-4fe0-b5b3-d7bf557b0b10,786ae773-492d-4696-a941-12a00893d1d8,dde25472-d85f-4a31-94be-641d4d55f70e,b08e4df6-aca4-4b43-85c8-857ab1f1dcc2,138768c3-7dc3-4415-a899-df44d46bbf7c,6639d80a-11e4-4c68-a02b-3b25e54f54c0,9ccc2169-f6b5-4e88-8ede-d6e9f340eb5b,a890ab4f-49cb-49a0-b3a2-9b09d3b988f2,144dccbc-3cbd-468e-a486-6b2c222431df,41ba9784-ed11-47e0-8645-4846c6044988,0e7de2b2-f949-4326-ac5f-6003cf414671,51eb27b6-610f-4806-8214-ae99578d342a,592ead9e-d3cc-4a27-b146-61ef07dbe939,73b82a1e-a64f-4ca7-a3d5-ea4d72df6947,5bdc1447-ff92-4c8d-b69d-5896e4d28ce4"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
@@ -45,7 +45,7 @@
 #!   HISTORY="2020-03-11,Kevin&lt;space&gt;Weller,Initial&lt;space&gt;publication.,2021-03-28,Kevin&lt;space&gt;Weller,Upgrade&lt;space&gt;referenced&lt;space&gt;AttributeValidationHTMLReportGenerator&lt;space&gt;to&lt;space&gt;the&lt;space&gt;latest&lt;space&gt;version&lt;space&gt;&lt;openparen&gt;9&lt;closeparen&gt;."
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2021.2.1.0 (20211203 - Build 21797 - linux-x64)"
-#!   LAST_SAVE_DATE="2022-03-30T13:13:32"
+#!   LAST_SAVE_DATE="2022-03-30T13:41:49"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -64,7 +64,7 @@
 #!   TITLE="TestCustomTransformer"
 #!   USAGE="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;To use this template, simply:&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;    &lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Open the template file and save it as a workspace; &lt;/li&gt;&#10;    &lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Modify it to suit your needs, including test preparation, execution, and results validation.&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The workflow to be tested should be contained in a custom transformer that is either embedded or linked. This is good design practice anyway, and aids in testing the same workflow with different inputs. &lt;/p&gt;&#10;"
 #!   USE_MARKDOWN="NO"
-#!   VIEW_POSITION="-713.8 189.657"
+#!   VIEW_POSITION="-1724.16 0"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="87"
@@ -572,7 +572,7 @@
 #!   BOUNDING_RECT="2800.0000000000009 -1221.5 1646 504.3688276537938"
 #!   STICKY="true"
 #!   COLOUR="0.85098039215686272,0.92941176470588238,0.60392156862745094,1"
-#!   CONTENTS="43 42 40 "
+#!   CONTENTS="40 43 42 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -586,7 +586,7 @@
 #!   BOUNDING_RECT="-1142 410 676.47810340172373 2976"
 #!   STICKY="true"
 #!   COLOUR="0.63529411764705879,0.80000000000000004,0.59999999999999998,1"
-#!   CONTENTS="61 15 64 41 14 2 "
+#!   CONTENTS="14 15 2 61 64 41 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -600,7 +600,7 @@
 #!   BOUNDING_RECT="-200 -190 587.93341381689675 2436"
 #!   STICKY="true"
 #!   COLOUR="1,0.85490196078431369,0.59999999999999998,1"
-#!   CONTENTS="39 44 16 "
+#!   CONTENTS="16 44 39 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -614,7 +614,7 @@
 #!   BOUNDING_RECT="699.99999999999955 -190 784.49610358172549 2556"
 #!   STICKY="true"
 #!   COLOUR="0.85098039215686272,0.92941176470588238,0.60392156862745094,1"
-#!   CONTENTS="32 46 18 "
+#!   CONTENTS="18 32 46 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -628,7 +628,7 @@
 #!   BOUNDING_RECT="1749.9999999999998 -190 728.00106825772946 2436"
 #!   STICKY="true"
 #!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
-#!   CONTENTS="45 67 28 "
+#!   CONTENTS="67 28 45 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -1280,6 +1280,1182 @@
 #! </ATTR_LINKS>
 #! <SUBDOCUMENTS>
 #! <SUBDOCUMENT
+#!   NAME="CustomTransformer"
+#!   ARCGIS_COMPATIBILITY=""
+#!   CATEGORY="Format Specific"
+#!   DESCRIPTION=""
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   DOC_EXTENTS="5830 521"
+#!   DOC_TOP_LEFT="-6450 229"
+#!   FME_DOCUMENT_GUID="bc78c80d-7a11-4be5-acc7-b2ae8e45cc5f"
+#!   FME_DOCUMENT_PRIORGUID="8184a73e-a060-4101-a5ff-b3005d24278c,b823ba4a-2dc9-4fc8-ae6d-9b94786a8b04,cade9662-c050-4ead-8855-6c05884d49ee"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   GUID="bc78c80d-7a11-4be5-acc7-b2ae8e45cc5f"
+#!   HISTORY=""
+#!   IS_VISIBLE="true"
+#!   LAST_SAVE_BUILD="FME(R) 2019.2.3.1 (20200212 - Build 19823 - linux-x64)"
+#!   LAST_SAVE_DATE="2020-03-07T10:01:49"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   PYTHON_COMPATIBILITY=""
+#!   REPLACED_BY=""
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="CustomTransformer"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-7833.08 1533.02"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR TEXT text:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;text&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR MULTILINETEXT multilinetext:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;multilinetext&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR NUMBER number:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;number&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LONGITUDE longitude:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;longitude&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LATITUDE latitude:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;latitude&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPnRleHQ8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiVEVYVCIsInByb21wdCI6InRleHQ6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm11bHRpbGluZXRleHQ8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiTVVMVElMSU5FVEVYVCIsInByb21wdCI6Im11bHRpbGluZXRleHQ6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm51bWJlcjxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJOVU1CRVIiLCJwcm9tcHQiOiJudW1iZXI6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxvbmdpdHVkZTxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJMT05HSVRVREUiLCJwcm9tcHQiOiJsb25naXR1ZGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxhdGl0dWRlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkxBVElUVURFIiwicHJvbXB0IjoibGF0aXR1ZGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="LATITUDE" IS_STAND_ALONE="false" />
+#!     <INFO NAME="LONGITUDE" IS_STAND_ALONE="false" />
+#!     <INFO NAME="MULTILINETEXT" IS_STAND_ALONE="false" />
+#!     <INFO NAME="NUMBER" IS_STAND_ALONE="false" />
+#!     <INFO NAME="TEXT" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="AttributeValidator"
+#!   VERSION="3"
+#!   POSITION="-5700 750"
+#!   BOUNDING_RECT="-5700 750 454 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="number;RANGE;&lt;openbracket&gt;1&lt;comma&gt;100&lt;closebracket&gt;/longitude;RANGE;&lt;openbracket&gt;-180&lt;comma&gt;180&lt;closebracket&gt;/latitude;RANGE;&lt;openbracket&gt;-90&lt;comma&gt;90&lt;closebracket&gt;/text,multilinetext;MINIMUM_LENGTH;2/text;MAXIMUM_LENGTH;40"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="VertexCreator"
+#!   VERSION="3"
+#!   POSITION="-4050 750"
+#!   BOUNDING_RECT="-4050 750 454 71"
+#!   ORDER="500000000000070"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_PARAMETERS" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="IGNORE_DUPLICATES" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="INDEX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MEASURE_TYPE" PARM_VALUE="Continuous"/>
+#!     <XFORM_PARM PARM_NAME="MISSING_VAL_MODE" PARM_VALUE="None (Drop Values)"/>
+#!     <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Add Point"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="VertexCreator"/>
+#!     <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(longitude)"/>
+#!     <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(latitude)"/>
+#!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="10"
+#!   TYPE="CoordinateSystemSetter"
+#!   VERSION="0"
+#!   POSITION="-3300 750"
+#!   BOUNDING_RECT="-3300 750 520.00106825772946 71"
+#!   ORDER="500000000000071"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:4326"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="AttributeRemover"
+#!   VERSION="1"
+#!   POSITION="-2550 750"
+#!   BOUNDING_RECT="-2550 750 454 71"
+#!   ORDER="500000000000072"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="longitude,latitude"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="CoordinateExtractor"
+#!   VERSION="4"
+#!   POSITION="-1800 750"
+#!   BOUNDING_RECT="-1800 750 454 71"
+#!   ORDER="500000000000074"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ALL_ATTRIBUTES_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="IND" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="INDEX_ATTRIBUTES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Specify Coordinate"/>
+#!     <XFORM_PARM PARM_NAME="MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateExtractor"/>
+#!     <XFORM_PARM PARM_NAME="X_ATTR" PARM_VALUE="longitude"/>
+#!     <XFORM_PARM PARM_NAME="Y_ATTR" PARM_VALUE="latitude"/>
+#!     <XFORM_PARM PARM_NAME="Z_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Z_DEFAULT" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="ListPopulator"
+#!   VERSION="1"
+#!   POSITION="-4950 750"
+#!   BOUNDING_RECT="-4950 750 430 71"
+#!   ORDER="500000000000076"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="_fme_validation_message_list"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREFIX" PARM_VALUE="nothing"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListPopulator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="25"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="6"
+#!   POSITION="-4950 300"
+#!   BOUNDING_RECT="-4950 300 645.00106825772946 71"
+#!   ORDER="500000000000077"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21797"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="CustomTransformer"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="2"
+#!   NAME="Input"
+#!   POSITION="-6450 750"
+#!   BOUNDING_RECT="-6450 750 430 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="number" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(NUMBER)" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(MULTILINETEXT)" />
+#!     <XFORM_ATTR ATTR_NAME="text" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(TEXT)" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LATITUDE)" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LONGITUDE)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="3"
+#!   NAME="Feature"
+#!   POSITION="-1050 750"
+#!   BOUNDING_RECT="-1050 750 430 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="5"
+#!   NAME="&lt;INVALID&gt;"
+#!   POSITION="-1050 300"
+#!   BOUNDING_RECT="-1050 300 430 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="10"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! <SUBDOCUMENT
+#!   NAME="GoodFeatureValidationVerifier"
+#!   ARCGIS_COMPATIBILITY=""
+#!   CATEGORY="Data Quality"
+#!   DESCRIPTION="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Read back good bike rack &amp;amp; validate. &lt;/p&gt;&#10;"
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   DOC_EXTENTS="5080 71"
+#!   DOC_TOP_LEFT="-1500 2029"
+#!   FME_DOCUMENT_GUID=""
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   HISTORY=""
+#!   IS_VISIBLE="true"
+#!   LAST_SAVE_BUILD=""
+#!   LAST_SAVE_DATE=""
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   PYTHON_COMPATIBILITY=""
+#!   REPLACED_BY=""
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="GoodFeatureValidationVerifier"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-2139.02 2334.02"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR GoodFeature_Text GoodFeature Text:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR GoodFeature_MultiLineText GoodFeature MultiLineText:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL RANGE_SLIDER_OR_ATTR GoodFeature_Number &quot;RANGE:[1,]%PRECISION:0&quot; GoodFeature Number:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI RANGE_SLIDER_OR_ATTR GoodFeature_Longitude &quot;RANGE:[,]&quot; GoodFeature Longitude:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI RANGE_SLIDER_OR_ATTR GoodFeature_Latitude &quot;RANGE:[,]&quot; GoodFeature Latitude:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR _FME_VALIDATION_MESSAGE Fme Validation Message:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;_fme_validation_message&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR FME_FEATURE_TYPE Fme Feature Type:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR TEXT text:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;text&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR MULTILINETEXT multilinetext:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;multilinetext&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR NUMBER number:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;number&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LATITUDE latitude:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;latitude&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LONGITUDE longitude:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;longitude&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LIST_NAME_ENCODED LIST_NAME &quot;&quot; List Attribute:"
+#!   DEFAULT_VALUE="_fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiR29vZEZlYXR1cmVfVGV4dCIsInByb21wdCI6Ikdvb2RGZWF0dXJlIFRleHQ6IiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJHb29kRmVhdHVyZV9NdWx0aUxpbmVUZXh0IiwicHJvbXB0IjoiR29vZEZlYXR1cmUgTXVsdGlMaW5lVGV4dDoiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsibWluaW11bSI6MSwibXVsdGlwbGVPZiI6MSwibmFtZSI6Ikdvb2RGZWF0dXJlX051bWJlciIsInByb21wdCI6Ikdvb2RGZWF0dXJlIE51bWJlcjoiLCJyZXF1aXJlZCI6ZmFsc2UsInNob3dTbGlkZXIiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6Im51bWJlciIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsibmFtZSI6Ikdvb2RGZWF0dXJlX0xvbmdpdHVkZSIsInByb21wdCI6Ikdvb2RGZWF0dXJlIExvbmdpdHVkZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd1NsaWRlciI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoibnVtYmVyIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJuYW1lIjoiR29vZEZlYXR1cmVfTGF0aXR1ZGUiLCJwcm9tcHQiOiJHb29kRmVhdHVyZSBMYXRpdHVkZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd1NsaWRlciI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoibnVtYmVyIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPl9mbWVfdmFsaWRhdGlvbl9tZXNzYWdlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Il9GTUVfVkFMSURBVElPTl9NRVNTQUdFIiwicHJvbXB0IjoiRm1lIFZhbGlkYXRpb24gTWVzc2FnZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+Zm1lX2ZlYXR1cmVfdHlwZTxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJGTUVfRkVBVFVSRV9UWVBFIiwicHJvbXB0IjoiRm1lIEZlYXR1cmUgVHlwZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+dGV4dDxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJURVhUIiwicHJvbXB0IjoidGV4dDoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+bXVsdGlsaW5ldGV4dDxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJNVUxUSUxJTkVURVhUIiwicHJvbXB0IjoibXVsdGlsaW5ldGV4dDoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+bnVtYmVyPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Ik5VTUJFUiIsInByb21wdCI6Im51bWJlcjoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+bGF0aXR1ZGU8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiTEFUSVRVREUiLCJwcm9tcHQiOiJsYXRpdHVkZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+bG9uZ2l0dWRlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkxPTkdJVFVERSIsInByb21wdCI6ImxvbmdpdHVkZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6ImF0dHJpYnV0ZU5hbWVzIiwibGlzdFN1cHBvcnQiOiJsaXN0TmFtZXNPbmx5In0sImRlZmF1bHRWYWx1ZSI6Il9mbWVfdmFsaWRhdGlvbl9tZXNzYWdlX2xpc3Q8b3BlbmN1cmx5PjxjbG9zZWN1cmx5PiIsIm5hbWUiOiJMSVNUX05BTUUiLCJwcm9tcHQiOiJMaXN0IEF0dHJpYnV0ZToiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="FME_FEATURE_TYPE" IS_STAND_ALONE="false" />
+#!     <INFO NAME="GoodFeature_Latitude" IS_STAND_ALONE="true" />
+#!     <INFO NAME="GoodFeature_Longitude" IS_STAND_ALONE="true" />
+#!     <INFO NAME="GoodFeature_MultiLineText" IS_STAND_ALONE="true" />
+#!     <INFO NAME="GoodFeature_Number" IS_STAND_ALONE="true" />
+#!     <INFO NAME="GoodFeature_Text" IS_STAND_ALONE="true" />
+#!     <INFO NAME="LATITUDE" IS_STAND_ALONE="false" />
+#!     <INFO NAME="LIST_NAME" IS_STAND_ALONE="false" />
+#!     <INFO NAME="LONGITUDE" IS_STAND_ALONE="false" />
+#!     <INFO NAME="MULTILINETEXT" IS_STAND_ALONE="false" />
+#!     <INFO NAME="NUMBER" IS_STAND_ALONE="false" />
+#!     <INFO NAME="TEXT" IS_STAND_ALONE="false" />
+#!     <INFO NAME="_FME_VALIDATION_MESSAGE" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="AttributeValidator"
+#!   VERSION="3"
+#!   POSITION="1500 2100"
+#!   BOUNDING_RECT="1500 2100 430 71"
+#!   ORDER="500000000000014"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="_validation_list_length;RANGE;&lt;openbracket&gt;0&lt;comma&gt;0&lt;closebracket&gt;/text;IN;$(GoodFeature_Text)/multilinetext;IN;$(GoodFeature_MultiLineText)/number;IN;$(GoodFeature_Number)/longitude;IN;$(GoodFeature_Longitude)/latitude;IN;$(GoodFeature_Latitude)"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="ListElementCounter"
+#!   VERSION="1"
+#!   POSITION="-750 2100"
+#!   BOUNDING_RECT="-750 2100 701.00106825772946 71"
+#!   ORDER="500000000000092"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="_validation_list_length"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="$(LIST_NAME)"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ValidationErrorListElementCounter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="AttributeRemover"
+#!   VERSION="1"
+#!   POSITION="300.00000000000023 2100"
+#!   BOUNDING_RECT="300.00000000000023 2100 981.00106825772946 71"
+#!   ORDER="500000000000098"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE="$(LIST_NAME)"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestValidationErrorMessageListsAttributeRemover"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="6"
+#!   POSITION="2250 2100"
+#!   BOUNDING_RECT="2250 2100 645.00106825772946 71"
+#!   ORDER="500000000000099"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21797"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="GoodFeatureValidationVerifier"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="16"
+#!   NAME="Input"
+#!   POSITION="-1500 2100"
+#!   BOUNDING_RECT="-1500 2100 430 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(_FME_VALIDATION_MESSAGE)" />
+#!     <XFORM_ATTR ATTR_NAME="number" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(NUMBER)" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(MULTILINETEXT)" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(FME_FEATURE_TYPE)" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LATITUDE)" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LONGITUDE)" />
+#!     <XFORM_ATTR ATTR_NAME="text" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(TEXT)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="18"
+#!   NAME="Output"
+#!   POSITION="3150 2100"
+#!   BOUNDING_RECT="3150 2100 430 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! <SUBDOCUMENT
+#!   NAME="EmptyFeatureValidationVerifier"
+#!   ARCGIS_COMPATIBILITY=""
+#!   CATEGORY="Data Quality"
+#!   DESCRIPTION=""
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   DOC_EXTENTS="5489 88"
+#!   DOC_TOP_LEFT="-3859 -71"
+#!   FME_DOCUMENT_GUID=""
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   HISTORY=""
+#!   IS_VISIBLE="true"
+#!   LAST_SAVE_BUILD=""
+#!   LAST_SAVE_DATE=""
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   PYTHON_COMPATIBILITY=""
+#!   REPLACED_BY=""
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="EmptyFeatureValidationVerifier"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-4449.04 510.005"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR TEXT text:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;text&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR MULTILINETEXT multilinetext:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;multilinetext&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR NUMBER number:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;number&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LONGITUDE longitude:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;longitude&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LATITUDE latitude:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;latitude&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LIST_NAME_ENCODED LIST_NAME &quot;&quot; List Attribute:"
+#!   DEFAULT_VALUE="_fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPnRleHQ8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiVEVYVCIsInByb21wdCI6InRleHQ6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm11bHRpbGluZXRleHQ8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiTVVMVElMSU5FVEVYVCIsInByb21wdCI6Im11bHRpbGluZXRleHQ6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm51bWJlcjxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJOVU1CRVIiLCJwcm9tcHQiOiJudW1iZXI6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxvbmdpdHVkZTxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJMT05HSVRVREUiLCJwcm9tcHQiOiJsb25naXR1ZGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxhdGl0dWRlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkxBVElUVURFIiwicHJvbXB0IjoibGF0aXR1ZGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJhdHRyaWJ1dGVOYW1lcyIsImxpc3RTdXBwb3J0IjoibGlzdE5hbWVzT25seSJ9LCJkZWZhdWx0VmFsdWUiOiJfZm1lX3ZhbGlkYXRpb25fbWVzc2FnZV9saXN0PG9wZW5jdXJseT48Y2xvc2VjdXJseT4iLCJuYW1lIjoiTElTVF9OQU1FIiwicHJvbXB0IjoiTGlzdCBBdHRyaWJ1dGU6IiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifV19"
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="LATITUDE" IS_STAND_ALONE="false" />
+#!     <INFO NAME="LIST_NAME" IS_STAND_ALONE="false" />
+#!     <INFO NAME="LONGITUDE" IS_STAND_ALONE="false" />
+#!     <INFO NAME="MULTILINETEXT" IS_STAND_ALONE="false" />
+#!     <INFO NAME="NUMBER" IS_STAND_ALONE="false" />
+#!     <INFO NAME="TEXT" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="ListElementCounter"
+#!   VERSION="1"
+#!   POSITION="-3150 0"
+#!   BOUNDING_RECT="-3150 0 701.00106825772946 71"
+#!   ORDER="500000000000092"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="_validation_list_length"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="$(LIST_NAME)"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ValidationErrorListElementCounter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="AttributeValidator"
+#!   VERSION="3"
+#!   POSITION="-750 0"
+#!   BOUNDING_RECT="-750 0 719.00106825772946 71"
+#!   ORDER="500000000000093"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="_validation_list_length;RANGE;&lt;openbracket&gt;5&lt;comma&gt;5&lt;closebracket&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ValidationErrorListAttributeValidator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="AttributeRemover"
+#!   VERSION="1"
+#!   POSITION="-2100 0"
+#!   BOUNDING_RECT="-2100 0 981.00106825772946 71"
+#!   ORDER="500000000000098"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19823"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE="_fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt; _fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;.calling_module _fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;.validator_name"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestValidationErrorMessageListsAttributeRemover"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="6"
+#!   POSITION="300 0"
+#!   BOUNDING_RECT="300 0 645.00106825772946 71"
+#!   ORDER="500000000000099"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21797"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="EmptyFeatureValidationVerifier"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="13"
+#!   NAME="Output"
+#!   POSITION="1200 0"
+#!   BOUNDING_RECT="1200 0 430 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="15"
+#!   NAME="Input"
+#!   POSITION="-3859.0010682577295 17"
+#!   BOUNDING_RECT="-3859.0010682577295 17 430 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" ATTR_TYPE="varchar(200)" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" ATTR_TYPE="varchar(200)" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" ATTR_TYPE="varchar(200)" ATTR_VALUE="" />
+#!     <XFORM_ATTR ATTR_NAME="number" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(NUMBER)" />
+#!     <XFORM_ATTR ATTR_NAME="multilinetext" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(MULTILINETEXT)" />
+#!     <XFORM_ATTR ATTR_NAME="latitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LATITUDE)" />
+#!     <XFORM_ATTR ATTR_NAME="longitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LONGITUDE)" />
+#!     <XFORM_ATTR ATTR_NAME="text" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(TEXT)" />
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="15"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! <SUBDOCUMENT
 #!   NAME="FeaturePreparer"
 #!   ARCGIS_COMPATIBILITY=""
 #!   CATEGORY="Attributes"
@@ -1787,381 +2963,6 @@
 #! </ATTR_LINKS>
 #! </SUBDOCUMENT>
 #! <SUBDOCUMENT
-#!   NAME="GoodFeatureValidationVerifier"
-#!   ARCGIS_COMPATIBILITY=""
-#!   CATEGORY="Data Quality"
-#!   DESCRIPTION="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Read back good bike rack &amp;amp; validate. &lt;/p&gt;&#10;"
-#!   DOC_DYNAMIC_INPUT_ATTRS="0"
-#!   DOC_EXTENTS="5080 71"
-#!   DOC_TOP_LEFT="-1500 2029"
-#!   FME_DOCUMENT_GUID=""
-#!   FME_DOCUMENT_PRIORGUID=""
-#!   FME_NAMES_ENCODING="UTF-8"
-#!   FME_PROCESS_COUNT="NO_PARALLELISM"
-#!   FME_PROCESS_GROUPS_ORDERED="No"
-#!   FME_PROCESS_GROUP_BY=""
-#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
-#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
-#!   HISTORY=""
-#!   IS_VISIBLE="true"
-#!   LAST_SAVE_BUILD=""
-#!   LAST_SAVE_DATE=""
-#!   MARKDOWN_DESCRIPTION=""
-#!   MARKDOWN_USAGE=""
-#!   PYTHON_COMPATIBILITY=""
-#!   REPLACED_BY=""
-#!   SUPPRESS_UPGRADE="false"
-#!   TITLE="GoodFeatureValidationVerifier"
-#!   USAGE=""
-#!   USE_MARKDOWN="NO"
-#!   VIEW_POSITION="-2139.02 2334.02"
-#!   XFORM_DEPRECATED="No"
-#!   ZOOM_SCALE="100"
-#! >
-#! <GLOBAL_PARAMETERS>
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR GoodFeature_Text GoodFeature Text:"
-#!   DEFAULT_VALUE=""
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR GoodFeature_MultiLineText GoodFeature MultiLineText:"
-#!   DEFAULT_VALUE=""
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL RANGE_SLIDER_OR_ATTR GoodFeature_Number &quot;RANGE:[1,]%PRECISION:0&quot; GoodFeature Number:"
-#!   DEFAULT_VALUE=""
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI RANGE_SLIDER_OR_ATTR GoodFeature_Longitude &quot;RANGE:[,]&quot; GoodFeature Longitude:"
-#!   DEFAULT_VALUE=""
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI RANGE_SLIDER_OR_ATTR GoodFeature_Latitude &quot;RANGE:[,]&quot; GoodFeature Latitude:"
-#!   DEFAULT_VALUE=""
-#!   IS_STAND_ALONE="true"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR _FME_VALIDATION_MESSAGE Fme Validation Message:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;_fme_validation_message&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR FME_FEATURE_TYPE Fme Feature Type:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR TEXT text:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;text&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR MULTILINETEXT multilinetext:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;multilinetext&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR NUMBER number:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;number&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LATITUDE latitude:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;latitude&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LONGITUDE longitude:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;longitude&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI LIST_NAME_ENCODED LIST_NAME &quot;&quot; List Attribute:"
-#!   DEFAULT_VALUE="_fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! </GLOBAL_PARAMETERS>
-#! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiR29vZEZlYXR1cmVfVGV4dCIsInByb21wdCI6Ikdvb2RGZWF0dXJlIFRleHQ6IiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJHb29kRmVhdHVyZV9NdWx0aUxpbmVUZXh0IiwicHJvbXB0IjoiR29vZEZlYXR1cmUgTXVsdGlMaW5lVGV4dDoiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsibWluaW11bSI6MSwibXVsdGlwbGVPZiI6MSwibmFtZSI6Ikdvb2RGZWF0dXJlX051bWJlciIsInByb21wdCI6Ikdvb2RGZWF0dXJlIE51bWJlcjoiLCJyZXF1aXJlZCI6ZmFsc2UsInNob3dTbGlkZXIiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6Im51bWJlciIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsibmFtZSI6Ikdvb2RGZWF0dXJlX0xvbmdpdHVkZSIsInByb21wdCI6Ikdvb2RGZWF0dXJlIExvbmdpdHVkZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd1NsaWRlciI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoibnVtYmVyIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJuYW1lIjoiR29vZEZlYXR1cmVfTGF0aXR1ZGUiLCJwcm9tcHQiOiJHb29kRmVhdHVyZSBMYXRpdHVkZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd1NsaWRlciI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoibnVtYmVyIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPl9mbWVfdmFsaWRhdGlvbl9tZXNzYWdlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Il9GTUVfVkFMSURBVElPTl9NRVNTQUdFIiwicHJvbXB0IjoiRm1lIFZhbGlkYXRpb24gTWVzc2FnZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+Zm1lX2ZlYXR1cmVfdHlwZTxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJGTUVfRkVBVFVSRV9UWVBFIiwicHJvbXB0IjoiRm1lIEZlYXR1cmUgVHlwZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+dGV4dDxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJURVhUIiwicHJvbXB0IjoidGV4dDoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+bXVsdGlsaW5ldGV4dDxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJNVUxUSUxJTkVURVhUIiwicHJvbXB0IjoibXVsdGlsaW5ldGV4dDoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+bnVtYmVyPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Ik5VTUJFUiIsInByb21wdCI6Im51bWJlcjoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+bGF0aXR1ZGU8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiTEFUSVRVREUiLCJwcm9tcHQiOiJsYXRpdHVkZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+bG9uZ2l0dWRlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkxPTkdJVFVERSIsInByb21wdCI6ImxvbmdpdHVkZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6ImF0dHJpYnV0ZU5hbWVzIiwibGlzdFN1cHBvcnQiOiJsaXN0TmFtZXNPbmx5In0sImRlZmF1bHRWYWx1ZSI6Il9mbWVfdmFsaWRhdGlvbl9tZXNzYWdlX2xpc3Q8b3BlbmN1cmx5PjxjbG9zZWN1cmx5PiIsIm5hbWUiOiJMSVNUX05BTUUiLCJwcm9tcHQiOiJMaXN0IEF0dHJpYnV0ZToiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9XX0="
-#! >
-#! <PARAMETER_INFO>
-#!     <INFO NAME="FME_FEATURE_TYPE" IS_STAND_ALONE="false" />
-#!     <INFO NAME="GoodFeature_Latitude" IS_STAND_ALONE="true" />
-#!     <INFO NAME="GoodFeature_Longitude" IS_STAND_ALONE="true" />
-#!     <INFO NAME="GoodFeature_MultiLineText" IS_STAND_ALONE="true" />
-#!     <INFO NAME="GoodFeature_Number" IS_STAND_ALONE="true" />
-#!     <INFO NAME="GoodFeature_Text" IS_STAND_ALONE="true" />
-#!     <INFO NAME="LATITUDE" IS_STAND_ALONE="false" />
-#!     <INFO NAME="LIST_NAME" IS_STAND_ALONE="false" />
-#!     <INFO NAME="LONGITUDE" IS_STAND_ALONE="false" />
-#!     <INFO NAME="MULTILINETEXT" IS_STAND_ALONE="false" />
-#!     <INFO NAME="NUMBER" IS_STAND_ALONE="false" />
-#!     <INFO NAME="TEXT" IS_STAND_ALONE="false" />
-#!     <INFO NAME="_FME_VALIDATION_MESSAGE" IS_STAND_ALONE="false" />
-#! </PARAMETER_INFO>
-#! </USER_PARAMETERS>
-#! <COMMENTS>
-#! </COMMENTS>
-#! <CONSTANTS>
-#! </CONSTANTS>
-#! <BOOKMARKS>
-#! </BOOKMARKS>
-#! <TRANSFORMERS>
-#! <TRANSFORMER
-#!   IDENTIFIER="2"
-#!   TYPE="AttributeValidator"
-#!   VERSION="3"
-#!   POSITION="1500 2100"
-#!   BOUNDING_RECT="1500 2100 430 71"
-#!   ORDER="500000000000014"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="PASSED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="FAILED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
-#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="_validation_list_length;RANGE;&lt;openbracket&gt;0&lt;comma&gt;0&lt;closebracket&gt;/text;IN;$(GoodFeature_Text)/multilinetext;IN;$(GoodFeature_MultiLineText)/number;IN;$(GoodFeature_Number)/longitude;IN;$(GoodFeature_Longitude)/latitude;IN;$(GoodFeature_Latitude)"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidator"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="21"
-#!   TYPE="ListElementCounter"
-#!   VERSION="1"
-#!   POSITION="-750 2100"
-#!   BOUNDING_RECT="-750 2100 701.00106825772946 71"
-#!   ORDER="500000000000092"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="_validation_list_length"/>
-#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="$(LIST_NAME)"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ValidationErrorListElementCounter"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="23"
-#!   TYPE="AttributeRemover"
-#!   VERSION="1"
-#!   POSITION="300.00000000000023 2100"
-#!   BOUNDING_RECT="300.00000000000023 2100 981.00106825772946 71"
-#!   ORDER="500000000000098"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE="$(LIST_NAME)"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestValidationErrorMessageListsAttributeRemover"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="13"
-#!   TYPE="SubDocumentTransformer"
-#!   VERSION="6"
-#!   POSITION="2250 2100"
-#!   BOUNDING_RECT="2250 2100 645.00106825772946 71"
-#!   ORDER="500000000000099"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="21797"
-#! >
-#!     <OUTPUT_FEAT NAME="Output"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="GoodFeatureValidationVerifier"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
-#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! </TRANSFORMERS>
-#! <SUBDOCUMENT_IOS>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="16"
-#!   NAME="Input"
-#!   POSITION="-1500 2100"
-#!   BOUNDING_RECT="-1500 2100 430 71"
-#!   COLLAPSED="true"
-#!   PUBLISHED="true"
-#!   IS_SOURCE="true"
-#!   ATTR_MODE="0"
-#! >
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(_FME_VALIDATION_MESSAGE)" />
-#!     <XFORM_ATTR ATTR_NAME="number" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(NUMBER)" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(MULTILINETEXT)" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(FME_FEATURE_TYPE)" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LATITUDE)" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LONGITUDE)" />
-#!     <XFORM_ATTR ATTR_NAME="text" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(TEXT)" />
-#! </SUBDOCUMENT_IO>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="18"
-#!   NAME="Output"
-#!   POSITION="3150 2100"
-#!   BOUNDING_RECT="3150 2100 430 71"
-#!   COLLAPSED="true"
-#!   IS_SOURCE="false"
-#!   ATTR_MODE="0"
-#! >
-#! </SUBDOCUMENT_IO>
-#! </SUBDOCUMENT_IOS>
-#! <FEAT_LINKS>
-#! <FEAT_LINK
-#!   IDENTIFIER="17"
-#!   SOURCE_NODE="16"
-#!   TARGET_NODE="21"
-#!   SOURCE_PORT_DESC="0"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="8"
-#!   SOURCE_NODE="2"
-#!   TARGET_NODE="13"
-#!   SOURCE_PORT_DESC="fo 0 PASSED"
-#!   TARGET_PORT_DESC="fi 0 Input"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="19"
-#!   SOURCE_NODE="13"
-#!   TARGET_NODE="18"
-#!   SOURCE_PORT_DESC="fo 0 Output"
-#!   TARGET_PORT_DESC="0"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="24"
-#!   SOURCE_NODE="21"
-#!   TARGET_NODE="23"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="20"
-#!   SOURCE_NODE="23"
-#!   TARGET_NODE="2"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="12"
-#!   SOURCE_NODE="2"
-#!   TARGET_NODE="13"
-#!   SOURCE_PORT_DESC="fo 1 FAILED"
-#!   TARGET_PORT_DESC="fi 0 Input"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! </FEAT_LINKS>
-#! <BREAKPOINTS>
-#! </BREAKPOINTS>
-#! <ATTR_LINKS>
-#! </ATTR_LINKS>
-#! </SUBDOCUMENT>
-#! <SUBDOCUMENT
 #!   NAME="BadFeatureValidationVerifier"
 #!   ARCGIS_COMPATIBILITY=""
 #!   CATEGORY="Data Quality"
@@ -2490,807 +3291,6 @@
 #! <ATTR_LINKS>
 #! </ATTR_LINKS>
 #! </SUBDOCUMENT>
-#! <SUBDOCUMENT
-#!   NAME="EmptyFeatureValidationVerifier"
-#!   ARCGIS_COMPATIBILITY=""
-#!   CATEGORY="Data Quality"
-#!   DESCRIPTION=""
-#!   DOC_DYNAMIC_INPUT_ATTRS="0"
-#!   DOC_EXTENTS="5489 88"
-#!   DOC_TOP_LEFT="-3859 -71"
-#!   FME_DOCUMENT_GUID=""
-#!   FME_DOCUMENT_PRIORGUID=""
-#!   FME_NAMES_ENCODING="UTF-8"
-#!   FME_PROCESS_COUNT="NO_PARALLELISM"
-#!   FME_PROCESS_GROUPS_ORDERED="No"
-#!   FME_PROCESS_GROUP_BY=""
-#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
-#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
-#!   HISTORY=""
-#!   IS_VISIBLE="true"
-#!   LAST_SAVE_BUILD=""
-#!   LAST_SAVE_DATE=""
-#!   MARKDOWN_DESCRIPTION=""
-#!   MARKDOWN_USAGE=""
-#!   PYTHON_COMPATIBILITY=""
-#!   REPLACED_BY=""
-#!   SUPPRESS_UPGRADE="false"
-#!   TITLE="EmptyFeatureValidationVerifier"
-#!   USAGE=""
-#!   USE_MARKDOWN="NO"
-#!   VIEW_POSITION="-4449.04 510.005"
-#!   XFORM_DEPRECATED="No"
-#!   ZOOM_SCALE="100"
-#! >
-#! <GLOBAL_PARAMETERS>
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR TEXT text:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;text&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR MULTILINETEXT multilinetext:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;multilinetext&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR NUMBER number:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;number&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LONGITUDE longitude:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;longitude&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LATITUDE latitude:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;latitude&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI LIST_NAME_ENCODED LIST_NAME &quot;&quot; List Attribute:"
-#!   DEFAULT_VALUE="_fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! </GLOBAL_PARAMETERS>
-#! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPnRleHQ8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiVEVYVCIsInByb21wdCI6InRleHQ6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm11bHRpbGluZXRleHQ8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiTVVMVElMSU5FVEVYVCIsInByb21wdCI6Im11bHRpbGluZXRleHQ6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm51bWJlcjxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJOVU1CRVIiLCJwcm9tcHQiOiJudW1iZXI6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxvbmdpdHVkZTxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJMT05HSVRVREUiLCJwcm9tcHQiOiJsb25naXR1ZGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxhdGl0dWRlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkxBVElUVURFIiwicHJvbXB0IjoibGF0aXR1ZGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJhdHRyaWJ1dGVOYW1lcyIsImxpc3RTdXBwb3J0IjoibGlzdE5hbWVzT25seSJ9LCJkZWZhdWx0VmFsdWUiOiJfZm1lX3ZhbGlkYXRpb25fbWVzc2FnZV9saXN0PG9wZW5jdXJseT48Y2xvc2VjdXJseT4iLCJuYW1lIjoiTElTVF9OQU1FIiwicHJvbXB0IjoiTGlzdCBBdHRyaWJ1dGU6IiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifV19"
-#! >
-#! <PARAMETER_INFO>
-#!     <INFO NAME="LATITUDE" IS_STAND_ALONE="false" />
-#!     <INFO NAME="LIST_NAME" IS_STAND_ALONE="false" />
-#!     <INFO NAME="LONGITUDE" IS_STAND_ALONE="false" />
-#!     <INFO NAME="MULTILINETEXT" IS_STAND_ALONE="false" />
-#!     <INFO NAME="NUMBER" IS_STAND_ALONE="false" />
-#!     <INFO NAME="TEXT" IS_STAND_ALONE="false" />
-#! </PARAMETER_INFO>
-#! </USER_PARAMETERS>
-#! <COMMENTS>
-#! </COMMENTS>
-#! <CONSTANTS>
-#! </CONSTANTS>
-#! <BOOKMARKS>
-#! </BOOKMARKS>
-#! <TRANSFORMERS>
-#! <TRANSFORMER
-#!   IDENTIFIER="4"
-#!   TYPE="ListElementCounter"
-#!   VERSION="1"
-#!   POSITION="-3150 0"
-#!   BOUNDING_RECT="-3150 0 701.00106825772946 71"
-#!   ORDER="500000000000092"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="_validation_list_length"/>
-#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="$(LIST_NAME)"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ValidationErrorListElementCounter"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="5"
-#!   TYPE="AttributeValidator"
-#!   VERSION="3"
-#!   POSITION="-750 0"
-#!   BOUNDING_RECT="-750 0 719.00106825772946 71"
-#!   ORDER="500000000000093"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="PASSED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="FAILED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
-#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="_validation_list_length;RANGE;&lt;openbracket&gt;5&lt;comma&gt;5&lt;closebracket&gt;"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ValidationErrorListAttributeValidator"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="6"
-#!   TYPE="AttributeRemover"
-#!   VERSION="1"
-#!   POSITION="-2100 0"
-#!   BOUNDING_RECT="-2100 0 981.00106825772946 71"
-#!   ORDER="500000000000098"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE="_fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt; _fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;.calling_module _fme_validation_message_list&lt;opencurly&gt;&lt;closecurly&gt;.validator_name"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestValidationErrorMessageListsAttributeRemover"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="16"
-#!   TYPE="SubDocumentTransformer"
-#!   VERSION="6"
-#!   POSITION="300 0"
-#!   BOUNDING_RECT="300 0 645.00106825772946 71"
-#!   ORDER="500000000000099"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="21797"
-#! >
-#!     <OUTPUT_FEAT NAME="Output"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_validation_list_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="EmptyFeatureValidationVerifier"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
-#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! </TRANSFORMERS>
-#! <SUBDOCUMENT_IOS>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="13"
-#!   NAME="Output"
-#!   POSITION="1200 0"
-#!   BOUNDING_RECT="1200 0 430 71"
-#!   COLLAPSED="true"
-#!   IS_SOURCE="false"
-#!   ATTR_MODE="0"
-#! >
-#! </SUBDOCUMENT_IO>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="15"
-#!   NAME="Input"
-#!   POSITION="-3859.0010682577295 17"
-#!   BOUNDING_RECT="-3859.0010682577295 17 430 71"
-#!   COLLAPSED="true"
-#!   PUBLISHED="true"
-#!   IS_SOURCE="true"
-#!   ATTR_MODE="0"
-#! >
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" ATTR_TYPE="varchar(200)" ATTR_VALUE="" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" ATTR_TYPE="varchar(200)" ATTR_VALUE="" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" ATTR_TYPE="varchar(200)" ATTR_VALUE="" />
-#!     <XFORM_ATTR ATTR_NAME="number" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(NUMBER)" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(MULTILINETEXT)" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LATITUDE)" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LONGITUDE)" />
-#!     <XFORM_ATTR ATTR_NAME="text" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(TEXT)" />
-#! </SUBDOCUMENT_IO>
-#! </SUBDOCUMENT_IOS>
-#! <FEAT_LINKS>
-#! <FEAT_LINK
-#!   IDENTIFIER="17"
-#!   SOURCE_NODE="15"
-#!   TARGET_NODE="4"
-#!   SOURCE_PORT_DESC="0"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="8"
-#!   SOURCE_NODE="4"
-#!   TARGET_NODE="6"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="9"
-#!   SOURCE_NODE="5"
-#!   TARGET_NODE="16"
-#!   SOURCE_PORT_DESC="fo 0 PASSED"
-#!   TARGET_PORT_DESC="fi 0 Input"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="10"
-#!   SOURCE_NODE="6"
-#!   TARGET_NODE="5"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="14"
-#!   SOURCE_NODE="16"
-#!   TARGET_NODE="13"
-#!   SOURCE_PORT_DESC="fo 0 Output"
-#!   TARGET_PORT_DESC="0"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="12"
-#!   SOURCE_NODE="5"
-#!   TARGET_NODE="16"
-#!   SOURCE_PORT_DESC="fo 1 FAILED"
-#!   TARGET_PORT_DESC="fi 0 Input"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! </FEAT_LINKS>
-#! <BREAKPOINTS>
-#! </BREAKPOINTS>
-#! <ATTR_LINKS>
-#! </ATTR_LINKS>
-#! </SUBDOCUMENT>
-#! <SUBDOCUMENT
-#!   NAME="CustomTransformer"
-#!   ARCGIS_COMPATIBILITY=""
-#!   CATEGORY="Format Specific"
-#!   DESCRIPTION=""
-#!   DOC_DYNAMIC_INPUT_ATTRS="0"
-#!   DOC_EXTENTS="5830 521"
-#!   DOC_TOP_LEFT="-6450 229"
-#!   FME_DOCUMENT_GUID="bc78c80d-7a11-4be5-acc7-b2ae8e45cc5f"
-#!   FME_DOCUMENT_PRIORGUID="8184a73e-a060-4101-a5ff-b3005d24278c,b823ba4a-2dc9-4fc8-ae6d-9b94786a8b04,cade9662-c050-4ead-8855-6c05884d49ee"
-#!   FME_NAMES_ENCODING="UTF-8"
-#!   FME_PROCESS_COUNT="NO_PARALLELISM"
-#!   FME_PROCESS_GROUPS_ORDERED="No"
-#!   FME_PROCESS_GROUP_BY=""
-#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
-#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
-#!   GUID="bc78c80d-7a11-4be5-acc7-b2ae8e45cc5f"
-#!   HISTORY=""
-#!   IS_VISIBLE="true"
-#!   LAST_SAVE_BUILD="FME(R) 2019.2.3.1 (20200212 - Build 19823 - linux-x64)"
-#!   LAST_SAVE_DATE="2020-03-07T10:01:49"
-#!   MARKDOWN_DESCRIPTION=""
-#!   MARKDOWN_USAGE=""
-#!   PYTHON_COMPATIBILITY=""
-#!   REPLACED_BY=""
-#!   SUPPRESS_UPGRADE="false"
-#!   TITLE="CustomTransformer"
-#!   USAGE=""
-#!   USE_MARKDOWN="NO"
-#!   VIEW_POSITION="-7833.08 1533.02"
-#!   XFORM_DEPRECATED="No"
-#!   ZOOM_SCALE="100"
-#! >
-#! <GLOBAL_PARAMETERS>
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR TEXT text:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;text&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR MULTILINETEXT multilinetext:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;multilinetext&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR NUMBER number:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;number&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LONGITUDE longitude:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;longitude&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR LATITUDE latitude:"
-#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;latitude&lt;closeparen&gt;"
-#!   IS_STAND_ALONE="false"
-#! />
-#! </GLOBAL_PARAMETERS>
-#! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPnRleHQ8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiVEVYVCIsInByb21wdCI6InRleHQ6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm11bHRpbGluZXRleHQ8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiTVVMVElMSU5FVEVYVCIsInByb21wdCI6Im11bHRpbGluZXRleHQ6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm51bWJlcjxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJOVU1CRVIiLCJwcm9tcHQiOiJudW1iZXI6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxvbmdpdHVkZTxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJMT05HSVRVREUiLCJwcm9tcHQiOiJsb25naXR1ZGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxhdGl0dWRlPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IkxBVElUVURFIiwicHJvbXB0IjoibGF0aXR1ZGU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ=="
-#! >
-#! <PARAMETER_INFO>
-#!     <INFO NAME="LATITUDE" IS_STAND_ALONE="false" />
-#!     <INFO NAME="LONGITUDE" IS_STAND_ALONE="false" />
-#!     <INFO NAME="MULTILINETEXT" IS_STAND_ALONE="false" />
-#!     <INFO NAME="NUMBER" IS_STAND_ALONE="false" />
-#!     <INFO NAME="TEXT" IS_STAND_ALONE="false" />
-#! </PARAMETER_INFO>
-#! </USER_PARAMETERS>
-#! <COMMENTS>
-#! </COMMENTS>
-#! <CONSTANTS>
-#! </CONSTANTS>
-#! <BOOKMARKS>
-#! </BOOKMARKS>
-#! <TRANSFORMERS>
-#! <TRANSFORMER
-#!   IDENTIFIER="7"
-#!   TYPE="AttributeValidator"
-#!   VERSION="3"
-#!   POSITION="-5700 750"
-#!   BOUNDING_RECT="-5700 750 454 71"
-#!   ORDER="500000000000003"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="PASSED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="FAILED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
-#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="number;RANGE;&lt;openbracket&gt;1&lt;comma&gt;100&lt;closebracket&gt;/longitude;RANGE;&lt;openbracket&gt;-180&lt;comma&gt;180&lt;closebracket&gt;/latitude;RANGE;&lt;openbracket&gt;-90&lt;comma&gt;90&lt;closebracket&gt;/text,multilinetext;MINIMUM_LENGTH;2/text;MAXIMUM_LENGTH;40"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="VALIDATION_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidator"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="9"
-#!   TYPE="VertexCreator"
-#!   VERSION="3"
-#!   POSITION="-4050 750"
-#!   BOUNDING_RECT="-4050 750 454 71"
-#!   ORDER="500000000000070"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ADVANCED_PARAMETERS" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="IGNORE_DUPLICATES" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="INDEX" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MEASURE_TYPE" PARM_VALUE="Continuous"/>
-#!     <XFORM_PARM PARM_NAME="MISSING_VAL_MODE" PARM_VALUE="None (Drop Values)"/>
-#!     <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Add Point"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="VertexCreator"/>
-#!     <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(longitude)"/>
-#!     <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(latitude)"/>
-#!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="10"
-#!   TYPE="CoordinateSystemSetter"
-#!   VERSION="0"
-#!   POSITION="-3300 750"
-#!   BOUNDING_RECT="-3300 750 520.00106825772946 71"
-#!   ORDER="500000000000071"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:4326"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="11"
-#!   TYPE="AttributeRemover"
-#!   VERSION="1"
-#!   POSITION="-2550 750"
-#!   BOUNDING_RECT="-2550 750 454 71"
-#!   ORDER="500000000000072"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="longitude,latitude"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="18"
-#!   TYPE="CoordinateExtractor"
-#!   VERSION="4"
-#!   POSITION="-1800 750"
-#!   BOUNDING_RECT="-1800 750 454 71"
-#!   ORDER="500000000000074"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ALL_ATTRIBUTES_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
-#!     <XFORM_PARM PARM_NAME="IND" PARM_VALUE="0"/>
-#!     <XFORM_PARM PARM_NAME="INDEX_ATTRIBUTES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Specify Coordinate"/>
-#!     <XFORM_PARM PARM_NAME="MODE_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateExtractor"/>
-#!     <XFORM_PARM PARM_NAME="X_ATTR" PARM_VALUE="longitude"/>
-#!     <XFORM_PARM PARM_NAME="Y_ATTR" PARM_VALUE="latitude"/>
-#!     <XFORM_PARM PARM_NAME="Z_ATTR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="Z_DEFAULT" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="21"
-#!   TYPE="ListPopulator"
-#!   VERSION="1"
-#!   POSITION="-4950 750"
-#!   BOUNDING_RECT="-4950 750 430 71"
-#!   ORDER="500000000000076"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="19823"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="_fme_validation_message_list"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PREFIX" PARM_VALUE="nothing"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListPopulator"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="25"
-#!   TYPE="SubDocumentTransformer"
-#!   VERSION="6"
-#!   POSITION="-4950 300"
-#!   BOUNDING_RECT="-4950 300 645.00106825772946 71"
-#!   ORDER="500000000000077"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="21797"
-#! >
-#!     <OUTPUT_FEAT NAME="Output"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="text" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.validator_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_fme_validation_message_list{}.calling_module" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="Validator_Name" PARM_VALUE="CustomTransformer"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValidationListPopulator"/>
-#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! </TRANSFORMERS>
-#! <SUBDOCUMENT_IOS>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="2"
-#!   NAME="Input"
-#!   POSITION="-6450 750"
-#!   BOUNDING_RECT="-6450 750 430 71"
-#!   COLLAPSED="true"
-#!   PUBLISHED="true"
-#!   IS_SOURCE="true"
-#!   ATTR_MODE="0"
-#! >
-#!     <XFORM_ATTR ATTR_NAME="number" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(NUMBER)" />
-#!     <XFORM_ATTR ATTR_NAME="multilinetext" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(MULTILINETEXT)" />
-#!     <XFORM_ATTR ATTR_NAME="text" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(TEXT)" />
-#!     <XFORM_ATTR ATTR_NAME="latitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LATITUDE)" />
-#!     <XFORM_ATTR ATTR_NAME="longitude" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LONGITUDE)" />
-#! </SUBDOCUMENT_IO>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="3"
-#!   NAME="Feature"
-#!   POSITION="-1050 750"
-#!   BOUNDING_RECT="-1050 750 430 71"
-#!   COLLAPSED="true"
-#!   IS_SOURCE="false"
-#!   ATTR_MODE="0"
-#! >
-#! </SUBDOCUMENT_IO>
-#! <SUBDOCUMENT_IO
-#!   IDENTIFIER="5"
-#!   NAME="&lt;INVALID&gt;"
-#!   POSITION="-1050 300"
-#!   BOUNDING_RECT="-1050 300 430 71"
-#!   COLLAPSED="true"
-#!   IS_SOURCE="false"
-#!   ATTR_MODE="0"
-#! >
-#! </SUBDOCUMENT_IO>
-#! </SUBDOCUMENT_IOS>
-#! <FEAT_LINKS>
-#! <FEAT_LINK
-#!   IDENTIFIER="12"
-#!   SOURCE_NODE="2"
-#!   TARGET_NODE="7"
-#!   SOURCE_PORT_DESC="0"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="23"
-#!   SOURCE_NODE="7"
-#!   TARGET_NODE="21"
-#!   SOURCE_PORT_DESC="fo 0 PASSED"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="16"
-#!   SOURCE_NODE="9"
-#!   TARGET_NODE="10"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="17"
-#!   SOURCE_NODE="10"
-#!   TARGET_NODE="11"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="19"
-#!   SOURCE_NODE="11"
-#!   TARGET_NODE="18"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="22"
-#!   SOURCE_NODE="18"
-#!   TARGET_NODE="3"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="0"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="24"
-#!   SOURCE_NODE="21"
-#!   TARGET_NODE="9"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="15"
-#!   SOURCE_NODE="25"
-#!   TARGET_NODE="5"
-#!   SOURCE_PORT_DESC="fo 0 Output"
-#!   TARGET_PORT_DESC="0"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="20"
-#!   SOURCE_NODE="7"
-#!   TARGET_NODE="25"
-#!   SOURCE_PORT_DESC="fo 1 FAILED"
-#!   TARGET_PORT_DESC="fi 0 Input"
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! </FEAT_LINKS>
-#! <BREAKPOINTS>
-#! </BREAKPOINTS>
-#! <ATTR_LINKS>
-#! </ATTR_LINKS>
-#! </SUBDOCUMENT>
 #! </SUBDOCUMENTS>
 #! <LOOKUP_TABLES>
 #! </LOOKUP_TABLES>
@@ -3491,13 +3491,13 @@ MACRO $(FeaturePreparer_WORKSPACE_NAME)_Feature_Longitude $(EmptyFeature_Longitu
 MACRO $(FeaturePreparer_WORKSPACE_NAME)_Feature_Latitude $(EmptyFeature_Latitude)
 DEFAULT_MACRO FeaturePreparer_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(FeaturePreparer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(FeaturePreparer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"text {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Text$encode)} multilinetext {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_MultiLineText$encode)} number {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Number$encode)} longitude {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Longitude$encode)} latitude {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Latitude$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { $(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "fme_feature_type" "SET_TO" "sample_feature" }    OUTPUT { OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"        }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(FeaturePreparer_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "EmptyFeaturePreparer Output Output Renamer/Nuker"   INPUT FEATURE_TYPE EmptyFeaturePreparer_Output   OUTPUT FEATURE_TYPE EmptyFeaturePreparer_Output
 # -------------------------------------------------------------------------
@@ -3514,7 +3514,7 @@ MACRO $(CustomTransformer_WORKSPACE_NAME)_LONGITUDE <at>Value<openparen>longitud
 MACRO $(CustomTransformer_WORKSPACE_NAME)_LATITUDE <at>Value<openparen>latitude<closeparen>
 DEFAULT_MACRO CustomTransformer_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(CustomTransformer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(CustomTransformer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(CustomTransformer_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(CustomTransformer_WORKSPACE_NAME)_MULTILINETEXT),UTF8,text,$($(CustomTransformer_WORKSPACE_NAME)_TEXT),UTF8,latitude,$($(CustomTransformer_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(CustomTransformer_WORKSPACE_NAME)_LONGITUDE),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(CustomTransformer_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(CustomTransformer_WORKSPACE_NAME)_MULTILINETEXT),UTF8,text,$($(CustomTransformer_WORKSPACE_NAME)_TEXT),UTF8,latitude,$($(CustomTransformer_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(CustomTransformer_WORKSPACE_NAME)_LONGITUDE),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 MACRO testClauses #Tcl to generate test clauses for the table in preparation for the TestFactory
 #Each Attribute gets put in a seperate clause
@@ -3553,7 +3553,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name CustomTransformer
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
@@ -3571,11 +3571,11 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC }    } else {        puts "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2 }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        $($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Feature1648667612 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_CoordinateExtractor_OUTPUT"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Feature"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>1648667612 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Feature1648669309 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_CoordinateExtractor_OUTPUT"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Feature"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>1648669309 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(CustomTransformer_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "EmptyFeatureCustomTransformer Feature Output Renamer/Nuker"   INPUT FEATURE_TYPE EmptyFeatureCustomTransformer_Feature
 FACTORY_DEF * TeeFactory   FACTORY_NAME "EmptyFeatureCustomTransformer <INVALID> Output Renamer/Nuker"   INPUT FEATURE_TYPE EmptyFeatureCustomTransformer_<INVALID>   OUTPUT FEATURE_TYPE EmptyFeatureCustomTransformer_<INVALID>
@@ -3594,7 +3594,7 @@ MACRO $(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_LATITUDE <at>Value<openpa
 MACRO $(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_LIST_NAME _fme_validation_message_list<opencurly><closecurly>
 DEFAULT_MACRO EmptyFeatureValidationVerifier_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(EmptyFeatureValidationVerifier_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(EmptyFeatureValidationVerifier_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_MULTILINETEXT),UTF8,latitude,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_LONGITUDE),UTF8,text,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_TEXT),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_MULTILINETEXT),UTF8,latitude,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_LONGITUDE),UTF8,text,$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_TEXT),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_ValidationErrorListElementCounter }    INPUT  FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_ValidationErrorListElementCounter_OUTPUT"         "_validation_list_length" @NumElements("$($(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_LIST_NAME)",ENCODED)          }
 # -------------------------------------------------------------------------
@@ -3619,7 +3619,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name EmptyFeatureValidationVerifier
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
@@ -3637,10 +3637,10 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC }    } else {        puts "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2 }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        $($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(EmptyFeatureValidationVerifier_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(EmptyFeatureValidationVerifier_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "EmptyFeatureValidationVerifier Output Output Renamer/Nuker"   INPUT FEATURE_TYPE EmptyFeatureValidationVerifier_Output   OUTPUT FEATURE_TYPE EmptyFeatureValidationVerifier_Output
 # -------------------------------------------------------------------------
@@ -3657,13 +3657,13 @@ MACRO $(FeaturePreparer_WORKSPACE_NAME)_Feature_Longitude $(BadFeature_Longitude
 MACRO $(FeaturePreparer_WORKSPACE_NAME)_Feature_Latitude $(BadFeature_Latitude)
 DEFAULT_MACRO FeaturePreparer_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(FeaturePreparer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(FeaturePreparer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"text {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Text$encode)} multilinetext {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_MultiLineText$encode)} number {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Number$encode)} longitude {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Longitude$encode)} latitude {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Latitude$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { $(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "fme_feature_type" "SET_TO" "sample_feature" }    OUTPUT { OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"        }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(FeaturePreparer_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "BadFeaturePreparer Output Output Renamer/Nuker"   INPUT FEATURE_TYPE BadFeaturePreparer_Output   OUTPUT FEATURE_TYPE BadFeaturePreparer_Output
 # -------------------------------------------------------------------------
@@ -3680,7 +3680,7 @@ MACRO $(CustomTransformer_WORKSPACE_NAME)_LONGITUDE <at>Value<openparen>longitud
 MACRO $(CustomTransformer_WORKSPACE_NAME)_LATITUDE <at>Value<openparen>latitude<closeparen>
 DEFAULT_MACRO CustomTransformer_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(CustomTransformer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(CustomTransformer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(CustomTransformer_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(CustomTransformer_WORKSPACE_NAME)_MULTILINETEXT),UTF8,text,$($(CustomTransformer_WORKSPACE_NAME)_TEXT),UTF8,latitude,$($(CustomTransformer_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(CustomTransformer_WORKSPACE_NAME)_LONGITUDE),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(CustomTransformer_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(CustomTransformer_WORKSPACE_NAME)_MULTILINETEXT),UTF8,text,$($(CustomTransformer_WORKSPACE_NAME)_TEXT),UTF8,latitude,$($(CustomTransformer_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(CustomTransformer_WORKSPACE_NAME)_LONGITUDE),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 MACRO testClauses #Tcl to generate test clauses for the table in preparation for the TestFactory
 #Each Attribute gets put in a seperate clause
@@ -3719,7 +3719,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name CustomTransformer
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
@@ -3737,11 +3737,11 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC }    } else {        puts "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2 }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        $($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Feature1648667612 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_CoordinateExtractor_OUTPUT"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Feature"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>1648667612 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Feature1648669309 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_CoordinateExtractor_OUTPUT"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Feature"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>1648669309 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(CustomTransformer_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "BadFeatureCustomTransformer Feature Output Renamer/Nuker"   INPUT FEATURE_TYPE BadFeatureCustomTransformer_Feature
 FACTORY_DEF * TeeFactory   FACTORY_NAME "BadFeatureCustomTransformer <INVALID> Output Renamer/Nuker"   INPUT FEATURE_TYPE BadFeatureCustomTransformer_<INVALID>   OUTPUT FEATURE_TYPE BadFeatureCustomTransformer_<INVALID>
@@ -3760,7 +3760,7 @@ MACRO $(BadFeatureValidationVerifier_WORKSPACE_NAME)_LATITUDE <at>Value<openpare
 MACRO $(BadFeatureValidationVerifier_WORKSPACE_NAME)_LIST_NAME _fme_validation_message_list<opencurly><closecurly>
 DEFAULT_MACRO BadFeatureValidationVerifier_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(BadFeatureValidationVerifier_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(BadFeatureValidationVerifier_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_MULTILINETEXT),UTF8,latitude,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_LONGITUDE),UTF8,text,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_TEXT),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_MULTILINETEXT),UTF8,latitude,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_LONGITUDE),UTF8,text,$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_TEXT),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(BadFeatureValidationVerifier_WORKSPACE_NAME)_ValidationErrorListElementCounter }    INPUT  FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_ValidationErrorListElementCounter_OUTPUT"         "_validation_list_length" @NumElements("$($(BadFeatureValidationVerifier_WORKSPACE_NAME)_LIST_NAME)",ENCODED)          }
 # -------------------------------------------------------------------------
@@ -3785,7 +3785,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name BadFeatureValidationVerifier
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
@@ -3803,10 +3803,10 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC }    } else {        puts "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2 }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        $($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(BadFeatureValidationVerifier_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(BadFeatureValidationVerifier_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "BadFeatureValidationVerifier Output Output Renamer/Nuker"   INPUT FEATURE_TYPE BadFeatureValidationVerifier_Output   OUTPUT FEATURE_TYPE BadFeatureValidationVerifier_Output
 # -------------------------------------------------------------------------
@@ -3823,13 +3823,13 @@ MACRO $(FeaturePreparer_WORKSPACE_NAME)_Feature_Longitude $(GoodFeature_Longitud
 MACRO $(FeaturePreparer_WORKSPACE_NAME)_Feature_Latitude $(GoodFeature_Latitude)
 DEFAULT_MACRO FeaturePreparer_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(FeaturePreparer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(FeaturePreparer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"text {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Text$encode)} multilinetext {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_MultiLineText$encode)} number {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Number$encode)} longitude {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Longitude$encode)} latitude {$($(FeaturePreparer_WORKSPACE_NAME)_Feature_Latitude$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { $(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "fme_feature_type" "SET_TO" "sample_feature" }    OUTPUT { OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"        }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FeaturePreparer_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_AttributeCreator_OUTPUT"   OUTPUT FEATURE_TYPE "$(FeaturePreparer_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(FeaturePreparer_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GoodFeaturePreparer Output Output Renamer/Nuker"   INPUT FEATURE_TYPE GoodFeaturePreparer_Output   OUTPUT FEATURE_TYPE GoodFeaturePreparer_Output
 # -------------------------------------------------------------------------
@@ -3846,7 +3846,7 @@ MACRO $(CustomTransformer_WORKSPACE_NAME)_LONGITUDE <at>Value<openparen>longitud
 MACRO $(CustomTransformer_WORKSPACE_NAME)_LATITUDE <at>Value<openparen>latitude<closeparen>
 DEFAULT_MACRO CustomTransformer_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(CustomTransformer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(CustomTransformer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(CustomTransformer_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(CustomTransformer_WORKSPACE_NAME)_MULTILINETEXT),UTF8,text,$($(CustomTransformer_WORKSPACE_NAME)_TEXT),UTF8,latitude,$($(CustomTransformer_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(CustomTransformer_WORKSPACE_NAME)_LONGITUDE),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,number,$($(CustomTransformer_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(CustomTransformer_WORKSPACE_NAME)_MULTILINETEXT),UTF8,text,$($(CustomTransformer_WORKSPACE_NAME)_TEXT),UTF8,latitude,$($(CustomTransformer_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(CustomTransformer_WORKSPACE_NAME)_LONGITUDE),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 MACRO testClauses #Tcl to generate test clauses for the table in preparation for the TestFactory
 #Each Attribute gets put in a seperate clause
@@ -3885,7 +3885,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name CustomTransformer
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
@@ -3903,11 +3903,11 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC }    } else {        puts "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2 }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        $($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Feature1648667612 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_CoordinateExtractor_OUTPUT"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Feature"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>1648667612 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_Feature1648669309 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_CoordinateExtractor_OUTPUT"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_Feature"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>1648669309 Output Collector"   INPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(CustomTransformer_WORKSPACE_NAME)_<INVALID>"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(CustomTransformer_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GoodFeatureCustomTransformer Feature Output Renamer/Nuker"   INPUT FEATURE_TYPE GoodFeatureCustomTransformer_Feature   OUTPUT FEATURE_TYPE GoodFeatureCustomTransformer_Feature
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GoodFeatureCustomTransformer <INVALID> Output Renamer/Nuker"   INPUT FEATURE_TYPE GoodFeatureCustomTransformer_<INVALID>
@@ -3933,7 +3933,7 @@ MACRO $(GoodFeatureValidationVerifier_WORKSPACE_NAME)_LONGITUDE <at>Value<openpa
 MACRO $(GoodFeatureValidationVerifier_WORKSPACE_NAME)_LIST_NAME _fme_validation_message_list<opencurly><closecurly>
 DEFAULT_MACRO GoodFeatureValidationVerifier_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(GoodFeatureValidationVerifier_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(GoodFeatureValidationVerifier_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,_fme_validation_message,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)__FME_VALIDATION_MESSAGE),UTF8,number,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_MULTILINETEXT),UTF8,fme_feature_type,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_FME_FEATURE_TYPE),UTF8,latitude,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_LONGITUDE),UTF8,text,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_TEXT),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,_fme_validation_message,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)__FME_VALIDATION_MESSAGE),UTF8,number,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_NUMBER),UTF8,multilinetext,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_MULTILINETEXT),UTF8,fme_feature_type,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_FME_FEATURE_TYPE),UTF8,latitude,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_LATITUDE),UTF8,longitude,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_LONGITUDE),UTF8,text,$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_TEXT),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(GoodFeatureValidationVerifier_WORKSPACE_NAME)_ValidationErrorListElementCounter }    INPUT  FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_ValidationErrorListElementCounter_OUTPUT"         "_validation_list_length" @NumElements("$($(GoodFeatureValidationVerifier_WORKSPACE_NAME)_LIST_NAME)",ENCODED)          }
 # -------------------------------------------------------------------------
@@ -3958,7 +3958,7 @@ MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_SUB_DOC_NAME AttributeV
 MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_Validator_Name GoodFeatureValidationVerifier
 DEFAULT_MACRO AttributeValidationListPopulator_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(AttributeValidationListPopulator_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648667612 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input1648669309 Input Splitter"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 Tcl2 proc $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_FME_MF_DIR {$(FME_MF_DIR_USERTYPED$encode)} _FME_MF_NAME {$(FME_MF_NAME$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Input"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(AttributeValidationListPopulator_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
@@ -3976,10 +3976,10 @@ FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_
 # once during mapping file parse time.
 INCLUDE [    set listAttributeRemoveRegexps {};    set anyList {no};    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append listAttributeRemoveRegexps ",^$attr$";       set anyList {yes};    };    if { ${anyList} == {no} } {        puts {MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC }    } else {        puts "MACRO $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC @RemoveAttributes(fme_pcre_match\"$listAttributeRemoveRegexps\")"    }; ]
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2 }    INPUT  FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeExposer_OUTPUT"    OUTPUT { FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"        @RemoveAttributes(fme_encoded,_mgs_validator_name,_fme_validation_message,_FME_MF_DIR,_FME_MF_NAME,_mgs_calling_module)        $($(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_LIST_FUNC)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(AttributeValidationListPopulator_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(AttributeValidationListPopulator_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Output1648667612 Output Collector"   INPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Output1648669309 Output Collector"   INPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_AttributeValidationListPopulator_Output"   OUTPUT FEATURE_TYPE "$(GoodFeatureValidationVerifier_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(GoodFeatureValidationVerifier_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GoodFeatureValidationVerifier Output Output Renamer/Nuker"   INPUT FEATURE_TYPE GoodFeatureValidationVerifier_Output   OUTPUT FEATURE_TYPE GoodFeatureValidationVerifier_Output
 # -------------------------------------------------------------------------
