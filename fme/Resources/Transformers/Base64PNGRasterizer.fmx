@@ -1,6 +1,6 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <TRANSFORMER
-# TRANSFORMER_BEGIN Base64PNGRasterizer,1,Rasters,37d9f229-5f47-4d75-9642-a5f731424beb,"Embedded Always",No,NO_PARALLELISM,,No,21797,YES,No,,No,
+# TRANSFORMER_BEGIN Base64PNGRasterizer,1,Rasters,72f06a52-41fd-4c9b-bd10-ddfff17c62f0,"Embedded Always",No,NO_PARALLELISM,,No,21797,YES,No,,No,
 # <p>Rasterize all rasterizable vector geometries arriving on the <strong>Input</strong> port, grouping them into output raster features by the provided <code>id</code>, <code>_xmax</code>, <code>_xmin</code>, <code>_ymax</code>, and <code>_ymin</code> attributes, plus the attributes named in the <strong>Custom_Attributes_to_Preserve</strong> user parameter. For each <strong>Output</strong> raster, include an <code>_image_base64</code> attribute containing the base64 encoding of a PNG-formatted version of the raster. This attribute's contents are suitable for use with an inline HTML <code>￼&lt;img&gt;</code> tag. The vector geometry types currently supported for rasterization are:</p>
 # <ul>
 # <li>Point</li>
@@ -34,8 +34,8 @@
 #!   DOC_TOP_LEFT="-13350 -1443"
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="21797"
-#!   FME_DOCUMENT_GUID="37d9f229-5f47-4d75-9642-a5f731424beb"
-#!   FME_DOCUMENT_PRIORGUID="9c4bfd8f-37e9-47b7-ad95-065e78443e5e,d5ca6f18-c32c-4c13-b4dc-00a2dd2fd4dc,6306933d-a6d2-45e0-8f84-ffe1ebb940d9,993eefd2-d10d-4487-8488-480ad5ddc02d,4b582ef6-d799-49d6-8f4a-f3d244bf18d1,a44e711f-e409-4b76-8d18-0175e315a277,ae001bd6-d9f9-48c9-a776-d0d106e781ff,b11a7174-fb95-4c80-ac2a-a3b110f5c1ff,0c7e11dc-19c8-400d-8540-f12a5a5d0d8d,5d0b7ecd-9c1a-48c9-86b2-95da27c0b6d1,23615aa8-3d9c-4f28-a182-67edfb0b5094,6c79d921-386d-47c1-be9a-329b08aad3b1"
+#!   FME_DOCUMENT_GUID="72f06a52-41fd-4c9b-bd10-ddfff17c62f0"
+#!   FME_DOCUMENT_PRIORGUID="9c4bfd8f-37e9-47b7-ad95-065e78443e5e,d5ca6f18-c32c-4c13-b4dc-00a2dd2fd4dc,6306933d-a6d2-45e0-8f84-ffe1ebb940d9,993eefd2-d10d-4487-8488-480ad5ddc02d,4b582ef6-d799-49d6-8f4a-f3d244bf18d1,a44e711f-e409-4b76-8d18-0175e315a277,ae001bd6-d9f9-48c9-a776-d0d106e781ff,b11a7174-fb95-4c80-ac2a-a3b110f5c1ff,0c7e11dc-19c8-400d-8540-f12a5a5d0d8d,5d0b7ecd-9c1a-48c9-86b2-95da27c0b6d1,23615aa8-3d9c-4f28-a182-67edfb0b5094,6c79d921-386d-47c1-be9a-329b08aad3b1,37d9f229-5f47-4d75-9642-a5f731424beb"
 #!   FME_LINKED_TRANSFORMER_VERSION="1"
 #!   FME_NAMES_ENCODING="UTF-8"
 #!   FME_PROCESS_COUNT="NO_PARALLELISM"
@@ -48,7 +48,7 @@
 #!   HISTORY="2022-04-11,Kevin&lt;space&gt;Weller,Initial&lt;space&gt;publication."
 #!   ITERATION_COUNT_ATTR=""
 #!   LAST_SAVE_BUILD="FME(R) 2021.2.1.0 (20211203 - Build 21797 - linux-x64)"
-#!   LAST_SAVE_DATE="2022-04-09T15:57:36"
+#!   LAST_SAVE_DATE="2022-04-09T16:03:13"
 #!   MARKDOWN_DESCRIPTION="Rasterize all rasterizable vector geometries arriving on the **Input** port, grouping them into output raster features by the provided `id`, `_xmax`, `_xmin`, `_ymax`, and `_ymin` attributes, plus the attributes named in the **Custom_Attributes_to_Preserve** user parameter. For each **Output** raster, include an `_image_base64` attribute containing the base64 encoding of a PNG-formatted version of the raster. This attribute&apos;s contents are suitable for use with an inline HTML `￼&lt;img&gt;` tag. The vector geometry types currently supported for rasterization are:&#10;&#10;- Point&#10;- Line&#10;- Arc&#10;- Area&#10;- Ellipse&#10;- Text&#10;- Point Cloud&#10;&#10;The following geometry types are currently rendered as single points in the **Default_Fill_Color** on the output rasters (this is likely to change to some kind of planar projection or disaggregation as appropriate in a future enhancement):&#10;&#10;- Surface&#10;- Solid&#10;- Collection&#10;- Instance&#10;- Null&#10;&#10;Rasters are passed through ungrouped, and unchanged with the sole exception that they are scaled to the requested dimensions.&#10;&#10;**IMPORTANT: This transformer must be embedded, not linked, for the calling module (workspace or linked custom transformer) to be properly identified; this is the default when you add it to your workflow.**&#10;&#10;This transformer is part of a suite that can be used for both data and workflow quality. For the former, data can be tested and exception reports generated from inside any workspace or transformer. For the latter, regression test driver workspaces can call a target workspace or transformer with predefined test data and verify that the results are correct and can be generated without error for both common and edge cases.&#10;&#10;For issues or questions, please Create an issue [here](https://github.com/modgeosys/fme-components/issues). For the source, including test driver components, please see the [Github repository](https://github.com/modgeosys/fme-components).&#10;&#10;Copyright &amp;copy; 2019-2022 by Modern geoSystems, released under [this BSD 3-clause license](https://github.com/modgeosys/fme-components/raw/master/LICENSE)."
 #!   MARKDOWN_USAGE="### Ports&#10;&#10;#### Input&#10;Feed all features that contain geometries to be rasterized.&#10;&#10;#### Output&#10;An ouput feature per group, with all the grouping attributes intact.  Each output feature includes the following additional attribute:&#10;&#10;- `_image_base64` - the base64 encoding of a PNG-formatted version of the raster&#10;&#10;### Parameters&#10;Specify the parameters for rasterization of the incoming features.&#10;&#10;#### ID&#10;The name of the attribute containing the identifier for each **Input** feature for grouping purposes.&#10;&#10;#### Name&#10;A name for this _Base64PNGRasterizer_ instance to support the creation of unique temporary filenames.&#10;&#10;#### Default_Pen_Color&#10;The default line drawing color to use for rasterized vector geometries when none is specified.&#10;&#10;#### Default_Fill_Color&#10;The default fill color to use for rasterized vector geometries when none is specified.&#10;&#10;#### _XMAX&#10;The name of the attribute containing the maximum x value for the raster ground extents.&#10;&#10;#### _XMIN&#10;The name of the attribute containing the minimum x value for the raster ground extents.&#10;&#10;#### _YMAX&#10;The name of the attribute containing the maximum y value for the raster ground extents.&#10;&#10;#### _YMIN&#10;The name of the attribute containing the minimum y value for the raster ground extents.&#10;&#10;#### Custom_Attributes_to_Preserve&#10;A space-separated list of custom attributes to include in the grouping of **Input** features into **Output** raster features.  These attributes will be included with all **Output** features."
 #!   MAX_LOOP_ITERATIONS=""
@@ -129,7 +129,7 @@
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI IGNORE OPTIONAL TEXT_EDIT_PYTHON_PARM All_Attributes_to_Preserve All Attributes to Preserve"
-#!   DEFAULT_VALUE="import&lt;space&gt;fme&lt;lf&gt;import&lt;space&gt;re&lt;lf&gt;&lt;lf&gt;attribute_parameters&lt;space&gt;=&lt;space&gt;&lt;openparen&gt;&lt;apos&gt;DatasetValidator_ExpectedBase64PNGRasterizer_&lt;apos&gt;&lt;space&gt;+&lt;space&gt;n&lt;space&gt;for&lt;space&gt;n&lt;space&gt;in&lt;space&gt;&lt;openparen&gt;&lt;apos&gt;ID&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;_XMAX&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;_XMIN&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;_YMAX&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;_YMIN&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;parameter_attributes&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;re.sub&lt;openparen&gt;r&lt;apos&gt;^&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;&lt;openparen&gt;&lt;openbracket&gt;A-Za-z0-9_&lt;closebracket&gt;+&lt;closeparen&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;dollar&gt;&lt;apos&gt;&lt;comma&gt;&lt;space&gt;r&lt;apos&gt;&lt;backslash&gt;1&lt;apos&gt;&lt;comma&gt;&lt;space&gt;fme.macroValues&lt;openbracket&gt;ap&lt;closebracket&gt;&lt;closeparen&gt;&lt;space&gt;for&lt;space&gt;ap&lt;space&gt;in&lt;space&gt;attribute_parameters&lt;closebracket&gt;&lt;lf&gt;result&lt;space&gt;=&lt;space&gt;&lt;apos&gt;&lt;space&gt;&lt;apos&gt;.join&lt;openparen&gt;parameter_attributes&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;result&lt;space&gt;+=&lt;space&gt;&lt;apos&gt;&lt;space&gt;_base64_geometry&lt;space&gt;_number_of_columns&lt;space&gt;_number_of_rows&lt;space&gt;_saved_color&lt;space&gt;_saved_fill_color&lt;space&gt;_size_ratio&lt;space&gt;_x&lt;space&gt;_y&lt;space&gt;fme_color&lt;space&gt;fme_feature_type&lt;space&gt;fme_fill_color&lt;space&gt;fme_rotation&lt;space&gt;fme_text_size&lt;space&gt;fme_text_string&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;if&lt;space&gt;len&lt;openparen&gt;fme.macroValues&lt;openbracket&gt;&lt;apos&gt;DatasetValidator_ExpectedBase64PNGRasterizer_Custom_Attributes_to_Preserve&lt;apos&gt;&lt;closebracket&gt;&lt;closeparen&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;0:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;result&lt;space&gt;+=&lt;space&gt;&lt;apos&gt;&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;fme.macroValues&lt;openbracket&gt;&lt;apos&gt;DatasetValidator_ExpectedBase64PNGRasterizer_Custom_Attributes_to_Preserve&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;return&lt;space&gt;result"
+#!   DEFAULT_VALUE="import&lt;space&gt;fme&lt;lf&gt;import&lt;space&gt;re&lt;lf&gt;&lt;lf&gt;#&lt;space&gt;Initialize&lt;space&gt;the&lt;space&gt;grouping&lt;space&gt;attribute&lt;space&gt;list&lt;space&gt;with&lt;space&gt;the&lt;space&gt;existing&lt;space&gt;attribute&lt;space&gt;parameters.&lt;lf&gt;attribute_parameters&lt;space&gt;=&lt;space&gt;&lt;openparen&gt;&lt;apos&gt;DatasetValidator_ExpectedBase64PNGRasterizer_&lt;apos&gt;&lt;space&gt;+&lt;space&gt;n&lt;space&gt;for&lt;space&gt;n&lt;space&gt;in&lt;space&gt;&lt;openparen&gt;&lt;apos&gt;ID&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;_XMAX&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;_XMIN&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;_YMAX&lt;apos&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;_YMIN&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;parameter_attributes&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;re.sub&lt;openparen&gt;r&lt;apos&gt;^&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;&lt;openparen&gt;&lt;openbracket&gt;A-Za-z0-9_&lt;closebracket&gt;+&lt;closeparen&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;dollar&gt;&lt;apos&gt;&lt;comma&gt;&lt;space&gt;r&lt;apos&gt;&lt;backslash&gt;1&lt;apos&gt;&lt;comma&gt;&lt;space&gt;fme.macroValues&lt;openbracket&gt;ap&lt;closebracket&gt;&lt;closeparen&gt;&lt;space&gt;for&lt;space&gt;ap&lt;space&gt;in&lt;space&gt;attribute_parameters&lt;closebracket&gt;&lt;lf&gt;result&lt;space&gt;=&lt;space&gt;&lt;apos&gt;&lt;space&gt;&lt;apos&gt;.join&lt;openparen&gt;parameter_attributes&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;#&lt;space&gt;Add&lt;space&gt;all&lt;space&gt;the&lt;space&gt;internally-generated&lt;space&gt;attributes.&lt;lf&gt;result&lt;space&gt;+=&lt;space&gt;&lt;apos&gt;&lt;space&gt;_base64_geometry&lt;space&gt;_number_of_columns&lt;space&gt;_number_of_rows&lt;space&gt;_saved_color&lt;space&gt;_saved_fill_color&lt;space&gt;_size_ratio&lt;space&gt;_x&lt;space&gt;_y&lt;space&gt;fme_color&lt;space&gt;fme_feature_type&lt;space&gt;fme_fill_color&lt;space&gt;fme_rotation&lt;space&gt;fme_text_size&lt;space&gt;fme_text_string&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;#&lt;space&gt;Add&lt;space&gt;any&lt;space&gt;custom&lt;space&gt;attributes&lt;space&gt;specified&lt;space&gt;in&lt;space&gt;the&lt;space&gt;transformer&lt;space&gt;parameters.&lt;lf&gt;if&lt;space&gt;len&lt;openparen&gt;fme.macroValues&lt;openbracket&gt;&lt;apos&gt;DatasetValidator_ExpectedBase64PNGRasterizer_Custom_Attributes_to_Preserve&lt;apos&gt;&lt;closebracket&gt;&lt;closeparen&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;0:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;result&lt;space&gt;+=&lt;space&gt;&lt;apos&gt;&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;fme.macroValues&lt;openbracket&gt;&lt;apos&gt;DatasetValidator_ExpectedBase64PNGRasterizer_Custom_Attributes_to_Preserve&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;return&lt;space&gt;result"
 #!   IS_STAND_ALONE="true"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -301,7 +301,7 @@
 #!   BOUNDING_RECT="-9288 410 3149.0010682577313 801"
 #!   STICKY="true"
 #!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
-#!   CONTENTS="34 33 10 51 52 12 11 9 "
+#!   CONTENTS="12 33 34 52 51 9 11 10 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -315,7 +315,7 @@
 #!   BOUNDING_RECT="-9288 -640 3160.0010682577276 411"
 #!   STICKY="true"
 #!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
-#!   CONTENTS="37 22 14 13 15 38 46 "
+#!   CONTENTS="15 14 22 38 37 13 46 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -333,7 +333,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -344,6 +343,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -420,7 +420,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="Raster"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -432,6 +431,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="SUMMARY"/>
@@ -482,7 +482,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -493,6 +492,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -503,7 +503,6 @@
 #!     <XFORM_ATTR ATTR_NAME="_image" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -514,6 +513,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -543,7 +543,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -555,6 +554,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_PNG_Rootname $(PNG_Rootname) _Name $(Name)"/>
@@ -668,6 +668,7 @@
 #! >
 #!     <OUTPUT_FEAT NAME="PASSED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -677,13 +678,13 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="FAILED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -693,7 +694,6 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -724,6 +724,7 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -733,7 +734,6 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -925,7 +925,6 @@
 #!     <XFORM_ATTR ATTR_NAME="filecopy_source_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filecopy_dest_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filecopy_dest_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -936,6 +935,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1023,7 +1023,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1034,11 +1033,11 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1050,6 +1049,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1289,7 +1289,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="ToBeRasterized"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1300,6 +1299,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1307,7 +1307,6 @@
 #!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="ToBeScaledOnly"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1318,11 +1317,11 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="ToBeBlank"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -1333,6 +1332,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="Base64PNGRasterizerGeometryFilter"/>
@@ -1354,7 +1354,6 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1363,6 +1362,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1391,7 +1391,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1402,6 +1401,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -2535,12 +2535,15 @@ def ParamFunc():
   import fme
   import re
 
+  # Initialize the grouping attribute list with the existing attribute parameters.
   attribute_parameters = ('DatasetValidator_ExpectedBase64PNGRasterizer_' + n for n in ('ID', '_XMAX', '_XMIN', '_YMAX', '_YMIN'))
   parameter_attributes = [re.sub(r'^<at>Value<openparen>([A-Za-z0-9_]+)<closeparen>$', r'\1', fme.macroValues[ap]) for ap in attribute_parameters]
   result = ' '.join(parameter_attributes)
 
+  # Add all the internally-generated attributes.
   result += ' _base64_geometry _number_of_columns _number_of_rows _saved_color _saved_fill_color _size_ratio _x _y fme_color fme_feature_type fme_fill_color fme_rotation fme_text_size fme_text_string'
 
+  # Add any custom attributes specified in the transformer parameters.
   if len(fme.macroValues['DatasetValidator_ExpectedBase64PNGRasterizer_Custom_Attributes_to_Preserve']) > 0:
       result += ' ' + fme.macroValues['DatasetValidator_ExpectedBase64PNGRasterizer_Custom_Attributes_to_Preserve']
 
@@ -2567,7 +2570,7 @@ USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBh
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 DEFAULT_MACRO Base64PNGRasterizer_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Base64PNGRasterizer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Base64PNGRasterizer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input1649541456 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,id,$($(Base64PNGRasterizer_WORKSPACE_NAME)_ID),UTF8,_xmax,$($(Base64PNGRasterizer_WORKSPACE_NAME)__XMAX),UTF8,_xmin,$($(Base64PNGRasterizer_WORKSPACE_NAME)__XMIN),UTF8,_ymax,$($(Base64PNGRasterizer_WORKSPACE_NAME)__YMAX),UTF8,_ymin,$($(Base64PNGRasterizer_WORKSPACE_NAME)__YMIN),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input1649541793 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,id,$($(Base64PNGRasterizer_WORKSPACE_NAME)_ID),UTF8,_xmax,$($(Base64PNGRasterizer_WORKSPACE_NAME)__XMAX),UTF8,_xmin,$($(Base64PNGRasterizer_WORKSPACE_NAME)__XMIN),UTF8,_ymax,$($(Base64PNGRasterizer_WORKSPACE_NAME)__YMAX),UTF8,_ymin,$($(Base64PNGRasterizer_WORKSPACE_NAME)__YMIN),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} GeometryExtractorFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_GeometryExtractor }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input"    GEOMETRY_ENCODING { fmebinary }    DEST_ATTR_NAME { "_base64_geometry" }    REMOVE_GEOMETRY { No }    LEVELS_ATTR { <Unused> }    OGCVERSION { 1.2 }    OGC_WKT_PRECISION { FLOAT_64 }    JSON_MAX_DIGITS { <Unused> }    OMIT_NAMESPACES { <Unused> }    PREFER_POLYGON_OVER_SURFACE { NO }    SRS_NAME {  }    SRS_AXIS_ORDER {  }    GENERATE_GEOMETRY_IDS { No }    GEOHASH_PRECISION { <Unused> }    OGEOSMS_URL_PREFIX { http://maps.google.com/?q= }    ELLIPSOID_NAME { <Unused> }    LETTERING_TYPE { <Unused> }    PRECISION { "<Unused>" }    MSSQL_FORMAT { "<Unused>" }    ISO6709_FORMAT { "<Unused>" }    ISO6709_MAX_DECIMAL_PLACES { "<Unused>" }    OUTPUT { OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_GeometryExtractor_OUTPUT"        }
 # -------------------------------------------------------------------------
@@ -2582,7 +2585,7 @@ MACRO $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_TRANSFORMER_GROUP
 MACRO $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_SUB_DOC_NAME Base64PNGRasterizerGeometryFilter
 DEFAULT_MACRO Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input1649541456 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input1649541793 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"
 # -------------------------------------------------------------------------
 MACRO OUTPUT_POINT_FTYPE not_selected
 MACRO OUTPUT_POINT_FTYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT
@@ -2610,7 +2613,7 @@ MACRO OUTPUT_NULL_FTYPE not_selected
 MACRO OUTPUT_NULL_FTYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL
 Lookup $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterTable   ""  "not_selected"   fme_point $(OUTPUT_POINT_FTYPE)   fme_line $(OUTPUT_LINE_FTYPE)   fme_arc $(OUTPUT_ARC_FTYPE)   fme_area $(OUTPUT_AREA_FTYPE)   fme_ellipse $(OUTPUT_ELLIPSE_FTYPE)   fme_text $(OUTPUT_TEXT_FTYPE)   fme_raster $(OUTPUT_RASTER_FTYPE)   fme_point_cloud $(OUTPUT_POINTCLOUD_FTYPE)   fme_surface $(OUTPUT_SURFACE_FTYPE)   fme_solid $(OUTPUT_SOLID_FTYPE)   fme_collection $(OUTPUT_COLLECTION_FTYPE)   fme_no_geom $(OUTPUT_NULL_FTYPE)
 # Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
-INCLUDE [ FME_CleanseFMEUUID {$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_c79db5f8_ba02_46d6_b895_0ca99fa1a0920} ]
+INCLUDE [ FME_CleanseFMEUUID {$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_22a431c4_7505_4afb_bd23_9dc7a6304e2e0} ]
 MACRO COLLECTION_HANDLING NOT_THIS_TIME
 MACRO INSTANCE_FILTERING *
 INCLUDE [    if 0 {       puts "MACRO COLLECTION_HANDLING *";       if <Unused> {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {{"$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"} == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
@@ -2620,9 +2623,9 @@ FACTORY_DEF {$(COLLECTION_HANDLING)} TestFactory    FACTORY_NAME { $(Base64PNGRa
 FACTORY_DEF {$(COLLECTION_HANDLING)} DeaggregateFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Deagg }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Collection___ }    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW { <Unused> }    OUTPUT { POINT FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { LINE FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { POLYGON FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { DONUT FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { AGGREGATE FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterPrepper }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Not_Collection___ }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Input___ }    OUTPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Prepped___        @SupplyAttributes("$(FME_UUID_SAFE)_targetFeatureType", @Lookup($(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterTable,&fme_type)) }
 FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Router }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Prepped___ }    TEST { @Value($(FME_UUID_SAFE)_targetFeatureType) != "not_selected" }    OUTPUT { PASSED FEATURE_TYPE * @FeatureType(@Value($(FME_UUID_SAFE)_targetFeatureType))                                 @RemoveAttributes($(FME_UUID_SAFE)_targetFeatureType) }    OUTPUT { FAILED FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"        @RemoveAttributes($(FME_UUID_SAFE)_targetFeatureType)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized1649541456 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_LINE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank1649541456 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly1649541456 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RASTER"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized1649541793 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_LINE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank1649541793 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly1649541793 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RASTER"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter ToBeRasterized Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeRasterized"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeRasterized"
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter ToBeBlank Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeBlank"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeBlank"
@@ -2679,7 +2682,7 @@ MACRO $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_TRANSFORMER_GROUP
 MACRO $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_SUB_DOC_NAME Base64PNGRasterizerGeometryFilter
 DEFAULT_MACRO Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input1649541456 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input1649541793 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"
 # -------------------------------------------------------------------------
 MACRO OUTPUT_POINT_FTYPE not_selected
 MACRO OUTPUT_POINT_FTYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT
@@ -2707,7 +2710,7 @@ MACRO OUTPUT_NULL_FTYPE not_selected
 MACRO OUTPUT_NULL_FTYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL
 Lookup $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterTable   ""  "not_selected"   fme_point $(OUTPUT_POINT_FTYPE)   fme_line $(OUTPUT_LINE_FTYPE)   fme_arc $(OUTPUT_ARC_FTYPE)   fme_area $(OUTPUT_AREA_FTYPE)   fme_ellipse $(OUTPUT_ELLIPSE_FTYPE)   fme_text $(OUTPUT_TEXT_FTYPE)   fme_raster $(OUTPUT_RASTER_FTYPE)   fme_point_cloud $(OUTPUT_POINTCLOUD_FTYPE)   fme_surface $(OUTPUT_SURFACE_FTYPE)   fme_solid $(OUTPUT_SOLID_FTYPE)   fme_collection $(OUTPUT_COLLECTION_FTYPE)   fme_no_geom $(OUTPUT_NULL_FTYPE)
 # Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
-INCLUDE [ FME_CleanseFMEUUID {$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_c79db5f8_ba02_46d6_b895_0ca99fa1a0921} ]
+INCLUDE [ FME_CleanseFMEUUID {$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_22a431c4_7505_4afb_bd23_9dc7a6304e2e1} ]
 MACRO COLLECTION_HANDLING NOT_THIS_TIME
 MACRO INSTANCE_FILTERING *
 INCLUDE [    if 0 {       puts "MACRO COLLECTION_HANDLING *";       if <Unused> {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {{"$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"} == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
@@ -2717,9 +2720,9 @@ FACTORY_DEF {$(COLLECTION_HANDLING)} TestFactory    FACTORY_NAME { $(Base64PNGRa
 FACTORY_DEF {$(COLLECTION_HANDLING)} DeaggregateFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Deagg }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Collection___ }    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW { <Unused> }    OUTPUT { POINT FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { LINE FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { POLYGON FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { DONUT FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { AGGREGATE FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterPrepper }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Not_Collection___ }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Input___ }    OUTPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Prepped___        @SupplyAttributes("$(FME_UUID_SAFE)_targetFeatureType", @Lookup($(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterTable,&fme_type)) }
 FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Router }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Prepped___ }    TEST { @Value($(FME_UUID_SAFE)_targetFeatureType) != "not_selected" }    OUTPUT { PASSED FEATURE_TYPE * @FeatureType(@Value($(FME_UUID_SAFE)_targetFeatureType))                                 @RemoveAttributes($(FME_UUID_SAFE)_targetFeatureType) }    OUTPUT { FAILED FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"        @RemoveAttributes($(FME_UUID_SAFE)_targetFeatureType)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized1649541456 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_LINE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank1649541456 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly1649541456 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RASTER"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized1649541793 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_LINE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank1649541793 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly1649541793 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RASTER"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2 ToBeRasterized Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2_ToBeRasterized"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2_ToBeRasterized"
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2 ToBeBlank Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2_ToBeBlank"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2_ToBeBlank"
@@ -2744,14 +2747,14 @@ MACRO $(FileDeleter_WORKSPACE_NAME)_SUB_DOC_NAME FileDeleter
 MACRO $(FileDeleter_WORKSPACE_NAME)_FileToDelete $(FME_MF_DIR)Resources/Temp/$($(Base64PNGRasterizer_WORKSPACE_NAME)_PNG_Rootname)_@Value(_Name)_@Value(id).png
 DEFAULT_MACRO FileDeleter_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(FileDeleter_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(FileDeleter_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FileDeleter_WORKSPACE_NAME)_Input1649541456 Input Splitter"   INPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FileDeleter_WORKSPACE_NAME)_Input1649541793 Input Splitter"   INPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { $(FileDeleter_WORKSPACE_NAME)_AttributeManager }    INPUT  FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "" "filecopy_source_dataset" "$($(FileDeleter_WORKSPACE_NAME)_FileToDelete$encode)" "SET_TO" }      ATTR_ACTION { "" "filecopy_dest_dataset" "" "SET_TO" }      ATTR_ACTION { "" "filecopy_dest_filename" "nul" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_AttributeManager_OUTPUT"        }
 # -------------------------------------------------------------------------
 INCLUDE [    puts {DEFAULT_MACRO FeatureWriterDataset_$(FileDeleter_WORKSPACE_NAME)_FeatureWriter c:<backslash>temp}; ]
 FACTORY_DEF {*} WriterFactory    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    FACTORY_NAME { $(FileDeleter_WORKSPACE_NAME)_FeatureWriter }    WRITER_TYPE { FILECOPY }    WRITER_DATASET { "$(FeatureWriterDataset_$(FileDeleter_WORKSPACE_NAME)_FeatureWriter)" }    WRITER_SETTINGS { "RUNTIME_MACROS,FILE_OPERATION<comma>MOVE<comma>COPY_SOURCE_DIRECTORY<comma>NO<comma>COPY_SUBDIRECTORIES<comma>YES<comma>FAIL_NONEXISTENT_SOURCE<comma>NO<comma>OVERWRITE_FILE<comma>YES<comma>FEATURE_TYPE_NAMES_AS_FOLDERS<comma>YES<comma>FAIL_INVALID_DESTINATION<comma>NO<comma>MIME_TYPE<comma>text<solidus>plain<comma>DESTINATION_DATASETTYPE_VALIDATION<comma>Yes<comma>COORDINATE_SYSTEM_GRANULARITY<comma>FEATURE,METAFILE,FILECOPY" }    WRITER_METAFILE { "ATTRIBUTE_CASE,ANY,ATTRIBUTE_INVALID_CHARS,,ATTRIBUTE_LENGTH,512,ATTR_TYPE_MAP,char<openparen>width<closeparen><comma>fme_varchar<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_varbinary<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_char<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_binary<openparen>width<closeparen><comma>string<comma>fme_buffer<comma>string<comma>fme_binarybuffer<comma>string<comma>fme_xml<comma>string<comma>fme_json<comma>datetime<comma>fme_datetime<comma>time<comma>fme_time<comma>date<comma>fme_date<comma>real64<comma>fme_real64<comma>real32<comma>fme_real32<comma><quote>number<openparen>width<comma>decimal<closeparen><quote><comma><quote>fme_decimal<openparen>width<comma>decimal<closeparen><quote><comma>int32<comma>fme_int32<comma><quote>number<openparen>11<comma>0<closeparen><quote><comma>fme_uint32<comma><quote>number<openparen>20<comma>0<closeparen><quote><comma>fme_int64<comma><quote>number<openparen>20<comma>0<closeparen><quote><comma>fme_uint64<comma>logical<comma>fme_boolean<comma>int16<comma>fme_int16<comma>int32<comma>fme_uint16<comma>int16<comma>fme_int8<comma>int16<comma>fme_uint8,DEST_ILLEGAL_ATTR_LIST,,FEATURE_TYPE_CASE,ANY,FEATURE_TYPE_INVALID_CHARS,<quote>:?*<lt><gt>|,FEATURE_TYPE_LENGTH,0,FEATURE_TYPE_LENGTH_INCLUDES_PREFIX,false,FEATURE_TYPE_RESERVED_WORDS,,FORMAT_METAFILE,$(FME_HOME_ENCODED)metafile<solidus>filecopy.fmf,FORMAT_NAME,FILECOPY,GEOM_MAP,filecopy_none<comma>fme_no_geom<comma>filecopy_none<comma>fme_point<comma>filecopy_none<comma>fme_line<comma>filecopy_none<comma>fme_polygon<comma>filecopy_none<comma>fme_arc<comma>filecopy_none<comma>fme_text<comma>filecopy_none<comma>fme_ellipse<comma>filecopy_none<comma>fme_rectangle<comma>filecopy_none<comma>fme_rounded_rectangle<comma>filecopy_none<comma>fme_collection<comma>filecopy_none<comma>fme_surface<comma>filecopy_none<comma>fme_solid<comma>filecopy_none<comma>fme_raster<comma>filecopy_none<comma>fme_point_cloud<comma>filecopy_none<comma>fme_voxel_grid<comma>filecopy_none<comma>fme_feature_table,READER_ATTR_INDEX_TYPES,,READER_FORMAT_TYPE,DYNAMIC,READER_USES_DEF,yes,SOURCE,no,SUPPORTS_FEAT_TYPE_FANOUT,yes,SUPPORTS_MULTI_GEOM,yes,WORKBENCH_CANNED_SCHEMA,,WRITER,FILECOPY,WRITER_ATTR_INDEX_TYPES,,WRITER_DEFLINE_PARMS,,WRITER_DEF_LINE_TEMPLATE,<opencurly>FME_GEN_GROUP_NAME<closecurly>,WRITER_FORMAT_PARAMETER,WRITER_FEATURE_TYPE_EDITING<comma>NO<comma>MIME_TYPE<comma>text<solidus>plain<comma>WRITER_AUTO_EXPOSE<comma><quote>filecopy_source_dataset<space>char<openparen>512<closeparen><quote><comma>FEATURE_TYPE_NAME<comma>Subfolder<comma>FEATURE_TYPE_DEFAULT_NAME<comma>subfolder<comma>WRITER_DATASET_HINT<comma><quote>Specify<space>a<space>folder<space>for<space>the<space>File<space>Copy<quote>,WRITER_FORMAT_TYPE,DYNAMIC,WRITER_HAS_DEFLINE_ATTRS,no,WRITER_USES_DEF,yes" }    WRITER_FEATURE_TYPES { "filecopy:filecopy,ftp_feature_type_name,filecopy,ftp_writer,FILECOPY,ftp_dynamic_schema,no,ftp_dynamic_feature_type_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_geometry_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_def_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_sources,<lt>lt<gt>Unused<lt>gt<gt>,ftp_format_attributes,filecopy_dest_filename<comma>filecopy_source_dataset" }    WRITER_PARAMS { "FAIL_NONEXISTENT_SOURCE,NO,FAIL_INVALID_DESTINATION,NO,FILE_OPERATION,MOVE,OVERWRITE_FILE,YES,MIME_TYPE,text<solidus>plain,COPY_SUBDIRECTORIES,YES,COORDINATE_SYSTEM_GRANULARITY,FEATURE,DESTINATION_DATASETTYPE_VALIDATION,Yes,COPY_SOURCE_DIRECTORY,NO" }    DATASET_ATTR { "_dataset" }    FEATURE_TYPE_LIST_ATTR { "_feature_type" }    TOTAL_FEATURES_WRITTEN_ATTR { "_total_features_written" }    OUTPUT_PORTS { filecopy filecopy }    INPUT filecopy FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_AttributeManager_OUTPUT"  @FeatureType(ENCODED,filecopy)    OUTPUT filecopy FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_FeatureWriter_filecopy"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FileDeleter_WORKSPACE_NAME)_Output1649541456 Output Collector"   INPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_FeatureWriter_filecopy"   OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FileDeleter_WORKSPACE_NAME)_Output1649541793 Output Collector"   INPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_FeatureWriter_filecopy"   OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(FileDeleter_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter_Output"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Output1649541456 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter_Output"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Output1649541793 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter_Output"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Base64PNGRasterizer_WORKSPACE_NAME))}]
