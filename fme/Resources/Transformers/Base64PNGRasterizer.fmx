@@ -1,6 +1,6 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <TRANSFORMER
-# TRANSFORMER_BEGIN Base64PNGRasterizer,1,Rasters,d16c19ec-32bb-44ea-b8cd-42e873f27be9,"Embedded Always",No,NO_PARALLELISM,,No,21797,YES,No,,No,
+# TRANSFORMER_BEGIN Base64PNGRasterizer,1,Rasters,63034414-668d-4cb4-8834-40e397834900,"Embedded Always",No,NO_PARALLELISM,,No,21797,YES,No,,No,
 # <p>Rasterize all rasterizable vector geometries arriving on the <strong>Input</strong> port, grouping them into output raster features by the provided <code>id</code>, <code>_xmax</code>, <code>_xmin</code>, <code>_ymax</code>, and <code>_ymin</code> attributes, plus the attributes named in the <strong>Custom_Attributes_to_Preserve</strong> user parameter. For each <strong>Output</strong> raster, include an <code>_image_base64</code> attribute containing the base64 encoding of a PNG-formatted version of the raster. This attribute's contents are suitable for use with an inline HTML <code>￼&lt;img&gt;</code> tag. The vector geometry types currently supported for rasterization are:</p>
 # <ul>
 # <li>Point</li>
@@ -30,12 +30,12 @@
 #!   BLOCKED_LOOPING="No"
 #!   CATEGORY="Rasters"
 #!   DESCRIPTION="&lt;p&gt;Rasterize all rasterizable vector geometries arriving on the &lt;strong&gt;Input&lt;/strong&gt; port, grouping them into output raster features by the provided &lt;code&gt;id&lt;/code&gt;, &lt;code&gt;_xmax&lt;/code&gt;, &lt;code&gt;_xmin&lt;/code&gt;, &lt;code&gt;_ymax&lt;/code&gt;, and &lt;code&gt;_ymin&lt;/code&gt; attributes, plus the attributes named in the &lt;strong&gt;Custom_Attributes_to_Preserve&lt;/strong&gt; user parameter. For each &lt;strong&gt;Output&lt;/strong&gt; raster, include an &lt;code&gt;_image_base64&lt;/code&gt; attribute containing the base64 encoding of a PNG-formatted version of the raster. This attribute&apos;s contents are suitable for use with an inline HTML &lt;code&gt;￼&amp;lt;img&amp;gt;&lt;/code&gt; tag. The vector geometry types currently supported for rasterization are:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;Point&lt;/li&gt;&#10;&lt;li&gt;Line&lt;/li&gt;&#10;&lt;li&gt;Arc&lt;/li&gt;&#10;&lt;li&gt;Area&lt;/li&gt;&#10;&lt;li&gt;Ellipse&lt;/li&gt;&#10;&lt;li&gt;Text&lt;/li&gt;&#10;&lt;li&gt;Point Cloud&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;p&gt;The following geometry types are currently rendered as single points in the &lt;strong&gt;Default_Fill_Color&lt;/strong&gt; on the output rasters (this is likely to change to some kind of planar projection or disaggregation as appropriate in a future enhancement):&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;Surface&lt;/li&gt;&#10;&lt;li&gt;Solid&lt;/li&gt;&#10;&lt;li&gt;Collection&lt;/li&gt;&#10;&lt;li&gt;Instance&lt;/li&gt;&#10;&lt;li&gt;Null&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;p&gt;Rasters are passed through ungrouped, and unchanged with the sole exception that they are scaled to the requested dimensions.&lt;/p&gt;&#10;&lt;p&gt;&lt;strong&gt;IMPORTANT: This transformer must be embedded, not linked, for the calling module (workspace or linked custom transformer) to be properly identified; this is the default when you add it to your workflow.&lt;/strong&gt;&lt;/p&gt;&#10;&lt;p&gt;This transformer is part of a suite that can be used for both data and workflow quality. For the former, data can be tested and exception reports generated from inside any workspace or transformer. For the latter, regression test driver workspaces can call a target workspace or transformer with predefined test data and verify that the results are correct and can be generated without error for both common and edge cases.&lt;/p&gt;&#10;&lt;p&gt;For issues or questions, please Create an issue &lt;a href=&quot;https://github.com/modgeosys/fme-components/issues&quot;&gt;here&lt;/a&gt;. For the source, including test driver components, please see the &lt;a href=&quot;https://github.com/modgeosys/fme-components&quot;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;&#10;&lt;p&gt;Copyright &amp;copy; 2019-2022 by Modern geoSystems, released under &lt;a href=&quot;https://github.com/modgeosys/fme-components/raw/master/LICENSE&quot;&gt;this BSD 3-clause license&lt;/a&gt;.&lt;/p&gt;"
-#!   DOC_EXTENTS="16013 2193"
-#!   DOC_TOP_LEFT="-13350 -1443"
+#!   DOC_EXTENTS="16613 2193"
+#!   DOC_TOP_LEFT="-14250 -1443"
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="21797"
-#!   FME_DOCUMENT_GUID="d16c19ec-32bb-44ea-b8cd-42e873f27be9"
-#!   FME_DOCUMENT_PRIORGUID="9c4bfd8f-37e9-47b7-ad95-065e78443e5e,d5ca6f18-c32c-4c13-b4dc-00a2dd2fd4dc,6306933d-a6d2-45e0-8f84-ffe1ebb940d9,993eefd2-d10d-4487-8488-480ad5ddc02d,4b582ef6-d799-49d6-8f4a-f3d244bf18d1,a44e711f-e409-4b76-8d18-0175e315a277,ae001bd6-d9f9-48c9-a776-d0d106e781ff,b11a7174-fb95-4c80-ac2a-a3b110f5c1ff,0c7e11dc-19c8-400d-8540-f12a5a5d0d8d,5d0b7ecd-9c1a-48c9-86b2-95da27c0b6d1,23615aa8-3d9c-4f28-a182-67edfb0b5094,6c79d921-386d-47c1-be9a-329b08aad3b1,37d9f229-5f47-4d75-9642-a5f731424beb,72f06a52-41fd-4c9b-bd10-ddfff17c62f0,31c9bbe1-0b0a-4374-8dc4-3921d5402499,cb62a1af-3440-4c02-b906-a55c99aea07a,59490f6c-027e-40d8-8770-e8cbcc15da18,42a617df-5c2f-444c-8c0b-05055061e096,9ac3dde8-4f2c-477b-bfaa-e3cdb4c51c9e"
+#!   FME_DOCUMENT_GUID="63034414-668d-4cb4-8834-40e397834900"
+#!   FME_DOCUMENT_PRIORGUID="9c4bfd8f-37e9-47b7-ad95-065e78443e5e,d5ca6f18-c32c-4c13-b4dc-00a2dd2fd4dc,6306933d-a6d2-45e0-8f84-ffe1ebb940d9,993eefd2-d10d-4487-8488-480ad5ddc02d,4b582ef6-d799-49d6-8f4a-f3d244bf18d1,a44e711f-e409-4b76-8d18-0175e315a277,ae001bd6-d9f9-48c9-a776-d0d106e781ff,b11a7174-fb95-4c80-ac2a-a3b110f5c1ff,0c7e11dc-19c8-400d-8540-f12a5a5d0d8d,5d0b7ecd-9c1a-48c9-86b2-95da27c0b6d1,23615aa8-3d9c-4f28-a182-67edfb0b5094,6c79d921-386d-47c1-be9a-329b08aad3b1,37d9f229-5f47-4d75-9642-a5f731424beb,72f06a52-41fd-4c9b-bd10-ddfff17c62f0,31c9bbe1-0b0a-4374-8dc4-3921d5402499,cb62a1af-3440-4c02-b906-a55c99aea07a,59490f6c-027e-40d8-8770-e8cbcc15da18,42a617df-5c2f-444c-8c0b-05055061e096,9ac3dde8-4f2c-477b-bfaa-e3cdb4c51c9e,d16c19ec-32bb-44ea-b8cd-42e873f27be9"
 #!   FME_LINKED_TRANSFORMER_VERSION="1"
 #!   FME_NAMES_ENCODING="UTF-8"
 #!   FME_PROCESS_COUNT="NO_PARALLELISM"
@@ -48,7 +48,7 @@
 #!   HISTORY="2022-04-11,Kevin&lt;space&gt;Weller,Initial&lt;space&gt;publication."
 #!   ITERATION_COUNT_ATTR=""
 #!   LAST_SAVE_BUILD="FME(R) 2021.2.1.0 (20211203 - Build 21797 - linux-x64)"
-#!   LAST_SAVE_DATE="2022-04-09T20:48:18"
+#!   LAST_SAVE_DATE="2022-04-10T08:51:45"
 #!   MARKDOWN_DESCRIPTION="Rasterize all rasterizable vector geometries arriving on the **Input** port, grouping them into output raster features by the provided `id`, `_xmax`, `_xmin`, `_ymax`, and `_ymin` attributes, plus the attributes named in the **Custom_Attributes_to_Preserve** user parameter. For each **Output** raster, include an `_image_base64` attribute containing the base64 encoding of a PNG-formatted version of the raster. This attribute&apos;s contents are suitable for use with an inline HTML `￼&lt;img&gt;` tag. The vector geometry types currently supported for rasterization are:&#10;&#10;- Point&#10;- Line&#10;- Arc&#10;- Area&#10;- Ellipse&#10;- Text&#10;- Point Cloud&#10;&#10;The following geometry types are currently rendered as single points in the **Default_Fill_Color** on the output rasters (this is likely to change to some kind of planar projection or disaggregation as appropriate in a future enhancement):&#10;&#10;- Surface&#10;- Solid&#10;- Collection&#10;- Instance&#10;- Null&#10;&#10;Rasters are passed through ungrouped, and unchanged with the sole exception that they are scaled to the requested dimensions.&#10;&#10;**IMPORTANT: This transformer must be embedded, not linked, for the calling module (workspace or linked custom transformer) to be properly identified; this is the default when you add it to your workflow.**&#10;&#10;This transformer is part of a suite that can be used for both data and workflow quality. For the former, data can be tested and exception reports generated from inside any workspace or transformer. For the latter, regression test driver workspaces can call a target workspace or transformer with predefined test data and verify that the results are correct and can be generated without error for both common and edge cases.&#10;&#10;For issues or questions, please Create an issue [here](https://github.com/modgeosys/fme-components/issues). For the source, including test driver components, please see the [Github repository](https://github.com/modgeosys/fme-components).&#10;&#10;Copyright &amp;copy; 2019-2022 by Modern geoSystems, released under [this BSD 3-clause license](https://github.com/modgeosys/fme-components/raw/master/LICENSE)."
 #!   MARKDOWN_USAGE="### Ports&#10;&#10;#### Input&#10;Feed all features that contain geometries to be rasterized.&#10;&#10;#### Output&#10;An ouput feature per group, with all the grouping attributes intact.  Each output feature includes the following additional attribute:&#10;&#10;- `_image_base64` - the base64 encoding of a PNG-formatted version of the raster&#10;&#10;### Parameters&#10;Specify the parameters for rasterization of the incoming features.&#10;&#10;#### ID&#10;The name of the attribute containing the identifier for each **Input** feature for grouping purposes.&#10;&#10;#### Name&#10;A name for this _Base64PNGRasterizer_ instance to support the creation of unique temporary filenames.&#10;&#10;#### Default_Pen_Color&#10;The default line drawing color to use for rasterized vector geometries when none is specified.&#10;&#10;#### Default_Fill_Color&#10;The default fill color to use for rasterized vector geometries when none is specified.&#10;&#10;#### _XMAX&#10;The name of the attribute containing the maximum x value for the raster ground extents.&#10;&#10;#### _XMIN&#10;The name of the attribute containing the minimum x value for the raster ground extents.&#10;&#10;#### _YMAX&#10;The name of the attribute containing the maximum y value for the raster ground extents.&#10;&#10;#### _YMIN&#10;The name of the attribute containing the minimum y value for the raster ground extents.&#10;&#10;#### Custom_Attributes_to_Preserve&#10;A space-separated list of custom attributes to include in the grouping of **Input** features into **Output** raster features.  These attributes will be included with all **Output** features."
 #!   MAX_LOOP_ITERATIONS=""
@@ -60,7 +60,7 @@
 #!   TITLE="Base64PNGRasterizer"
 #!   USAGE="&lt;h3&gt;Ports&lt;/h3&gt;&#10;&lt;h4&gt;Input&lt;/h4&gt;&#10;&lt;p&gt;Feed all features that contain geometries to be rasterized.&lt;/p&gt;&#10;&lt;h4&gt;Output&lt;/h4&gt;&#10;&lt;p&gt;An ouput feature per group, with all the grouping attributes intact.  Each output feature includes the following additional attribute:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;_image_base64&lt;/code&gt; - the base64 encoding of a PNG-formatted version of the raster&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h3&gt;Parameters&lt;/h3&gt;&#10;&lt;p&gt;Specify the parameters for rasterization of the incoming features.&lt;/p&gt;&#10;&lt;h4&gt;ID&lt;/h4&gt;&#10;&lt;p&gt;The name of the attribute containing the identifier for each &lt;strong&gt;Input&lt;/strong&gt; feature for grouping purposes.&lt;/p&gt;&#10;&lt;h4&gt;Name&lt;/h4&gt;&#10;&lt;p&gt;A name for this &lt;em&gt;Base64PNGRasterizer&lt;/em&gt; instance to support the creation of unique temporary filenames.&lt;/p&gt;&#10;&lt;h4&gt;Default_Pen_Color&lt;/h4&gt;&#10;&lt;p&gt;The default line drawing color to use for rasterized vector geometries when none is specified.&lt;/p&gt;&#10;&lt;h4&gt;Default_Fill_Color&lt;/h4&gt;&#10;&lt;p&gt;The default fill color to use for rasterized vector geometries when none is specified.&lt;/p&gt;&#10;&lt;h4&gt;_XMAX&lt;/h4&gt;&#10;&lt;p&gt;The name of the attribute containing the maximum x value for the raster ground extents.&lt;/p&gt;&#10;&lt;h4&gt;_XMIN&lt;/h4&gt;&#10;&lt;p&gt;The name of the attribute containing the minimum x value for the raster ground extents.&lt;/p&gt;&#10;&lt;h4&gt;_YMAX&lt;/h4&gt;&#10;&lt;p&gt;The name of the attribute containing the maximum y value for the raster ground extents.&lt;/p&gt;&#10;&lt;h4&gt;_YMIN&lt;/h4&gt;&#10;&lt;p&gt;The name of the attribute containing the minimum y value for the raster ground extents.&lt;/p&gt;&#10;&lt;h4&gt;Custom_Attributes_to_Preserve&lt;/h4&gt;&#10;&lt;p&gt;A space-separated list of custom attributes to include in the grouping of &lt;strong&gt;Input&lt;/strong&gt; features into &lt;strong&gt;Output&lt;/strong&gt; raster features.  These attributes will be included with all &lt;strong&gt;Output&lt;/strong&gt; features.&lt;/p&gt;"
 #!   USE_MARKDOWN="YES"
-#!   VIEW_POSITION="-8157.08 951.01"
+#!   VIEW_POSITION="-11808.1 951.01"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   XFORM_DEPRECATED="No"
@@ -134,7 +134,7 @@
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmlkPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IklEIiwicHJvbXB0IjoiaWQiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJOYW1lIiwicHJvbXB0IjoiTmFtZSIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWxwaGEiOnRydWUsImNvbG9yU3BhY2UiOiJyZ2IiLCJjb21wb25lbnRWYWx1ZVR5cGUiOiJmbG9hdCIsImRlZmF1bHRWYWx1ZSI6IjAsMCwwLDEiLCJuYW1lIjoiRGVmYXVsdF9QZW5fQ29sb3IiLCJwcm9tcHQiOiJEZWZhdWx0IFBlbiBDb2xvciIsInJlcXVpcmVkIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImNvbG9yIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhbHBoYSI6dHJ1ZSwiY29sb3JTcGFjZSI6InJnYiIsImNvbXBvbmVudFZhbHVlVHlwZSI6ImZsb2F0IiwiZGVmYXVsdFZhbHVlIjoiMSwxLDEsMCIsIm5hbWUiOiJEZWZhdWx0X0ZpbGxfQ29sb3IiLCJwcm9tcHQiOiJEZWZhdWx0IEZpbGwgQ29sb3IiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJjb2xvciIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5feG1heDxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJfWE1BWCIsInByb21wdCI6IlhtYXg6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPl94bWluPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Il9YTUlOIiwicHJvbXB0IjoiWG1pbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+X3ltYXg8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiX1lNQVgiLCJwcm9tcHQiOiJZbWF4OiIsInJlcXVpcmVkIjp0cnVlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5feW1pbjxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJfWU1JTiIsInByb21wdCI6IlltaW4iLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6ImF0dHJpYnV0ZU5hbWVzIiwibGlzdFN1cHBvcnQiOiJmdWxsIn0sIm5hbWUiOiJDdXN0b21fQXR0cmlidXRlc190b19QcmVzZXJ2ZSIsInByb21wdCI6IkN1c3RvbSBBdHRyaWJ1dGVzIHRvIFByZXNlcnZlIiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRyZWUiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6InJldHVybjxzcGFjZT48YXBvcz5yYXN0ZXI8YXBvcz4iLCJlZGl0b3IiOiJweXRob24iLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJQTkdfUm9vdG5hbWUiLCJwcm9tcHQiOiJQTkcgUm9vdG5hbWUiLCJyZXF1aXJlZCI6ZmFsc2UsInJ1bm5hYmxlIjp0cnVlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6ImltcG9ydDxzcGFjZT5mbWU8bGY+aW1wb3J0PHNwYWNlPnJlPGxmPjxsZj4jPHNwYWNlPkluaXRpYWxpemU8c3BhY2U+dGhlPHNwYWNlPmdyb3VwaW5nPHNwYWNlPmF0dHJpYnV0ZTxzcGFjZT5saXN0PHNwYWNlPndpdGg8c3BhY2U+dGhlPHNwYWNlPmV4aXN0aW5nPHNwYWNlPmF0dHJpYnV0ZTxzcGFjZT5wYXJhbWV0ZXJzLjxsZj5hdHRyaWJ1dGVfcGFyYW1ldGVyczxzcGFjZT49PHNwYWNlPjxvcGVuYnJhY2tldD5uYW1lPHNwYWNlPmZvcjxzcGFjZT5uYW1lPHNwYWNlPmluPHNwYWNlPkZNRV9NYWNyb1ZhbHVlcy5rZXlzPG9wZW5wYXJlbj48Y2xvc2VwYXJlbj48c3BhY2U+aWY8c3BhY2U+cmUuc2VhcmNoPG9wZW5wYXJlbj5yPGFwb3M+XzxvcGVucGFyZW4+SUR8XzxvcGVuYnJhY2tldD5YWTxjbG9zZWJyYWNrZXQ+TUFYfF88b3BlbmJyYWNrZXQ+WFk8Y2xvc2VicmFja2V0Pk1JTjxjbG9zZXBhcmVuPjxhcG9zPjxjb21tYT48c3BhY2U+bmFtZTxjbG9zZXBhcmVuPjxzcGFjZT5hbmQ8c3BhY2U+bm90PHNwYWNlPm5hbWUuc3RhcnRzd2l0aDxvcGVucGFyZW4+PGFwb3M+Rk1FXzxhcG9zPjxjbG9zZXBhcmVuPjxjbG9zZWJyYWNrZXQ+PGxmPnBhcmFtZXRlcl9hdHRyaWJ1dGVzPHNwYWNlPj08c3BhY2U+bGlzdDxvcGVucGFyZW4+c2V0PG9wZW5wYXJlbj5yZS5zdWI8b3BlbnBhcmVuPnI8YXBvcz5ePGx0PmF0PGd0PlZhbHVlPGx0Pm9wZW5wYXJlbjxndD48b3BlbnBhcmVuPjxvcGVuYnJhY2tldD5BLVphLXowLTlfPGNsb3NlYnJhY2tldD4rPGNsb3NlcGFyZW4+PGx0PmNsb3NlcGFyZW48Z3Q+PGRvbGxhcj48YXBvcz48Y29tbWE+PHNwYWNlPnI8YXBvcz48YmFja3NsYXNoPjE8YXBvcz48Y29tbWE+PHNwYWNlPmZtZS5tYWNyb1ZhbHVlczxvcGVuYnJhY2tldD5uYW1lPGNsb3NlYnJhY2tldD48Y2xvc2VwYXJlbj48c3BhY2U+Zm9yPHNwYWNlPm5hbWU8c3BhY2U+aW48c3BhY2U+YXR0cmlidXRlX3BhcmFtZXRlcnM8Y2xvc2VwYXJlbj48Y2xvc2VwYXJlbj48bGY+cmVzdWx0PHNwYWNlPj08c3BhY2U+PGFwb3M+PHNwYWNlPjxhcG9zPi5qb2luPG9wZW5wYXJlbj5wYXJhbWV0ZXJfYXR0cmlidXRlczxjbG9zZXBhcmVuPjxsZj48bGY+IzxzcGFjZT5BZGQ8c3BhY2U+YWxsPHNwYWNlPnRoZTxzcGFjZT5pbnRlcm5hbGx5LWdlbmVyYXRlZDxzcGFjZT5hdHRyaWJ1dGVzLjxsZj5yZXN1bHQ8c3BhY2U+PTxzcGFjZT48YXBvcz5pZDxzcGFjZT5feG1heDxzcGFjZT5feG1heF9leHRlbnQ8c3BhY2U+X3htaW48c3BhY2U+X3htaW5fZXh0ZW50PHNwYWNlPl95bWF4PHNwYWNlPl95bWF4X2V4dGVudDxzcGFjZT5feW1pbjxzcGFjZT5feW1pbl9leHRlbnQ8c3BhY2U+X2Jhc2U2NF9nZW9tZXRyeTxzcGFjZT5fbnVtYmVyX29mX2NvbHVtbnM8c3BhY2U+X251bWJlcl9vZl9yb3dzPHNwYWNlPl9zYXZlZF9jb2xvcjxzcGFjZT5fc2F2ZWRfZmlsbF9jb2xvcjxzcGFjZT5fc2l6ZV9yYXRpbzxzcGFjZT5feDxzcGFjZT5feTxzcGFjZT5mbWVfY29sb3I8c3BhY2U+Zm1lX2ZlYXR1cmVfdHlwZTxzcGFjZT5mbWVfZmlsbF9jb2xvcjxzcGFjZT5mbWVfcm90YXRpb248c3BhY2U+Zm1lX3RleHRfc2l6ZTxzcGFjZT5mbWVfdGV4dF9zdHJpbmc8YXBvcz48bGY+PGxmPiM8c3BhY2U+QWRkPHNwYWNlPmFueTxzcGFjZT5jdXN0b208c3BhY2U+YXR0cmlidXRlczxzcGFjZT5zcGVjaWZpZWQ8c3BhY2U+aW48c3BhY2U+dGhlPHNwYWNlPnRyYW5zZm9ybWVyPHNwYWNlPnBhcmFtZXRlcnMuPGxmPnBhcmFtZXRlcl9wcmVmaXg8c3BhY2U+PTxzcGFjZT48YXBvcz5fPGFwb3M+LmpvaW48b3BlbnBhcmVuPjxvcGVuYnJhY2tldD5jb21wb25lbnQ8c3BhY2U+Zm9yPHNwYWNlPmNvbXBvbmVudDxzcGFjZT5pbjxzcGFjZT5hdHRyaWJ1dGVfcGFyYW1ldGVyczxvcGVuYnJhY2tldD4wPGNsb3NlYnJhY2tldD4uc3BsaXQ8b3BlbnBhcmVuPjxhcG9zPl88YXBvcz48Y2xvc2VwYXJlbj48c3BhY2U+aWY8c3BhY2U+bGVuPG9wZW5wYXJlbj5jb21wb25lbnQ8Y2xvc2VwYXJlbj48c3BhY2U+PGd0PjxzcGFjZT4wPGNsb3NlYnJhY2tldD48b3BlbmJyYWNrZXQ+MDotMTxjbG9zZWJyYWNrZXQ+PGNsb3NlcGFyZW4+PGxmPmlmPHNwYWNlPmxlbjxvcGVucGFyZW4+Zm1lLm1hY3JvVmFsdWVzPG9wZW5icmFja2V0PnBhcmFtZXRlcl9wcmVmaXg8c3BhY2U+KzxzcGFjZT48YXBvcz5fQ3VzdG9tX0F0dHJpYnV0ZXNfdG9fUHJlc2VydmU8YXBvcz48Y2xvc2VicmFja2V0PjxjbG9zZXBhcmVuPjxzcGFjZT48Z3Q+PHNwYWNlPjA6PGxmPjxzcGFjZT48c3BhY2U+PHNwYWNlPjxzcGFjZT5yZXN1bHQ8c3BhY2U+Kz08c3BhY2U+PGFwb3M+PHNwYWNlPjxhcG9zPjxzcGFjZT4rPHNwYWNlPmZtZS5tYWNyb1ZhbHVlczxvcGVuYnJhY2tldD5wYXJhbWV0ZXJfcHJlZml4PHNwYWNlPis8c3BhY2U+PGFwb3M+X0N1c3RvbV9BdHRyaWJ1dGVzX3RvX1ByZXNlcnZlPGFwb3M+PGNsb3NlYnJhY2tldD48bGY+PGxmPnJldHVybjxzcGFjZT5yZXN1bHQiLCJlZGl0b3IiOiJweXRob24iLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJBbGxfQXR0cmlidXRlc190b19QcmVzZXJ2ZSIsInByb21wdCI6IkFsbCBBdHRyaWJ1dGVzIHRvIFByZXNlcnZlIiwicmVxdWlyZWQiOmZhbHNlLCJydW5uYWJsZSI6dHJ1ZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ=="
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmlkPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IklEIiwicHJvbXB0IjoiaWQiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJOYW1lIiwicHJvbXB0IjoiTmFtZSIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWxwaGEiOnRydWUsImNvbG9yU3BhY2UiOiJyZ2IiLCJjb21wb25lbnRWYWx1ZVR5cGUiOiJmbG9hdCIsImRlZmF1bHRWYWx1ZSI6IjAsMCwwLDEiLCJuYW1lIjoiRGVmYXVsdF9QZW5fQ29sb3IiLCJwcm9tcHQiOiJEZWZhdWx0IFBlbiBDb2xvciIsInJlcXVpcmVkIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImNvbG9yIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhbHBoYSI6dHJ1ZSwiY29sb3JTcGFjZSI6InJnYiIsImNvbXBvbmVudFZhbHVlVHlwZSI6ImZsb2F0IiwiZGVmYXVsdFZhbHVlIjoiMSwxLDEsMCIsIm5hbWUiOiJEZWZhdWx0X0ZpbGxfQ29sb3IiLCJwcm9tcHQiOiJEZWZhdWx0IEZpbGwgQ29sb3IiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJjb2xvciIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5feG1heDxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJfWE1BWCIsInByb21wdCI6IlhtYXg6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPl94bWluPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Il9YTUlOIiwicHJvbXB0IjoiWG1pbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+X3ltYXg8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiX1lNQVgiLCJwcm9tcHQiOiJZbWF4OiIsInJlcXVpcmVkIjp0cnVlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5feW1pbjxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJfWU1JTiIsInByb21wdCI6IlltaW4iLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6ImF0dHJpYnV0ZU5hbWVzIiwibGlzdFN1cHBvcnQiOiJmdWxsIn0sIm5hbWUiOiJDdXN0b21fQXR0cmlidXRlc190b19QcmVzZXJ2ZSIsInByb21wdCI6IkN1c3RvbSBBdHRyaWJ1dGVzIHRvIFByZXNlcnZlIiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRyZWUiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6InJldHVybjxzcGFjZT48YXBvcz5yYXN0ZXI8YXBvcz4iLCJlZGl0b3IiOiJweXRob24iLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJQTkdfUm9vdG5hbWUiLCJwcm9tcHQiOiJQTkcgUm9vdG5hbWUiLCJyZXF1aXJlZCI6ZmFsc2UsInJ1bm5hYmxlIjp0cnVlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6ImltcG9ydDxzcGFjZT5mbWU8bGY+aW1wb3J0PHNwYWNlPnJlPGxmPjxsZj48bGY+IzxzcGFjZT5Jbml0aWFsaXplPHNwYWNlPnRoZTxzcGFjZT5ncm91cGluZzxzcGFjZT5hdHRyaWJ1dGU8c3BhY2U+bGlzdDxzcGFjZT53aXRoPHNwYWNlPmFsbDxzcGFjZT50aGU8c3BhY2U+ZXhpc3Rpbmc8c3BhY2U+YXR0cmlidXRlPHNwYWNlPnBhcmFtZXRlcnM8c3BhY2U+YW5kPHNwYWNlPmFsbDxzcGFjZT5pbnRlcm5hbGx5LWdlbmVyYXRlZDxzcGFjZT5hdHRyaWJ1dGVzLjxsZj5yZXN1bHQ8c3BhY2U+PTxzcGFjZT48YXBvcz5pZDxzcGFjZT5feG1heDxzcGFjZT5feG1heF9leHRlbnQ8c3BhY2U+X3htaW48c3BhY2U+X3htaW5fZXh0ZW50PHNwYWNlPl95bWF4PHNwYWNlPl95bWF4X2V4dGVudDxzcGFjZT5feW1pbjxzcGFjZT5feW1pbl9leHRlbnQ8c3BhY2U+X2Jhc2U2NF9nZW9tZXRyeTxzcGFjZT5fbnVtYmVyX29mX2NvbHVtbnM8c3BhY2U+X251bWJlcl9vZl9yb3dzPHNwYWNlPl9zYXZlZF9jb2xvcjxzcGFjZT5fc2F2ZWRfZmlsbF9jb2xvcjxzcGFjZT5fc2l6ZV9yYXRpbzxzcGFjZT5feDxzcGFjZT5feTxzcGFjZT5mbWVfY29sb3I8c3BhY2U+Zm1lX2ZlYXR1cmVfdHlwZTxzcGFjZT5mbWVfZmlsbF9jb2xvcjxzcGFjZT5mbWVfcm90YXRpb248c3BhY2U+Zm1lX3RleHRfc2l6ZTxzcGFjZT5mbWVfdGV4dF9zdHJpbmc8YXBvcz48bGY+PGxmPiM8c3BhY2U+QWRkPHNwYWNlPmFueTxzcGFjZT5jdXN0b208c3BhY2U+YXR0cmlidXRlczxzcGFjZT5zcGVjaWZpZWQ8c3BhY2U+aW48c3BhY2U+dGhlPHNwYWNlPnRyYW5zZm9ybWVyPHNwYWNlPnBhcmFtZXRlcnMuPGxmPnNhbXBsZV91c2VyX3BhcmFtZXRlcjxzcGFjZT49PHNwYWNlPm5leHQ8b3BlbnBhcmVuPm5hbWU8c3BhY2U+Zm9yPHNwYWNlPm5hbWU8c3BhY2U+aW48c3BhY2U+Rk1FX01hY3JvVmFsdWVzLmtleXM8b3BlbnBhcmVuPjxjbG9zZXBhcmVuPjxzcGFjZT5pZjxzcGFjZT5yZS5zZWFyY2g8b3BlbnBhcmVuPnI8YXBvcz5fPG9wZW5wYXJlbj5JRHxfPG9wZW5icmFja2V0PlhZPGNsb3NlYnJhY2tldD5NQVh8XzxvcGVuYnJhY2tldD5YWTxjbG9zZWJyYWNrZXQ+TUlOPGNsb3NlcGFyZW4+PGFwb3M+PGNvbW1hPjxzcGFjZT5uYW1lPGNsb3NlcGFyZW4+PHNwYWNlPmFuZDxzcGFjZT5ub3Q8c3BhY2U+bmFtZS5zdGFydHN3aXRoPG9wZW5wYXJlbj48YXBvcz5GTUVfPGFwb3M+PGNsb3NlcGFyZW4+PGNsb3NlcGFyZW4+PGxmPnBhcmFtZXRlcl9wcmVmaXg8c3BhY2U+PTxzcGFjZT48YXBvcz5fPGFwb3M+LmpvaW48b3BlbnBhcmVuPjxvcGVuYnJhY2tldD5jb21wb25lbnQ8c3BhY2U+Zm9yPHNwYWNlPmNvbXBvbmVudDxzcGFjZT5pbjxzcGFjZT5zYW1wbGVfdXNlcl9wYXJhbWV0ZXIuc3BsaXQ8b3BlbnBhcmVuPjxhcG9zPl88YXBvcz48Y2xvc2VwYXJlbj48c3BhY2U+aWY8c3BhY2U+bGVuPG9wZW5wYXJlbj5jb21wb25lbnQ8Y2xvc2VwYXJlbj48c3BhY2U+PGd0PjxzcGFjZT4wPGNsb3NlYnJhY2tldD48b3BlbmJyYWNrZXQ+MDotMTxjbG9zZWJyYWNrZXQ+PGNsb3NlcGFyZW4+PGxmPmlmPHNwYWNlPmxlbjxvcGVucGFyZW4+Zm1lLm1hY3JvVmFsdWVzPG9wZW5icmFja2V0PnBhcmFtZXRlcl9wcmVmaXg8c3BhY2U+KzxzcGFjZT48YXBvcz5fQ3VzdG9tX0F0dHJpYnV0ZXNfdG9fUHJlc2VydmU8YXBvcz48Y2xvc2VicmFja2V0PjxjbG9zZXBhcmVuPjxzcGFjZT48Z3Q+PHNwYWNlPjA6PGxmPjxzcGFjZT48c3BhY2U+PHNwYWNlPjxzcGFjZT5yZXN1bHQ8c3BhY2U+Kz08c3BhY2U+PGFwb3M+PHNwYWNlPjxhcG9zPjxzcGFjZT4rPHNwYWNlPmZtZS5tYWNyb1ZhbHVlczxvcGVuYnJhY2tldD5wYXJhbWV0ZXJfcHJlZml4PHNwYWNlPis8c3BhY2U+PGFwb3M+X0N1c3RvbV9BdHRyaWJ1dGVzX3RvX1ByZXNlcnZlPGFwb3M+PGNsb3NlYnJhY2tldD48bGY+PGxmPnJldHVybjxzcGFjZT5yZXN1bHQiLCJlZGl0b3IiOiJweXRob24iLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJBbGxfQXR0cmlidXRlc190b19QcmVzZXJ2ZSIsInByb21wdCI6IkFsbCBBdHRyaWJ1dGVzIHRvIFByZXNlcnZlIiwicmVxdWlyZWQiOmZhbHNlLCJydW5uYWJsZSI6dHJ1ZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ=="
 #! >
 #! <PARAMETER_INFO>
 #!     <INFO NAME="All_Attributes_to_Preserve" IS_STAND_ALONE="true" />
@@ -154,10 +154,10 @@
 #! <COMMENT
 #!   IDENTIFIER="57"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Save the raster in PNG format.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-4350 750"
-#!   TOP_LEFT="-4350 750"
-#!   BOTTOM_RIGHT="-3843.0279302793028 569.99849998499985"
-#!   BOUNDING_RECT="-4350 750 506.97206972069716 180.00150001500015"
+#!   POSITION="-4650 750"
+#!   TOP_LEFT="-4650 750"
+#!   BOTTOM_RIGHT="-4143.0279302793024 569.99849998499985"
+#!   BOUNDING_RECT="-4650 750 506.97206972069716 180.00150001500015"
 #!   ORDER="500000000000267"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -169,10 +169,10 @@
 #! <COMMENT
 #!   IDENTIFIER="58"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Load the raw PNG binary.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="0 600"
-#!   TOP_LEFT="0 600"
-#!   BOTTOM_RIGHT="423.00123001230008 419.99849998499985"
-#!   BOUNDING_RECT="0 600 423.00123001230008 180.00150001500015"
+#!   POSITION="-300 600"
+#!   TOP_LEFT="-300 600"
+#!   BOTTOM_RIGHT="123.00123001230008 419.99849998499985"
+#!   BOUNDING_RECT="-300 600 423.00123001230008 180.00150001500015"
 #!   ORDER="500000000000268"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -184,10 +184,10 @@
 #! <COMMENT
 #!   IDENTIFIER="59"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Base-64 Encode the PNG binary.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="749.99999999999818 600"
-#!   TOP_LEFT="749.99999999999818 600"
-#!   BOTTOM_RIGHT="1163.9936399363976 419.99849998499985"
-#!   BOUNDING_RECT="749.99999999999818 600 413.9936399363994 180.00150001500015"
+#!   POSITION="449.99999999999818 600"
+#!   TOP_LEFT="449.99999999999818 600"
+#!   BOTTOM_RIGHT="863.99363993639759 419.99849998499985"
+#!   BOUNDING_RECT="449.99999999999818 600 413.9936399363994 180.00150001500015"
 #!   ORDER="500000000000277"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -199,10 +199,10 @@
 #! <COMMENT
 #!   IDENTIFIER="60"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Delete the temporary PNG file.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="1499.999999999998 600"
-#!   TOP_LEFT="1499.999999999998 600"
-#!   BOTTOM_RIGHT="1923.001230012298 359.99789997899984"
-#!   BOUNDING_RECT="1499.999999999998 600 423.00123001230008 240.00210002100019"
+#!   POSITION="1199.999999999998 600"
+#!   TOP_LEFT="1199.999999999998 600"
+#!   BOTTOM_RIGHT="1623.001230012298 359.99789997899984"
+#!   BOUNDING_RECT="1199.999999999998 600 423.00123001230008 240.00210002100019"
 #!   ORDER="500000000000278"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -214,10 +214,10 @@
 #! <COMMENT
 #!   IDENTIFIER="61"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Save the incoming feature&apos;s geometry.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-12600 750"
-#!   TOP_LEFT="-12600 750"
-#!   BOTTOM_RIGHT="-12135.104851048511 449.99729997299971"
-#!   BOUNDING_RECT="-12600 750 464.89514895148932 300.00270002700029"
+#!   POSITION="-13500 750"
+#!   TOP_LEFT="-13500 750"
+#!   BOTTOM_RIGHT="-13035.104851048511 449.99729997299971"
+#!   BOUNDING_RECT="-13500 750 464.89514895148932 300.00270002700029"
 #!   ORDER="500000000000279"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -229,10 +229,10 @@
 #! <COMMENT
 #!   IDENTIFIER="62"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Restore the incoming feature&apos;s geometry.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-3600 750"
-#!   TOP_LEFT="-3600 750"
-#!   BOTTOM_RIGHT="-3129.0207902079019 509.99789997899984"
-#!   BOUNDING_RECT="-3600 750 470.97920979209812 240.00210002100019"
+#!   POSITION="-3900 750"
+#!   TOP_LEFT="-3900 750"
+#!   BOTTOM_RIGHT="-3429.0207902079019 509.99789997899984"
+#!   BOUNDING_RECT="-3900 750 470.97920979209812 240.00210002100019"
 #!   ORDER="500000000000281"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -244,10 +244,10 @@
 #! <COMMENT
 #!   IDENTIFIER="63"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Output the geometry with a standard display width.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-11850 750"
-#!   TOP_LEFT="-11850 750"
-#!   BOTTOM_RIGHT="-11325.10575105751 509.99789997899984"
-#!   BOUNDING_RECT="-11850 750 524.89424894248987 240.00210002100019"
+#!   POSITION="-12750 750"
+#!   TOP_LEFT="-12750 750"
+#!   BOTTOM_RIGHT="-12225.10575105751 509.99789997899984"
+#!   BOUNDING_RECT="-12750 750 524.89424894248987 240.00210002100019"
 #!   ORDER="500000000000284"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -259,10 +259,10 @@
 #! <COMMENT
 #!   IDENTIFIER="64"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Grab the temporary filename components.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-5100 750"
-#!   TOP_LEFT="-5100 750"
-#!   BOTTOM_RIGHT="-4686.0468604686048 509.99789997899984"
-#!   BOUNDING_RECT="-5100 750 413.95313953139521 240.00210002100019"
+#!   POSITION="-5400 750"
+#!   TOP_LEFT="-5400 750"
+#!   BOTTOM_RIGHT="-4986.0468604686048 509.99789997899984"
+#!   BOUNDING_RECT="-5400 750 413.95313953139521 240.00210002100019"
 #!   ORDER="500000000000291"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -274,10 +274,10 @@
 #! <COMMENT
 #!   IDENTIFIER="65"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Restore the saved geometry colors over the blank image colors.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="-899.99999999999955 -150"
-#!   TOP_LEFT="-899.99999999999955 -150"
-#!   BOTTOM_RIGHT="-375.01275012750079 -450.00270002700029"
-#!   BOUNDING_RECT="-899.99999999999955 -150 524.98724987249875 300.00270002700029"
+#!   POSITION="-1199.9999999999995 -150"
+#!   TOP_LEFT="-1199.9999999999995 -150"
+#!   BOTTOM_RIGHT="-675.01275012750079 -450.00270002700029"
+#!   BOUNDING_RECT="-1199.9999999999995 -150 524.98724987249875 300.00270002700029"
 #!   ORDER="500000000000292"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -294,28 +294,28 @@
 #!   IDENTIFIER="66"
 #!   NAME="Set default colors if not already specified."
 #!   DESCRIPTION=""
-#!   TOP_LEFT="-9288 410"
+#!   TOP_LEFT="-9588 410"
 #!   ORDER="500000000000259"
 #!   PALETTE_COLOR="Color5"
-#!   BOTTOM_RIGHT="-6138.9989317422687 -391"
-#!   BOUNDING_RECT="-9288 410 3149.0010682577313 801"
+#!   BOTTOM_RIGHT="-6438.9989317422687 -391"
+#!   BOUNDING_RECT="-9588 410 3149.0010682577313 801"
 #!   STICKY="true"
 #!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
-#!   CONTENTS="52 10 34 12 9 51 33 11 "
+#!   CONTENTS="12 51 10 34 52 9 33 11 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
 #!   IDENTIFIER="67"
 #!   NAME="Set a dummy vertex for a blank image."
 #!   DESCRIPTION=""
-#!   TOP_LEFT="-9288 -640"
+#!   TOP_LEFT="-9588 -640"
 #!   ORDER="500000000000265"
 #!   PALETTE_COLOR="Color5"
-#!   BOTTOM_RIGHT="-6127.9989317422724 -1051"
-#!   BOUNDING_RECT="-9288 -640 3160.0010682577276 411"
+#!   BOTTOM_RIGHT="-6427.9989317422724 -1051"
+#!   BOUNDING_RECT="-9588 -640 3160.0010682577276 411"
 #!   STICKY="true"
 #!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
-#!   CONTENTS="46 13 37 14 15 38 22 "
+#!   CONTENTS="13 37 46 22 38 14 15 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -324,8 +324,8 @@
 #!   IDENTIFIER="4"
 #!   TYPE="BinaryEncoder"
 #!   VERSION="2"
-#!   POSITION="750.00000000000068 300.00000000000023"
-#!   BOUNDING_RECT="750.00000000000068 300.00000000000023 456.00106825772946 71"
+#!   POSITION="450.00000000000068 300.00000000000023"
+#!   BOUNDING_RECT="450.00000000000068 300.00000000000023 456.00106825772946 71"
 #!   ORDER="500000000000242"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -333,9 +333,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -348,13 +345,16 @@
 #!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_saved_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_saved_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_image" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_image_base64" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_image _image_base64"/>
@@ -368,8 +368,8 @@
 #!   IDENTIFIER="5"
 #!   TYPE="ImageRasterizer"
 #!   VERSION="7"
-#!   POSITION="-5849.9999999999964 299.99999999999994"
-#!   BOUNDING_RECT="-5849.9999999999964 299.99999999999994 430 71"
+#!   POSITION="-6149.9999999999964 299.99999999999994"
+#!   BOUNDING_RECT="-6149.9999999999964 299.99999999999994 430 71"
 #!   ORDER="500000000000245"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -415,8 +415,8 @@
 #!   IDENTIFIER="6"
 #!   TYPE="FeatureWriter"
 #!   VERSION="0"
-#!   POSITION="-4349.9999999999945 299.99999999999994"
-#!   BOUNDING_RECT="-4349.9999999999945 299.99999999999994 471.00106825772946 71"
+#!   POSITION="-4649.9999999999945 299.99999999999994"
+#!   BOUNDING_RECT="-4649.9999999999945 299.99999999999994 471.00106825772946 71"
 #!   ORDER="500000000000249"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -424,7 +424,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="Raster"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -440,6 +439,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="SUMMARY"/>
@@ -481,8 +481,8 @@
 #!   IDENTIFIER="7"
 #!   TYPE="AttributeFileReader"
 #!   VERSION="5"
-#!   POSITION="0 300"
-#!   BOUNDING_RECT="0 300 487.00106825772946 71"
+#!   POSITION="-300 300"
+#!   BOUNDING_RECT="-300 300 487.00106825772946 71"
 #!   ORDER="500000000000250"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -490,9 +490,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -505,19 +502,19 @@
 #!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_saved_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_saved_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_image" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -530,13 +527,16 @@
 #!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_saved_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_saved_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_image" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="CHAR_ENCODING" PARM_VALUE="fme-binary"/>
@@ -550,8 +550,8 @@
 #!   IDENTIFIER="8"
 #!   TYPE="ParameterFetcher"
 #!   VERSION="4"
-#!   POSITION="-5099.9999999999964 299.99999999999994"
-#!   BOUNDING_RECT="-5099.9999999999964 299.99999999999994 454 71"
+#!   POSITION="-5399.9999999999964 299.99999999999994"
+#!   BOUNDING_RECT="-5399.9999999999964 299.99999999999994 454 71"
 #!   ORDER="500000000000252"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -559,7 +559,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -575,6 +574,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_PNG_Rootname $(PNG_Rootname) _Name $(Name)"/>
@@ -586,8 +586,8 @@
 #!   IDENTIFIER="9"
 #!   TYPE="Tester"
 #!   VERSION="3"
-#!   POSITION="-9150 300"
-#!   BOUNDING_RECT="-9150 300 454 71"
+#!   POSITION="-9450 300"
+#!   BOUNDING_RECT="-9450 300 454 71"
 #!   ORDER="500000000000253"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -649,8 +649,8 @@
 #!   IDENTIFIER="10"
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
-#!   POSITION="-8400 -150.00000000000006"
-#!   BOUNDING_RECT="-8400 -150.00000000000006 531.00106825772946 71"
+#!   POSITION="-8700 -150.00000000000006"
+#!   BOUNDING_RECT="-8700 -150.00000000000006 531.00106825772946 71"
 #!   ORDER="500000000000256"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -691,8 +691,8 @@
 #!   IDENTIFIER="11"
 #!   TYPE="Tester"
 #!   VERSION="3"
-#!   POSITION="-7499.9999999999982 300"
-#!   BOUNDING_RECT="-7499.9999999999982 300 430 71"
+#!   POSITION="-7799.9999999999982 300"
+#!   BOUNDING_RECT="-7799.9999999999982 300 430 71"
 #!   ORDER="500000000000257"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -754,8 +754,8 @@
 #!   IDENTIFIER="12"
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
-#!   POSITION="-6749.9999999999982 -150.00000000000006"
-#!   BOUNDING_RECT="-6749.9999999999982 -150.00000000000006 511.00106825772946 71"
+#!   POSITION="-7049.9999999999982 -150.00000000000006"
+#!   BOUNDING_RECT="-7049.9999999999982 -150.00000000000006 511.00106825772946 71"
 #!   ORDER="500000000000258"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -796,8 +796,8 @@
 #!   IDENTIFIER="13"
 #!   TYPE="VertexCreator"
 #!   VERSION="4"
-#!   POSITION="-7500.0000000000036 -750"
-#!   BOUNDING_RECT="-7500.0000000000036 -750 469.00106825772946 71"
+#!   POSITION="-7800.0000000000036 -750"
+#!   BOUNDING_RECT="-7800.0000000000036 -750 469.00106825772946 71"
 #!   ORDER="500000000000262"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -863,8 +863,8 @@
 #!   IDENTIFIER="14"
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
-#!   POSITION="-8400 -750"
-#!   BOUNDING_RECT="-8400 -750 656.92256922569231 71"
+#!   POSITION="-8700 -750"
+#!   BOUNDING_RECT="-8700 -750 656.92256922569231 71"
 #!   ORDER="500000000000263"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -906,8 +906,8 @@
 #!   IDENTIFIER="15"
 #!   TYPE="FeatureColorSetter"
 #!   VERSION="2"
-#!   POSITION="-6750.0000000000018 -750"
-#!   BOUNDING_RECT="-6750.0000000000018 -750 522.00106825772946 71"
+#!   POSITION="-7050.0000000000018 -750"
+#!   BOUNDING_RECT="-7050.0000000000018 -750 522.00106825772946 71"
 #!   ORDER="500000000000264"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -977,8 +977,8 @@
 #!   IDENTIFIER="16"
 #!   TYPE="SubDocumentTransformer"
 #!   VERSION="1"
-#!   POSITION="1499.999999999998 300"
-#!   BOUNDING_RECT="1499.999999999998 300 430 71"
+#!   POSITION="1199.999999999998 300"
+#!   BOUNDING_RECT="1199.999999999998 300 430 71"
 #!   ORDER="500000000000270"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -989,9 +989,6 @@
 #!     <XFORM_ATTR ATTR_NAME="filecopy_source_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filecopy_dest_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="filecopy_dest_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1004,13 +1001,16 @@
 #!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_saved_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_saved_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_image" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_image_base64" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="FileToDelete" PARM_VALUE="$(FME_MF_DIR)Resources/Temp/$(PNG_Rootname)_@Value(_Name)_@Value(id).png"/>
@@ -1023,8 +1023,8 @@
 #!   IDENTIFIER="17"
 #!   TYPE="GeometryExtractor"
 #!   VERSION="17"
-#!   POSITION="-12600 300"
-#!   BOUNDING_RECT="-12600 300 454 71"
+#!   POSITION="-13500 300"
+#!   BOUNDING_RECT="-13500 300 454 71"
 #!   ORDER="500000000000275"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1082,8 +1082,8 @@
 #!   IDENTIFIER="18"
 #!   TYPE="GeometryReplacer"
 #!   VERSION="10"
-#!   POSITION="-3599.9999999999927 299.99999999999994"
-#!   BOUNDING_RECT="-3599.9999999999927 299.99999999999994 454 71"
+#!   POSITION="-3899.9999999999927 299.99999999999994"
+#!   BOUNDING_RECT="-3899.9999999999927 299.99999999999994 454 71"
 #!   ORDER="500000000000276"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1091,7 +1091,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1106,11 +1105,11 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1126,6 +1125,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1147,8 +1147,8 @@
 #!   IDENTIFIER="19"
 #!   TYPE="Scaler"
 #!   VERSION="4"
-#!   POSITION="-9150 -1350"
-#!   BOUNDING_RECT="-9150 -1350 430 71"
+#!   POSITION="-9450 -1350"
+#!   BOUNDING_RECT="-9450 -1350 430 71"
 #!   ORDER="500000000000283"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -1207,8 +1207,8 @@
 #!   IDENTIFIER="20"
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
-#!   POSITION="-11850 300"
-#!   BOUNDING_RECT="-11850 300 553.00106825772946 71"
+#!   POSITION="-12750 300"
+#!   BOUNDING_RECT="-12750 300 553.00106825772946 71"
 #!   ORDER="500000000000260"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1244,8 +1244,8 @@
 #!   IDENTIFIER="21"
 #!   TYPE="AttributeExposer"
 #!   VERSION="1"
-#!   POSITION="-10950 300"
-#!   BOUNDING_RECT="-10950 300 495.00106825772946 71"
+#!   POSITION="-11250 300"
+#!   BOUNDING_RECT="-11250 300 495.00106825772946 71"
 #!   ORDER="500000000000255"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -1277,8 +1277,8 @@
 #!   IDENTIFIER="22"
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
-#!   POSITION="-9150 -750"
-#!   BOUNDING_RECT="-9150 -750 599.92256922569231 71"
+#!   POSITION="-9450 -750"
+#!   BOUNDING_RECT="-9450 -750 599.92256922569231 71"
 #!   ORDER="500000000000286"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1318,8 +1318,8 @@
 #!   IDENTIFIER="23"
 #!   TYPE="SubDocumentTransformer"
 #!   VERSION="1"
-#!   POSITION="-10200 300"
-#!   BOUNDING_RECT="-10200 300 750.00106825772946 71"
+#!   POSITION="-10500 300"
+#!   BOUNDING_RECT="-10500 300 750.00106825772946 71"
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -1387,8 +1387,8 @@
 #!   IDENTIFIER="24"
 #!   TYPE="SubDocumentTransformer"
 #!   VERSION="1"
-#!   POSITION="-2850 300"
-#!   BOUNDING_RECT="-2850 300 797.97797977979781 71"
+#!   POSITION="-3150 300"
+#!   BOUNDING_RECT="-3150 300 797.97797977979781 71"
 #!   ORDER="500000000000289"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -1397,7 +1397,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="ToBeRasterized"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1412,6 +1411,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1419,7 +1419,6 @@
 #!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="ToBeScaledOnly"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -1434,11 +1433,11 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <OUTPUT_FEAT NAME="ToBeBlank"/>
 #!     <FEAT_COLLAPSED COLLAPSED="2"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -1453,6 +1452,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="Base64PNGRasterizerGeometryFilter"/>
@@ -1463,8 +1463,8 @@
 #!   IDENTIFIER="25"
 #!   TYPE="AttributeCreator"
 #!   VERSION="9"
-#!   POSITION="-899.99999999999955 -600"
-#!   BOUNDING_RECT="-899.99999999999955 -600 564.00106825772946 71"
+#!   POSITION="-1199.9999999999995 -600"
+#!   BOUNDING_RECT="-1199.9999999999995 -600 564.00106825772946 71"
 #!   ORDER="500000000000290"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -1474,7 +1474,6 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1487,6 +1486,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1506,8 +1506,8 @@
 #!   IDENTIFIER="26"
 #!   TYPE="AttributeExposer"
 #!   VERSION="1"
-#!   POSITION="-1800 -600"
-#!   BOUNDING_RECT="-1800 -600 609.00106825772946 71"
+#!   POSITION="-2100 -600"
+#!   BOUNDING_RECT="-2100 -600 609.00106825772946 71"
 #!   ORDER="500000000000293"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1515,7 +1515,6 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1530,6 +1529,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_fill_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_PNG_Rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_saved_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1539,13 +1539,104 @@
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SavedColorsAttributeExposer"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="68"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="-12000 300"
+#!   BOUNDING_RECT="-12000 300 430 71"
+#!   ORDER="500000000000294"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22319"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_ymin_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_ymax_extent" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_xmax" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="COMPOSITE"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1 AND 2 AND 3 AND 4"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST _xmax_extent ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST _xmin_extent ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST _ymax_extent ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST _ymin_extent ATTRIBUTE_HAS_A_VALUE &quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ValidExtentsTester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="69"
+#!   TYPE="AttributeManager"
+#!   VERSION="4"
+#!   POSITION="-11250 -750"
+#!   BOUNDING_RECT="-11250 -750 593.00106825772946 71"
+#!   ORDER="500000000000295"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22319"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_number_of_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymin_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymax_extent" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_size_ratio" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_number_of_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_base64_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_number_of_columns _number_of_columns 1 SET_TO _xmin_extent _xmin_extent 0 SET_TO _xmax_extent _xmax_extent 1 SET_TO _ymin_extent _ymin_extent 0 SET_TO _ymax_extent _ymax_extent 1 SET_TO _size_ratio _size_ratio 1 SET_TO _number_of_rows _number_of_rows 1 SET_TO id id  NO_OP _xmax _xmax 1 SET_TO _xmin _xmin 0 SET_TO _ymax _ymax 1 SET_TO _ymin _ymin 0 SET_TO _base64_geometry _base64_geometry  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BadExtentsAttributeManager"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <SUBDOCUMENT_IOS>
 #! <SUBDOCUMENT_IO
 #!   IDENTIFIER="2"
 #!   NAME="Input"
-#!   POSITION="-13350 300"
-#!   BOUNDING_RECT="-13350 300 430 71"
+#!   POSITION="-14250 300"
+#!   BOUNDING_RECT="-14250 300 430 71"
 #!   COLLAPSED="true"
 #!   PUBLISHED="true"
 #!   IS_SOURCE="true"
@@ -1560,8 +1651,8 @@
 #! <SUBDOCUMENT_IO
 #!   IDENTIFIER="3"
 #!   NAME="Output"
-#!   POSITION="2233.0010682577313 281.5"
-#!   BOUNDING_RECT="2233.0010682577313 281.5 430 71"
+#!   POSITION="1933.0010682577313 281.5"
+#!   BOUNDING_RECT="1933.0010682577313 281.5 430 71"
 #!   COLLAPSED="true"
 #!   IS_SOURCE="false"
 #!   ATTR_MODE="0"
@@ -1822,12 +1913,12 @@
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS="-6216 -1443"
+#!   EXTRA_POINTS="-6516 -1443"
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="44"
+#!   IDENTIFIER="70"
 #!   SOURCE_NODE="20"
-#!   TARGET_NODE="21"
+#!   TARGET_NODE="68"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1930,6 +2021,36 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
+#!   IDENTIFIER="71"
+#!   SOURCE_NODE="68"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="73"
+#!   SOURCE_NODE="69"
+#!   TARGET_NODE="22"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
 #!   IDENTIFIER="51"
 #!   SOURCE_NODE="9"
 #!   TARGET_NODE="10"
@@ -1979,6 +2100,21 @@
 #!   SOURCE_NODE="24"
 #!   TARGET_NODE="26"
 #!   SOURCE_PORT_DESC="fo 2 ToBeBlank"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="72"
+#!   SOURCE_NODE="68"
+#!   TARGET_NODE="69"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
@@ -2688,7 +2824,7 @@ else:
 END_INCLUDE
 # ============================================================================
 # ============================================================================
-USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmlkPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IklEIiwicHJvbXB0IjoiaWQiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJOYW1lIiwicHJvbXB0IjoiTmFtZSIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWxwaGEiOnRydWUsImNvbG9yU3BhY2UiOiJyZ2IiLCJjb21wb25lbnRWYWx1ZVR5cGUiOiJmbG9hdCIsImRlZmF1bHRWYWx1ZSI6IjAsMCwwLDEiLCJuYW1lIjoiRGVmYXVsdF9QZW5fQ29sb3IiLCJwcm9tcHQiOiJEZWZhdWx0IFBlbiBDb2xvciIsInJlcXVpcmVkIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImNvbG9yIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhbHBoYSI6dHJ1ZSwiY29sb3JTcGFjZSI6InJnYiIsImNvbXBvbmVudFZhbHVlVHlwZSI6ImZsb2F0IiwiZGVmYXVsdFZhbHVlIjoiMSwxLDEsMCIsIm5hbWUiOiJEZWZhdWx0X0ZpbGxfQ29sb3IiLCJwcm9tcHQiOiJEZWZhdWx0IEZpbGwgQ29sb3IiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJjb2xvciIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5feG1heDxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJfWE1BWCIsInByb21wdCI6IlhtYXg6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPl94bWluPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Il9YTUlOIiwicHJvbXB0IjoiWG1pbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+X3ltYXg8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiX1lNQVgiLCJwcm9tcHQiOiJZbWF4OiIsInJlcXVpcmVkIjp0cnVlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5feW1pbjxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJfWU1JTiIsInByb21wdCI6IlltaW4iLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6ImF0dHJpYnV0ZU5hbWVzIiwibGlzdFN1cHBvcnQiOiJmdWxsIn0sIm5hbWUiOiJDdXN0b21fQXR0cmlidXRlc190b19QcmVzZXJ2ZSIsInByb21wdCI6IkN1c3RvbSBBdHRyaWJ1dGVzIHRvIFByZXNlcnZlIiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRyZWUiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6InJldHVybjxzcGFjZT48YXBvcz5yYXN0ZXI8YXBvcz4iLCJlZGl0b3IiOiJweXRob24iLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJQTkdfUm9vdG5hbWUiLCJwcm9tcHQiOiJQTkcgUm9vdG5hbWUiLCJyZXF1aXJlZCI6ZmFsc2UsInJ1bm5hYmxlIjp0cnVlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6ImltcG9ydDxzcGFjZT5mbWU8bGY+aW1wb3J0PHNwYWNlPnJlPGxmPjxsZj4jPHNwYWNlPkluaXRpYWxpemU8c3BhY2U+dGhlPHNwYWNlPmdyb3VwaW5nPHNwYWNlPmF0dHJpYnV0ZTxzcGFjZT5saXN0PHNwYWNlPndpdGg8c3BhY2U+dGhlPHNwYWNlPmV4aXN0aW5nPHNwYWNlPmF0dHJpYnV0ZTxzcGFjZT5wYXJhbWV0ZXJzLjxsZj5hdHRyaWJ1dGVfcGFyYW1ldGVyczxzcGFjZT49PHNwYWNlPjxvcGVuYnJhY2tldD5uYW1lPHNwYWNlPmZvcjxzcGFjZT5uYW1lPHNwYWNlPmluPHNwYWNlPkZNRV9NYWNyb1ZhbHVlcy5rZXlzPG9wZW5wYXJlbj48Y2xvc2VwYXJlbj48c3BhY2U+aWY8c3BhY2U+cmUuc2VhcmNoPG9wZW5wYXJlbj5yPGFwb3M+XzxvcGVucGFyZW4+SUR8XzxvcGVuYnJhY2tldD5YWTxjbG9zZWJyYWNrZXQ+TUFYfF88b3BlbmJyYWNrZXQ+WFk8Y2xvc2VicmFja2V0Pk1JTjxjbG9zZXBhcmVuPjxhcG9zPjxjb21tYT48c3BhY2U+bmFtZTxjbG9zZXBhcmVuPjxzcGFjZT5hbmQ8c3BhY2U+bm90PHNwYWNlPm5hbWUuc3RhcnRzd2l0aDxvcGVucGFyZW4+PGFwb3M+Rk1FXzxhcG9zPjxjbG9zZXBhcmVuPjxjbG9zZWJyYWNrZXQ+PGxmPnBhcmFtZXRlcl9hdHRyaWJ1dGVzPHNwYWNlPj08c3BhY2U+bGlzdDxvcGVucGFyZW4+c2V0PG9wZW5wYXJlbj5yZS5zdWI8b3BlbnBhcmVuPnI8YXBvcz5ePGx0PmF0PGd0PlZhbHVlPGx0Pm9wZW5wYXJlbjxndD48b3BlbnBhcmVuPjxvcGVuYnJhY2tldD5BLVphLXowLTlfPGNsb3NlYnJhY2tldD4rPGNsb3NlcGFyZW4+PGx0PmNsb3NlcGFyZW48Z3Q+PGRvbGxhcj48YXBvcz48Y29tbWE+PHNwYWNlPnI8YXBvcz48YmFja3NsYXNoPjE8YXBvcz48Y29tbWE+PHNwYWNlPmZtZS5tYWNyb1ZhbHVlczxvcGVuYnJhY2tldD5uYW1lPGNsb3NlYnJhY2tldD48Y2xvc2VwYXJlbj48c3BhY2U+Zm9yPHNwYWNlPm5hbWU8c3BhY2U+aW48c3BhY2U+YXR0cmlidXRlX3BhcmFtZXRlcnM8Y2xvc2VwYXJlbj48Y2xvc2VwYXJlbj48bGY+cmVzdWx0PHNwYWNlPj08c3BhY2U+PGFwb3M+PHNwYWNlPjxhcG9zPi5qb2luPG9wZW5wYXJlbj5wYXJhbWV0ZXJfYXR0cmlidXRlczxjbG9zZXBhcmVuPjxsZj48bGY+IzxzcGFjZT5BZGQ8c3BhY2U+YWxsPHNwYWNlPnRoZTxzcGFjZT5pbnRlcm5hbGx5LWdlbmVyYXRlZDxzcGFjZT5hdHRyaWJ1dGVzLjxsZj5yZXN1bHQ8c3BhY2U+PTxzcGFjZT48YXBvcz5pZDxzcGFjZT5feG1heDxzcGFjZT5feG1heF9leHRlbnQ8c3BhY2U+X3htaW48c3BhY2U+X3htaW5fZXh0ZW50PHNwYWNlPl95bWF4PHNwYWNlPl95bWF4X2V4dGVudDxzcGFjZT5feW1pbjxzcGFjZT5feW1pbl9leHRlbnQ8c3BhY2U+X2Jhc2U2NF9nZW9tZXRyeTxzcGFjZT5fbnVtYmVyX29mX2NvbHVtbnM8c3BhY2U+X251bWJlcl9vZl9yb3dzPHNwYWNlPl9zYXZlZF9jb2xvcjxzcGFjZT5fc2F2ZWRfZmlsbF9jb2xvcjxzcGFjZT5fc2l6ZV9yYXRpbzxzcGFjZT5feDxzcGFjZT5feTxzcGFjZT5mbWVfY29sb3I8c3BhY2U+Zm1lX2ZlYXR1cmVfdHlwZTxzcGFjZT5mbWVfZmlsbF9jb2xvcjxzcGFjZT5mbWVfcm90YXRpb248c3BhY2U+Zm1lX3RleHRfc2l6ZTxzcGFjZT5mbWVfdGV4dF9zdHJpbmc8YXBvcz48bGY+PGxmPiM8c3BhY2U+QWRkPHNwYWNlPmFueTxzcGFjZT5jdXN0b208c3BhY2U+YXR0cmlidXRlczxzcGFjZT5zcGVjaWZpZWQ8c3BhY2U+aW48c3BhY2U+dGhlPHNwYWNlPnRyYW5zZm9ybWVyPHNwYWNlPnBhcmFtZXRlcnMuPGxmPnBhcmFtZXRlcl9wcmVmaXg8c3BhY2U+PTxzcGFjZT48YXBvcz5fPGFwb3M+LmpvaW48b3BlbnBhcmVuPjxvcGVuYnJhY2tldD5jb21wb25lbnQ8c3BhY2U+Zm9yPHNwYWNlPmNvbXBvbmVudDxzcGFjZT5pbjxzcGFjZT5hdHRyaWJ1dGVfcGFyYW1ldGVyczxvcGVuYnJhY2tldD4wPGNsb3NlYnJhY2tldD4uc3BsaXQ8b3BlbnBhcmVuPjxhcG9zPl88YXBvcz48Y2xvc2VwYXJlbj48c3BhY2U+aWY8c3BhY2U+bGVuPG9wZW5wYXJlbj5jb21wb25lbnQ8Y2xvc2VwYXJlbj48c3BhY2U+PGd0PjxzcGFjZT4wPGNsb3NlYnJhY2tldD48b3BlbmJyYWNrZXQ+MDotMTxjbG9zZWJyYWNrZXQ+PGNsb3NlcGFyZW4+PGxmPmlmPHNwYWNlPmxlbjxvcGVucGFyZW4+Zm1lLm1hY3JvVmFsdWVzPG9wZW5icmFja2V0PnBhcmFtZXRlcl9wcmVmaXg8c3BhY2U+KzxzcGFjZT48YXBvcz5fQ3VzdG9tX0F0dHJpYnV0ZXNfdG9fUHJlc2VydmU8YXBvcz48Y2xvc2VicmFja2V0PjxjbG9zZXBhcmVuPjxzcGFjZT48Z3Q+PHNwYWNlPjA6PGxmPjxzcGFjZT48c3BhY2U+PHNwYWNlPjxzcGFjZT5yZXN1bHQ8c3BhY2U+Kz08c3BhY2U+PGFwb3M+PHNwYWNlPjxhcG9zPjxzcGFjZT4rPHNwYWNlPmZtZS5tYWNyb1ZhbHVlczxvcGVuYnJhY2tldD5wYXJhbWV0ZXJfcHJlZml4PHNwYWNlPis8c3BhY2U+PGFwb3M+X0N1c3RvbV9BdHRyaWJ1dGVzX3RvX1ByZXNlcnZlPGFwb3M+PGNsb3NlYnJhY2tldD48bGY+PGxmPnJldHVybjxzcGFjZT5yZXN1bHQiLCJlZGl0b3IiOiJweXRob24iLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJBbGxfQXR0cmlidXRlc190b19QcmVzZXJ2ZSIsInByb21wdCI6IkFsbCBBdHRyaWJ1dGVzIHRvIFByZXNlcnZlIiwicmVxdWlyZWQiOmZhbHNlLCJydW5uYWJsZSI6dHJ1ZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ==
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmlkPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IklEIiwicHJvbXB0IjoiaWQiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJOYW1lIiwicHJvbXB0IjoiTmFtZSIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWxwaGEiOnRydWUsImNvbG9yU3BhY2UiOiJyZ2IiLCJjb21wb25lbnRWYWx1ZVR5cGUiOiJmbG9hdCIsImRlZmF1bHRWYWx1ZSI6IjAsMCwwLDEiLCJuYW1lIjoiRGVmYXVsdF9QZW5fQ29sb3IiLCJwcm9tcHQiOiJEZWZhdWx0IFBlbiBDb2xvciIsInJlcXVpcmVkIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImNvbG9yIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhbHBoYSI6dHJ1ZSwiY29sb3JTcGFjZSI6InJnYiIsImNvbXBvbmVudFZhbHVlVHlwZSI6ImZsb2F0IiwiZGVmYXVsdFZhbHVlIjoiMSwxLDEsMCIsIm5hbWUiOiJEZWZhdWx0X0ZpbGxfQ29sb3IiLCJwcm9tcHQiOiJEZWZhdWx0IEZpbGwgQ29sb3IiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJjb2xvciIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5feG1heDxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJfWE1BWCIsInByb21wdCI6IlhtYXg6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPl94bWluPGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Il9YTUlOIiwicHJvbXB0IjoiWG1pbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6IjxhdD5WYWx1ZTxvcGVucGFyZW4+X3ltYXg8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiX1lNQVgiLCJwcm9tcHQiOiJZbWF4OiIsInJlcXVpcmVkIjp0cnVlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5feW1pbjxjbG9zZXBhcmVuPiIsImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJfWU1JTiIsInByb21wdCI6IlltaW4iLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6ImF0dHJpYnV0ZU5hbWVzIiwibGlzdFN1cHBvcnQiOiJmdWxsIn0sIm5hbWUiOiJDdXN0b21fQXR0cmlidXRlc190b19QcmVzZXJ2ZSIsInByb21wdCI6IkN1c3RvbSBBdHRyaWJ1dGVzIHRvIFByZXNlcnZlIiwicmVxdWlyZWQiOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRyZWUiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6InJldHVybjxzcGFjZT48YXBvcz5yYXN0ZXI8YXBvcz4iLCJlZGl0b3IiOiJweXRob24iLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJQTkdfUm9vdG5hbWUiLCJwcm9tcHQiOiJQTkcgUm9vdG5hbWUiLCJyZXF1aXJlZCI6ZmFsc2UsInJ1bm5hYmxlIjp0cnVlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImRlZmF1bHRWYWx1ZSI6ImltcG9ydDxzcGFjZT5mbWU8bGY+aW1wb3J0PHNwYWNlPnJlPGxmPjxsZj48bGY+IzxzcGFjZT5Jbml0aWFsaXplPHNwYWNlPnRoZTxzcGFjZT5ncm91cGluZzxzcGFjZT5hdHRyaWJ1dGU8c3BhY2U+bGlzdDxzcGFjZT53aXRoPHNwYWNlPmFsbDxzcGFjZT50aGU8c3BhY2U+ZXhpc3Rpbmc8c3BhY2U+YXR0cmlidXRlPHNwYWNlPnBhcmFtZXRlcnM8c3BhY2U+YW5kPHNwYWNlPmFsbDxzcGFjZT5pbnRlcm5hbGx5LWdlbmVyYXRlZDxzcGFjZT5hdHRyaWJ1dGVzLjxsZj5yZXN1bHQ8c3BhY2U+PTxzcGFjZT48YXBvcz5pZDxzcGFjZT5feG1heDxzcGFjZT5feG1heF9leHRlbnQ8c3BhY2U+X3htaW48c3BhY2U+X3htaW5fZXh0ZW50PHNwYWNlPl95bWF4PHNwYWNlPl95bWF4X2V4dGVudDxzcGFjZT5feW1pbjxzcGFjZT5feW1pbl9leHRlbnQ8c3BhY2U+X2Jhc2U2NF9nZW9tZXRyeTxzcGFjZT5fbnVtYmVyX29mX2NvbHVtbnM8c3BhY2U+X251bWJlcl9vZl9yb3dzPHNwYWNlPl9zYXZlZF9jb2xvcjxzcGFjZT5fc2F2ZWRfZmlsbF9jb2xvcjxzcGFjZT5fc2l6ZV9yYXRpbzxzcGFjZT5feDxzcGFjZT5feTxzcGFjZT5mbWVfY29sb3I8c3BhY2U+Zm1lX2ZlYXR1cmVfdHlwZTxzcGFjZT5mbWVfZmlsbF9jb2xvcjxzcGFjZT5mbWVfcm90YXRpb248c3BhY2U+Zm1lX3RleHRfc2l6ZTxzcGFjZT5mbWVfdGV4dF9zdHJpbmc8YXBvcz48bGY+PGxmPiM8c3BhY2U+QWRkPHNwYWNlPmFueTxzcGFjZT5jdXN0b208c3BhY2U+YXR0cmlidXRlczxzcGFjZT5zcGVjaWZpZWQ8c3BhY2U+aW48c3BhY2U+dGhlPHNwYWNlPnRyYW5zZm9ybWVyPHNwYWNlPnBhcmFtZXRlcnMuPGxmPnNhbXBsZV91c2VyX3BhcmFtZXRlcjxzcGFjZT49PHNwYWNlPm5leHQ8b3BlbnBhcmVuPm5hbWU8c3BhY2U+Zm9yPHNwYWNlPm5hbWU8c3BhY2U+aW48c3BhY2U+Rk1FX01hY3JvVmFsdWVzLmtleXM8b3BlbnBhcmVuPjxjbG9zZXBhcmVuPjxzcGFjZT5pZjxzcGFjZT5yZS5zZWFyY2g8b3BlbnBhcmVuPnI8YXBvcz5fPG9wZW5wYXJlbj5JRHxfPG9wZW5icmFja2V0PlhZPGNsb3NlYnJhY2tldD5NQVh8XzxvcGVuYnJhY2tldD5YWTxjbG9zZWJyYWNrZXQ+TUlOPGNsb3NlcGFyZW4+PGFwb3M+PGNvbW1hPjxzcGFjZT5uYW1lPGNsb3NlcGFyZW4+PHNwYWNlPmFuZDxzcGFjZT5ub3Q8c3BhY2U+bmFtZS5zdGFydHN3aXRoPG9wZW5wYXJlbj48YXBvcz5GTUVfPGFwb3M+PGNsb3NlcGFyZW4+PGNsb3NlcGFyZW4+PGxmPnBhcmFtZXRlcl9wcmVmaXg8c3BhY2U+PTxzcGFjZT48YXBvcz5fPGFwb3M+LmpvaW48b3BlbnBhcmVuPjxvcGVuYnJhY2tldD5jb21wb25lbnQ8c3BhY2U+Zm9yPHNwYWNlPmNvbXBvbmVudDxzcGFjZT5pbjxzcGFjZT5zYW1wbGVfdXNlcl9wYXJhbWV0ZXIuc3BsaXQ8b3BlbnBhcmVuPjxhcG9zPl88YXBvcz48Y2xvc2VwYXJlbj48c3BhY2U+aWY8c3BhY2U+bGVuPG9wZW5wYXJlbj5jb21wb25lbnQ8Y2xvc2VwYXJlbj48c3BhY2U+PGd0PjxzcGFjZT4wPGNsb3NlYnJhY2tldD48b3BlbmJyYWNrZXQ+MDotMTxjbG9zZWJyYWNrZXQ+PGNsb3NlcGFyZW4+PGxmPmlmPHNwYWNlPmxlbjxvcGVucGFyZW4+Zm1lLm1hY3JvVmFsdWVzPG9wZW5icmFja2V0PnBhcmFtZXRlcl9wcmVmaXg8c3BhY2U+KzxzcGFjZT48YXBvcz5fQ3VzdG9tX0F0dHJpYnV0ZXNfdG9fUHJlc2VydmU8YXBvcz48Y2xvc2VicmFja2V0PjxjbG9zZXBhcmVuPjxzcGFjZT48Z3Q+PHNwYWNlPjA6PGxmPjxzcGFjZT48c3BhY2U+PHNwYWNlPjxzcGFjZT5yZXN1bHQ8c3BhY2U+Kz08c3BhY2U+PGFwb3M+PHNwYWNlPjxhcG9zPjxzcGFjZT4rPHNwYWNlPmZtZS5tYWNyb1ZhbHVlczxvcGVuYnJhY2tldD5wYXJhbWV0ZXJfcHJlZml4PHNwYWNlPis8c3BhY2U+PGFwb3M+X0N1c3RvbV9BdHRyaWJ1dGVzX3RvX1ByZXNlcnZlPGFwb3M+PGNsb3NlYnJhY2tldD48bGY+PGxmPnJldHVybjxzcGFjZT5yZXN1bHQiLCJlZGl0b3IiOiJweXRob24iLCJoaWRkZW4iOnRydWUsIm5hbWUiOiJBbGxfQXR0cmlidXRlc190b19QcmVzZXJ2ZSIsInByb21wdCI6IkFsbCBBdHRyaWJ1dGVzIHRvIFByZXNlcnZlIiwicmVxdWlyZWQiOmZhbHNlLCJydW5uYWJsZSI6dHJ1ZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ==
 # ============================================================================
 #! START_HEADER
 #! END_HEADER
@@ -2696,13 +2832,15 @@ USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBh
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 DEFAULT_MACRO Base64PNGRasterizer_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Base64PNGRasterizer_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Base64PNGRasterizer_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input1649558898 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,id,$($(Base64PNGRasterizer_WORKSPACE_NAME)_ID),UTF8,_xmax,$($(Base64PNGRasterizer_WORKSPACE_NAME)__XMAX),UTF8,_xmin,$($(Base64PNGRasterizer_WORKSPACE_NAME)__XMIN),UTF8,_ymax,$($(Base64PNGRasterizer_WORKSPACE_NAME)__YMAX),UTF8,_ymin,$($(Base64PNGRasterizer_WORKSPACE_NAME)__YMIN),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input1649602305 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,id,$($(Base64PNGRasterizer_WORKSPACE_NAME)_ID),UTF8,_xmax,$($(Base64PNGRasterizer_WORKSPACE_NAME)__XMAX),UTF8,_xmin,$($(Base64PNGRasterizer_WORKSPACE_NAME)__XMIN),UTF8,_ymax,$($(Base64PNGRasterizer_WORKSPACE_NAME)__YMAX),UTF8,_ymin,$($(Base64PNGRasterizer_WORKSPACE_NAME)__YMIN),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} GeometryExtractorFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_GeometryExtractor }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Input"    GEOMETRY_ENCODING { fmebinary }    DEST_ATTR_NAME { "_base64_geometry" }    REMOVE_GEOMETRY { No }    LEVELS_ATTR { <Unused> }    OGCVERSION { 1.2 }    OGC_WKT_PRECISION { FLOAT_64 }    JSON_MAX_DIGITS { <Unused> }    OMIT_NAMESPACES { <Unused> }    PREFER_POLYGON_OVER_SURFACE { NO }    SRS_NAME {  }    SRS_AXIS_ORDER {  }    GENERATE_GEOMETRY_IDS { No }    GEOHASH_PRECISION { <Unused> }    OGEOSMS_URL_PREFIX { http://maps.google.com/?q= }    ELLIPSOID_NAME { <Unused> }    LETTERING_TYPE { <Unused> }    PRECISION { "<Unused>" }    MSSQL_FORMAT { "<Unused>" }    ISO6709_FORMAT { "<Unused>" }    ISO6709_MAX_DECIMAL_PLACES { "<Unused>" }    OUTPUT { OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_GeometryExtractor_OUTPUT"        }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_ImageSizeAttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_GeometryExtractor_OUTPUT"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "_number_of_columns" "SET_TO" "256" }      ATTR_ACTION { "" "_xmin_extent" "SET_TO" "<at>Evaluate<openparen><at>Value<openparen>_xmin<closeparen>-1<closeparen>" }      ATTR_ACTION { "" "_xmax_extent" "SET_TO" "<at>Evaluate<openparen><at>Value<openparen>_xmax<closeparen>+1<closeparen>" }      ATTR_ACTION { "" "_ymin_extent" "SET_TO" "<at>Evaluate<openparen><at>Value<openparen>_ymin<closeparen>-1<closeparen>" }      ATTR_ACTION { "" "_ymax_extent" "SET_TO" "<at>Evaluate<openparen><at>Value<openparen>_ymax<closeparen>+1<closeparen>" }      ATTR_ACTION { "" "_size_ratio" "SET_TO" "<at>Evaluate<openparen><at>Value<openparen>_number_of_columns<closeparen><solidus><openparen><at>Value<openparen>_xmax_extent<closeparen>-<at>Value<openparen>_xmin_extent<closeparen><closeparen><closeparen>" }      ATTR_ACTION { "" "_number_of_rows" "SET_TO" "<at>Evaluate<openparen><at>round<openparen><openparen><at>Value<openparen>_ymax_extent<closeparen>-<at>Value<openparen>_ymin_extent<closeparen><closeparen>*<at>Value<openparen>_size_ratio<closeparen><comma>0<closeparen><closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageSizeAttributeCreator_OUTPUT"        }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_ColorsAttributeExposer }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageSizeAttributeCreator_OUTPUT"    OUTPUT { FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ColorsAttributeExposer_OUTPUT"          }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_ValidExtentsTester }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageSizeAttributeCreator_OUTPUT"    TEST { _xmax_extent ATTRIBUTE_HAS_A_VALUE "" ENCODED } TEST { _xmin_extent ATTRIBUTE_HAS_A_VALUE "" ENCODED } TEST { _ymax_extent ATTRIBUTE_HAS_A_VALUE "" ENCODED } TEST { _ymin_extent ATTRIBUTE_HAS_A_VALUE "" ENCODED }    BOOLEAN_OPERATOR { COMPOSITE }    COMPOSITE_TEST_EXPR { "1 AND 2 AND 3 AND 4" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ValidExtentsTester_PASSED"         }    OUTPUT { FAILED FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ValidExtentsTester_FAILED"         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_ColorsAttributeExposer }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ValidExtentsTester_PASSED"    OUTPUT { FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ColorsAttributeExposer_OUTPUT"          }
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter GeometryFilter_Input Input Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ColorsAttributeExposer_OUTPUT"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_GeometryFilter_Input"
 MACRO Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME $(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter
@@ -2711,7 +2849,7 @@ MACRO $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_TRANSFORMER_GROUP
 MACRO $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_SUB_DOC_NAME Base64PNGRasterizerGeometryFilter
 DEFAULT_MACRO Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input1649558898 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input1649602305 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"
 # -------------------------------------------------------------------------
 MACRO OUTPUT_POINT_FTYPE not_selected
 MACRO OUTPUT_POINT_FTYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT
@@ -2739,7 +2877,7 @@ MACRO OUTPUT_NULL_FTYPE not_selected
 MACRO OUTPUT_NULL_FTYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL
 Lookup $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterTable   ""  "not_selected"   fme_point $(OUTPUT_POINT_FTYPE)   fme_line $(OUTPUT_LINE_FTYPE)   fme_arc $(OUTPUT_ARC_FTYPE)   fme_area $(OUTPUT_AREA_FTYPE)   fme_ellipse $(OUTPUT_ELLIPSE_FTYPE)   fme_text $(OUTPUT_TEXT_FTYPE)   fme_raster $(OUTPUT_RASTER_FTYPE)   fme_point_cloud $(OUTPUT_POINTCLOUD_FTYPE)   fme_surface $(OUTPUT_SURFACE_FTYPE)   fme_solid $(OUTPUT_SOLID_FTYPE)   fme_collection $(OUTPUT_COLLECTION_FTYPE)   fme_no_geom $(OUTPUT_NULL_FTYPE)
 # Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
-INCLUDE [ FME_CleanseFMEUUID {$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_71b3f129_f68e_4123_b7ad_10784ca5d06c0} ]
+INCLUDE [ FME_CleanseFMEUUID {$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_9b3b9318_5459_4b4a_8cd9_85abea62ce556} ]
 MACRO COLLECTION_HANDLING NOT_THIS_TIME
 MACRO INSTANCE_FILTERING *
 INCLUDE [    if 0 {       puts "MACRO COLLECTION_HANDLING *";       if <Unused> {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {{"$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"} == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
@@ -2749,9 +2887,9 @@ FACTORY_DEF {$(COLLECTION_HANDLING)} TestFactory    FACTORY_NAME { $(Base64PNGRa
 FACTORY_DEF {$(COLLECTION_HANDLING)} DeaggregateFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Deagg }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Collection___ }    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW { <Unused> }    OUTPUT { POINT FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { LINE FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { POLYGON FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { DONUT FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { AGGREGATE FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterPrepper }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Not_Collection___ }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Input___ }    OUTPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Prepped___        @SupplyAttributes("$(FME_UUID_SAFE)_targetFeatureType", @Lookup($(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterTable,&fme_type)) }
 FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Router }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Prepped___ }    TEST { @Value($(FME_UUID_SAFE)_targetFeatureType) != "not_selected" }    OUTPUT { PASSED FEATURE_TYPE * @FeatureType(@Value($(FME_UUID_SAFE)_targetFeatureType))                                 @RemoveAttributes($(FME_UUID_SAFE)_targetFeatureType) }    OUTPUT { FAILED FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"        @RemoveAttributes($(FME_UUID_SAFE)_targetFeatureType)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized1649558898 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_LINE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank1649558898 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly1649558898 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RASTER"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized1649602305 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_LINE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank1649602305 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly1649602305 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RASTER"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter ToBeRasterized Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeRasterized"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeRasterized"
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter ToBeBlank Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeBlank"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeBlank"
@@ -2765,7 +2903,17 @@ FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NA
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_FillColorAttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FillColorTester_FAILED"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "fme_fill_color" "SET_TO" "$($(Base64PNGRasterizer_WORKSPACE_NAME)_Default_Fill_Color$encode)" }    OUTPUT { OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FillColorAttributeCreator_OUTPUT"        }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_SavedColorsAttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeBlank"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "_saved_color" "SET_TO" "<at>Value<openparen>fme_color<closeparen>" }      ATTR_ACTION { "" "_saved_fill_color" "SET_TO" "<at>Value<openparen>fme_fill_color<closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_SavedColorsAttributeCreator_OUTPUT"        }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ScalerInput }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeScaledOnly"    OUTPUT { FEATURE_TYPE ___TOINPUT___ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Input }    INPUT FEATURE_TYPE ___TOINPUT___    @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)    OUTPUT { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteScale }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Geometry_CenterPointCalculator }    INPUT  { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteScale }    OUTPUT { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteCenterPointScale         @ConvertToPoint(CENTER_OF_GRAVITY, __CPx__, __CPy__, __CPz__) }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_CenterPointScaler }    INPUT  { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteCenterPointScale         @Scale(REJECTABLE,ALLOW_NULLS,"@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)",@Value(__CPx__),@Value(__CPy__),@Value(__CPz__),RASTER_EXTENTS) }    OUTPUT { FEATURE_TYPE ___TOREJECTOR___        @RemoveAttributes(__CPx__,__CPy__,__CPz__) }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler }    INPUT  { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteScale }    OUTPUT { FEATURE_TYPE ___TOREJECTOR___         @Scale(REJECTABLE,ALLOW_NULLS,"@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)",RASTER_EXTENTS) }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Rejector }    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(fme_rejection_code) != ""    OUTPUT { FAILED FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Scaled       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___) }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_PointCloudScaler }    INPUT { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Scaled }    TEST &fme_type == "fme_point_cloud"    TEST { "" != "" }    BOOLEAN_OPERATOR AND    OUTPUT { PASSED FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_SCALED"       @TransformPointCloud(SCALE,)        }    OUTPUT { FAILED FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_SCALED"        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_BadExtentsAttributeManager }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ValidExtentsTester_FAILED"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "_number_of_columns" "_number_of_columns" "1" "SET_TO" }      ATTR_ACTION { "_xmin_extent" "_xmin_extent" "0" "SET_TO" }      ATTR_ACTION { "_xmax_extent" "_xmax_extent" "1" "SET_TO" }      ATTR_ACTION { "_ymin_extent" "_ymin_extent" "0" "SET_TO" }      ATTR_ACTION { "_ymax_extent" "_ymax_extent" "1" "SET_TO" }      ATTR_ACTION { "_size_ratio" "_size_ratio" "1" "SET_TO" }      ATTR_ACTION { "_number_of_rows" "_number_of_rows" "1" "SET_TO" }      ATTR_ACTION { "_xmax" "_xmax" "1" "SET_TO" }      ATTR_ACTION { "_xmin" "_xmin" "0" "SET_TO" }      ATTR_ACTION { "_ymax" "_ymax" "1" "SET_TO" }      ATTR_ACTION { "_ymin" "_ymin" "0" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_BadExtentsAttributeManager_OUTPUT"        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_SavedColorsAttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeBlank"    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_BadExtentsAttributeManager_OUTPUT"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "_saved_color" "SET_TO" "<at>Value<openparen>fme_color<closeparen>" }      ATTR_ACTION { "" "_saved_fill_color" "SET_TO" "<at>Value<openparen>fme_fill_color<closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_SavedColorsAttributeCreator_OUTPUT"        }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_DummyLocationAttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_SavedColorsAttributeCreator_OUTPUT"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "_x" "SET_TO" "<at>Evaluate<openparen><at>round<openparen><openparen><at>Value<openparen>_xmax_extent<closeparen>-<at>Value<openparen>_xmin_extent<closeparen><closeparen><solidus>2<comma>0<closeparen><closeparen>" }      ATTR_ACTION { "" "_y" "SET_TO" "<at>Evaluate<openparen><at>round<openparen><openparen><at>Value<openparen>_ymax_extent<closeparen>-<at>Value<openparen>_ymin_extent<closeparen><closeparen><solidus>2<comma>0<closeparen><closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_DummyLocationAttributeCreator_OUTPUT"        }
 # -------------------------------------------------------------------------
@@ -2776,14 +2924,6 @@ FACTORY_DEF {*} NeighborColorSetterFactory    FACTORY_NAME { $(Base64PNGRasteriz
 INCLUDE [    if { ([string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<Unused>}]==0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<not set>}]==0) &&         ([string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<Unused>}]==0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<not set>}]==0) &&         ([string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<Unused>}]==0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<not set>}]==0) &&         ([string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<Unused>}]==0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<not set>}]==0)}    {       puts {MACRO GROUND_EXTENTS_CLAUSE GROUND_EXTENTS_MIN_X { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)" }                                         GROUND_EXTENTS_MIN_Y { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)" }                                         GROUND_EXTENTS_MAX_X { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)" }                                         GROUND_EXTENTS_MAX_Y { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)" } };    }    elseif { ([string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<Unused>}] || [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<not set>}]) &&             ([string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<Unused>}] || [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymin_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<not set>}]) &&             ([string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<Unused>}] || [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_xmax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<not set>}]) &&             ([string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<Unused>}] || [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_ymax_extent<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)} {<not set>}])}    {       puts {MACRO GROUND_EXTENTS_CLAUSE};    }    else    {        puts_real {$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer (ImageRasterizer): To specify Ground Extents, all the Ground Extents parameters must be filled out.}; exit 1;    } ]
 INCLUDE [ if {{1.0} == {<Unused>}} {    puts {MACRO ALPHA_CLAUSE};    puts {MACRO BACKGROUND_ALPHA_CLAUSE}; } else {    puts {MACRO ALPHA_CLAUSE ALPHA { "1.0" } };    puts {MACRO BACKGROUND_ALPHA_CLAUSE BACKGROUND_ALPHA { "0.0" } }; } ]
 FACTORY_DEF {*} VectorToRasterFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FillColorTester_PASSED"    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FillColorAttributeCreator_OUTPUT"    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_BlankFeatureColorSetter_COLORED"    GROUP_BY { $($(Base64PNGRasterizer_WORKSPACE_NAME)_All_Attributes_to_Preserve) }    FLUSH_WHEN_GROUPS_CHANGE { No }    WIDTH { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_number_of_columns<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)" }    HEIGHT { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_number_of_rows<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)" }    X_CELL_SIZE { "<Unused>" }    Y_CELL_SIZE { "<Unused>" }    INTERPRETATION_TYPE { RGBA32 }    $(ALPHA_CLAUSE)    BACKGROUND_COLOR { "1,1,1" }    $(BACKGROUND_ALPHA_CLAUSE)    FILL_WITH_NODATA { No }    ANTI_ALIASING { No }    TOLERANCE { 0.5 }    POINTCLOUD_INTERPRETATION { COLOR }    $(GROUND_EXTENTS_CLAUSE)    REJECT_INVALID_GEOM YES    OUTPUT { RASTER FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer_RASTER"       @SupplyAttributes(?,fme_basename,$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer)        }
-# -------------------------------------------------------------------------
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ScalerInput }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_ToBeScaledOnly"    OUTPUT { FEATURE_TYPE ___TOINPUT___ }
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Input }    INPUT FEATURE_TYPE ___TOINPUT___    @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)    OUTPUT { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteScale }
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Geometry_CenterPointCalculator }    INPUT  { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteScale }    OUTPUT { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteCenterPointScale         @ConvertToPoint(CENTER_OF_GRAVITY, __CPx__, __CPy__, __CPz__) }
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_CenterPointScaler }    INPUT  { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteCenterPointScale         @Scale(REJECTABLE,ALLOW_NULLS,"@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)",@Value(__CPx__),@Value(__CPy__),@Value(__CPz__),RASTER_EXTENTS) }    OUTPUT { FEATURE_TYPE ___TOREJECTOR___        @RemoveAttributes(__CPx__,__CPy__,__CPz__) }
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler }    INPUT  { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_ExecuteScale }    OUTPUT { FEATURE_TYPE ___TOREJECTOR___         @Scale(REJECTABLE,ALLOW_NULLS,"@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)","@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_size_ratio<closeparen>,$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler)",RASTER_EXTENTS) }
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Rejector }    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(fme_rejection_code) != ""    OUTPUT { FAILED FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Scaled       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___) }
-FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_PointCloudScaler }    INPUT { FEATURE_TYPE $(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_Scaled }    TEST &fme_type == "fme_point_cloud"    TEST { "" != "" }    BOOLEAN_OPERATOR AND    OUTPUT { PASSED FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_SCALED"       @TransformPointCloud(SCALE,)        }    OUTPUT { FAILED FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_SCALED"        }
 # -------------------------------------------------------------------------
 Tcl2 proc $(Base64PNGRasterizer_WORKSPACE_NAME)_ParameterFetcher_doFetch {} {    foreach {name val} {"_PNG_Rootname {$($(Base64PNGRasterizer_WORKSPACE_NAME)_PNG_Rootname$encode)} _Name {$($(Base64PNGRasterizer_WORKSPACE_NAME)_Name$encode)}"} {         if { [string match {*<at>*} $val] == 1 } {             set val [FME_Execute EvaluateExpression {STRING} $val {$(Base64PNGRasterizer_WORKSPACE_NAME)_ParameterFetcher}];         } elseif {[string match {*FME_CONDITIONAL*} $val] == 1} {             set val [FME_Execute EvaluateExpression {STRING} $val {$(Base64PNGRasterizer_WORKSPACE_NAME)_ParameterFetcher}];         } else {             set val [FME_DecodeTextOrAttr $val];         };       FME_SetAttribute [FME_DecodeText $name] $val    } }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizer_WORKSPACE_NAME)_ParameterFetcher }    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ImageRasterizer_RASTER"    INPUT  FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_RasterScaler_SCALED"    OUTPUT { FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_ParameterFetcher_OUTPUT"         @Tcl2($(Base64PNGRasterizer_WORKSPACE_NAME)_ParameterFetcher_doFetch)          }
@@ -2808,7 +2948,7 @@ MACRO $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_TRANSFORMER_GROUP
 MACRO $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_SUB_DOC_NAME Base64PNGRasterizerGeometryFilter
 DEFAULT_MACRO Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input1649558898 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input1649602305 Input Splitter"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Input"
 # -------------------------------------------------------------------------
 MACRO OUTPUT_POINT_FTYPE not_selected
 MACRO OUTPUT_POINT_FTYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT
@@ -2836,7 +2976,7 @@ MACRO OUTPUT_NULL_FTYPE not_selected
 MACRO OUTPUT_NULL_FTYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL
 Lookup $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterTable   ""  "not_selected"   fme_point $(OUTPUT_POINT_FTYPE)   fme_line $(OUTPUT_LINE_FTYPE)   fme_arc $(OUTPUT_ARC_FTYPE)   fme_area $(OUTPUT_AREA_FTYPE)   fme_ellipse $(OUTPUT_ELLIPSE_FTYPE)   fme_text $(OUTPUT_TEXT_FTYPE)   fme_raster $(OUTPUT_RASTER_FTYPE)   fme_point_cloud $(OUTPUT_POINTCLOUD_FTYPE)   fme_surface $(OUTPUT_SURFACE_FTYPE)   fme_solid $(OUTPUT_SOLID_FTYPE)   fme_collection $(OUTPUT_COLLECTION_FTYPE)   fme_no_geom $(OUTPUT_NULL_FTYPE)
 # Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
-INCLUDE [ FME_CleanseFMEUUID {$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_71b3f129_f68e_4123_b7ad_10784ca5d06c1} ]
+INCLUDE [ FME_CleanseFMEUUID {$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_9b3b9318_5459_4b4a_8cd9_85abea62ce557} ]
 MACRO COLLECTION_HANDLING NOT_THIS_TIME
 MACRO INSTANCE_FILTERING *
 INCLUDE [    if 0 {       puts "MACRO COLLECTION_HANDLING *";       if <Unused> {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {{"$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"} == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
@@ -2846,9 +2986,9 @@ FACTORY_DEF {$(COLLECTION_HANDLING)} TestFactory    FACTORY_NAME { $(Base64PNGRa
 FACTORY_DEF {$(COLLECTION_HANDLING)} DeaggregateFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Deagg }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Collection___ }    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW { <Unused> }    OUTPUT { POINT FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { LINE FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { POLYGON FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { DONUT FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    OUTPUT { AGGREGATE FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterPrepper }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___HomogeneousAggregate___ }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Not_Collection___ }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Input___ }    OUTPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Prepped___        @SupplyAttributes("$(FME_UUID_SAFE)_targetFeatureType", @Lookup($(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RouterTable,&fme_type)) }
 FACTORY_DEF {*} TestFactory    FACTORY_NAME { $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_Router }    INPUT { FEATURE_TYPE $(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter___Prepped___ }    TEST { @Value($(FME_UUID_SAFE)_targetFeatureType) != "not_selected" }    OUTPUT { PASSED FEATURE_TYPE * @FeatureType(@Value($(FME_UUID_SAFE)_targetFeatureType))                                 @RemoveAttributes($(FME_UUID_SAFE)_targetFeatureType) }    OUTPUT { FAILED FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"        @RemoveAttributes($(FME_UUID_SAFE)_targetFeatureType)         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized1649558898 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_LINE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank1649558898 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly1649558898 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RASTER"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized1649602305 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_LINE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ARC"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_AREA"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_ELLIPSE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_TEXT"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_POINTCLOUD"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeRasterized"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank1649602305 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SURFACE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_SOLID"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_COLLECTION"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_NULL"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_INSTANCE"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_<UNFILTERED>"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeBlank"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly1649602305 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_GeometryFilter_RASTER"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME)_ToBeScaledOnly"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Base64PNGRasterizerGeometryFilter_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2 ToBeRasterized Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2_ToBeRasterized"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2_ToBeRasterized"
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2 ToBeBlank Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2_ToBeBlank"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Base64PNGRasterizerGeometryFilter_2_ToBeBlank"
@@ -2873,14 +3013,14 @@ MACRO $(FileDeleter_WORKSPACE_NAME)_SUB_DOC_NAME FileDeleter
 MACRO $(FileDeleter_WORKSPACE_NAME)_FileToDelete $(FME_MF_DIR)Resources/Temp/$($(Base64PNGRasterizer_WORKSPACE_NAME)_PNG_Rootname)_@Value(_Name)_@Value(id).png
 DEFAULT_MACRO FileDeleter_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(FileDeleter_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(FileDeleter_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FileDeleter_WORKSPACE_NAME)_Input1649558898 Input Splitter"   INPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FileDeleter_WORKSPACE_NAME)_Input1649602305 Input Splitter"   INPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { $(FileDeleter_WORKSPACE_NAME)_AttributeManager }    INPUT  FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Input"    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "" "filecopy_source_dataset" "$($(FileDeleter_WORKSPACE_NAME)_FileToDelete$encode)" "SET_TO" }      ATTR_ACTION { "" "filecopy_dest_dataset" "" "SET_TO" }      ATTR_ACTION { "" "filecopy_dest_filename" "nul" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_AttributeManager_OUTPUT"        }
 # -------------------------------------------------------------------------
 INCLUDE [    puts {DEFAULT_MACRO FeatureWriterDataset_$(FileDeleter_WORKSPACE_NAME)_FeatureWriter c:<backslash>temp}; ]
 FACTORY_DEF {*} WriterFactory    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    FACTORY_NAME { $(FileDeleter_WORKSPACE_NAME)_FeatureWriter }    WRITER_TYPE { FILECOPY }    WRITER_DATASET { "$(FeatureWriterDataset_$(FileDeleter_WORKSPACE_NAME)_FeatureWriter)" }    WRITER_SETTINGS { "RUNTIME_MACROS,FILE_OPERATION<comma>MOVE<comma>COPY_SOURCE_DIRECTORY<comma>NO<comma>COPY_SUBDIRECTORIES<comma>YES<comma>FAIL_NONEXISTENT_SOURCE<comma>NO<comma>OVERWRITE_FILE<comma>YES<comma>FEATURE_TYPE_NAMES_AS_FOLDERS<comma>YES<comma>FAIL_INVALID_DESTINATION<comma>NO<comma>MIME_TYPE<comma>text<solidus>plain<comma>DESTINATION_DATASETTYPE_VALIDATION<comma>Yes<comma>COORDINATE_SYSTEM_GRANULARITY<comma>FEATURE,METAFILE,FILECOPY" }    WRITER_METAFILE { "ATTRIBUTE_CASE,ANY,ATTRIBUTE_INVALID_CHARS,,ATTRIBUTE_LENGTH,512,ATTR_TYPE_MAP,char<openparen>width<closeparen><comma>fme_varchar<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_varbinary<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_char<openparen>width<closeparen><comma>char<openparen>width<closeparen><comma>fme_binary<openparen>width<closeparen><comma>string<comma>fme_buffer<comma>string<comma>fme_binarybuffer<comma>string<comma>fme_xml<comma>string<comma>fme_json<comma>datetime<comma>fme_datetime<comma>time<comma>fme_time<comma>date<comma>fme_date<comma>real64<comma>fme_real64<comma>real32<comma>fme_real32<comma><quote>number<openparen>width<comma>decimal<closeparen><quote><comma><quote>fme_decimal<openparen>width<comma>decimal<closeparen><quote><comma>int32<comma>fme_int32<comma><quote>number<openparen>11<comma>0<closeparen><quote><comma>fme_uint32<comma><quote>number<openparen>20<comma>0<closeparen><quote><comma>fme_int64<comma><quote>number<openparen>20<comma>0<closeparen><quote><comma>fme_uint64<comma>logical<comma>fme_boolean<comma>int16<comma>fme_int16<comma>int32<comma>fme_uint16<comma>int16<comma>fme_int8<comma>int16<comma>fme_uint8,DEST_ILLEGAL_ATTR_LIST,,FEATURE_TYPE_CASE,ANY,FEATURE_TYPE_INVALID_CHARS,<quote>:?*<lt><gt>|,FEATURE_TYPE_LENGTH,0,FEATURE_TYPE_LENGTH_INCLUDES_PREFIX,false,FEATURE_TYPE_RESERVED_WORDS,,FORMAT_METAFILE,$(FME_HOME_ENCODED)metafile<solidus>filecopy.fmf,FORMAT_NAME,FILECOPY,GEOM_MAP,filecopy_none<comma>fme_no_geom<comma>filecopy_none<comma>fme_point<comma>filecopy_none<comma>fme_line<comma>filecopy_none<comma>fme_polygon<comma>filecopy_none<comma>fme_arc<comma>filecopy_none<comma>fme_text<comma>filecopy_none<comma>fme_ellipse<comma>filecopy_none<comma>fme_rectangle<comma>filecopy_none<comma>fme_rounded_rectangle<comma>filecopy_none<comma>fme_collection<comma>filecopy_none<comma>fme_surface<comma>filecopy_none<comma>fme_solid<comma>filecopy_none<comma>fme_raster<comma>filecopy_none<comma>fme_point_cloud<comma>filecopy_none<comma>fme_voxel_grid<comma>filecopy_none<comma>fme_feature_table,READER_ATTR_INDEX_TYPES,,READER_FORMAT_TYPE,DYNAMIC,READER_USES_DEF,yes,SOURCE,no,SUPPORTS_FEAT_TYPE_FANOUT,yes,SUPPORTS_MULTI_GEOM,yes,WORKBENCH_CANNED_SCHEMA,,WRITER,FILECOPY,WRITER_ATTR_INDEX_TYPES,,WRITER_DEFLINE_PARMS,,WRITER_DEF_LINE_TEMPLATE,<opencurly>FME_GEN_GROUP_NAME<closecurly>,WRITER_FORMAT_PARAMETER,WRITER_FEATURE_TYPE_EDITING<comma>NO<comma>MIME_TYPE<comma>text<solidus>plain<comma>WRITER_AUTO_EXPOSE<comma><quote>filecopy_source_dataset<space>char<openparen>512<closeparen><quote><comma>FEATURE_TYPE_NAME<comma>Subfolder<comma>FEATURE_TYPE_DEFAULT_NAME<comma>subfolder<comma>WRITER_DATASET_HINT<comma><quote>Specify<space>a<space>folder<space>for<space>the<space>File<space>Copy<quote>,WRITER_FORMAT_TYPE,DYNAMIC,WRITER_HAS_DEFLINE_ATTRS,no,WRITER_USES_DEF,yes" }    WRITER_FEATURE_TYPES { "filecopy:filecopy,ftp_feature_type_name,filecopy,ftp_writer,FILECOPY,ftp_dynamic_schema,no,ftp_dynamic_feature_type_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_geometry_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_def_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_sources,<lt>lt<gt>Unused<lt>gt<gt>,ftp_format_attributes,filecopy_dest_filename<comma>filecopy_source_dataset" }    WRITER_PARAMS { "FAIL_NONEXISTENT_SOURCE,NO,FAIL_INVALID_DESTINATION,NO,FILE_OPERATION,MOVE,OVERWRITE_FILE,YES,MIME_TYPE,text<solidus>plain,COPY_SUBDIRECTORIES,YES,COORDINATE_SYSTEM_GRANULARITY,FEATURE,DESTINATION_DATASETTYPE_VALIDATION,Yes,COPY_SOURCE_DIRECTORY,NO" }    DATASET_ATTR { "_dataset" }    FEATURE_TYPE_LIST_ATTR { "_feature_type" }    TOTAL_FEATURES_WRITTEN_ATTR { "_total_features_written" }    OUTPUT_PORTS { filecopy filecopy }    INPUT filecopy FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_AttributeManager_OUTPUT"  @FeatureType(ENCODED,filecopy)    OUTPUT filecopy FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_FeatureWriter_filecopy"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FileDeleter_WORKSPACE_NAME)_Output1649558898 Output Collector"   INPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_FeatureWriter_filecopy"   OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(FileDeleter_WORKSPACE_NAME)_Output1649602305 Output Collector"   INPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_FeatureWriter_filecopy"   OUTPUT FEATURE_TYPE "$(FileDeleter_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(FileDeleter_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter Output Output Renamer/Nuker"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter_Output"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter_Output"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Output1649558898 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter_Output"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(Base64PNGRasterizer_WORKSPACE_NAME)_Output1649602305 Output Collector"   INPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_FileDeleter_Output"   OUTPUT FEATURE_TYPE "$(Base64PNGRasterizer_WORKSPACE_NAME)_Output"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(Base64PNGRasterizer_WORKSPACE_NAME))}]
