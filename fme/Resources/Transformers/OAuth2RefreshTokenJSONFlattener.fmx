@@ -1,5 +1,356 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <TRANSFORMER
+# TRANSFORMER_BEGIN OAuth2RefreshTokenJSONFlattener,6,Integrations,1e1aebac-27a8-4edf-baeb-e7eab52db577,"Linked by Default",No,NO_PARALLELISM,,No,21797,YES,Yes,36,No,
+# <p>Extract attributes from OAuth2 refresh token retrieval response JSON.</p>
+# <p>For issues or questions, please Create an issue <a href="https://github.com/modgeosys/fme-components/issues">here</a>.  For the source, including test driver components, please see the <a href="https://github.com/modgeosys/fme-components">Github repository</a>.</p>
+# <p>Copyright &copy; 2017-2020 by Modern geoSystems, released under <a href="https://github.com/modgeosys/fme-components/raw/master/LICENSE">this BSD 3-clause license</a>.</p>
+# TRANSFORMER_END
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BLOCKED_LOOPING="No"
+#!   CATEGORY="Integrations"
+#!   DESCRIPTION="&lt;p&gt;Extract attributes from OAuth2 refresh token retrieval response JSON.&lt;/p&gt;&#10;&lt;p&gt;For issues or questions, please Create an issue &lt;a href=&quot;https://github.com/modgeosys/fme-components/issues&quot;&gt;here&lt;/a&gt;.  For the source, including test driver components, please see the &lt;a href=&quot;https://github.com/modgeosys/fme-components&quot;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;&#10;&lt;p&gt;Copyright &amp;copy; 2017-2020 by Modern geoSystems, released under &lt;a href=&quot;https://github.com/modgeosys/fme-components/raw/master/LICENSE&quot;&gt;this BSD 3-clause license&lt;/a&gt;.&lt;/p&gt;"
+#!   DOC_EXTENTS="2097.01 971"
+#!   DOC_TOP_LEFT="-1200 -671"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="21797"
+#!   FME_DOCUMENT_GUID="1e1aebac-27a8-4edf-baeb-e7eab52db577"
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_LINKED_TRANSFORMER_VERSION="6"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FME_SERVER_SERVICES=""
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   FMX_INSERT_MODE="Linked by Default"
+#!   HISTORY="2018-01-21,Kevin&lt;space&gt;Weller,Initial&lt;space&gt;publication.,2018-03-08,Kevin&lt;space&gt;Weller,Updates&lt;space&gt;to&lt;space&gt;reflect&lt;space&gt;move&lt;space&gt;from&lt;space&gt;GitHub&lt;space&gt;to&lt;space&gt;Assembla&lt;space&gt;and&lt;space&gt;Atlassian&lt;semicolon&gt;&lt;space&gt;resource&lt;space&gt;Data&lt;space&gt;files&lt;space&gt;moved&lt;space&gt;to&lt;space&gt;Auth&lt;space&gt;subdirectory.,2019-05-09,Kevin&lt;space&gt;Weller,Updates&lt;space&gt;to&lt;space&gt;reflect&lt;space&gt;move&lt;space&gt;from&lt;space&gt;Assembla&lt;space&gt;and&lt;space&gt;Atlassian&lt;space&gt;back&lt;space&gt;to&lt;space&gt;Github&lt;semicolon&gt;&lt;space&gt;update&lt;space&gt;to&lt;space&gt;FME&lt;space&gt;2018.1.2.1&lt;semicolon&gt;&lt;space&gt;update&lt;space&gt;documentation&lt;space&gt;metadata.,2020-05-08,Kevin&lt;space&gt;Weller,Rename&lt;space&gt;and&lt;space&gt;remove&lt;space&gt;no-longer-necessary&lt;space&gt;local&lt;space&gt;refresh&lt;space&gt;token&lt;space&gt;file."
+#!   ITERATION_COUNT_ATTR=""
+#!   LAST_SAVE_BUILD="FME(R) 2021.2.1.0 (20211203 - Build 21797 - linux-x64)"
+#!   LAST_SAVE_DATE="2022-04-11T12:02:12"
+#!   MARKDOWN_DESCRIPTION="Extract attributes from OAuth2 refresh token retrieval response JSON.&#10;&#10;For issues or questions, please Create an issue [here](https://github.com/modgeosys/fme-components/issues).  For the source, including test driver components, please see the [Github repository](https://github.com/modgeosys/fme-components).&#10;&#10;Copyright &amp;copy; 2017-2020 by Modern geoSystems, released under [this BSD 3-clause license](https://github.com/modgeosys/fme-components/raw/master/LICENSE)."
+#!   MARKDOWN_USAGE="### Ports&#10;&#10;#### Input&#10;Feed a feature per refresh token response.&#10;&#10;#### &lt;Rejected\&gt;Input&#10;Feed all features that were rejected by their corresponding refresh web service calls.&#10;&#10;#### Output&#10;The input feature enhanced with the following attributes for each resulting API configuration file:&#10;&#10;- `oauth2_client_id` - As assigned in API configuration file&#10;- `oauth2_client_key` - As assigned in API configuration file&#10;- `oauth2_redirect_url` - As assigned in API configuration file &#10;- `oauth2_refresh_token_file` - As assigned in API configuration file&#10;- `oauth2_refresh_url` - As assigned in API configuration file&#10;- `oauth2_old_refresh_token` - As assigned in refresh token file before refreshing&#10;- `oauth2_refresh_token` - As returned from the refresh web service call&#10;- `oauth2_access_token` - As returned from the refresh web service call&#10;- `oauth2_created_at` - As returned from the refresh web service call&#10;- `oauth2_expires_in` - As returned from the refresh web service call&#10;- `oauth2_http_status_code` - As returned from the refresh web service call&#10;- `oauth2_response_body` - As returned from the refresh web service call&#10;- `oauth2_x_refresh_token_expires_in` - As returned from the refresh web service call&#10;&#10;#### &lt;Rejected\&gt;OutputParse&#10;The refreshed input feature enhanced with the following attributes for each feature rejected during parser processing:&#10;&#10;- `oauth2_json_error{}` - As returned by the JSON parser&#10;&#10;#### &lt;Rejected\&gt;Output&#10;The unrefreshed input feature enhanced with the following attributes for each feature rejected during processing:&#10;&#10;- `oauth2_http_error` - As returned from the refresh web service call&#10;- `oauth2_http_status_code` - As returned from the refresh web service call&#10;- `oauth2_response_body` - As returned from the refresh web service call&#10;&#10;#### &lt;Rejected\&gt;ErrorParse:&#10;The unrefreshed input feature enhanced with the following attributes for each feature rejected during error processing:&#10;&#10;- `oauth2_json_error{}` - As returned by the JSON parser&#10;&#10;### Parameters&#10;Specify the attributes containing the required parameters for each load request.&#10;&#10;#### OAUTH2_RESPONSE_BODY&#10;The response body from the token refresh call."
+#!   MAX_LOOP_ITERATIONS=""
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="36"
+#!   REPLACED_BY=""
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   TITLE="OAuth2RefreshTokenJSONFlattener"
+#!   USAGE="&lt;h3&gt;Ports&lt;/h3&gt;&#10;&lt;h4&gt;Input&lt;/h4&gt;&#10;&lt;p&gt;Feed a feature per refresh token response.&lt;/p&gt;&#10;&lt;h4&gt;&amp;lt;Rejected&gt;Input&lt;/h4&gt;&#10;&lt;p&gt;Feed all features that were rejected by their corresponding refresh web service calls.&lt;/p&gt;&#10;&lt;h4&gt;Output&lt;/h4&gt;&#10;&lt;p&gt;The input feature enhanced with the following attributes for each resulting API configuration file:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_client_id&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_client_key&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_redirect_url&lt;/code&gt; - As assigned in API configuration file &lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_refresh_token_file&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_refresh_url&lt;/code&gt; - As assigned in API configuration file&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_old_refresh_token&lt;/code&gt; - As assigned in refresh token file before refreshing&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_refresh_token&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_access_token&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_created_at&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_expires_in&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_http_status_code&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_response_body&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_x_refresh_token_expires_in&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h4&gt;&amp;lt;Rejected&gt;OutputParse&lt;/h4&gt;&#10;&lt;p&gt;The refreshed input feature enhanced with the following attributes for each feature rejected during parser processing:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_json_error{}&lt;/code&gt; - As returned by the JSON parser&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h4&gt;&amp;lt;Rejected&gt;Output&lt;/h4&gt;&#10;&lt;p&gt;The unrefreshed input feature enhanced with the following attributes for each feature rejected during processing:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_http_error&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_http_status_code&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_response_body&lt;/code&gt; - As returned from the refresh web service call&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h4&gt;&amp;lt;Rejected&gt;ErrorParse:&lt;/h4&gt;&#10;&lt;p&gt;The unrefreshed input feature enhanced with the following attributes for each feature rejected during error processing:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;code&gt;oauth2_json_error{}&lt;/code&gt; - As returned by the JSON parser&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;h3&gt;Parameters&lt;/h3&gt;&#10;&lt;p&gt;Specify the attributes containing the required parameters for each load request.&lt;/p&gt;&#10;&lt;h4&gt;OAUTH2_RESPONSE_BODY&lt;/h4&gt;&#10;&lt;p&gt;The response body from the token refresh call.&lt;/p&gt;"
+#!   USE_MARKDOWN="YES"
+#!   VIEW_POSITION="-1842.02 1260.01"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   XFORM_DEPRECATED="Yes"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR OAUTH2_RESPONSE_BODY Oauth2 Response Body:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_response_body&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm9hdXRoMl9yZXNwb25zZV9ib2R5PGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Ik9BVVRIMl9SRVNQT05TRV9CT0RZIiwicHJvbXB0IjoiT2F1dGgyIFJlc3BvbnNlIEJvZHk6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="OAUTH2_RESPONSE_BODY" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="JSONFlattener"
+#!   VERSION="4"
+#!   POSITION="-450 300"
+#!   BOUNDING_RECT="-450 300 431 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_access_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_expires_in" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_refresh_token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_x_refresh_token_expires_in" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_token_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_created_at" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_response_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_json_error{}.message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_json_error{}.line" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_json_error{}.column" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_json_error{}.severity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_access_token" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_expires_in" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_refresh_token" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_x_refresh_token_expires_in" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_token_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_created_at" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ERROR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ERROR_LIST_ATTR" PARM_VALUE="oauth2_json_error"/>
+#!     <XFORM_PARM PARM_NAME="FLATTEN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_DOCUMENT" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_response_body&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="oauth2_access_token oauth2_expires_in oauth2_refresh_token oauth2_x_refresh_token_expires_in oauth2_token_type oauth2_created_at"/>
+#!     <XFORM_PARM PARM_NAME="PREFIX_STRING" PARM_VALUE="oauth2_"/>
+#!     <XFORM_PARM PARM_NAME="RECURSIVE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="JSONFlattener"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="JSONFlattener"
+#!   VERSION="4"
+#!   POSITION="-450 -450"
+#!   BOUNDING_RECT="-450 -450 440.51299999999998 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="oauth2_response_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_json_error{}.message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_json_error{}.line" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_json_error{}.column" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_json_error{}.severity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="oauth2_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ERROR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ERROR_LIST_ATTR" PARM_VALUE="oauth2_json_error"/>
+#!     <XFORM_PARM PARM_NAME="FLATTEN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JSON_DOCUMENT" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;oauth2_response_body&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="oauth2_error"/>
+#!     <XFORM_PARM PARM_NAME="PREFIX_STRING" PARM_VALUE="oauth2"/>
+#!     <XFORM_PARM PARM_NAME="RECURSIVE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ErrorJSONFlattener"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="10"
+#!   NAME="Input"
+#!   POSITION="-1200 300"
+#!   BOUNDING_RECT="-1200 300 430 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="oauth2_response_body" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(OAUTH2_RESPONSE_BODY)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="11"
+#!   NAME="Output"
+#!   POSITION="150 300"
+#!   BOUNDING_RECT="150 300 430 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="12"
+#!   NAME="&lt;Rejected&gt;OutputParse"
+#!   POSITION="150 150"
+#!   BOUNDING_RECT="150 150 612.51499999999999 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="13"
+#!   NAME="&lt;Rejected&gt;Input"
+#!   POSITION="-1192.29 -542.75"
+#!   BOUNDING_RECT="-1192.29 -542.75 477.40699999999998 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="oauth2_response_body" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(OAUTH2_RESPONSE_BODY)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="14"
+#!   NAME="&lt;Rejected&gt;Output"
+#!   POSITION="150 -450"
+#!   BOUNDING_RECT="150 -450 510.024 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="15"
+#!   NAME="&lt;Rejected&gt;ErrorParse"
+#!   POSITION="150 -600"
+#!   BOUNDING_RECT="150 -600 747.00900000000001 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="21"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </TRANSFORMER>
+
+# ============================================================================
+DEFAULT_MACRO $(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_OAUTH2_RESPONSE_BODY <at>Value<openparen>oauth2_response_body<closeparen>
+# ============================================================================
+# ============================================================================
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPm9hdXRoMl9yZXNwb25zZV9ib2R5PGNsb3NlcGFyZW4+IiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Ik9BVVRIMl9SRVNQT05TRV9CT0RZIiwicHJvbXB0IjoiT2F1dGgyIFJlc3BvbnNlIEJvZHk6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ==
+# ============================================================================
+#! START_HEADER
+#! END_HEADER
+
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+DEFAULT_MACRO OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_Input1649700132 Input Splitter"   INPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,oauth2_response_body,$($(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_OAUTH2_RESPONSE_BODY),UTF8, FEATURE_TYPE)"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>Input1649700132 Input Splitter"   INPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>Input"   OUTPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>Input" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,oauth2_response_body,$($(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_OAUTH2_RESPONSE_BODY),UTF8, FEATURE_TYPE)"
+# -------------------------------------------------------------------------
+FACTORY_DEF * JSONQueryFactory    FACTORY_NAME $(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_ErrorJSONFlattener    INPUT  FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>Input"    MODE FLATTEN    PREF_STRING "oauth2"    JSON_DOCUMENT "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>oauth2_response_body<closeparen>,$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_ErrorJSONFlattener)"    EXPLODE_QUERY "json"    RECURSIVE_FLATTEN YES    ERROR_LIST_ATTR "oauth2_json_error"    OUTPUT EXPLODED FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_ErrorJSONFlattener_OUTPUT"    OUTPUT REJECTED FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_ErrorJSONFlattener_<REJECTED>"
+# -------------------------------------------------------------------------
+FACTORY_DEF * JSONQueryFactory    FACTORY_NAME $(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_JSONFlattener    INPUT  FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_Input"    MODE FLATTEN    PREF_STRING "oauth2_"    JSON_DOCUMENT "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>oauth2_response_body<closeparen>,$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_JSONFlattener)"    EXPLODE_QUERY "json"    RECURSIVE_FLATTEN YES    ERROR_LIST_ATTR "oauth2_json_error"    OUTPUT EXPLODED FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_JSONFlattener_OUTPUT"    OUTPUT REJECTED FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_JSONFlattener_<REJECTED>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_Output1649700132 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_JSONFlattener_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>OutputParse1649700132 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_JSONFlattener_<REJECTED>"   OUTPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>OutputParse"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>Output1649700132 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_ErrorJSONFlattener_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>Output"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>ErrorParse1649700132 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_ErrorJSONFlattener_<REJECTED>"   OUTPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>ErrorParse"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME))}]
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <TRANSFORMER
 # TRANSFORMER_BEGIN OAuth2RefreshTokenJSONFlattener,5,Integrations,fcb4c3a1-281a-4efd-b1f5-02f1055ae8de,"Linked by Default",No,NO_PARALLELISM,,No,19823,YES,No,36,No
 # <p>Extract attributes from OAuth2 refresh token retrieval response JSON.</p>
 # <p>For issues or questions, please Create an issue <a href="https://github.com/modgeosys/fme-components/issues">here</a>.  For the source, including test driver components, please see the <a href="https://github.com/modgeosys/fme-components">Github repository</a>.</p>
@@ -3311,6 +3662,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKS
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>Output1515901054 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_ErrorJSONFlattener_OUTPUT"   OUTPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>Output"
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>ErrorParse1515901054 Output Collector"   INPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_ErrorJSONFlattener_<REJECTED>"   OUTPUT FEATURE_TYPE "$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME)_<Rejected>ErrorParse"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(OAuth2RefreshTokenJSONFlattener_WORKSPACE_NAME))}]
+
 
 
 
