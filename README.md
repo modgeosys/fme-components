@@ -9,8 +9,5 @@ Components for use with FME&reg; (ETL from Safe Software http://www.safe.com).  
 * **AttributeValidationListPopulator.fmx**:  Enhance the output from a standard _AttributeValidator_ transformer with contextual information to assist subsequent diagnosis of invalid attribute values. The output is meant to be used by a subsequent _AttributeValidationHTMLReportGenerator_ to create a human-readable report of invalid attributes at different positions within a calling workspace or custom transformer.  _IMPORTANT: This transformer must be embedded, not linked, for the calling module (workspace or linked custom transformer) to be properly identified; this is the default when you add it to your workflow._
 * **AttributeValidationHTMLReportGenerator.fmx:**  Generate a human-readable HTML report of invalid attributes at different positions within a calling workspace or custom transformer from the output of one or more standard _AttributeValidator_ transformers and paired _AttributeValidationListPopulator_ transformers.
 * **SQLiteSorter.fmx:**  A sometimes-faster alternative to the built-in _Sorter_ transformer using a temporary SQLite database file.
-* **OAuth2CallbackProcessor.fmx (deprecated):**  Process an OAuth2 redirect URI call, as from a workspace with a published endpoint.
-* **OAuth2ConfigurationReader (deprecated):**  Load an OAuth2 API configuration JSON file.
-* **OAuth2RefreshTokenJSONFlattener.fmx (deprecated):**  Extract attributes from OAuth2 refresh token retrieval response JSON.
 
 See component properties (metadata) for usage instructions.
